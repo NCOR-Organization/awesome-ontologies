@@ -40,6 +40,7 @@ More information on how to contibute [here](/CONTRIBUTING.md)
 - [SUMO](https://www.adampease.org/OP/) - Suggested Upper Merged Ontology, supports natural language processing and reasoning.
 - [GFO (General Formal Ontology)](https://www.onto-med.de/en/theory/gfo/) - Integrates objects, processes, and time.
 - [GIST Core](https://github.com/semanticarts/gist/tree/main/ontologies) - gist is a minimalist upper ontology created by Semantic Arts
+- [gUFO](https://nemo-ufes.github.io/gufo/) - gUFO is a lightweight implementation of the Unified Foundational Ontology (UFO).
 
 
 ## 🧠 Mid-Level Ontologies
