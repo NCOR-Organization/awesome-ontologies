@@ -1,0 +1,17 @@
+Download Log for http://www.obofoundry.org/ontology/ + https://bioportal.bioontology.org/ontologieshttps://github.com
+------------------------------------------------------------
+Downloaded (0):
+
+Skipped (10):
+  - ontologies.ttl | Reason: Already exists
+  - ontologies.ttl | Reason: Already exists
+  - ontologies.ttl | Reason: Already exists
+  - ontologies.ttl | Reason: Already exists
+  - ontologies.ttl | Reason: Already exists
+  - ontologies.ttl | Reason: Already exists
+  - ontologies.ttl | Reason: Already exists
+  - ontologies.ttl | Reason: Already exists
+  - ontologies.ttl | Reason: Already exists
+  - ontologies.ttl | Reason: Already exists
+
+Errors (0):
