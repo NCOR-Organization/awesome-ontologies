@@ -1,0 +1,2048 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/zeco.owl#"
+     xml:base="http://purl.obolibrary.org/obo/zeco.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:ubprop="http://purl.obolibrary.org/obo/ubprop#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/zeco.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/zeco/releases/2022-02-14/zeco.owl"/>
+        <dc:description>Ontology of Zebrafish Experimental Conditions</dc:description>
+        <dc:title>Zebrafish Experimental Conditions Ontology</dc:title>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/3.0/"/>
+        <oboInOwl:default-namespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zebrafish_experimental_conditions_ontology</oboInOwl:default-namespace>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-02-14</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <rdfs:label>definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000232 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000589 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000589"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000600 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000600"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0100001 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0100001">
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <rdfs:label>term replaced by</rdfs:label>
+        <rdfs:label xml:lang="en">term replaced by</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0001900 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001900"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0040042 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0040042"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000267 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ZECO_0000267">
+        <rdfs:label xml:lang="en">ZECO_AGR_slim</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/valid_for_go_annotation_extension -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/valid_for_go_gp2term -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/valid_for_go_gp2term">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/valid_for_go_ontology -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/valid_for_go_ontology">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/valid_for_gocam -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/valid_for_gocam">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ubprop#_upper_level -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ubprop#_upper_level">
+        <rdfs:comment>abstract upper-level terms not directly useful for analysis</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#SubsetProperty -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SubsetProperty">
+        <rdfs:label>subset_property</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#auto-generated-by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#auto-generated-by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#consider -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#consider">
+        <rdfs:label>consider</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#date -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#date"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#default-namespace -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#default-namespace"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <rdfs:label>database_cross_reference</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <rdfs:label>has_exact_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion">
+        <rdfs:label>has_obo_format_version</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
+        <rdfs:label>has_obo_namespace</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
+        <rdfs:label>in_subset</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#saved-by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#saved-by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand">
+        <rdfs:label>shorthand</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <obo:IAO_0000111 xml:lang="en">is part of</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">my brain is part of my body (continuant parthood, two material entities)</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this day is part of this year (occurrent parthood)</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">a core relation that holds between a part and its whole</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Everything is part of itself. Any part of any part of a thing is itself part of that thing. Two distinct things cannot be part of each other.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)
+
+A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An occurrent cannot be part of a continuant: use &apos;has participant&apos;. A material entity cannot be part of an immaterial entity: use &apos;has location&apos;. A specifically dependent continuant cannot be part of an independent continuant: use &apos;inheres in&apos;. An independent continuant cannot be part of a specifically dependent continuant: use &apos;bearer of&apos;.</obo:IAO_0000116>
+        <obo:IAO_0000118 xml:lang="en">part_of</obo:IAO_0000118>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_gp2term"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
+        <rdfs:label xml:lang="en">part of</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections"/>
+        <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:PartOf"/>
+        <rdfs:seeAlso>http://www.obofoundry.org/ro/#OBO_REL:part_of</rdfs:seeAlso>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <obo:IAO_0000111 xml:lang="en">has part</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">my body has part my brain (continuant parthood, two material entities)</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">my stomach has part my stomach cavity (continuant parthood, material entity has part immaterial entity)</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this year has part this day (occurrent parthood)</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">a core relation that holds between a whole and its part</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Everything has itself as a part. Any part of any part of a thing is itself part of that thing. Two distinct things cannot have each other as a part.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Parthood requires the part and the whole to have compatible classes: only an occurrent have an occurrent as part; only a process can have a process as part; only a continuant can have a continuant as part; only an independent continuant can have an independent continuant as part; only a specifically dependent continuant can have a specifically dependent continuant as part; only a generically dependent continuant can have a generically dependent continuant as part. (This list is not exhaustive.)
+
+A continuant cannot have an occurrent as part: use &apos;participates in&apos;. An occurrent cannot have a continuant as part: use &apos;has participant&apos;. An immaterial entity cannot have a material entity as part: use &apos;location of&apos;. An independent continuant cannot have a specifically dependent continuant as part: use &apos;bearer of&apos;. A specifically dependent continuant cannot have an independent continuant as part: use &apos;inheres in&apos;.</obo:IAO_0000116>
+        <obo:IAO_0000118 xml:lang="en">has_part</obo:IAO_0000118>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
+        <rdfs:label xml:lang="en">has part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002211 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002211">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115>process(P1) regulates process(P2) iff: P1 results in the initiation or termination of P2 OR affects the frequency of its initiation or termination OR affects the magnitude or rate of output of P2.</obo:IAO_0000115>
+        <obo:IAO_0000116>We use &apos;regulates&apos; here to specifically imply control. However, many colloquial usages of the term correctly correspond to the weaker relation of &apos;causally upstream of or within&apos; (aka influences). Consider relabeling to make things more explicit</obo:IAO_0000116>
+        <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
+        <obo:IAO_0000117>David Hill</obo:IAO_0000117>
+        <obo:IAO_0000117>Tanya Berardini</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/ro/docs/causal-relations"/>
+        <obo:IAO_0000119>GO</obo:IAO_0000119>
+        <obo:IAO_0000232>Regulation precludes parthood; the regulatory process may not be within the regulated process.</obo:IAO_0000232>
+        <obo:IAO_0000589>regulates (processual)</obo:IAO_0000589>
+        <obo:IAO_0000600 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obo:IAO_0000600>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
+        <rdfs:label xml:lang="en">regulates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000100 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000100">
+        <obo:IAO_0000115>The state in which an organism exists. </obo:IAO_0000115>
+        <rdfs:label xml:lang="en">conditions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000101 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000101">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000100"/>
+        <obo:IAO_0000115>Condition which serves as a standard against which experimental conditions can be compared.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000267"/>
+        <rdfs:label xml:lang="en">control conditions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000102 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000102">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000101"/>
+        <obo:IAO_0000115>Control condition in which the conditions of the organism in the control experiment are not standard but are being used as the condition against which the experimental condition is compared.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>innocuous condition</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">generic control</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000103">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000100"/>
+        <obo:IAO_0000115>Experimental condition that is the standard environment for zebrafish husbandry, as described in ‘The Zebrafish Book’. In general the standard environment utilizes contaminant free tank water, heated to 28.5 degrees C, with the fish fed a normal contaminant free diet, with standard osmolarity, pH, and normal light cycle of 14hr light/10hr dark.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000267"/>
+        <rdfs:label xml:lang="en">standard conditions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000104">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000100"/>
+        <obo:IAO_0000115>Condition in which variables of the experiment are manipulated to determine the variables effect by comparing to a control condition.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000267"/>
+        <rdfs:label xml:lang="en">experimental conditions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000105 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000105">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000104"/>
+        <obo:IAO_0000115>Experimental condition in which the organism is treated with a microorganism.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000267"/>
+        <rdfs:label xml:lang="en">biological treatment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000106 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000106">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000105"/>
+        <obo:IAO_0000115>Biological treatment in which fish have been infected with bacteria. This infection can be done by addition of bacteria in the water or by injection of bacteria, (for example in the brain ventricle, in the caudal vein, in the yolk sac), or ingestion, or other means.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">bacterial treatment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000107 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000107">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000105"/>
+        <obo:IAO_0000115>Biological treatment in which fish have been infected with a fungus.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">fungal treatment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000108 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000108">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000105"/>
+        <obo:IAO_0000115>Biological treatment in which fish were raised in the absence of bacteria.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">germ free</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000109 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000109">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000105"/>
+        <obo:IAO_0000115>Biological treatment in which fish have been infected with protozoa.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">protozoan treatment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000110 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000110">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000105"/>
+        <obo:IAO_0000115>Biological treatment in which fish have been infected with a virus.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">viral treatment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000111 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000111">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000104"/>
+        <obo:IAO_0000115>Experimental condition in which the fish is treated with a chemical substance. This treatment could be administered by adding the chemical substance to the tank water, injections, or by consumption.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000267"/>
+        <rdfs:label xml:lang="en">chemical treatment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000112 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000112">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000104"/>
+        <obo:IAO_0000115>Experimental condition where the food of the zebrafish is manipulated in some way.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000267"/>
+        <rdfs:label xml:lang="en">diet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000113 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000113">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000104"/>
+        <obo:IAO_0000115>Experimental condition in which the availability of food is manipulated.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000267"/>
+        <rdfs:label xml:lang="en">food availability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000114 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000114">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000115"/>
+        <obo:IAO_0000115>Limited food availability condition in which there is no food provided.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">fasting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000115 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000115">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000113"/>
+        <obo:IAO_0000115>Food availability condition in which food is provided in limited supply.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">limited food availability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000116 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000116">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000247"/>
+        <obo:IAO_0000115>Food availability condition in which food is available in unlimited supply.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">unlimited food availability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000117 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000117">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000112"/>
+        <obo:IAO_0000115>Diet condition in which the contents of the food is manipulated.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">food content</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000118 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000118">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000117"/>
+        <obo:IAO_0000115>Food content condition in which the amount of cholesterol in the diet is manipulated.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">cholesterol content</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000119 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000119">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000118"/>
+        <obo:IAO_0000115>Cholesterol content condition in which the amount of cholesterol in the diet is elevated.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">high cholesterol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000120 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000120">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000118"/>
+        <obo:IAO_0000115>Cholesterol content condition in which the amount of cholesterol in the diet is reduced.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">low cholesterol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000121 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000121">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000117"/>
+        <obo:IAO_0000115>Food content condition in which the amount of fat in the diet is manipulated.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">fat content</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000122 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000122">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000121"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000251"/>
+        <obo:IAO_0000115>Fat content condition in which the amount of fat in the diet is elevated.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">high fat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000123 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000123">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000122"/>
+        <obo:IAO_0000115>High fat condition in which the amount of saturated fat in the diet is elevated.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">high saturated fat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000124 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000124">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000122"/>
+        <obo:IAO_0000115>High fat condition in which the amount of monounsaturated fat in the diet is elevated.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">high monounsaturated fat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000125 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000125">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000121"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000250"/>
+        <obo:IAO_0000115>Fat content condition in which the amount of fat in the diet is reduced.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">low fat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000126 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000126">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000125"/>
+        <obo:IAO_0000115>Low fat condition in which the amount of trans fat in the diet is reduced.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">low trans fat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000127 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000127">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000125"/>
+        <obo:IAO_0000115>Low fat condition in which the amount of polyunsaturated fat in the diet is reduced.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">low polyunsaturated fat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000128 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000128">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000117"/>
+        <obo:IAO_0000115>Food content condition in which the amount of protein in the diet is manipulated.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">protein content</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000129 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000129">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000128"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000251"/>
+        <obo:IAO_0000115>Protein content condition in which the protein in the diet is elevated.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">high protein</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000130 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000130">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000128"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000250"/>
+        <obo:IAO_0000115>Protein content condition in which the protein in the diet is reduced.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">low protein</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000131 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000131">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000104"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000267"/>
+        <rdfs:label xml:lang="en">stress</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000132 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000132">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000241"/>
+        <obo:IAO_0000115>High carbohydrate conditions in which the amount of sugar in the diet is elevated.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">high sugar</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000133 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000133">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000132"/>
+        <obo:IAO_0000115>High sugar condition in which the amount of fructose in the diet is elevated.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">high fructose</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000134 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000134">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000132"/>
+        <obo:IAO_0000115>High sugar condition in which the amount of glucose in the diet is elevated.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">high glucose</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000135 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000135">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000132"/>
+        <obo:IAO_0000115>High sugar condition in which the amount of sucrose in the diet is elevated.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">high sucrose</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000136 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000136">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000242"/>
+        <obo:IAO_0000115>High carbohydrate conditions in which the amount of sugar in the diet is reduced.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">low sugar</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000137 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000137">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000136"/>
+        <obo:IAO_0000115>Low sugar condition in which the amount of sucrose in the diet is reduced.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">low sucrose</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000138 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000138">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000136"/>
+        <obo:IAO_0000115>Low sugar condition in which the amount of fructose in the diet is reduced.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">low fructose</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000139 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000139">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000136"/>
+        <obo:IAO_0000115>Low sugar condition in which the amount of glucose in the diet is reduced.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">low glucose</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000140 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000140">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000104"/>
+        <obo:IAO_0000115>Experimental condition that manipulates the enclosure of the fish.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000267"/>
+        <rdfs:label xml:lang="en">housing conditions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000141 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000141">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000140"/>
+        <obo:IAO_0000115>Housing condition in which the roof of the enclosure if open.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">open roofed</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000142 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000142">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000140"/>
+        <obo:IAO_0000115>Housing condition in which the enclosure of the fish is overcrowded, containing an excess of fish that reduces the available space of the enclosure.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>high density</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">overcrowding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000143 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000143">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000104"/>
+        <obo:IAO_0000115>Experimental condition in which components of the fish have been removed and are maintained separately.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000267"/>
+        <rdfs:label xml:lang="en">in vitro culture</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000144 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000144">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000143"/>
+        <obo:IAO_0000115>In vitro culture condition in which an organ is dissected/isolated/collected from the fish and placed in culture. The analysis of the experiment is done on this organ in culture.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">organ culture</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000145 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000145">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000143"/>
+        <obo:IAO_0000115>In vitro culture condition in which an embryo or adult fish is dissociated to a single cell suspension. The analysis is made on this cell culture.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">primary cell culture</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000146 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000146">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000104"/>
+        <obo:IAO_0000115>Experimental condition in which the intensity, wavelength, and/or duration of illumination is (are) different from the one in controlled conditions.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000267"/>
+        <rdfs:label xml:lang="en">lighting conditions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000147 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000147">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000146"/>
+        <rdfs:label xml:lang="en">light duration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000148 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000148">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000147"/>
+        <rdfs:label xml:lang="en">altered light dark cycle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000149 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000149">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000147"/>
+        <rdfs:label xml:lang="en">constant dark</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000150 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000150">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000147"/>
+        <rdfs:label xml:lang="en">constant light</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000151 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000151">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000146"/>
+        <rdfs:label xml:lang="en">light intensity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000152 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000152">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000151"/>
+        <rdfs:label xml:lang="en">high light intensity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000153 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000153">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000151"/>
+        <rdfs:label xml:lang="en">low light intensity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000154 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000154">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000104"/>
+        <obo:IAO_0000115>Experimental condition in which gravity forces are manipulated. For zebrafish, this can be in the form of centrifugal forces or trips to outerspace.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000267"/>
+        <rdfs:label xml:lang="en">gravity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000155 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000155">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000131"/>
+        <obo:IAO_0000115>Experimental condition in which an external mechanical force is applied to the fish or part of the fish.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">mechanical stress</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000156 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000156">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000155"/>
+        <rdfs:label xml:lang="en">vibration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000157 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000157">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000155"/>
+        <rdfs:label xml:lang="en">water flow</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000158 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000158">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000157"/>
+        <rdfs:label xml:lang="en">circular flow</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000159 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000159">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000157"/>
+        <rdfs:label xml:lang="en">through flow</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000160 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000160">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000104"/>
+        <obo:IAO_0000115>Experimental condition in which the zebrafish is exposed to an increased or decreased temperature.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000267"/>
+        <rdfs:label xml:lang="en">temperature exposure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000161 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000161">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000160"/>
+        <obo:IAO_0000115>Temperature exposure condition in which fish are raised in temperature different (lower or higher) than the controlled temperature. The standard controlled temperature (according to the zebrafish book) is 28.5 degrees C.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">stable temperature exposure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000162 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000162">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000161"/>
+        <obo:IAO_0000115>Temperature exposure condition in which fish are raised in temperature that is lower than the controlled temperature. The standard controlled temperature (according to the zebrafish book) is 28.5 degrees C.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">cold exposure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000163 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000163">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000161"/>
+        <obo:IAO_0000115>Temperature exposure condition in which fish are raised in temperature that is higher than the controlled temperature. The standard controlled temperature (according to the zebrafish book) is 28.5 degrees C.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">heat exposure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000164 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000164">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000160"/>
+        <obo:IAO_0000115>Temperature exposure condition in which fish are subjected for a short period of time to temperature that is lower or higher than the controlled temperature. The standard controlled temperature (according to the zebrafish book) is 28.5 degrees C.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">temperature shock</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000165 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000165">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000164"/>
+        <obo:IAO_0000115>Temperature shock condition in which fish are subjected for a short period of time to temperature lower than the controlled temperature. The standard controlled temperature (according to the zebrafish book) is 28.5 degrees C.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">cold shock</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000166 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000166">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000164"/>
+        <obo:IAO_0000115>Temperature shock condition in which fish are subjected for a short period of time to temperature higher than the controlled temperature. The standard controlled temperature (according to the zebrafish book) is 28.5 degrees C.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">heat shock</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000168 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000168">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000229"/>
+        <obo:IAO_0000115>Targeted destruction of an anatomical structure.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">ablation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000169 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000169">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000168"/>
+        <obo:IAO_0000115>Experimental condition which uses a chemical to ablate an anatomical structure or cell.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">chemical ablation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000170 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000170">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000168"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000245"/>
+        <obo:IAO_0000115>Experimental condition which uses focused light to ablate an anatomical structure or cell.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">light ablation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000171 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000171">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000176"/>
+        <obo:IAO_0000115>Surgical manipulation in which a particular organ, appendage, or part of an organism is removed.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">resection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000172 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000172">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000171"/>
+        <obo:IAO_0000115>Resection condtion in which all or part of an extremity such as the fin or tail are removed.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">amputation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000173 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000173">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000105"/>
+        <obo:IAO_0000115>Biological treatment in which the organism is treated with a substance to stimulate the production of antibodies and provide immunity against one or several diseases.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">vaccine treatment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000174 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000174">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000229"/>
+        <obo:IAO_0000115>Experimental condition in which there is a deep cut or tear of the flesh.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">laceration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000176 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000176">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000229"/>
+        <obo:IAO_0000115>Experimental condition that involves  manual or instrumental techniques to alter anatomical structures.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">surgical manipulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000177 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000177">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000105"/>
+        <obo:IAO_0000115>Experimental condition in which living cells or tissues from one species are transplanted into another.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">xenotransplantation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000178 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000178">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000229"/>
+        <obo:IAO_0000115>Experimental condition in which a hole or break in the membranes of an organ or structure of the body is created.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">perforation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000179 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000179">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000229"/>
+        <obo:IAO_0000115>Experimental condition that results in superficial damage of tissue such that it is scraped or worn away.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">abrasion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000180 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000180">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000229"/>
+        <obo:IAO_0000115>Experimental condition that results in hematoma of tissue in which capillaries and sometimes venules are damaged by trauma, allowing blood to seep, hemorrhage, or extravasate into the surrounding interstitial tissues. (https://en.wikipedia.org/wiki/Bruise)</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">contusion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000181 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000181">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000176"/>
+        <obo:IAO_0000115>Cutting transversly of an organ or tissue. Type of cutting often used to divide the spinal cord to investigate neural regeneration in zebrafish.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">transection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000182 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000182">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000104"/>
+        <obo:IAO_0000115>Experimental condition in which a chemical or physical characteristic of water is altered.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000267"/>
+        <rdfs:label xml:lang="en">water quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000183 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000183">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000182"/>
+        <rdfs:comment>Water quality condition that alters the concentration of atmospheric gases in water.</rdfs:comment>
+        <rdfs:label xml:lang="en">gas composition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000184 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000184">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000183"/>
+        <obo:IAO_0000115>A gas composition condition that alters the concentraion of carbion dioxide.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">carbon dioxide content</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000185 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000185">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000184"/>
+        <rdfs:label xml:lang="en">hypercapnia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000186 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000186">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000184"/>
+        <rdfs:label xml:lang="en">hypocapnia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000187 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000187">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000183"/>
+        <obo:IAO_0000115>A gas composition condition that alters the concentraion of oxygen.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">oxygen content</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000188 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000188">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000187"/>
+        <obo:IAO_0000115>An oxygen content with high concentration of oxygen.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">hyperoxia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000189 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000189">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000187"/>
+        <obo:IAO_0000115>An oxygen content with low concentration of oxygen.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">hypoxia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000190 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000190">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000182"/>
+        <rdfs:label xml:lang="en">ion composition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000191 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000191">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000190"/>
+        <rdfs:label xml:lang="en">modified calcium composition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000192 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000192">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000191"/>
+        <rdfs:label xml:lang="en">high calcium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000193 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000193">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000191"/>
+        <rdfs:label xml:lang="en">low calcium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000194 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000194">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000190"/>
+        <rdfs:label xml:lang="en">modified potassium composition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000195 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000195">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000194"/>
+        <rdfs:label xml:lang="en">high potassium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000196 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000196">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000194"/>
+        <rdfs:label xml:lang="en">low potassium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000197 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000197">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000190"/>
+        <rdfs:label xml:lang="en">modified sodium composition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000198 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000198">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000197"/>
+        <rdfs:label xml:lang="en">high sodium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000199 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000199">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000197"/>
+        <rdfs:label xml:lang="en">low sodium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000200 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000200">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000190"/>
+        <rdfs:label xml:lang="en">pH</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000201 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000201">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000200"/>
+        <obo:IAO_0000115>Experimental condition in which the pH of the water is lower than the pH of the controlled conditions.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">acidic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000202 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000202">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000200"/>
+        <obo:IAO_0000115>Experimental condition in which the pH of the water is higher than the pH of the controlled conditions.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">basic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000203 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000203">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000182"/>
+        <rdfs:label xml:lang="en">water salinity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000204 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000204">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000203"/>
+        <obo:IAO_0000115>Experimental condition in which the salt concentration is higher than the one in controlled conditions.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">hypertonic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000205 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000205">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000203"/>
+        <obo:IAO_0000115>Experimental condition in which the salt concentration is lower than the one in controlled conditions.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">hypotonic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000206 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000206">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000203"/>
+        <rdfs:label xml:lang="en">isotonic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000207 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000207">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000203"/>
+        <rdfs:label xml:lang="en">stable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000208 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000208">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000104"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000267"/>
+        <rdfs:label xml:lang="en">radiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000209 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000209">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000208"/>
+        <rdfs:label xml:lang="en">electromagnetic radiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000210 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000210">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000209"/>
+        <rdfs:label xml:lang="en">radio waves</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000211 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000211">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000209"/>
+        <rdfs:label xml:lang="en">microwaves</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000212 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000212">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000209"/>
+        <rdfs:label xml:lang="en">infared</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000213 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000213">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000209"/>
+        <obo:IAO_0000115>Electromagnetic radiation with a wavelength from 400 nm to 700 nm. Visible light referes to the light which is visible to the human eye and is responsible fo the sense of sight.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">visible light</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000213"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Electromagnetic radiation with a wavelength from 400 nm to 700 nm. Visible light referes to the light which is visible to the human eye and is responsible fo the sense of sight.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Light</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000214 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000214">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000209"/>
+        <obo:IAO_0000115>Electromagnetic radiation with a wavelength from 10 nm to 400nm. Long-wavelength ultraviolet radiation can cause chemical reactions and causes many substances to glow or fluoresce.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>UV</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>UV light</oboInOwl:hasExactSynonym>
+        <rdfs:label>ultraviolet light</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000214"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Electromagnetic radiation with a wavelength from 10 nm to 400nm. Long-wavelength ultraviolet radiation can cause chemical reactions and causes many substances to glow or fluoresce.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Ultraviolet</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000215 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000215">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000209"/>
+        <rdfs:label xml:lang="en">x-ray</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000216 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000216">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000209"/>
+        <rdfs:label>gamma ray</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000217 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000217">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000208"/>
+        <rdfs:label xml:lang="en">particle radiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000218 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000218">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000217"/>
+        <rdfs:label xml:lang="en">proton</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000219 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000219">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000217"/>
+        <rdfs:label xml:lang="en">neutron</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000220 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000220">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000208"/>
+        <rdfs:label xml:lang="en">acoustic radiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000221 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000221">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000217"/>
+        <rdfs:label xml:lang="en">alpha particle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000222 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000222">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000104"/>
+        <obo:IAO_0000115>Experimental condition in which the fish is exposed to a physical field that is produced by electrically charged objects.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000267"/>
+        <rdfs:label xml:lang="en">electromagnetic field</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000223 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000223">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000222"/>
+        <obo:IAO_0000115>Experimental condition where the fish is exposed to materials that produce an electric field.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">electric field</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000224 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000224">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000222"/>
+        <obo:IAO_0000115>Experimental condition where the fish is exposed to magnetic materials.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">magnetic field</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000225 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000225">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000122"/>
+        <obo:IAO_0000115>High fat condition in which the amount of polyunsaturated fat in the diet is elevated.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">high polysunsaturated fat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000226 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000226">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000122"/>
+        <obo:IAO_0000115>High fat condition in which the amount of trans fat in the diet is elevated.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">high trans fat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000227 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000227">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000125"/>
+        <obo:IAO_0000115>Low fat condition in which the amount of saturated fat in the diet is reduced.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">low saturated fat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000228 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000228">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000125"/>
+        <obo:IAO_0000115>Low fat condition in which the amount of monounsaturated fat in the diet is reduced.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">low monounsaturated fat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000229 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000229">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000104"/>
+        <obo:IAO_0000115>Experimental condition in which an anatomical structure, cell, or organ has sustained targeted physical change, usually through the use of an instrument.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000267"/>
+        <rdfs:label xml:lang="en">physical alteration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000230 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000230">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000106"/>
+        <obo:IAO_0000115>Bacterial treatment where the bacteria are injected into the fish.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">bacterial treatment by injection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000231 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000231">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000106"/>
+        <obo:IAO_0000115>Bacterial treatment where the bacteria are introduced via the environment. For zebrafish this is the tank water.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">bacterial treatment by exposure to environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000232 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000232">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000107"/>
+        <obo:IAO_0000115>Fungal treatment where the fungus is injected into the fish.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">fungal treatment by injection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000233 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000233">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000107"/>
+        <obo:IAO_0000115>Fungal treatment where the fungus is introduced via the environment. For zebrafish this is the tank water.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">fungal treatment by exposure to environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000234 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000234">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000110"/>
+        <obo:IAO_0000115>Viral treatment where the virus is introduced via the environment. For zebrafish this is the tank water.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">viral treatment by exposure to environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000235 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000235">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000110"/>
+        <obo:IAO_0000115>Viral treatment where the virus is injected into the fish.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">viral treatment by injection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000236 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000236">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000177"/>
+        <obo:IAO_0000115>Xenotransplantation condition in which cancer cells are injected or grafted into the zebrafish.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">cancer xenotransplantation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000237 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000237">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000111"/>
+        <obo:IAO_0000115>Chemical treatment in which the chemical is injected into the zebrafish.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">chemical treatment by injection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000238 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000238">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000111"/>
+        <obo:IAO_0000115>Chemical treatment condition in which the chemical is introduced through the environment. For zebrafish this is the tank water.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">chemical treatment by environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000239 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000239">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000111"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000112"/>
+        <obo:IAO_0000115>Chemical treatment condition in which the chemical is introduced through the diet.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">chemical treatment by diet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000240 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000240">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000117"/>
+        <obo:IAO_0000115>Food content condition in which the amount of carbohydrate in the diet is manipulated.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">carbohydrate content</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000241 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000241">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000240"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000251"/>
+        <obo:IAO_0000115>Food content condtion in which the amount of carbohydrate in the diet is elevated.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">high carbohydrate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000242 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000242">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000240"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000250"/>
+        <obo:IAO_0000115>Food content condtion in which the amount of carbohydrate in the diet is reduced.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">low carbohydrate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000243 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000243">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000131"/>
+        <rdfs:label xml:lang="en">stress by handling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000244 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000244">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000156"/>
+        <obo:IAO_0000115>Mechanical stress condition where the organism is subjected to vibrations having an ultrasonic frequency.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">ultrasound</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000245 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000245">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000229"/>
+        <obo:IAO_0000115>Physical alteration which uses light to damage the anatomical structure, cell, or organ.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">light damage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000246 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000246">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000140"/>
+        <obo:IAO_0000115>Housing condition in which the enclosure of the fish is undercrowded,containing a low amount of fish that increases the available space of the enclosure.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>low density</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">undercrowding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000247 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000247">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000113"/>
+        <obo:IAO_0000115>Food availability condition in which food is provided in increased supply.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>overfeeding</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">increased food availability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000248 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000248">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000229"/>
+        <obo:IAO_0000115>Physical alteration which uses cold to damage an anatomical structure, cell, or organ</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">cold damage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000249 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000249">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000168"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000248"/>
+        <obo:IAO_0000115>Experimental condition which uses a cold instrument to ablate an anatomical structure or cell.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">cryoablation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000250 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000250">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000117"/>
+        <obo:IAO_0000115>Food content condition in which levels of a nutrient are decreased relative to standard diet.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">nutrient decreased</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000251 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000251">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000117"/>
+        <obo:IAO_0000115>Food content condition in which levels of a nutrient are increased relative to standard diet.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">nutrient increased</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000252 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000252">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000104"/>
+        <obo:IAO_0000115>Experimental condition that manipulates the frequency or way an organism is fed.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000267"/>
+        <rdfs:label xml:lang="en">feeding regime</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000253 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000253">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000252"/>
+        <obo:IAO_0000115>Feeding regime in which food, drugs, or other substances are administered by force, typically through a tube leading down the throat to the stomach.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">gavage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000254 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000254">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000106"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000253"/>
+        <obo:IAO_0000115>Bacterial treatment condition where bacteria are introduced to the organism by gavage.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">bacterial treatment by gavage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000255 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000255">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000111"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000253"/>
+        <obo:IAO_0000115>Chemical treatment condition where the chemical is introduced to the organism by gavage.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">chemical treatment by gavage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000256 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000256">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000106"/>
+        <obo:IAO_0000115>Bacterial treatment where bacteria are introduced via the diet.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">bacterial treatment by diet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000259 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000259">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000229"/>
+        <obo:IAO_0000115>Condition that uses a cold or hot insturment, electrical current, or chemical to burn or dissolve an anatomical structure to remove or close it off.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">cauterization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000260 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000260">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000259"/>
+        <obo:IAO_0000115>Cauterization of a tissue using a heated instrument.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">thermal cauterization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000261 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000261">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000229"/>
+        <obo:IAO_0000115>An injury that occurs because of pressure from a heavy object onto a body part. A compression injury may also arise from squeezing of a body part between two objects. https://www.medicinenet.com/crush_injury/definition.htm</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>crush injury</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">compression injury</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000262 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000262">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000117"/>
+        <obo:IAO_0000115>Food content condition in which the amount of probiotics in the diet is manipulated</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">probiotic content</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000263 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000263">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000154"/>
+        <obo:IAO_0000115>Experimental condition in which gravity forces are smaller than in control conditions. An example of a microgravity condition would be trips to outerspace.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">microgravity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ZECO_0000264 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ZECO_0000264">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ZECO_0000154"/>
+        <obo:IAO_0000115>Experimental condition in which gravity forces are greater than in control conditions. An example of an increased gravity condition would be the application of centrifugal forces.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">increased gravity</rdfs:label>
+    </owl:Class>
+    <rdf:Description>
+        <rdfs:comment>https://en.wikipedia.org/wiki/Ultraviolet</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Ultraviolet</oboInOwl:hasDbXref>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+

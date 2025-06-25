@@ -1,0 +1,1649 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>OBO Foundry</title><!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+
+<!-- Prism.js is for code blocks -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" />
+
+<!-- bootstrap icons, see https://icons.getbootstrap.com/#install -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+<!-- Custom stylesheet -->
+<link rel="stylesheet" href="/assets/css/style.css">
+
+<link type="application/atom+xml" rel="alternate" href="http://obofoundry.org/feed.xml" title="The OBO Foundry" />
+
+<style>
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+}
+
+.footer {
+    margin-top: auto;
+    padding-top: 1em;
+    background-color: #f5f5f5;
+}
+</style>
+</head>
+
+<body><nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+            <img src="/images/foundrylogo.png" alt="" style="max-height: 24px"
+                 class="d-inline-block align-text-top">
+            OBO Foundry
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarAboutDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        About
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarAboutDropdown">
+                        <li><a class="dropdown-item" href="/about-OBO-Foundry.html">About</a></li>
+                        <li><a class="dropdown-item" href="/docs/COC.html">Code of Conduct</a></li>
+                        <li><a class="dropdown-item" href="/resources">Resources</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="/docs/OperationsCommittee.html">Operations Committee</a></li>
+                        <li><a class="dropdown-item" href="/docs/SOP.html" style="padding-left: 2em">Standard Operating
+                            Procedures</a></li>
+                        <li><a class="dropdown-item" href="/docs/EditorialWG.html" style="padding-left: 2em">Editorial
+                            Working Group</a></li>
+                        <li><a class="dropdown-item" href="/docs/TechnicalWG.html" style="padding-left: 2em">Technical
+                            Working Group</a></li>
+                        <li><a class="dropdown-item" href="/docs/OutreachWG.html" style="padding-left: 2em">Outreach
+                            Working Group</a></li>
+                        <li><a class="dropdown-item" href="/roles/">OBO Foundry Organizational Roles</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="https://github.com/OBOFoundry/OBOFoundry.github.io">GitHub
+                            Project</a></li>
+                        <li><a class="dropdown-item" href="https://github.com/OBOFoundry">GitHub Organization</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarPrinciplesDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Principles
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarPrinciplesDropdown">
+                        
+                        <li><a class="dropdown-item" href="/principles/fp-000-summary.html">Overview</a></li>
+                        
+                        <li><a class="dropdown-item" href="/principles/fp-001-open.html">Open (principle 1)</a></li>
+                        
+                        <li><a class="dropdown-item" href="/principles/fp-002-format.html">Common Format (principle 2)</a></li>
+                        
+                        <li><a class="dropdown-item" href="/principles/fp-003-uris.html">URI/Identifier Space (principle 3)</a></li>
+                        
+                        <li><a class="dropdown-item" href="/principles/fp-004-versioning.html">Versioning (principle 4)</a></li>
+                        
+                        <li><a class="dropdown-item" href="/principles/fp-005-delineated-content.html">Scope (principle 5)</a></li>
+                        
+                        <li><a class="dropdown-item" href="/principles/fp-006-textual-definitions.html">Textual Definitions (principle 6)</a></li>
+                        
+                        <li><a class="dropdown-item" href="/principles/fp-007-relations.html">Relations (principle 7)</a></li>
+                        
+                        <li><a class="dropdown-item" href="/principles/fp-008-documented.html">Documentation (principle 8)</a></li>
+                        
+                        <li><a class="dropdown-item" href="/principles/fp-009-users.html">Documented Plurality of Users (principle 9)</a></li>
+                        
+                        <li><a class="dropdown-item" href="/principles/fp-010-collaboration.html">Commitment To Collaboration (principle 10)</a></li>
+                        
+                        <li><a class="dropdown-item" href="/principles/fp-011-locus-of-authority.html">Locus of Authority (principle 11)</a></li>
+                        
+                        <li><a class="dropdown-item" href="/principles/fp-012-naming-conventions.html">Naming Conventions (principle 12)</a></li>
+                        
+                        <li><a class="dropdown-item" href="/principles/fp-013-notification.html">Notification of Changes (principle 13)</a></li>
+                        
+                        <li><a class="dropdown-item" href="/principles/fp-016-maintenance.html">Maintenance (principle 16)</a></li>
+                        
+                        <li><a class="dropdown-item" href="/principles/fp-019-term-stability.html">Stability of Term Meaning (principle 19)</a></li>
+                        
+                        <li><a class="dropdown-item" href="/principles/fp-020-responsiveness.html">Responsiveness (principle 20)</a></li>
+                        
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarOntologiesDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Ontologies
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarOntologiesDropdown">
+                        <li><a class="dropdown-item" href="/">Ontology Table</a></li>
+                        <li><a class="dropdown-item" href="/id-policy.html">ID Policy</a></li>
+                        <li><a class="dropdown-item" href="http://dashboard.obofoundry.org/dashboard/index.html">OBO
+                            Dashboard</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <a class="dropdown-item"
+                               href="https://github.com/OBOFoundry/OBOFoundry.github.io/tree/master/ontology">
+                                Ontologies Metadata Source
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item"
+                               href="https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/registry/">
+                                Combined Metadata
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item"
+                               href="http://purl.obolibrary.org/meta/obo_context.jsonld">
+                                JSON-LD 1.1 Context
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item"
+                               href="http://purl.obolibrary.org/meta/ontologies.yml">
+                                Ontology YAML
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item"
+                               href="http://purl.obolibrary.org/meta/ontologies.jsonld">
+                                Ontology JSON-LD
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item"
+                               href="http://purl.obolibrary.org/meta/ontologies.ttl">
+                                Ontology RDF/Turtle
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarCitationDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Citation
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarCitationDropdown">
+                        <li><a class="dropdown-item" href="/citation/Citation.html">Cite Ontologies</a></li>
+                        <li><a class="dropdown-item" href="/citation/RelatedPublications.html">OBO Foundry Publications</a></li>
+                        <li><a class="dropdown-item" href="/citation/KnownPublications.html">Known OBO Foundry Ontology Publications</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarParticipateDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Participate
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarParticipateDropdown">
+                        <li>
+                            <a class="dropdown-item" href="https://github.com/OBOFoundry/OBOFoundry.github.io/issues">OBO
+                                Foundry Issue Tracker</a></li>
+                        <li>
+                            <a class="dropdown-item" href="https://groups.google.com/forum/#!forum/obo-discuss">OBO-Discuss
+                                Mail List</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="https://groups.google.com/forum/#!members/obo-tools">OBO-Tools
+                                Mail List</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="https://join.slack.com/t/obo-communitygroup/shared_invite/zt-1oq48ttk7-kKo0i6TwntYtAq~Jcjjg4g">OBO
+                                Community Slack channel</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/docs/NewOBOFC.html">Join the OBO Operations Committee</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/faq/how-do-i-register-my-ontology.html">Submit your
+                                ontology</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarNewsletterDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Newsletter
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarNewsletterDropdown">
+                        
+                        
+                        <li><a class="dropdown-item" href="/newsletter/2025/06/16/8th-issue-newsletter.html">OBO Foundry Newsletter Issue 8</a></li>
+                        
+                        
+                        
+                        <li><a class="dropdown-item" href="/newsletter/2025/01/23/7th-issue-newsletter.html">OBO Foundry Newsletter Issue 7</a></li>
+                        
+                        
+                        
+                        <li><a class="dropdown-item" href="/newsletter/2024/10/14/6th-issue-newsletter.html">OBO Foundry Newsletter Issue 6</a></li>
+                        
+                        
+                        
+                        <li><a class="dropdown-item" href="/newsletter/2024/06/27/5th-issue-newsletter.html">OBO Foundry Newsletter Issue 5</a></li>
+                        
+                        
+                        
+                        <li><a class="dropdown-item" href="/newsletter/2024/03/18/4th-issue-newsletter.html">OBO Foundry Newsletter Issue 4</a></li>
+                        
+                        
+                        
+                        <li><a class="dropdown-item" href="/newsletter/2023/12/18/3rd-issue-newsletter.html">OBO Foundry Newsletter Issue 3</a></li>
+                        
+                        
+                        
+                        <li><a class="dropdown-item" href="/newsletter/2023/09/15/second-issue-newsletter.html">OBO Foundry Newsletter issue 2</a></li>
+                        
+                        
+                        
+                        <li><a class="dropdown-item" href="/newsletter/2023/06/16/inaugural-newsletter.html">Inaugural OBO Foundry Newsletter</a></li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/faq/index.html">FAQ</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container" style="margin-top: 2em; margin-bottom: 2em;">
+    <div class="content">
+  <div>
+    <div class="page-header">
+      <h1>Known Ontology Project Publications</h1>
+    </div>
+  </div>
+
+  <div class="col-md-12">
+    <div class="row">
+      <div class="col-md-3">
+         <p><a href="/citation/Citation.html">OBO Citation and Attribution Policy</a></p>
+
+<ul>
+  <li><a href="/citation/Citation.html#single-term">Referring to a single term</a></li>
+  <li><a href="/citation/Citation.html#refer-ontology">Referring to an ontology</a></li>
+  <li><a href="/citation/Citation.html#cite-ontology">Citing an ontology</a></li>
+</ul>
+
+<p><a href="/citation/RelatedPublications.html">OBO Foundry Publications</a></p>
+<ul>
+  <li><a href="/citation/RelatedPublications.html#citing">Citing the OBO Foundry</a></li>
+  <li><a href="/citation/RelatedPublications.html#other">Other OBO Foundry Publications</a></li>
+</ul>
+
+<p><a href="/citation/KnownPublications.html">OBO Foundry Ontology Publications</a></p>
+ 
+      </div>
+
+      <div class="col-md-9"><p>This list is generated automatically from OBO Foundry ontology metadata. It is not intended to be authoritative or exhaustive.</p>
+<div>
+  
+    
+  
+    
+  
+    
+      <h5>Agronomy Ontology (agro)</h5>
+      <ul>
+      
+        <li><a href="http://ceur-ws.org/Vol-1747/IT205_ICBO2016.pdf" target="_blank" rel="noopener">Data-driven Agricultural Research for Development: A Need for Data Harmonization Via Semantics.</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+  
+    
+      <h5>Ascomycete phenotype ontology (apo)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/20157474" target="_blank" rel="noopener">New mutant phenotype data curation system in the Saccharomyces Genome Database</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Apollo Structured Vocabulary (apollo_sv)</h5>
+      <ul>
+      
+        <li><a href="https://doi.org/10.1186/s13326-016-0092-y" target="_blank" rel="noopener">The Apollo Structured Vocabulary: an OWL2 ontology of phenomena in infectious disease epidemiology and population biology for use in epidemic simulation</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Antibiotic Resistance Ontology (aro)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/31665441" target="_blank" rel="noopener">CARD 2020: antibiotic resistome surveillance with the comprehensive antibiotic resistance database.</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Biological Collections Ontology (bco)</h5>
+      <ul>
+      
+        <li><a href="https://doi.org/10.1371/journal.pone.0089606" target="_blank" rel="noopener">Semantics in Support of Biodiversity Knowledge Discovery: An Introduction to the Biological Collections Ontology and Related Ontologies</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+  
+    
+      <h5>Biological Spatial Ontology (bspo)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/25140222" target="_blank" rel="noopener">Nose to tail, roots to shoots: spatial descriptors for phenotypic diversity in the Biological Spatial Ontology.</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>BRENDA tissue / enzyme source (bto)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/21030441" target="_blank" rel="noopener">The BRENDA Tissue Ontology (BTO): the first all-integrating ontology of all organisms for enzyme sources</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+      <h5>Comparative Data Analysis Ontology (cdao)</h5>
+      <ul>
+      
+        <li><a href="https://doi.org/10.4137/EBO.S2320" target="_blank" rel="noopener">Initial Implementation of a Comparative Data Analysis Ontology</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Compositional Dietary Nutrition Ontology (cdno)</h5>
+      <ul>
+      
+        <li><a href="https://doi.org/10.3389/fnut.2022.928837" target="_blank" rel="noopener">Establishing a Common Nutritional Vocabulary - From Food Production to Diet</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Chemical Entities of Biological Interest (chebi)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/26467479" target="_blank" rel="noopener">ChEBI in 2016: Improved services and an expanding collection of metabolites.</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Chemical Information Ontology (cheminf)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/21991315" target="_blank" rel="noopener">The chemical information ontology: provenance and disambiguation for chemical data on the biological semantic web</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>CHEBI Integrated Role Ontology (chiro)</h5>
+      <ul>
+      
+        <li><a href="https://doi.org/10.26434/chemrxiv.12591221" target="_blank" rel="noopener">Extension of Roles in the ChEBI Ontology</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+      <h5>Coronavirus Infectious Disease Ontology (cido)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/36271389" target="_blank" rel="noopener">A comprehensive update on CIDO: the community-based coronavirus infectious disease ontology</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Confidence Information Ontology (cio)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/25957950" target="_blank" rel="noopener">The Confidence Information Ontology: a step towards a standard for asserting confidence in annotations</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Cell Ontology (cl)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/27377652" target="_blank" rel="noopener">The Cell Ontology 2016: enhanced content, modularization, and ontology interoperability.</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+      <h5>Cell Line Ontology (clo)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/25852852" target="_blank" rel="noopener">CLO: The Cell Line Ontology</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+      <h5>Clinical measurement ontology (cmo)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/22654893" target="_blank" rel="noopener">Three ontologies to define phenotype measurement data.</a></li>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/24103152" target="_blank" rel="noopener">The clinical measurement, measurement method and experimental condition ontologies: expansion, improvements and new applications.</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <h5>Dictyostelium discoideum anatomy (ddanat)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/18366659" target="_blank" rel="noopener">An anatomy ontology to represent biological knowledge in Dictyostelium discoideum</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Dictyostelium discoideum phenotype ontology (ddpheno)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/31840793" target="_blank" rel="noopener">dictyBase and the Dicty Stock Center (version 2.0) - a progress report</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+  
+    
+      <h5>Human Disease Ontology (doid)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/25348409" target="_blank" rel="noopener">Disease Ontology 2015 update: an expanded and updated database of human diseases for linking biomedical knowledge through disease data</a></li>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/34755882" target="_blank" rel="noopener">The Human Disease Ontology 2022 update</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Drosophila Phenotype Ontology (dpo)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/24138933" target="_blank" rel="noopener">The Drosophila phenotype ontology.</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>The Drug Ontology (dron)</h5>
+      <ul>
+      
+        <li><a href="https://doi.org/10.1186/s13326-017-0121-5" target="_blank" rel="noopener">Therapeutic indications and other use-case-driven updates in the drug ontology: anti-malarials, anti-hypertensives, opioid analgesics, and a large term request</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+  
+    
+      <h5>Evidence and Conclusion Ontology (eco)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/34986598" target="_blank" rel="noopener">ECO: the Evidence and Conclusion Ontology, an update for 2022.</a></li>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/30407590" target="_blank" rel="noopener">ECO, the Evidence &amp; Conclusion Ontology: community standard for evidence information.</a></li>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/25052702" target="_blank" rel="noopener">Standardized description of scientific evidence using the Evidence Ontology (ECO)</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+  
+    
+      <h5>Mouse Developmental Anatomy Ontology (emapa)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/9651497" target="_blank" rel="noopener">An internet-accessible database of mouse developmental anatomy based on a systematic nomenclature</a></li>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/23972281" target="_blank" rel="noopener">EMAP/EMAPA ontology of mouse developmental anatomy: 2013 update</a></li>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/26208972" target="_blank" rel="noopener">Mouse Anatomy Ontologies: Enhancements and Tools for Exploring and Integrating Biomedical Data</a></li>
+      
+        <li><a href="https://doi.org/10.1016/B978-0-12-800043-4.00023-3" target="_blank" rel="noopener">Textual Anatomics: the Mouse Developmental Anatomy Ontology and the Gene Expression Database for Mouse Development (GXD)</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Environment Ontology (envo)</h5>
+      <ul>
+      
+        <li><a href="https://doi.org/10.1186/2041-1480-4-43" target="_blank" rel="noopener">The environment ontology: contextualising biological and biomedical entities</a></li>
+      
+        <li><a href="https://doi.org/10.1186/s13326-016-0097-6" target="_blank" rel="noopener">The environment ontology in 2016: bridging domains with increased scope, semantic density, and interoperation</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <h5>Drosophila gross anatomy (fbbt)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/24139062" target="_blank" rel="noopener">The Drosophila anatomy ontology</a></li>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/22402613" target="_blank" rel="noopener">A strategy for building neuroanatomy ontologies</a></li>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/22180411" target="_blank" rel="noopener">The Virtual Fly Brain Browser and Query Interface</a></li>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/16381917" target="_blank" rel="noopener">FlyBase: anatomical data, images and queries</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <h5>Flora Phenotype Ontology (flopo)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/27842607" target="_blank" rel="noopener">The flora phenotype ontology (FLOPO): tool for integrating morphological traits and phenotypes of vascular plants</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Food-Biomarker Ontology (fobi)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/32556148" target="_blank" rel="noopener">FOBI: an ontology to represent food intake data and associate it with metabolomic data</a></li>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/34601570" target="_blank" rel="noopener">The fobitools framework: the first steps towards food enrichment analysis</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Food Ontology (foodon)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/31304272" target="_blank" rel="noopener">FoodOn: a harmonized food ontology to increase global food traceability, quality control and data integration</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+      <h5>Fission Yeast Phenotype Ontology (fypo)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/23658422" target="_blank" rel="noopener">FYPO: The Fission Yeast Phenotype Ontology.</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <h5>Glycan Naming and Subsumption Ontology (GNOme) (gno)</h5>
+      <ul>
+      
+        <li><a href="https://doi.org/10.5281/zenodo.6678278" target="_blank" rel="noopener">GNOme - Glycan Naming and Subsumption Ontology</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Gene Ontology (go)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/10802651" target="_blank" rel="noopener">Gene ontology: tool for the unification of biology. The Gene Ontology Consortium</a></li>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/33290552" target="_blank" rel="noopener">The Gene Ontology resource: enriching a GOld mine</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Human Ancestry Ontology (hancestro)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/29448949" target="_blank" rel="noopener">A standardized framework for representation of ancestry data in genomics studies, with application to the NHGRI-EBI GWAS Catalog</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Hymenoptera Anatomy Ontology (hao)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/21209921" target="_blank" rel="noopener">A gross anatomy ontology for hymenoptera</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Homology Ontology (hom)</h5>
+      <ul>
+      
+        <li><a href="https://doi.org/10.1016/j.tig.2009.12.012" target="_blank" rel="noopener">An ontology to clarify homology-related concepts</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <h5>Integrative and Conjugative Element Ontology (iceo)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/35058462" target="_blank" rel="noopener">ICEO, a biological ontology for representing and analyzing bacterial integrative and conjugative elements</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+      <h5>Infectious Disease Ontology (ido)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/34275487" target="_blank" rel="noopener">The Infectious Disease Ontology in the age of COVID-19</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Interaction Network Ontology (ino)</h5>
+      <ul>
+      
+        <li><a href="https://doi.org/10.1186/2041-1480-6-2" target="_blank" rel="noopener">Development and application of an Interaction Network Ontology for literature mining of vaccine-associated gene-gene interactions</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>clinical LABoratory Ontology (labo)</h5>
+      <ul>
+      
+        <li><a href="https://doi.org/10.5281/zenodo.6522019" target="_blank" rel="noopener">LABO: An Ontology for Laboratory Test Prescription and Reporting</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <h5>Model Card Report Ontology (mcro)</h5>
+      <ul>
+      
+        <li><a href="https://doi.org/10.1186/s12859-022-04797-6" target="_blank" rel="noopener">Toward a standard formal semantic representation of the model card report</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <h5>MIAPA Ontology (miapa)</h5>
+      <ul>
+      
+        <li><a href="https://doi.org/10.1089/omi.2006.10.231" target="_blank" rel="noopener">Taking the First Steps towards a Standard for Reporting on Phylogenies: Minimum Information about a Phylogenetic Analysis (MIAPA)</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Measurement method ontology (mmo)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/22654893" target="_blank" rel="noopener">Three ontologies to define phenotype measurement data.</a></li>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/24103152" target="_blank" rel="noopener">The clinical measurement, measurement method and experimental condition ontologies: expansion, improvements and new applications.</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+      <h5>Protein modification (mod)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/18688235" target="_blank" rel="noopener">The PSI-MOD community standard for representation of protein modification data</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Mondo Disease Ontology (mondo)</h5>
+      <ul>
+      
+        <li><a href="https://www.medrxiv.org/content/10.1101/2022.04.13.22273750" target="_blank" rel="noopener">Mondo: Unifying diseases for the world, by the world</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+      <h5>Mammalian Phenotype Ontology (mp)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/22961259" target="_blank" rel="noopener">The Mammalian Phenotype Ontology as a unifying standard for experimental and high-throughput phenotyping data</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <h5>Mass spectrometry ontology (ms)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/23482073" target="_blank" rel="noopener">The HUPO proteomics standards initiative- mass spectrometry controlled vocabulary.</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Neuro Behavior Ontology (nbo)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/24177753" target="_blank" rel="noopener">Analyzing gene expression data in mice with the Neuro Behavior Ontology</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <h5>Ontology of Biological Attributes (oba)</h5>
+      <ul>
+      
+        <li><a href="https://doi.org/10.1007/s00335-023-09992-1" target="_blank" rel="noopener">The Ontology of Biological Attributes (OBA) - computational traits for the life sciences</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+      <h5>Ontology for Biomedical Investigations (obi)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/27128319" target="_blank" rel="noopener">The Ontology for Biomedical Investigations</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <h5>Ontology for General Medical Science (ogms)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/21347182" target="_blank" rel="noopener">Toward an ontological treatment of disease and diagnosis</a></li>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/25991121" target="_blank" rel="noopener">Biomarkers in the Ontology for General Medical Science</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Oral Health and Disease Ontology (ohd)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/32819435" target="_blank" rel="noopener">Structuring, reuse and analysis of electronic dental data using the Oral Health and Disease Ontology</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+      <h5>Ontology of Host Pathogen Interactions (ohpi)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/30365026" target="_blank" rel="noopener">Victors: a web-based knowledge base of virulence factors in human and animal pathogens</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+  
+    
+      <h5>Ontology of Microbial Phenotypes (omp)</h5>
+      <ul>
+      
+        <li><a href="https://doi.org/10.1186/s12866-014-0294-3" target="_blank" rel="noopener">An ontology for microbial phenotypes</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Ontology for Modeling and Representation of Social Entities (omrse)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/27406187" target="_blank" rel="noopener">The ontology of medically related social entities: recent developments</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+      <h5>Ontology for Nutritional Studies (ons)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/29736190" target="_blank" rel="noopener">ONS: an ontology for a standardized description of interventions and observational studies in nutrition</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>OntoAvida: ontology for Avida digital evolution platform (ontoavida)</h5>
+      <ul>
+      
+        <li><a href="https://doi.org/10.1038/s41597-023-02514-3" target="_blank" rel="noopener">Ontology for the Avida digital evolution platform</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <h5>Phenotype And Trait Ontology (pato)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/28387809" target="_blank" rel="noopener">The anatomy of phenotype ontologies: principles, properties and applications</a></li>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/15642100" target="_blank" rel="noopener">Using ontologies to describe mouse phenotypes</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+  
+    
+      <h5>The Prescription of Drugs Ontology (pdro)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/34831777" target="_blank" rel="noopener">The Prescription of Drug Ontology 2.0 (PDRO): More Than the Sum of Its Parts</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Plant Experimental Conditions Ontology (peco)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/29186578" target="_blank" rel="noopener">The Planteome database: an integrated resource for reference ontologies, plant genomics and phenomics.</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Pathogen Host Interaction Phenotype Ontology (phipo)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/34788826" target="_blank" rel="noopener">PHI-base in 2022: a multi-species phenotype database for Pathogen-Host Interactions</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>planaria-ontology (plana)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/34318308" target="_blank" rel="noopener">Planarian Anatomy Ontology: a resource to connect data within and across experimental platforms</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+      <h5>Plant Ontology (po)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/23220694" target="_blank" rel="noopener">The plant ontology as a tool for comparative plant anatomy and genomic analyses.</a></li>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/29186578" target="_blank" rel="noopener">The Planteome database: an integrated resource for reference ontologies, plant genomics and phenomics.</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Porifera Ontology (poro)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/25276334" target="_blank" rel="noopener">The Porifera Ontology (PORO): enhancing sponge systematics with an anatomy ontology</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+      <h5>PRotein Ontology (PRO) (pr)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/27899649" target="_blank" rel="noopener">Protein Ontology (PRO): enhancing and scaling up the representation of protein entities</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+  
+    
+      <h5>Plant Stress Ontology (pso)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/29186578" target="_blank" rel="noopener">The Planteome database: an integrated resource for reference ontologies, plant genomics and phenomics.</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Pathway ontology (pw)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/21478484" target="_blank" rel="noopener">The Rat Genome Database pathway portal.</a></li>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/24499703" target="_blank" rel="noopener">The pathway ontology - updates and applications.</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+  
+    
+      <h5>Rat Strain Ontology (rs)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/24267899" target="_blank" rel="noopener">Rat Strain Ontology: structured controlled vocabulary designed to facilitate access to strain data at RGD.</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <h5>Sequence types and features ontology (so)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/15892872" target="_blank" rel="noopener">The Sequence Ontology: a tool for the unification of genome annotations.</a></li>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/20226267" target="_blank" rel="noopener">Evolution of the Sequence Ontology terms and relationships.</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Spider Ontology (spd)</h5>
+      <ul>
+      
+        <li><a href="https://doi.org/10.3390/d11100202" target="_blank" rel="noopener">The Spider Anatomy Ontology (SPD)—A Versatile Tool to Link Anatomy with Cross-Disciplinary Data</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>The Statistical Methods Ontology (stato)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/31831744" target="_blank" rel="noopener">Experiment design driven FAIRification of omics data matrices, an exemplar</a></li>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/32109232" target="_blank" rel="noopener">Semantic concept schema of the linear mixed model of experimental observations</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Software ontology (swo)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/25068035" target="_blank" rel="noopener">The Software Ontology (SWO): a resource for reproducibility in biomedical data analysis, curation and digital preservation</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Symptom Ontology (symp)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/19850722" target="_blank" rel="noopener">GeMInA, Genomic Metadata for Infectious Agents, a geospatial surveillance pathogen database</a></li>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/34755882" target="_blank" rel="noopener">The Human Disease Ontology 2022 update</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>terms4FAIRskills (t4fs)</h5>
+      <ul>
+      
+        <li><a href="https://doi.org/10.5281/zenodo.4705219" target="_blank" rel="noopener">EOSC Co-creation funded project 074: Delivery of a proof of concept for terms4FAIRskills: Technical report</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Taxonomic rank vocabulary (taxrank)</h5>
+      <ul>
+      
+        <li><a href="https://doi.org/10.1186/2041-1480-4-34" target="_blank" rel="noopener">The vertebrate taxonomy ontology: a framework for reasoning across model organism and species phenotypes</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Plant Trait Ontology (to)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/29186578" target="_blank" rel="noopener">The Planteome database: an integrated resource for reference ontologies, plant genomics and phenomics.</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Pathogen Transmission Ontology (trans)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/19850722" target="_blank" rel="noopener">GeMInA, Genomic Metadata for Infectious Agents, a geospatial surveillance pathogen database</a></li>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/34755882" target="_blank" rel="noopener">The Human Disease Ontology 2022 update</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Teleost taxonomy ontology (tto)</h5>
+      <ul>
+      
+        <li><a href="https://doi.org/10.1038/npre.2010.4629.1" target="_blank" rel="noopener">The Teleost Taxonomy Ontology</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Toxic Process Ontology (txpo)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/32883995" target="_blank" rel="noopener">Ontological approach to the knowledge systematization of a toxic process and toxic course representation framework for early drug risk management</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Uberon multi-species anatomy ontology (uberon)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/22293552" target="_blank" rel="noopener">Uberon, an integrative multi-species anatomy ontology</a></li>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/25009735" target="_blank" rel="noopener">Unification of multi-species vertebrate anatomy ontologies for comparative biology in Uberon</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Units of measurement ontology (uo)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/23060432" target="_blank" rel="noopener">The Units Ontology: a tool for integrating units of measurement in science</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Unified Phenotype Ontology (uPheno) (upheno)</h5>
+      <ul>
+      
+        <li><a href="https://doi.org/10.1101/2024.09.18.613276" target="_blank" rel="noopener">The Unified Phenotype Ontology (uPheno): A framework for cross-species integrative phenomics</a></li>
+      
+        <li><a href="https://zenodo.org/record/2382757" target="_blank" rel="noopener">Phenotype Ontologies Traversing All The Organisms (POTATO) workshop aims to reconcile logical definitions across species</a></li>
+      
+        <li><a href="https://zenodo.org/record/3352149" target="_blank" rel="noopener">Phenotype Ontologies Traversing All The Organisms (POTATO) workshop: 2nd edition</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+      <h5>Vaccine Ontology (vo)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/23256535" target="_blank" rel="noopener">Ontology representation and analysis of vaccine formulation and administration and their effects on vaccine immune responses</a></li>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/21624163" target="_blank" rel="noopener">Mining of vaccine-associated IFN-γ gene interaction networks using the Vaccine Ontology</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+      <h5>Vertebrate Taxonomy Ontology (vto)</h5>
+      <ul>
+      
+        <li><a href="https://doi.org/10.1186/2041-1480-4-34" target="_blank" rel="noopener">The vertebrate taxonomy ontology: a framework for reasoning across model organism and species phenotypes</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>C. elegans Gross Anatomy Ontology (wbbt)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/18629098" target="_blank" rel="noopener">Building a cell and anatomy ontology of Caenorhabditis elegans</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>C. elegans development ontology (wbls)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/31642470" target="_blank" rel="noopener">WormBase: a modern Model Organism Information Resource</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>C. elegans phenotype (wbphenotype)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/21261995" target="_blank" rel="noopener">Worm Phenotype Ontology: integrating phenotype data within and beyond the C. elegans community.</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Xenopus Anatomy Ontology (xao)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/18817563" target="_blank" rel="noopener">An ontology for Xenopus anatomy and development.</a></li>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/24139024" target="_blank" rel="noopener">Enhanced XAO: the ontology of Xenopus anatomy and development underpins more accurate annotation of gene expression and queries on Xenbase.</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Experimental condition ontology (xco)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/22654893" target="_blank" rel="noopener">Three ontologies to define phenotype measurement data.</a></li>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/24103152" target="_blank" rel="noopener">The clinical measurement, measurement method and experimental condition ontologies: expansion, improvements and new applications.</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+      <h5>Xenopus Phenotype Ontology (xpo)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/35317743" target="_blank" rel="noopener">The Xenopus phenotype ontology: bridging model organism phenotype data to human health and development.</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+      <h5>Zebrafish anatomy and development ontology (zfa)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/24568621" target="_blank" rel="noopener">The zebrafish anatomy and stage ontologies: representing the anatomy and development of Danio rerio.</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <h5>Human Phenotype Ontology (HPO) (hp)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/18950739" target="_blank" rel="noopener">The Human Phenotype Ontology: a tool for annotating and analyzing human hereditary disease.</a></li>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/26119816" target="_blank" rel="noopener">The Human Phenotype Ontology: Semantic Unification of Common and Rare Disease.</a></li>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/24217912" target="_blank" rel="noopener">The Human Phenotype Ontology project: linking molecular biology and disease through phenotype data.</a></li>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/30476213" target="_blank" rel="noopener">Expansion of the Human Phenotype Ontology (HPO) knowledge base and resources.</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Kinetic Simulation Algorithm Ontology (kisao)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/22027554" target="_blank" rel="noopener">Controlled vocabularies and semantics in systems biology</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+      <h5>Sickle Cell Disease Ontology (scdo)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/35363306" target="_blank" rel="noopener">The Sickle Cell Disease Ontology: recent development and expansion of the universal sickle cell knowledge representation.</a></li>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/33021900" target="_blank" rel="noopener">The Sickle Cell Disease Ontology: Enabling Collaborative Research and Co-Designing of New Planetary Health Applications.</a></li>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/31769834" target="_blank" rel="noopener">The Sickle Cell Disease Ontology: enabling universal sickle cell-based knowledge representation.</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <h5>Variation Ontology (vario)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/24162187" target="_blank" rel="noopener">Variation Ontology for annotation of variation effects and mechanisms</a></li>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/24533660" target="_blank" rel="noopener">Variation ontology: annotator guide</a></li>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/25616435" target="_blank" rel="noopener">Types and effects of protein variations</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>VEuPathDB ontology (eupath)</h5>
+      <ul>
+      
+        <li><a href="https://doi.org/10.5281/zenodo.6685957" target="_blank" rel="noopener">Malaria study data integration and information retrieval based on OBO Foundry ontologies.</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <h5>Human developmental anatomy, abstract (ehdaa2)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/22973865" target="_blank" rel="noopener">A new ontology (structured hierarchy) of human developmental anatomy for the first 7 weeks (Carnegie stages 1-20).</a></li>
+      
+      </ul>
+    
+  
+    
+      <h5>Foundational Model of Anatomy Ontology (subset) (fma)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/18688289" target="_blank" rel="noopener">Translating the Foundational Model of Anatomy into OWL</a></li>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/18360535" target="_blank" rel="noopener">The foundational model of anatomy in OWL: Experience and perspectives</a></li>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/16779026" target="_blank" rel="noopener">Challenges in converting frame-based ontology into OWL: the Foundational Model of Anatomy case-study</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <h5>Unipathway (upa)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/22102589" target="_blank" rel="noopener">UniPathway: a resource for the exploration and annotation of metabolic pathways</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <h5>The Drug-Drug Interactions Ontology (dinto)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/26147071" target="_blank" rel="noopener">DINTO: Using OWL Ontologies and SWRL Rules to Infer Drug–Drug Interactions and Their Mechanisms.</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <h5>Plant Environment Ontology (eo)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/22847540" target="_blank" rel="noopener">Ontologies as integrative tools for plant science.</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <h5>Teleost Anatomy Ontology (tao)</h5>
+      <ul>
+      
+        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/20547776" target="_blank" rel="noopener">The teleost anatomy ontology: anatomical representation for the genomics age</a></li>
+      
+      </ul>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+</div>
+</div>
+    </div>
+  </div>
+</div>
+
+
+</div><footer class="footer">
+    <p class="small text-center text-muted">
+        © 2024 OBO Technical WG
+    </p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- prism.js is for code blocks, see https://prismjs.com -->
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+</body>
+
+</html>

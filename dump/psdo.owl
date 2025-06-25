@@ -1,0 +1,1102 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/psdo.owl#"
+     xml:base="http://purl.obolibrary.org/obo/psdo.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:doap="http://usefulinc.com/ns/doap#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/psdo.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/2022-02-23/psdo.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/stato.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2017-03-24/iao.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/core.owl"/>
+        <dc:contributor xml:lang="en">Dahee Lee</dc:contributor>
+        <dc:contributor xml:lang="en">Shelbi Lisecki</dc:contributor>
+        <dc:contributor xml:lang="en">Veena Panicker</dc:contributor>
+        <dc:creator xml:lang="en">Colin Gross</dc:creator>
+        <dc:creator xml:lang="en">Cooper Stansbury</dc:creator>
+        <dc:creator xml:lang="en">John Rincon</dc:creator>
+        <dc:creator xml:lang="en">Zach Landis-Lewis</dc:creator>
+        <dc:description xml:lang="en">Performance Summary Display Ontology (PSDO) is an application ontology about motivating information in performance summaries and the visual and textual entities that are used to communicate about performance. Motivating information includes performance comparisons and changes that motivate improvement or sustainment, such as improvement towards a goal, loss of high performer status, or the presence of a performance gap. Visual and textual entities include charts, tables, and graphs that display performance information. PSDO&apos;s domain focus is healthcare organizations that use clinical quality dashboards and feedback interventions for healthcare professionals and teams. Performance information is commonly about the quality of care and health outcomes that have been derived from clinical data using performance measures (aka metrics, process indicators, quality measures, etc). PSDO uses Basic Formal Ontology as its upper level ontology. This work is supported by the NIH, National Library of Medicine (1K01LM012528-01, 1R01LM013894-01).
+
+Landis-Lewis Z, Stansbury C, Rincón J, Gross C. Performance Summary Display Ontology: Feedback intervention content, delivery, and interpreted information. International Conference on Biomedical Ontology 2022 (ICBO 2022). https://icbo-conference.github.io/icbo2022/papers/ICBO-2022_paper_2172.pdf</dc:description>
+        <dc:language xml:lang="en">en</dc:language>
+        <dc:license xml:lang="en">https://creativecommons.org/licenses/by/4.0/</dc:license>
+        <dc:title xml:lang="en">Performance Summary Display Ontology</dc:title>
+        <terms:license xml:lang="en">https://creativecommons.org/licenses/by/4.0/</terms:license>
+        <owl:versionInfo xml:lang="en">1.0.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000109 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PSDO_0000109">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <obo:IAO_0000115 xml:lang="en">Relationship between foaf:Person or foaf:Organization and an information content entity.  The ICE represents data about the person such as their performance capabilities or situation.</obo:IAO_0000115>
+        <rdfs:label>described by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000008"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000058"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000079"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that displays relations between sets in a concretized collection of display components.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Zhang J. A representational analysis of relational information displays. International Journal of Human-Computer Studies. 1996 Jul 1;45(1):59–74.</obo:IAO_0000119>
+        <obo:IAO_0000232 xml:lang="en">Zhang’s notion of &apos;dimension&apos; relies on an understanding of ‘distributed representations’ which have both an &apos;internal&apos; and an &apos;external&apos; component. Each sets (see &apos;representing sets&apos;) has a quality of &apos;being distrobuted between internal (the cognition and representation of the sets as such) and external (the &apos;mark).&apos; See:
+
+Zhang J, Norman DA. Representations in distributed cognitive tasks. Cognitive Science. 1994 Jan 1;18(1):87–122.</obo:IAO_0000232>
+        <rdfs:label xml:lang="en">relational information display</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is the collection of specification and metadata associated with a generalized potential information display.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">performance summary display template</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A relational information display whose display components bear some combination of sets (roles): ascribee set, performance measure set, performance set, or time set.</obo:IAO_0000115>
+        <obo:IAO_0000117>Cooper Stansbury, John Rincon, Dahee Lee, Zach Landis-Lewis, Colin Gross</obo:IAO_0000117>
+        <obo:IAO_0000232 xml:lang="en">All subclasses of &apos;performance summary display&apos; are defined classes based on cardinality of marks that realize specific represented set roles.</obo:IAO_0000232>
+        <obo:IAO_0000232 xml:lang="en">It is the authors current belief that the necessary and sufficient definiton of &apos;performance summary display&apos; mandates that at least two set must be realized.</obo:IAO_0000232>
+        <rdfs:label xml:lang="en">performance summary display</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000062"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000079"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A role inhering in the set of attributes of a mark in a relational information display that share a scale type and that convey information about another entity.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Zhang J. A representational analysis of relational information displays. International Journal of Human-Computer Studies. 1996 Jul 1;45(1):59–74.</obo:IAO_0000119>
+        <obo:IAO_0000232 xml:lang="en">&apos;Represented sets&apos; are realized in the processes perception, design or cognition.</obo:IAO_0000232>
+        <obo:IAO_0000232 xml:lang="en">There is a distinction between elements and sets. Sets are groups, or sets of elements (with cardinality of at least one). At this time we do not know if elements with different roles can exist in a set with a different name, i.e., an acribee role within a time set. It seems unlikely that this is possible.</obo:IAO_0000232>
+        <rdfs:label xml:lang="en">represented set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>An axis, a title of an axis or of a graph, a bar in a bar graph, a line in a line graph, a textual entity in a table.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is a proper part of a relational information display and is concretized by a mark.</obo:IAO_0000115>
+        <obo:IAO_0000232 xml:lang="en">Munzner T. Visualization analysis and design. Boca Raton: CRC Press, Taylor &amp; Francis Group, CRC Press is an imprint of the Taylor &amp; Francis Group, an informa business; 2015. 404 p. (A.K. Peters visualization series).</obo:IAO_0000232>
+        <obo:IAO_0000232 xml:lang="en">The material entity that concretizes the information content entity has the capability to bear some role &apos;represented sets&apos; or &apos;focal element, ect...</obo:IAO_0000232>
+        <rdfs:label xml:lang="en">relational information display component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000006"/>
+        <obo:IAO_0000115 xml:lang="en">A represented set where the mark attributes are about entities that have attributed performance data.</obo:IAO_0000115>
+        <obo:IAO_0000232 xml:lang="en">The elements of an &apos;ascribee set&apos; typically represent people, organizations, or groups. They can also represent statistics, targets, or goals. The possible overlap with &apos;performance measure set&apos; is justified by the creative liberties taken by the designer of the performance summary display.</obo:IAO_0000232>
+        <rdfs:label xml:lang="en">ascribee set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000084"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000062"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000079"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A role inhering in a mark that is disjoint with a focal element and that has the same scale type as the focal element.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">comparative element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000062"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A quality that is the abstract measurement property of a concretized display component.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Zhang J. A representational analysis of relational information displays. International Journal of Human-Computer Studies. 1996 Jul 1;45(1):59–74.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">scale type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000020"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000062"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A scale type with three formal properties that (1) the instances can be distinguished from each other and (2) that one instance on a scale can be judged greater than, less than, or equal to another instance on the same scale and that (3) the magnitude of an instance represented by a unit on the scale is the same regardless of where on the scale the unit falls.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Zhang J. A representational analysis of relational information displays. International Journal of Human-Computer Studies. 1996 Jul 1;45(1):59–74.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">interval scale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000020"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000062"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A scale type with four formal properties that (1) the instances can be distinguished from each other and (2) that one instance on a scale can be judged greater than, less than, or equal to another instance on the same scale, that (3) the magnitude of an instance represented by a unit on the scale is the same regardless of where on the scale the unit falls and (4) an absolute zero value can indicate that nothing at all of the property being represented exists.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Zhang J. A representational analysis of relational information displays. International Journal of Human-Computer Studies. 1996 Jul 1;45(1):59–74.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">ratio scale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000020"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000062"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A scale type with two formal properties that (1) the instances can be distinguished from each other and (2) that one instance on a scale can be judged greater than, less than, or equal to another instance on the same scale.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Zhang J. A representational analysis of relational information displays. International Journal of Human-Computer Studies. 1996 Jul 1;45(1):59–74.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">ordinal scale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000020"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000062"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A scale type with one  formal property that (1) the instances can be distinguished from each other.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Zhang J. A representational analysis of relational information displays. International Journal of Human-Computer Studies. 1996 Jul 1;45(1):59–74.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">nominal scale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000145"/>
+        <obo:IAO_0000115 xml:lang="en">A relational quality of the perceived general movement of a mark, or set of marks that is integrated over a time set.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">performance trend quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000145"/>
+        <obo:IAO_0000115 xml:lang="en">A relational quality of the perceived distance between marks.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">performance gap quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000088"/>
+        <obo:IAO_0000115 xml:lang="en">A report designed for the purpose of providing performance summary information to a recipient of an intervention.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">performance report</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000006"/>
+        <obo:IAO_0000112 xml:lang="en">Two sepearate performance measure elements might be &apos;appropriate perscriptions of Drug A&apos; and &apos;appropriate perscriptions of Drug B.&apos; Each performance has a method for measurement that is specific to the type of drug (A or B) prescription behavior.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A represented set where the attributes of the mark are about the methods of measuring behavior.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">performance measure set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000006"/>
+        <obo:IAO_0000115 xml:lang="en">A represented set where the attributes of the mark are about time.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">time set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000006"/>
+        <obo:IAO_0000115 xml:lang="en">A represented set where the attributes of the mark are about measurements, decisions, aggregates, or calculations related to measured behavior.</obo:IAO_0000115>
+        <obo:IAO_0000232 xml:lang="en">Performance set can include entities like performance values (all scale types)</obo:IAO_0000232>
+        <rdfs:label xml:lang="en">performance set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000084"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000062"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A role inhering in a mark that conveys specific information to the recipient of a performance summary report realized through the acts of perception.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">focal element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000040"/>
+        <obo:IAO_0000115 xml:lang="en">A focal element that conveys information about identity to the recipient of the performance summary report.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">recipient element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000019"/>
+        <obo:IAO_0000115 xml:lang="en">A comparative element that conveys information about an entity that has an attributed performance level.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">social comparator element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000019"/>
+        <obo:IAO_0000115 xml:lang="en">A comparative element that conveys information about a desired future performance level.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">goal comparator element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000019"/>
+        <obo:IAO_0000115 xml:lang="en">A comparative element that conveys information about a predetermined performance level.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">standard comparator element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000061"/>
+        <obo:IAO_0000115 xml:lang="en">An attribute of external form or contour.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">&quot;shape, n.1.&quot; OED Online, Oxford University Press, June 2018, www.oed.com/view/Entry/177498. Accessed 28 June 2018.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">shape</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000061"/>
+        <obo:IAO_0000115 xml:lang="en">An attribute by virtue of which some thing appears to have a &apos;pure&apos; color.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">&quot;colour | color, n.1.&quot; OED Online, Oxford University Press, June 2018, www.oed.com/view/Entry/36596. Accessed 28 June 2018.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">color hue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000061"/>
+        <obo:IAO_0000115 xml:lang="en">An attribute of relation in which a thing stands with respect to another or others.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">&quot;position, n.&quot; OED Online, Oxford University Press, June 2018, www.oed.com/view/Entry/148314. Accessed 28 June 2018.</obo:IAO_0000119>
+        <obo:IAO_0000232>&apos;Position’ may actually be a relational quality in BFO because is depends on multiple entities.</obo:IAO_0000232>
+        <rdfs:label xml:lang="en">position</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000061"/>
+        <obo:IAO_0000115 xml:lang="en">An attribute of the magnitude of the degree of divergence of two things from one another.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">&quot;angle, n.2.&quot; OED Online, Oxford University Press, June 2018, www.oed.com/view/Entry/7542. Accessed 28 June 2018.</obo:IAO_0000119>
+        <obo:IAO_0000232>&apos;Angle’ may actually be a relational quality in BFO because is depends on multiple entities.</obo:IAO_0000232>
+        <rdfs:label xml:lang="en">angle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000061"/>
+        <obo:IAO_0000115 xml:lang="en">An attribute of constitution, structure, or substance of anything with regard to its constituents or formative element.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">&quot;texture, n.&quot; OED Online, Oxford University Press, June 2018, www.oed.com/view/Entry/200031. Accessed 28 June 2018.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">texture</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000061"/>
+        <obo:IAO_0000115 xml:lang="en">The quality of linear magnitude of any thing as measured from end to end</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">&quot;length, n.&quot; OED Online, Oxford University Press, June 2018, www.oed.com/view/Entry/107245. Accessed 28 June 2018.</obo:IAO_0000119>
+        <obo:IAO_0000232 xml:lang="en">rdfs:Label property is &apos;mark length&apos; to distinguish from the PATO class &apos;length.&apos;</obo:IAO_0000232>
+        <rdfs:label xml:lang="en">mark length</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000062"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An information carrier that can be measured, observed, or logged.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Munzner T. Visualization analysis and design. Boca Raton: CRC Press, Taylor &amp; Francis Group, CRC Press is an imprint of the Taylor &amp; Francis Group, an informa business; 2015. 404 p. (A.K. Peters visualization series).</obo:IAO_0000119>
+        <obo:IAO_0000232 xml:lang="en">This is also called a &apos;channel&apos; by T. Munzner. &quot;A channel is a way to control the appearance of marks independent of the dimensionality of the goemetric primitive.&quot;
+
+T. Munzner, Visualization analysis and design. Boca Raton: CRC Press, Taylor &amp; Francis Group, CRC Press is an imprint of the Taylor &amp; Francis Group, an informa business, 2015.</obo:IAO_0000232>
+        <rdfs:label xml:lang="en">attribute</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000062">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000178"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000008"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000178"/>
+        <obo:IAO_0000112 xml:lang="en">Ink on paper or pixels on a screen (non-exhaustive).</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A material information bearer that is a basic visual element of a relational information display.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Munzner T. Visualization analysis and design. Boca Raton: CRC Press, Taylor &amp; Francis Group, CRC Press is an imprint of the Taylor &amp; Francis Group, an informa business; 2015. 404 p. (A.K. Peters visualization series).</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">mark</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000079 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000079">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000062"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A object aggregate of marks.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">mark collection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000080 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000080">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000115 xml:lang="en">A role born by a member of a represented set.</obo:IAO_0000115>
+        <obo:IAO_0000232 xml:lang="en">It is possible that elements and sets are realized in different, but similar processes.</obo:IAO_0000232>
+        <obo:IAO_0000232 xml:lang="en">The distinction between an element and a role is one of plurality. The set refers to the set of entities that bear represented roles, while the represented element is born by each element of the set.</obo:IAO_0000232>
+        <rdfs:label xml:lang="en">represented element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000081 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000081">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000080"/>
+        <obo:IAO_0000115 xml:lang="en">A represented element that is born by a member of a performance measure set.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">performance measure element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000082">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000080"/>
+        <obo:IAO_0000115 xml:lang="en">A represented element that is born by a member of a time set.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">time element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000083 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000083">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000080"/>
+        <obo:IAO_0000115 xml:lang="en">A represented element that is born by a member of a performance set.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">performance level element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000084 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000084">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000080"/>
+        <obo:IAO_0000115 xml:lang="en">A represented element that is born by a member of an acribee set.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">ascribee element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000085 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000085">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000084"/>
+        <obo:IAO_0000115 xml:lang="en">An ascribee element where the mark attributes are about a living system.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">performer element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000086 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000086">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000018"/>
+        <obo:IAO_0000115 xml:lang="en">An ascribee set where the mark attributes are about a living system.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">performer set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000087 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000087">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000061"/>
+        <obo:IAO_0000115 xml:lang="en">An attribute of the degree from which a curve deviates from a straight line.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">“curvature | Definition of curvature in English by Oxford Dictionaries,” Oxford Dictionaries | English. [Online]. Available: https://en.oxforddictionaries.com/definition/curvature. [Accessed: 20-Feb-2019].</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">curvature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000088 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000088">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000056"/>
+        <obo:IAO_0000115 xml:lang="en">A position where the distance between marks is on the same scale.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">T. Munzner, Visualization analysis and design. Boca Raton: CRC Press, Taylor &amp; Francis Group, CRC Press is an imprint of the Taylor &amp; Francis Group, an informa business, 2015.</obo:IAO_0000119>
+        <obo:IAO_0000232 xml:lang="en">This, like the superclass, may actually be a BFO &apos;relational quality&apos; that holds between sets of marks.</obo:IAO_0000232>
+        <rdfs:label xml:lang="en">position on common scale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000089 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000089">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000056"/>
+        <obo:IAO_0000115 xml:lang="en">A position where the distance between marks is not on the same scale.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">T. Munzner, Visualization analysis and design. Boca Raton: CRC Press, Taylor &amp; Francis Group, CRC Press is an imprint of the Taylor &amp; Francis Group, an informa business, 2015.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">position on unaligned scale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000090 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000090">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000061"/>
+        <obo:IAO_0000115 xml:lang="en">An attribute that is the quantity that expresses the extent of a two-dimensional figure or shape in a plane.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">“Area,” Wikipedia. 14-Feb-2019.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">area</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000091 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000091">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000061"/>
+        <obo:IAO_0000115 xml:lang="en">An attribute that is the amount of white content mixed with a pure color, or mixture of pure colors.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">T. Munzner, Visualization analysis and design. Boca Raton: CRC Press, Taylor &amp; Francis Group, CRC Press is an imprint of the Taylor &amp; Francis Group, an informa business, 2015.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">color saturation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000092 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000092">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000061"/>
+        <obo:IAO_0000115 xml:lang="en">An attribute that is the amount of black content mixed with a pure color, or mixture of pure colors.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">T. Munzner, Visualization analysis and design. Boca Raton: CRC Press, Taylor &amp; Francis Group, CRC Press is an imprint of the Taylor &amp; Francis Group, an informa business, 2015.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">color lightness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000093 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000093">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000108"/>
+        <obo:IAO_0000115 xml:lang="en">Ascribee content that is used to identify a discrepancy with the performance level of the recipient of an intervention.</obo:IAO_0000115>
+        <obo:IAO_0000117>Zach Landis-Lewis</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">comparator content</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000094 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000094">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000093"/>
+        <obo:IAO_0000115>Comparator content that has been ascribed a desired future performance level.</obo:IAO_0000115>
+        <obo:IAO_0000117>Veena Panicker, Colin Gross, Shelbi Lisecki, Cooper Stansbury, Zach Landis-Lewis</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">goal comparator content</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000095 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000095">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000093"/>
+        <obo:IAO_0000115>Comparator content about living systems that are ascribed a performance level.</obo:IAO_0000115>
+        <obo:IAO_0000117>Zach Landis-Lewis</obo:IAO_0000117>
+        <rdfs:label>social comparator content</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000096 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000096">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000093"/>
+        <obo:IAO_0000115>Comparator content that has been ascribed a predetermined performance level.</obo:IAO_0000115>
+        <obo:IAO_0000117>Zach Landis-Lewis</obo:IAO_0000117>
+        <rdfs:label>standard comparator content</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000097 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000097">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000108"/>
+        <obo:IAO_0000115>Ascribee content that is about a living system to whom an intervention is directed.</obo:IAO_0000115>
+        <obo:IAO_0000117>Zach Landis-Lewis</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">recipient content</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000098 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000098">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
+        <obo:IAO_0000115>A document that is an aggregate of information content entities about performance levels, performance measures, time intervals, and ascribees.</obo:IAO_0000115>
+        <obo:IAO_0000117>Zach Landis-Lewis, Cooper Stansbury, Colin Gross</obo:IAO_0000117>
+        <obo:IAO_0000119>Lee D, Panicker V, Gross C, Zhang J, Landis-Lewis Z. What was visualized? A method for describing content of performance summary displays in feedback interventions. BMC Med Res Methodol. 2020 Apr 23;20(1):90.</obo:IAO_0000119>
+        <rdfs:label>performance summary document</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000099 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000099">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000101"/>
+        <obo:IAO_0000115>A performance trend that is improving</obo:IAO_0000115>
+        <obo:IAO_0000117>Zach Landis-Lewis</obo:IAO_0000117>
+        <rdfs:label>positive performance trend content</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000100 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000100">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000101"/>
+        <obo:IAO_0000115>A performance trend that is worsening</obo:IAO_0000115>
+        <obo:IAO_0000117>Zach Landis-Lewis</obo:IAO_0000117>
+        <rdfs:label>negative performance trend content</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000101 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000101">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is about a change in performance</obo:IAO_0000115>
+        <obo:IAO_0000117>Zach Landis-Lewis</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">performance trend content</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000102 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000102">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115>An information content entity about a method of measuring performance.</obo:IAO_0000115>
+        <obo:IAO_0000117>Zach Landis-Lewis</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">performance measure content</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000103">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is about the output value of a method of measuring performance.</obo:IAO_0000115>
+        <obo:IAO_0000117>Zach Landis-Lewis</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">performance level content</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000104">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000106"/>
+        <obo:IAO_0000115>A performance gap content entity having a recipient performance level that is better than its comparator performance level</obo:IAO_0000115>
+        <obo:IAO_0000117>Zach Landis-Lewis</obo:IAO_0000117>
+        <rdfs:label>positive performance gap content</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000105 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000105">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000106"/>
+        <obo:IAO_0000115>A performance gap content entity having a comparator performance level that is better than its recipient performance level.</obo:IAO_0000115>
+        <obo:IAO_0000117>Zach Landis-Lewis</obo:IAO_0000117>
+        <rdfs:label>negative performance gap content</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000106 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000106">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is about a discrepancy between performance levels.</obo:IAO_0000115>
+        <obo:IAO_0000117>Zach Landis-Lewis</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">performance gap content</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000107 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000107">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115>An information content entity that is an aggregate of performance level content entities.</obo:IAO_0000115>
+        <obo:IAO_0000117>Zach Landis-Lewis</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">performance content</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000108 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000108">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115>An information content entity that is about an entity that is ascribed a performance value.</obo:IAO_0000115>
+        <obo:IAO_0000117>Veena Panicker, Colin Gross, Shelbi Lisecki, Cooper Stansbury, Zach Landis-Lewis</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">ascribee content</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000110 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000110">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+        <obo:IAO_0000115>A textual entity about performance levels, measures, ascribees, and time.</obo:IAO_0000115>
+        <obo:IAO_0000117>Zach Landis-Lewis, Colin Gross</obo:IAO_0000117>
+        <rdfs:label>performance summary textual entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000111 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000111">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115>An information content entity that is about a unit of time.</obo:IAO_0000115>
+        <obo:IAO_0000117>Zach Landis-Lewis, Colin Gross</obo:IAO_0000117>
+        <rdfs:label>time interval content</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000112 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000112">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115>An information content entity that is about a change from a negative performance gap to a positive performance gap</obo:IAO_0000115>
+        <obo:IAO_0000117>Zach Landis-Lewis</obo:IAO_0000117>
+        <rdfs:label>achievement content</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000113 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000113">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115>An information content entity that is about a change from a positive performance gap to a negative performance gap</obo:IAO_0000115>
+        <obo:IAO_0000117>Zach Landis-Lewis</obo:IAO_0000117>
+        <rdfs:label>loss content</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000114 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000114">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <obo:IAO_0000115>A document part designed for the purpose of providing information about performance levels, measures, ascribees, and time to a recipient of an intervention.</obo:IAO_0000115>
+        <obo:IAO_0000117>Zach Landis-Lewis, Colin Gross</obo:IAO_0000117>
+        <obo:IAO_0000119>Lee D, Panicker V, Gross C, Zhang J, Landis-Lewis Z. What was visualized? A method for describing content of performance summary displays in feedback interventions. BMC Med Res Methodol. 2020 Apr 23;20(1):90.</obo:IAO_0000119>
+        <rdfs:label>performance summary section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000115 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000115">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000006"/>
+        <obo:IAO_0000115>A represented set where the mark attributes are about a discrepancy between performance levels.</obo:IAO_0000115>
+        <obo:IAO_0000117>Zach Landis-Lewis, Colin Gross</obo:IAO_0000117>
+        <rdfs:label>performance gap set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000116 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000116">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000115"/>
+        <obo:IAO_0000115>A performance gap set where the mark attributes are about a comparator performance level that is better than the recipient performance level.</obo:IAO_0000115>
+        <obo:IAO_0000117>Zach Landis-Lewis, Colin Gross</obo:IAO_0000117>
+        <rdfs:label>negative performance gap set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000117 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000117">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000115"/>
+        <obo:IAO_0000115>A performance gap set where the mark attributes are about a recipient performance level that is better than a comparator performance level.</obo:IAO_0000115>
+        <obo:IAO_0000117>Zach Landis-Lewis, Colin Gross</obo:IAO_0000117>
+        <rdfs:label>positive performance gap set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000118 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000118">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000006"/>
+        <obo:IAO_0000115>A represented set where the mark attributes are about a change in performance.</obo:IAO_0000115>
+        <obo:IAO_0000117>Zach Landis-Lewis, Colin Gross</obo:IAO_0000117>
+        <rdfs:label>performance trend set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000119 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000119">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000118"/>
+        <obo:IAO_0000115>A performance trend set where the mark attributes are about worsening.</obo:IAO_0000115>
+        <obo:IAO_0000117>Zach Landis-Lewis, Colin Gross</obo:IAO_0000117>
+        <rdfs:label>negative performance trend set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000120 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000120">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000118"/>
+        <obo:IAO_0000115>A performance trend set where the mark attributes are about improvement.</obo:IAO_0000115>
+        <obo:IAO_0000117>Zach Landis-Lewis, Colin Gross</obo:IAO_0000117>
+        <rdfs:label>positive performance trend set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000121 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000121">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000006"/>
+        <obo:IAO_0000115>A represented set where the mark attributes are about a change from a negative performance gap to a positive performance gap.</obo:IAO_0000115>
+        <obo:IAO_0000117>Zach Landis-Lewis, Colin Gross</obo:IAO_0000117>
+        <rdfs:label>achievement set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000122 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000122">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000006"/>
+        <obo:IAO_0000115>A represented set where the mark attributes are about a change from a positive performance gap to a negative performance gap.</obo:IAO_0000115>
+        <obo:IAO_0000117>Zach Landis-Lewis, Colin Gross</obo:IAO_0000117>
+        <rdfs:label>loss set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000123 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000123">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000095"/>
+        <obo:IAO_0000115>Social comparator content that is about a percentile for a performance level that is better than average.</obo:IAO_0000115>
+        <obo:IAO_0000117>Zach Landis-Lewis</obo:IAO_0000117>
+        <rdfs:label>top performer benchmark</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000124 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000124">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000123"/>
+        <obo:IAO_0000115>A top performer benchmark that is ascribed the performance level of the 90th percentile for a population.</obo:IAO_0000115>
+        <obo:IAO_0000117>Zach Landis-Lewis</obo:IAO_0000117>
+        <rdfs:label>90th percentile benchmark</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000125 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000125">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000123"/>
+        <obo:IAO_0000115>A top performer benchmark that is ascribed the performance level of the 75th percentile for a population.</obo:IAO_0000115>
+        <obo:IAO_0000117>Zach Landis-Lewis</obo:IAO_0000117>
+        <rdfs:label>75th percentile benchmark</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000126 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000126">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000127"/>
+        <obo:IAO_0000115>An average comparator that is about a peer group.</obo:IAO_0000115>
+        <obo:IAO_0000117>Zach Landis-Lewis</obo:IAO_0000117>
+        <rdfs:label>peer average comparator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000127 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000127">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000095"/>
+        <obo:IAO_0000115>Social comparator content that is about a mean performance level for a population.</obo:IAO_0000115>
+        <obo:IAO_0000117>Zach Landis-Lewis</obo:IAO_0000117>
+        <rdfs:label>average comparator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000128 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000128">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000125"/>
+        <obo:IAO_0000115>A 75th percentile benchmark that is about a peer group.</obo:IAO_0000115>
+        <obo:IAO_0000117>Zach Landis-Lewis</obo:IAO_0000117>
+        <rdfs:label>peer 75th percentile benchmark</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PSDO_0000129 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PSDO_0000129">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PSDO_0000124"/>
+        <obo:IAO_0000115>A 90th percentile benchmark that is about a peer group.</obo:IAO_0000115>
+        <obo:IAO_0000117>Zach Landis-Lewis</obo:IAO_0000117>
+        <rdfs:label>peer 90th percentile benchmark</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

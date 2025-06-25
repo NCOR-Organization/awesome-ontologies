@@ -1,0 +1,1188 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/mcro.owl#"
+     xml:base="http://purl.obolibrary.org/obo/mcro.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:efo="http://www.ebi.ac.uk/efo/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:swo="http://www.ebi.ac.uk/swo/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:mcro="http://sbmi.uth.edu/ontology/mcro#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:edamontology="http://edamontology.org#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/mcro.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/2023-03-07/mcro.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/prov-o-20130430"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/mcro/main/import/swo_import_final.owl"/>
+        <terms:contributor>Degui Zhi</terms:contributor>
+        <terms:contributor>Kirk Roberts</terms:contributor>
+        <terms:contributor>Licong Cui</terms:contributor>
+        <terms:contributor>Xiaqian Jiang</terms:contributor>
+        <terms:creator>Tuan Amith and Cui Tao</terms:creator>
+        <terms:description>An ontology representing the model card structure</terms:description>
+        <terms:license>https://creativecommons.org/licenses/by/3.0/</terms:license>
+        <terms:title>Model Card Ontology</terms:title>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-03-07</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/mcro#image -->
+
+    <owl:AnnotationProperty rdf:about="http://sbmi.uth.edu/ontology/mcro#image">
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontology/mcro#Graphic"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0004000 -->
+
+    <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/SWO_0004000">
+        <rdfs:label>has version</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_9001002 -->
+
+    <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/SWO_9001002"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000041 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/MCRO_0000041">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000046"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <obo:IAO_0000115>additional information abou the citation associated with the model</obo:IAO_0000115>
+        <rdfs:label>citation text</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000042 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/MCRO_0000042">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000046"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <obo:IAO_0000115>value of the confidence interval attributed to the Performance Metric concept</obo:IAO_0000115>
+        <rdfs:label>confidence interval value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000043 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/MCRO_0000043">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000046"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <obo:IAO_0000115>Data pertaining to the contact information of the model&apos;s contact information. This is associated to the Owner Information class of the Model Card Ontology</obo:IAO_0000115>
+        <rdfs:label>contact text</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000044 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/MCRO_0000044">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000046"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <obo:IAO_0000115>Additional textual information attributed to the licensing information.</obo:IAO_0000115>
+        <rdfs:label>custom_text</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000045 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/MCRO_0000045">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000046"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <obo:IAO_0000115>Detailed textual information of the model card that is attributed to specific concepts of the Model Card Ontology. This contrasts with the &quot;overview&quot; data property as the &quot;overview&quot; has a summarized version of &quot;documentation&quot;</obo:IAO_0000115>
+        <rdfs:label>documentation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000046 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/MCRO_0000046">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <obo:IAO_0000115>Model Card Report Ontology specific data properties that provide attributes to its concepts.</obo:IAO_0000115>
+        <rdfs:label>model card text</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000047 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/MCRO_0000047">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000046"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <obo:IAO_0000115>Name of the owner of the model. This is linked to the Owner Information concept of the Model Card Ontology</obo:IAO_0000115>
+        <rdfs:label>name text</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000048 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/MCRO_0000048">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000046"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <obo:IAO_0000115>Summary textual information for the concepts of the Model Card Ontology</obo:IAO_0000115>
+        <rdfs:label>overview</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000049 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/MCRO_0000049">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000046"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <obo:IAO_0000115>general numeric value associated with the Performance Metric concepts</obo:IAO_0000115>
+        <rdfs:label>performance metric value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000050 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/MCRO_0000050">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000046"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000034"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <obo:IAO_0000115>&quot;A description of any sensitive data that may be present in adataset. Be sure to note PII information such as names, addresses, phone numbers, etc. Preferably, such info should be scrubbed from a dataset if possible. Note that even non-identifying information, such as zip code, age, race, and gender, can be used to identify individuals when aggregated. Please describe any such fields here&quot; Google LLC</obo:IAO_0000115>
+        <rdfs:label>sensitive data</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000051 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/MCRO_0000051">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000046"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <obo:IAO_0000115>This is data property is specific to Perfomance Metric concepts. It attributes information about the data partition used to experiment on the model.</obo:IAO_0000115>
+        <rdfs:label>slice</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000052 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/MCRO_0000052">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000046"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <obo:IAO_0000115>This is a value pertaining to a threshold value that is attributed to the Performance Metric concept for the Model Card ontology.</obo:IAO_0000115>
+        <rdfs:label>threshold value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000301 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000301"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000310 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000310"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000314 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000314"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000320 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000320"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000088"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000021"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000022"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000031"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The Model Card (MC) is the document designed for transparent reporting of AI model provenance, usage, and ethics-informed evaluation. A report that details characteristics of machine learning model to supplement its release to the public.</obo:IAO_0000115>
+        <obo:IAO_0000119>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</obo:IAO_0000119>
+        <rdfs:label>Model Card Report</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000027"/>
+        <obo:IAO_0000115>Section content in this section should describe information in &quot;how close or far off a given set of measurements (observations or readings) are to their true value&quot;</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Accuracy_and_precision</obo:IAO_0000119>
+        <rdfs:label>Accuracy Information Section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000027"/>
+        <obo:IAO_0000115>The content describes information pertaining to the area under the ROC curve.</obo:IAO_0000115>
+        <rdfs:label>Area Under the Curve Information Section</rdfs:label>
+        <skos:altLabel>AUC</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000301"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000045"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>information relating to the citation for the targetted model. This is part of the model details component of the model card report</obo:IAO_0000115>
+        <rdfs:label>Citation Information Section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000036"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000039"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000045"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>This section pertains to &quot;Factors&quot; of the model card report by Mitchell et al., 2019. The considerations section includes qualitative information about your model, including some analysis of its risks and limitations. As such, this section usually requires careful consideration, and conversations with many relevant  stakeholders, including other model developers, dataset producers, and downstream users likely to interact with your model, or be affected by its outputs.</obo:IAO_0000115>
+        <rdfs:label>Consideration Information Section</rdfs:label>
+        <skos:altLabel>Factors</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000022"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000031"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000622"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000014"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Information about the data that was used to develop the model</obo:IAO_0000115>
+        <rdfs:label>Dataset Information Section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000033"/>
+        <obo:IAO_0000115>Content information that is a type of risk information that is specific to ethical consideration if using the model.</obo:IAO_0000115>
+        <rdfs:label>Ethical Consideration Section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000006"/>
+        <obo:IAO_0000115>The section is devoted in describing the evaluation dataset. &quot;Evaluation datasets should include datasets that are publicly available for third-party use. These could be existing datasets or new ones provided alongside the model card analyses to enable further benchmarking... the evaluation datasets should not only be representative of the model’s typical use cases but also anticipated test scenarios and challenging cases.&quot;
+
+Details on the dataset(s) used for the quantitative analyses in the card. 
+- Datasets 
+- Motivation 
+- Preprocessing&quot;
+
+(Mitchell et al., 2019)</obo:IAO_0000115>
+        <obo:IAO_0000119>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</obo:IAO_0000119>
+        <rdfs:label>Evaluation Data Information Section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000027"/>
+        <obo:IAO_0000115>The F1 score is the harmonic mean of the precision and recall. This section describes information relating to the F1 score revealed by the performance of the machine learning model.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/F-score</obo:IAO_0000119>
+        <rdfs:label>F1-Score Information Section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000027"/>
+        <obo:IAO_0000115>The section describes information about the false discovery rate of the machine learning model. 
+
+&quot;The false discovery rate (FDR) is a method of conceptualizing the rate of type I errors in null hypothesis testing when conducting multiple comparisons. FDR-controlling procedures are designed to control the FDR, which is the expected proportion of &quot;discoveries&quot; (rejected null hypotheses) that are false (incorrect rejections of the null)&quot;. quivalently, the FDR is the expected ratio of the number of false positive classifications (false discoveries) to the total number of positive classifications (rejections of the null). The total number of rejections of the null include both the number of false positives (FP) and true positives (TP). Simply put, FDR = FP / (FP + TP). FDR-controlling procedures provide less stringent control of Type I errors compared to familywise error rate (FWER) controlling procedures (such as the Bonferroni correction), which control the probability of at least one Type I error. Thus, FDR-controlling procedures have greater power, at the cost of increased numbers of Type I errors.&quot;</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/False_discovery_rate</obo:IAO_0000119>
+        <rdfs:label>False Discovery Rate Information Section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000027"/>
+        <obo:IAO_0000115>This section describes information relating to false ommision rate of the performance of the machine learning model. FOR is the probability that the true value is positive.</obo:IAO_0000115>
+        <rdfs:label>False Ommission Rate Section Information</rdfs:label>
+        <skos:altLabel>FOR</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000027"/>
+        <obo:IAO_0000115>This content describes the information pertaining to the model&apos;s false postive rate. &quot;A false positive error, or false positive, is a result that indicates a given condition exists when it does not. For example, a pregnancy test which indicates a woman is pregnant when she is not, or the conviction of an innocent person. A false positive error is a type I error where the test is checking a single condition, and wrongly gives an affirmative (positive) decision.&quot;</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/False_positives_and_false_negatives#False_positive_error</obo:IAO_0000119>
+        <rdfs:label>False Positive Rate Information Section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000098"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>This content summarizes the input and output data format for the model.</obo:IAO_0000115>
+        <rdfs:label>Format Information Section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000622"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A section describing the set of graphics accompanying the model card&apos;s dataset</obo:IAO_0000115>
+        <rdfs:label>Graphic Collection Section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000013"/>
+        <obo:IAO_0000115>This secton content serves to describe the inputed data&apos;s format for the machine learning model.</obo:IAO_0000115>
+        <rdfs:label>Input Format Information Section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000044"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000045"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Section for information about the licensing for the machine learning model.</obo:IAO_0000115>
+        <rdfs:label>License Information Section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <obo:IAO_0000115>Content section relating to the technical limits of the machine learning model (e.g. trained on ungeneralized data).</obo:IAO_0000115>
+        <rdfs:label>Limitation Information Section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000033"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Content section of the model card that addresses the risk or ethical consideration of the model.</obo:IAO_0000115>
+        <rdfs:label>Mitigation Strategy Section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Content section summarizing the architecture of the model (software used, algortihm, etc.)</obo:IAO_0000115>
+        <rdfs:label>Model Architecture Information Section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000038"/>
+        <obo:IAO_0000115>a graph content specifically for a model card report</obo:IAO_0000115>
+        <rdfs:label>Model Card Graphic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000025"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000032"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000045"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Basic information about the model that includes licensing information, owner information, the architecture of the model (algorthim employed), references (cited papers), and versioning information.</obo:IAO_0000115>
+        <obo:IAO_0000119>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</obo:IAO_0000119>
+        <rdfs:label>Model Detail Section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000024"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000045"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Section summarizing the content relating to the parameters for the development of the model.</obo:IAO_0000115>
+        <rdfs:label>Model Parameter Section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000038"/>
+        <obo:IAO_0000112>&quot;for use on black-and-white images only; please consider our research group’s full-color-image classifier for color images.”</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;not for use on text examples shorter than 100 tokens&quot;</obo:IAO_0000112>
+        <obo:IAO_0000115>&quot;Here, the model card should highlight technology that the model might easily be confused with, or related contexts that users could try to apply the model to. This section may provide an opportunity to recommend a related or similar model that was designed to better meet that particular need, where possible. This section is inspired by warning labels on food and toys, and similar disclaimers presented in electronic datasheets.&quot; Content that is a type of use case information but specific to use cases that are out of scope of the intended use case.</obo:IAO_0000115>
+        <obo:IAO_0000119>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</obo:IAO_0000119>
+        <rdfs:label>Out of Scope Use Case Section Information</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000013"/>
+        <obo:IAO_0000115>This secton content serves to describe the outputted data&apos;s format for the machine learning model.</obo:IAO_0000115>
+        <rdfs:label>Output Format Information Section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/ns/prov#Organization"/>
+                            <rdf:Description rdf:about="http://www.w3.org/ns/prov#Person"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000043"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000045"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000047"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Section for the information about the individuals involved in the development of the machine learning model. This includes contact information, the names of the individuals, etc.</obo:IAO_0000115>
+        <rdfs:label>Owner Information Section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000027"/>
+        <obo:IAO_0000115>This section is for the description of the precision and recall information of the machine learning model&apos;s performance.</obo:IAO_0000115>
+        <rdfs:label>Percision-Recall Curve Information Section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000049"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Section content here summarizing the information about the metrics (precision, recall, f1 score, etc.) that measured the performance of the model. One can report the values and portion of the data (slice).</obo:IAO_0000115>
+        <rdfs:label>Performance Metric Information Section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000034"/>
+        <obo:IAO_0000115>personally identifiable information as &quot;any information about an individual maintained by an agency, including (1) any information that can be used to distinguish or trace an individual&apos;s identity, such as name, social security number, date and place of birth, mother&apos;s maiden name, or biometric records; and (2) any other information that is linked or linkable to an individual, such as medical, educational, financial, and employment information.&quot; The section should specificially describe information about the personally identifiable datasets.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Personal_data</obo:IAO_0000119>
+        <obo:IAO_0000119>https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-122.pdf</obo:IAO_0000119>
+        <rdfs:label>Personally Identifiable Data Information Section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000038"/>
+        <obo:IAO_0000115>&quot;This section details whether the model was developed with general or specific tasks in mind (e.g., plant recognition worldwide or in the Pacific Northwest). The use cases may be as broadly or narrowly defined as the developers intend. For example, if the model was built simply to label images, then this task should be indicated as the primary intended use case.&quot;</obo:IAO_0000115>
+        <obo:IAO_0000119>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</obo:IAO_0000119>
+        <rdfs:label>Primary Intended Use Case Information Section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000039"/>
+        <obo:IAO_0000115>This section describes the primary intended user for the machine learning model. &quot;For example, was the model developed for entertainment purposes, for hobbyists, or enterprise solutions? This helps users gain insight into how robust the model may be to different kinds of inputs.&quot;</obo:IAO_0000115>
+        <obo:IAO_0000119>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</obo:IAO_0000119>
+        <rdfs:label>Primary Intended User Information Section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000622"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000014"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000045"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>content overview of the quantatitve analysis of the model, specifically the performance of the model</obo:IAO_0000115>
+        <rdfs:label>Quantative Analysis Section</rdfs:label>
+        <skos:editorialNote>need to connect evaluation data information and training data information</skos:editorialNote>
+        <skos:editorialNote>should their be a specified graphic collection for Quantative Analysis?</skos:editorialNote>
+        <skos:prefLabel>Quantative Analysis</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000045"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>information for any references related to the machine learning model (research papers, website, etc.)</obo:IAO_0000115>
+        <rdfs:label>Reference Information Section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <obo:IAO_0000115>Content information relating to potential uncertainity about utilizing the model</obo:IAO_0000115>
+        <rdfs:label>Risk Information Section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Information relating to sensitive datasets that contain info like personal information that was used to develop the machine learning model</obo:IAO_0000115>
+        <rdfs:label>Sensitive Data Information Section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000008"/>
+        <obo:IAO_0000115>The section is devoted in descrbing the synthetic evaluation datasets used for a machine learning model. Synthetic evaluation datasets are a type of evaluation dataset. &quot;It is often difficult to find datasets that represent populations outside of the initial domain used in training. In some of these situations, synthetically generated datasets may provide representation for use cases that would otherwise go unevaluated&quot; (Mitchell et al., 2019). This section should described the aforementioned.</obo:IAO_0000115>
+        <obo:IAO_0000119>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</obo:IAO_0000119>
+        <rdfs:label>Synthetic Evaluation Data Information Section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <obo:IAO_0000115>Content involving known trade-offs for the use of the model. Trade offs might include performance or technical or ethical. &quot;This section should list additional concerns that were not covered in the previous sections. For example, did the results suggest any further testing? Were there any relevant groups that were not represented in the evaluation dataset? Are there additional recommendations for model use? What are the ideal characteristics of an evaluation dataset for this model?&quot;</obo:IAO_0000115>
+        <obo:IAO_0000119>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</obo:IAO_0000119>
+        <rdfs:label>Trade-off Information Section</rdfs:label>
+        <skos:altLabel>Caveats</skos:altLabel>
+        <skos:altLabel>Recommendations</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000006"/>
+        <obo:IAO_0000115>The section is for information about the training data used for evaluation of a machine learning model.</obo:IAO_0000115>
+        <obo:IAO_0000119>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</obo:IAO_0000119>
+        <rdfs:label>Training Data Information Section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <obo:IAO_0000115>The content here involves information about intential uses of the model.
+&quot;This section should allow readers to quickly grasp what the model should and should not be used for, and why it was created. It can also help frame the statistical analysis presented in the rest of the card, including a short description of the user(s), use-case(s), and context(s) for which the model was originally developed.&quot;</obo:IAO_0000115>
+        <obo:IAO_0000119>Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Deborah Raji, Timnit Gebru. 2019. Model Cards for Model Reporting. In FAT* ’19: Conference on Fairness, Accountability, and Transparency, January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560. 3287596</obo:IAO_0000119>
+        <rdfs:label>Use Case Information Section</rdfs:label>
+        <skos:altLabel>Intended Use</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <obo:IAO_0000115>Content information pertaining to intended users of the model. This includes individuals that may be impacted as an outcome of the use of the model.</obo:IAO_0000115>
+        <rdfs:comment>target user for the model</rdfs:comment>
+        <rdfs:label>User Information Section</rdfs:label>
+        <skos:altLabel>Intended User Information</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MCRO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MCRO_0000040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000129"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000045"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MCRO_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>This content section describes any versioning information for the machine learning model.</obo:IAO_0000115>
+        <rdfs:label>Version Information Section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000002 -->
+
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/SWO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#List -->
+
+    <owl:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Collection -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Collection"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/ns/prov-o -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/prov-o"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov-o-20120312 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/prov-o-20120312"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov-o# -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/prov-o#"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

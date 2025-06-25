@@ -1,0 +1,1337 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/olatdv.owl#"
+     xml:base="http://purl.obolibrary.org/obo/olatdv.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:olatdv="http://purl.obolibrary.org/obo/olatdv#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/olatdv.owl">
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <oboInOwl:default-namespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:default-namespace>
+        <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</oboInOwl:hasOBOFormatVersion>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adapted from MFO by Thorsten Henrich</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/olatdv#granular_stage -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/olatdv#granular_stage">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Subset consisting of classes describing highly granular developmental stages (for instance, &apos;23-year-old&apos;). Such stages might be useful for annotation purpose, but might be folded into less granular parents for display purpose.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#SubsetProperty -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SubsetProperty">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subset_property</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#default-namespace -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#default-namespace"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database_cross_reference</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_exact_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_obo_format_version</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_obo_namespace</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shorthand</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFO:0000050</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">part_of</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">part_of</oboInOwl:shorthand>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">part of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000062 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000062">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X preceded_by Y iff: end(Y) before_or_simultaneous_with start(X)</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFO:0000062</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">preceded_by</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">preceded_by</oboInOwl:shorthand>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">preceded_by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002087 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002087">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000062"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X immediately_preceded_by Y iff: end(X) simultaneous_with start(Y)</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0002087</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immediately_preceded_by</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immediately_preceded_by</oboInOwl:shorthand>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immediately_preceded_by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000010">
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000010</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">developmental stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) -   Stage 0 Unfertilized eggs: The mature unfertilized egg is an oblate spheroid measuring average 1,245.9 +/-3.9 um (n=122) in horizontal diameter and a little less (average 1,169.9 +/- 4.0 um, n=122) in vertical diameter. The egg proper is closely surrounded by a thick egg envelope, the chorion. The perivitelline space between the chorion and the vitellus is very difficult to recognize using a light microscope. The micropyle located in the chorion at the animal pole is a small trumpet- or funnel-like structure. A number of short villi (non-attaching filaments; average 200.3 +/- 4.7 / egg, n=38) are distributed over the whole surface of the chorion. At spawning, eggs are held together in clumps by a tuft of long attaching filaments (average 29.6 +/- 1.3 / egg, n=38) on the chorion surface in the vegetal pole area of each egg [13]. A large, transparent yolk sphere is located in the center of each unfertilized egg. The cortical alveoli (vesicles, ca. 0.4-45 um in diameter) and oil droplets are embedded at random in the cortical cytoplasm. The cortical alveoli contain a transparent colloidal material and usually one or sometimes a few spherical bodies [16]. The size of the oil droplets usually varies according to differences in the temperature during and after oocyte maturation, in the time after ovulation and among the individual females. -  </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unfertilized eggs</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000020</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 0</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000020"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) -   Stage 0 Unfertilized eggs: The mature unfertilized egg is an oblate spheroid measuring average 1,245.9 +/-3.9 um (n=122) in horizontal diameter and a little less (average 1,169.9 +/- 4.0 um, n=122) in vertical diameter. The egg proper is closely surrounded by a thick egg envelope, the chorion. The perivitelline space between the chorion and the vitellus is very difficult to recognize using a light microscope. The micropyle located in the chorion at the animal pole is a small trumpet- or funnel-like structure. A number of short villi (non-attaching filaments; average 200.3 +/- 4.7 / egg, n=38) are distributed over the whole surface of the chorion. At spawning, eggs are held together in clumps by a tuft of long attaching filaments (average 29.6 +/- 1.3 / egg, n=38) on the chorion surface in the vegetal pole area of each egg [13]. A large, transparent yolk sphere is located in the center of each unfertilized egg. The cortical alveoli (vesicles, ca. 0.4-45 um in diameter) and oil droplets are embedded at random in the cortical cytoplasm. The cortical alveoli contain a transparent colloidal material and usually one or sometimes a few spherical bodies [16]. The size of the oil droplets usually varies according to differences in the temperature during and after oocyte maturation, in the time after ovulation and among the individual females. -  </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000020"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 3 min  Stage 1 (3 min) Activated egg stage: When an egg is stimulated by a spermatozoon arriving at the vitelline surface through the micropyle, a transient wave of increase in cytoplasmic free calcium starts at the point of sperm attachment [5,33]. The cortical alveoli in the vicinity of the micropyle also begin to break down (exocytosis of alveolar contents) about 9 sec after sperm attachment [17]. The wave of exocytosis begins to propagate over the whole egg surface and ends at the vegetal pole 154 sec after its beginning. As a result of the exocytosis of cortical alveoli into the narrow space between the chorion and the vitellus, the chorion thins and hardens [24] as it separates from the vitellus to form a wide perivitelline space. Swollen spherical bodies secreted from the cortical alveoli are faintly visible in the perivitelline space. A transient &quot;contractile wave&quot; of cortical cytoplasmic layer follows the wave of exocytosis [9,15]. Due to the oscillatory contractions following this distinct contractile wave, the cortical cytoplasm progressively accumulates toward the animal pole to form a thick cytoplasmic layer [1,26]. At 7-8 minutes after sperm entry, the second polar body is extruded onto the surface of the cytoplasm at the center of the area where the germinal vesicle broke down during oocyte maturation. - 3 min </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">activated egg stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000030</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 1</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000030"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 3 min  Stage 1 (3 min) Activated egg stage: When an egg is stimulated by a spermatozoon arriving at the vitelline surface through the micropyle, a transient wave of increase in cytoplasmic free calcium starts at the point of sperm attachment [5,33]. The cortical alveoli in the vicinity of the micropyle also begin to break down (exocytosis of alveolar contents) about 9 sec after sperm attachment [17]. The wave of exocytosis begins to propagate over the whole egg surface and ends at the vegetal pole 154 sec after its beginning. As a result of the exocytosis of cortical alveoli into the narrow space between the chorion and the vitellus, the chorion thins and hardens [24] as it separates from the vitellus to form a wide perivitelline space. Swollen spherical bodies secreted from the cortical alveoli are faintly visible in the perivitelline space. A transient &quot;contractile wave&quot; of cortical cytoplasmic layer follows the wave of exocytosis [9,15]. Due to the oscillatory contractions following this distinct contractile wave, the cortical cytoplasm progressively accumulates toward the animal pole to form a thick cytoplasmic layer [1,26]. At 7-8 minutes after sperm entry, the second polar body is extruded onto the surface of the cytoplasm at the center of the area where the germinal vesicle broke down during oocyte maturation. - 3 min </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 30 min  Stage 2a (30 min) Blastodisc stage a: The male and the female pronuclei migrate toward and associate with each other at the center of the thick cytoplasmic disc at the animal pole. Chromosomes then appear and divide into two groups at the poles of the spindle marking the end of this stage. Oscillatory contractions cause the peripheral cortical cytoplasm to migrate toward the animal pole where it forms a convex, lens-shaped blastodisc. Meanwhile, oil droplets migrate toward the vegetal pole and begin coalescing. - 30 min </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blastodisc stage a</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000040</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 2a</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000040"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 30 min  Stage 2a (30 min) Blastodisc stage a: The male and the female pronuclei migrate toward and associate with each other at the center of the thick cytoplasmic disc at the animal pole. Chromosomes then appear and divide into two groups at the poles of the spindle marking the end of this stage. Oscillatory contractions cause the peripheral cortical cytoplasm to migrate toward the animal pole where it forms a convex, lens-shaped blastodisc. Meanwhile, oil droplets migrate toward the vegetal pole and begin coalescing. - 30 min </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 60 min  Stage 2b (60 min) Blastodisc stage b: The male and the female pronuclei migrate toward and associate with each other at the center of the thick cytoplasmic disc at the animal pole. Chromosomes then appear and divide into two groups at the poles of the spindle marking the end of this stage. The layer of cortical cytoplasm covering the yolk sphere is very thin except where it forms the cap-shaped blastodisc. By the end of this stage, most of the oil droplets from the animal hemisphere have already migrated to the vegetal hemisphere. Two dimple-like pits on the blastodisc serve as markers to locate the future blastomeres. - 60 min </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blastodisc stage b</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000050</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 2b</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000050"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 60 min  Stage 2b (60 min) Blastodisc stage b: The male and the female pronuclei migrate toward and associate with each other at the center of the thick cytoplasmic disc at the animal pole. Chromosomes then appear and divide into two groups at the poles of the spindle marking the end of this stage. The layer of cortical cytoplasm covering the yolk sphere is very thin except where it forms the cap-shaped blastodisc. By the end of this stage, most of the oil droplets from the animal hemisphere have already migrated to the vegetal hemisphere. Two dimple-like pits on the blastodisc serve as markers to locate the future blastomeres. - 60 min </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 1 hr 5 min  Stage 3 (1 hr 5 min) 2 cell stage: The first cleavage plane is at a right angle to the axis between the second polar body (meiotic spindle) and the micropyle in 60-79% of eggs. The two blastomeres are highly rounded just after cleavage, but are comparatively flat just before the second cleavage. - 1 hr 5 min </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2 cell stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000060</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 3</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000060"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 1 hr 5 min  Stage 3 (1 hr 5 min) 2 cell stage: The first cleavage plane is at a right angle to the axis between the second polar body (meiotic spindle) and the micropyle in 60-79% of eggs. The two blastomeres are highly rounded just after cleavage, but are comparatively flat just before the second cleavage. - 1 hr 5 min </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000060"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 1 hr 45 min  Stage 4 (1 hr 45 min) 4 cell stage: The second cleavage furrow develops on the two blastomeres at a right angle to the first cleavage plane. It deepens until each blastomere is divided into 2 of the same size. The oil droplets are larger but fewer and gather toward the vegetal pole. - 1 hr 45 min </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4 cell stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000070</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 4</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000070"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 1 hr 45 min  Stage 4 (1 hr 45 min) 4 cell stage: The second cleavage furrow develops on the two blastomeres at a right angle to the first cleavage plane. It deepens until each blastomere is divided into 2 of the same size. The oil droplets are larger but fewer and gather toward the vegetal pole. - 1 hr 45 min </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000080 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000080">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000070"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 2 hrs 20 min  Stage 5 (2 hrs 20 min) 8 cell stage: The third cleavage plane is parallel to the first and divides the 4 blastomeres into 8 blastomeres. The blastoderm has bilaterally symmetrical rows of blastomeres and elongates along the axis of the second cleavage plane. - 2 hrs 20 min </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8 cell stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000080</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 5</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000080"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 2 hrs 20 min  Stage 5 (2 hrs 20 min) 8 cell stage: The third cleavage plane is parallel to the first and divides the 4 blastomeres into 8 blastomeres. The blastoderm has bilaterally symmetrical rows of blastomeres and elongates along the axis of the second cleavage plane. - 2 hrs 20 min </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000090 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000090">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000080"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 2 hrs 55 min  Stage 6 (2 hrs 55 min) 16 cell stage: The fourth cleavage plane, which is parallel to the second, divides the 2 rows of 4 blastomeres into 4 rows of 4 blastomeres. - 2 hrs 55 min </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16 cell stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000090</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 6</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000090"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 2 hrs 55 min  Stage 6 (2 hrs 55 min) 16 cell stage: The fourth cleavage plane, which is parallel to the second, divides the 2 rows of 4 blastomeres into 4 rows of 4 blastomeres. - 2 hrs 55 min </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000100 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000100">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000090"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 3 hrs 30 min  Stage 7 (3 hrs 30 min) 32 cell stage: The fifth cleavage plane divides the marginal 12blastomeres meridionally into 24, and the central 4 blastomeres horizontally into 8 thereby forming 2 layers, an outer and an inner layer, in the central region. The number of marginal cells is 14. These observations agree with those of Matui [24], Gamo and Terajima [4] and Iwamatsu [11] but differ from the earlier reports of Kamito [21, cf. 30] in which cleavage was reported to continue to occur meridionally at least through the 32 cell stage. - 3 hrs 30 min </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32 cell stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000100</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 7</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000100"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 3 hrs 30 min  Stage 7 (3 hrs 30 min) 32 cell stage: The fifth cleavage plane divides the marginal 12blastomeres meridionally into 24, and the central 4 blastomeres horizontally into 8 thereby forming 2 layers, an outer and an inner layer, in the central region. The number of marginal cells is 14. These observations agree with those of Matui [24], Gamo and Terajima [4] and Iwamatsu [11] but differ from the earlier reports of Kamito [21, cf. 30] in which cleavage was reported to continue to occur meridionally at least through the 32 cell stage. - 3 hrs 30 min </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000110 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000110">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000100"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 4 hrs 5 min  Stage 8 (4 hrs 5 min) Early morula stage: The planes of the sixth and later cleavages are difficult to precisely trace. The blastomeres (64-128) have different cleavage planes depending on their positions within the dome-shaped blastoderm and are arranged in 3 layers. The peripheral blastomeres (21-24) are flattened in shape. The cells (30-35 m in diameter) are arranged in 3-4 layers but are still easily dissociated from each other [31]. - 4 hrs 5 min </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">early morula stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000110</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 8</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000110"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 4 hrs 5 min  Stage 8 (4 hrs 5 min) Early morula stage: The planes of the sixth and later cleavages are difficult to precisely trace. The blastomeres (64-128) have different cleavage planes depending on their positions within the dome-shaped blastoderm and are arranged in 3 layers. The peripheral blastomeres (21-24) are flattened in shape. The cells (30-35 m in diameter) are arranged in 3-4 layers but are still easily dissociated from each other [31]. - 4 hrs 5 min </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000120 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000120">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000110"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 5 hrs 15 min  Stage 9 (5 hrs 15 min) Late morula stage: The blastodermal cells (256-512 blastomeres) are smaller than those of the previous stage and the number of marginal cells (30- 40) has increased. The blastodermal cells (central region, 25- 35 m in diameter) now form 4-5 layers. - 5 hrs 15 min </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">late morula stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000120</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 9</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000120"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 5 hrs 15 min  Stage 9 (5 hrs 15 min) Late morula stage: The blastodermal cells (256-512 blastomeres) are smaller than those of the previous stage and the number of marginal cells (30- 40) has increased. The blastodermal cells (central region, 25- 35 m in diameter) now form 4-5 layers. - 5 hrs 15 min </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000130 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000130">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000120"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 6 hrs 30 min  Stage 10 (6 hrs 30 min) Early blastula stage: The blastoderm (about 1,000 cells) is still high (thick) as in the late morula stage, although its inner cells (20-30 m in diameter) are smaller. According to Kageyama [19], the 11th cleavage still takes place synchronously. Nuclei from the marginal cells (40, cf.[19]) migrate out of the cells and are distributed in a few rows in the periblast (cortical syncytial layer). - 6 hrs 30 min </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">early blastula stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000130</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 10</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000130"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 6 hrs 30 min  Stage 10 (6 hrs 30 min) Early blastula stage: The blastoderm (about 1,000 cells) is still high (thick) as in the late morula stage, although its inner cells (20-30 m in diameter) are smaller. According to Kageyama [19], the 11th cleavage still takes place synchronously. Nuclei from the marginal cells (40, cf.[19]) migrate out of the cells and are distributed in a few rows in the periblast (cortical syncytial layer). - 6 hrs 30 min </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000140 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000140">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000130"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 8 hrs 15 min  Stage 11 (8 hrs 15 min) Late blastula stage: Projection of the underside of the blastoderm (central cells, about 20 m in diameter) into the yolk sphere is observed. In this stage, some blastomeres begin to cleave asynchronously and to migrate. Several (5-6) rows of periblast nuclei are visible around the blastoderm. - 8 hrs 15 min </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Late blastula stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000140</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 11</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000140"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 8 hrs 15 min  Stage 11 (8 hrs 15 min) Late blastula stage: Projection of the underside of the blastoderm (central cells, about 20 m in diameter) into the yolk sphere is observed. In this stage, some blastomeres begin to cleave asynchronously and to migrate. Several (5-6) rows of periblast nuclei are visible around the blastoderm. - 8 hrs 15 min </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000150 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000150">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000140"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 10 hrs 20 min  Stage 12 (10 hrs 20 min) Pre-early gastrula stage: The blastoderm has flattened down onto the yolk sphere so that its outer surface follows the curvature of the yolk sphere. The cell layers are slightly thicker on one side. The diameter of the cells in the central region of the blastoderm remains about 20 m. - 10 hrs 20 min </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pre-early gastrula stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000150</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 12</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000150"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 10 hrs 20 min  Stage 12 (10 hrs 20 min) Pre-early gastrula stage: The blastoderm has flattened down onto the yolk sphere so that its outer surface follows the curvature of the yolk sphere. The cell layers are slightly thicker on one side. The diameter of the cells in the central region of the blastoderm remains about 20 m. - 10 hrs 20 min </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000160 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000160">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000150"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 13 hrs 0 min  Stage 13 (13 hrs 0 min) Early gastrula stage: The blastoderm begins to expand (epiboly, about 1/4 of the yolk sphere) over the surface of the yolk sphere, and the presumptive region of the embryonic shield arises as a thickened margin (dorsal lip) of the blastoderm. It is difficult to recognize the boundaries of the flattened marginal cells. The diameter of the cells in the central region of the blastoderm is 15-20 m. - 13 hrs 0 min </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">early gastrula stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000160</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 13</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000160"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 13 hrs 0 min  Stage 13 (13 hrs 0 min) Early gastrula stage: The blastoderm begins to expand (epiboly, about 1/4 of the yolk sphere) over the surface of the yolk sphere, and the presumptive region of the embryonic shield arises as a thickened margin (dorsal lip) of the blastoderm. It is difficult to recognize the boundaries of the flattened marginal cells. The diameter of the cells in the central region of the blastoderm is 15-20 m. - 13 hrs 0 min </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000170 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000170">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000160"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 15 hrs 0 min  Stage 14 (15 hrs 0 min) Pre-mid gastrula stage: Epiboly progressively advances and the blastoderm covers about 1/3 of the yolk sphere. The germ ring is well-defined, and the embryonic shield increases in size. Weak, rhythmically undulating movements [3,29] begin to occur on the blastoderm but not on the uncovered yolk sphere. - 15 hrs 0 min </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pre-mid gastrula stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000170</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 14</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000170"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 15 hrs 0 min  Stage 14 (15 hrs 0 min) Pre-mid gastrula stage: Epiboly progressively advances and the blastoderm covers about 1/3 of the yolk sphere. The germ ring is well-defined, and the embryonic shield increases in size. Weak, rhythmically undulating movements [3,29] begin to occur on the blastoderm but not on the uncovered yolk sphere. - 15 hrs 0 min </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000180 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000180">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000170"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 17 hrs 30 min  Stage 15 (17 hrs 30 min) Mid gastrula stage: A streak is visible in the midline of the embryonic shield projecting into the germ ring area. The blastoderm covers about 1/2 of the yolk sphere. The nuclei of the marginal periblast are barely visible on the yolk sphere. - 17 hrs 30 min </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mid gastrula stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000180</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 15</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000180"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 17 hrs 30 min  Stage 15 (17 hrs 30 min) Mid gastrula stage: A streak is visible in the midline of the embryonic shield projecting into the germ ring area. The blastoderm covers about 1/2 of the yolk sphere. The nuclei of the marginal periblast are barely visible on the yolk sphere. - 17 hrs 30 min </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000190 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000190">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000180"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 21 hrs 0 min  Stage 16 (21 hrs 0 min) Late gastrula stage: The blastoderm covers 3/4 of the yolk sphere, and the embryonic shield (body) becomes more clearly visible as a narrow streak. The enveloping layer expands uniformly over the yolk sphere until this stage [18]. - 21 hrs 0 min </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Late gastrula stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000190</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 16</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000190"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 21 hrs 0 min  Stage 16 (21 hrs 0 min) Late gastrula stage: The blastoderm covers 3/4 of the yolk sphere, and the embryonic shield (body) becomes more clearly visible as a narrow streak. The enveloping layer expands uniformly over the yolk sphere until this stage [18]. - 21 hrs 0 min </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000200 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000200">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000190"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 1 day 1 hr  Stage 17 (1 day 1 hr) Early neurula stage (Head formation): The yolk sphere is nearly covered by the thin blastoderm leaving a small area around the vegetal pole (yolk plug) ex- posed. The head (rudimentary brain) is recognized anteriorly in the distinct embryonic body. A beak-like mass of cells is seen in front of the head. A few small vacuoles (Kupffer&apos;s vesicles) appear at the underside of the caudal (posterior) end of the body, which is in contact with a small blastopore. - 1 day 1 hr </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">early neurula stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000200</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Head formation</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 17</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000200"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 1 day 1 hr  Stage 17 (1 day 1 hr) Early neurula stage (Head formation): The yolk sphere is nearly covered by the thin blastoderm leaving a small area around the vegetal pole (yolk plug) ex- posed. The head (rudimentary brain) is recognized anteriorly in the distinct embryonic body. A beak-like mass of cells is seen in front of the head. A few small vacuoles (Kupffer&apos;s vesicles) appear at the underside of the caudal (posterior) end of the body, which is in contact with a small blastopore. - 1 day 1 hr </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000210 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000210">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000200"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 1 day 2 hrs  Stage 18 (1 day 2 hrs) Late neurula stage (Optic bud formation): The brain and nerve cord in the arrow-shaped embryonic body codevelop as a solid rod of cells. A solid optic bud (rudimentary eye vesicle) appears on each side of the cephalic end. The beak- like cell mass is still visible. The Kufpper&apos;s vesicles enlarge somewhat. A small part of the yolk sphere still forms a blastopore at the vegetal pole. - 1 day 2 hrs </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">late neurula stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000210</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Optic bud formation</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 18</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000210"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 1 day 2 hrs  Stage 18 (1 day 2 hrs) Late neurula stage (Optic bud formation): The brain and nerve cord in the arrow-shaped embryonic body codevelop as a solid rod of cells. A solid optic bud (rudimentary eye vesicle) appears on each side of the cephalic end. The beak- like cell mass is still visible. The Kufpper&apos;s vesicles enlarge somewhat. A small part of the yolk sphere still forms a blastopore at the vegetal pole. - 1 day 2 hrs </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000220 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000220">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000210"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 1 day 3 hrs 30 min  Stage 19 (1 day 3 hrs 30 min) 2 somite stage: A groove appears in the dorsum of each optic lobe. At the end of this stage (3 somites), two slight knobs are recognized behind the optic vesicles. The blastopore is completely closed. The expansion of the enveloping layer is accomplished without an accompanying increase in the number of constituent cells [18]. - 1 day 3 hrs 30 min </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2 somite stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000220</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 19</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000220"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 1 day 3 hrs 30 min  Stage 19 (1 day 3 hrs 30 min) 2 somite stage: A groove appears in the dorsum of each optic lobe. At the end of this stage (3 somites), two slight knobs are recognized behind the optic vesicles. The blastopore is completely closed. The expansion of the enveloping layer is accomplished without an accompanying increase in the number of constituent cells [18]. - 1 day 3 hrs 30 min </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000230 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000230">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000220"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 1 day 7 hrs 30 min  Stage 20 (1 day 7 hrs 30 min) 4 somite stage: A paired placode of otic (auditory) vesicles appears at the posterior region of the head. Depressions begin to form at the dorsal surface of the eye vesicles. Three parts of the brain (the fore-, the mid- and the hind-brain) are discernible. - 1 day 7 hrs 30 min </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4 somite stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000230</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 20</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000230"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 1 day 7 hrs 30 min  Stage 20 (1 day 7 hrs 30 min) 4 somite stage: A paired placode of otic (auditory) vesicles appears at the posterior region of the head. Depressions begin to form at the dorsal surface of the eye vesicles. Three parts of the brain (the fore-, the mid- and the hind-brain) are discernible. - 1 day 7 hrs 30 min </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000240 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000240">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000230"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 1 day 10 hrs  Stage 21 (1 day 10 hrs) 6 somite stage (Brain and otic vesicle formation): The optic vesicles differentiate to form the optic cups and the lenses begin to form. The small otic vesicles appear, but they lack otolith. The three regions of the brain are well- defined, and the neural fold (neurocoele) is seen as a median line along the body. The flat body cavity is recognized on the surface of the yolk sphere bilateral to the mid-brain and hind- brain. - 1 day 10 hrs </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6 somite stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000240</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brain and otic vesicle formation</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 21</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000240"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 1 day 10 hrs  Stage 21 (1 day 10 hrs) 6 somite stage (Brain and otic vesicle formation): The optic vesicles differentiate to form the optic cups and the lenses begin to form. The small otic vesicles appear, but they lack otolith. The three regions of the brain are well- defined, and the neural fold (neurocoele) is seen as a median line along the body. The flat body cavity is recognized on the surface of the yolk sphere bilateral to the mid-brain and hind- brain. - 1 day 10 hrs </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000250 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000250">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000240"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 1 day 14 hrs  Stage 22 (1 day 14 hrs) 9 somite stage (Appearance of heart anlage): The tubular heart (heart anlage) appears underneath the head from the posterior end of the mid-brain to the anterior end of the hind-brain. The anlage of the hatching enzyme gland (cell mass) appears at the centroventral side of the hind-brain [28]. The body cavity extends further toward the posterior end of the eye vesicles. Melanophores appear on the yolk sphere. Incomplete lenses are present in the eyes, and the vesicular otocyst is defined. - 1 day 14 hrs </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9 somite stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000250</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Appearance of heart anlage</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 22</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000250"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 1 day 14 hrs  Stage 22 (1 day 14 hrs) 9 somite stage (Appearance of heart anlage): The tubular heart (heart anlage) appears underneath the head from the posterior end of the mid-brain to the anterior end of the hind-brain. The anlage of the hatching enzyme gland (cell mass) appears at the centroventral side of the hind-brain [28]. The body cavity extends further toward the posterior end of the eye vesicles. Melanophores appear on the yolk sphere. Incomplete lenses are present in the eyes, and the vesicular otocyst is defined. - 1 day 14 hrs </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000260 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000260">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000250"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 1 day 17 hrs  Stage 23 (1 day 17 hrs) 12 somite stage (Formation of tubular heart): The anterior portion of the straight-tubed heart reaches beneath the posterior end of the eye vesicle. A pair of semi-circular Cuvierian ducts (blood vessels) and the vitello-caudal vein begin to form on the yolk sphere. Kupffer&apos;s vesicles shrink. The neurocoele is formed in the fore-, mid- and hind-brains. The spherical optic lenses are completed. A blood island becomes pronounced in the ventral region between the 6th and 11th somites. The anterior (the 3rd - 5th) somites assume a slightly dog-legged shape. The oil droplets have coalesced into a single large drop. - 1 day 17 hrs </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12 somite stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000260</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Formation of tubular heart</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 23</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000260"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 1 day 17 hrs  Stage 23 (1 day 17 hrs) 12 somite stage (Formation of tubular heart): The anterior portion of the straight-tubed heart reaches beneath the posterior end of the eye vesicle. A pair of semi-circular Cuvierian ducts (blood vessels) and the vitello-caudal vein begin to form on the yolk sphere. Kupffer&apos;s vesicles shrink. The neurocoele is formed in the fore-, mid- and hind-brains. The spherical optic lenses are completed. A blood island becomes pronounced in the ventral region between the 6th and 11th somites. The anterior (the 3rd - 5th) somites assume a slightly dog-legged shape. The oil droplets have coalesced into a single large drop. - 1 day 17 hrs </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000270 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000270">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000260"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 1 day 20 hrs  Stage 24 (1 day 20 hrs) 16 somite stage (Start of heart beating): The anterior portion of the heart, which exhibits a slow (about 33-64/min) pulsation, extends up to the anterior end of the fore-brain. Cuvierian ducts and the vitello-caudal vein are still in- complete. Kupffer&apos;s vesicles have almost disappeared. Otoliths are not yet present in the otic vesicles. The embryonic body encircles nearly 1/2 of the yolk sphere. The gut (digestive) tube is observed ventral to the dogleg-shaped somites. - 1 day 20 hrs </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16 somite stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000270</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Start of heart beating</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 24</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000270"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 1 day 20 hrs  Stage 24 (1 day 20 hrs) 16 somite stage (Start of heart beating): The anterior portion of the heart, which exhibits a slow (about 33-64/min) pulsation, extends up to the anterior end of the fore-brain. Cuvierian ducts and the vitello-caudal vein are still in- complete. Kupffer&apos;s vesicles have almost disappeared. Otoliths are not yet present in the otic vesicles. The embryonic body encircles nearly 1/2 of the yolk sphere. The gut (digestive) tube is observed ventral to the dogleg-shaped somites. - 1 day 20 hrs </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000280 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000280">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000270"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 2 days 2 hrs  Stage 25 (2 days 2 hrs) 18-19 somite stage (Onset of blood circulation): When blood circulation begins, the spherical blood cells are first pushed out of the blood island (7th-15th somites) toward the vitello-caudal vein (Fig. 1). The blood is pumped (70-80 heart- beats/min) from the heart out into the anterior cardinal vein and the dorsal aorta roots. The dorsal aorta branching off the perceptible bulbus arteriosus is paired anteriorly with continuations extending to the head as the internal carotid arteries. The carotid artery splits to form the optic plexus, which connects with the left and right ducts of Cuvier. The left and right dorsal aorta roots run caudally until they join to form the dorsal aorta. The dorsal aorta is unpaired through the trunk region and continues into the tail as the vitello-caudal artery (Fig. 1). A countercurrent of the blood stream from the heart into the aorta is still observed. Otoliths appear as two conglomerates of small granules lying against the inner surface of each well-expanded otocyst. The embryonic body encircles nearly 7/12 of the yolk sphere. The dogleg-shaped somites form a herringbone pattern between the 3rd and 10th somites. Kupffer&apos;s vesicles have disappeared completely. The bulge of the liver anlage appears at the 1st- 3rd somites just posterior to the future position of the left pectoral fin in the 19 somite stage. - 2 days 2 hrs </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18-19 somite stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000280</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Onset of blood circulation</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 25</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000280"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 2 days 2 hrs  Stage 25 (2 days 2 hrs) 18-19 somite stage (Onset of blood circulation): When blood circulation begins, the spherical blood cells are first pushed out of the blood island (7th-15th somites) toward the vitello-caudal vein (Fig. 1). The blood is pumped (70-80 heart- beats/min) from the heart out into the anterior cardinal vein and the dorsal aorta roots. The dorsal aorta branching off the perceptible bulbus arteriosus is paired anteriorly with continuations extending to the head as the internal carotid arteries. The carotid artery splits to form the optic plexus, which connects with the left and right ducts of Cuvier. The left and right dorsal aorta roots run caudally until they join to form the dorsal aorta. The dorsal aorta is unpaired through the trunk region and continues into the tail as the vitello-caudal artery (Fig. 1). A countercurrent of the blood stream from the heart into the aorta is still observed. Otoliths appear as two conglomerates of small granules lying against the inner surface of each well-expanded otocyst. The embryonic body encircles nearly 7/12 of the yolk sphere. The dogleg-shaped somites form a herringbone pattern between the 3rd and 10th somites. Kupffer&apos;s vesicles have disappeared completely. The bulge of the liver anlage appears at the 1st- 3rd somites just posterior to the future position of the left pectoral fin in the 19 somite stage. - 2 days 2 hrs </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000290 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000290">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000280"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 2 days 6 hrs  Stage 26 (2 days 6 hrs) 22 somite stage (Development of guanophores and vacuolization of the notochord): Blood containing globular blood cells is pumped out beyond the anterior region of the hind-brain. The caudal vein is observed in the region from the 1st to the 14th somites. The tip of the tail is completely free of the yolk sphere. The anlage of the liver, which first appeared at the 19 somite stage, is not yet well- developed. Red-brown colored guanophores, which first appeared at the ventral side of the mid-brain in the 20 somite embryo, are more clearly seen. Vacuolization of the notochord starts at its anterior region. Differentiating choroidea of the eyes begin to darken due to melanization. - 2 days 6 hrs </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22 somite stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000290</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Development of guanophores and vacuolization of the notochord</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 26</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000290"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 2 days 6 hrs  Stage 26 (2 days 6 hrs) 22 somite stage (Development of guanophores and vacuolization of the notochord): Blood containing globular blood cells is pumped out beyond the anterior region of the hind-brain. The caudal vein is observed in the region from the 1st to the 14th somites. The tip of the tail is completely free of the yolk sphere. The anlage of the liver, which first appeared at the 19 somite stage, is not yet well- developed. Red-brown colored guanophores, which first appeared at the ventral side of the mid-brain in the 20 somite embryo, are more clearly seen. Vacuolization of the notochord starts at its anterior region. Differentiating choroidea of the eyes begin to darken due to melanization. - 2 days 6 hrs </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000300 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000300">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000290"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 2 days 10 hrs  Stage 27 (2 days 10 hrs) 24 somite stage (Appearance of pectoral fin bud): The tip of the tail where the notochord attaches is pointed. The embryonic body with the tail free from the yolk sphere encircles 5/8 of the yolk sphere. The rudiments of the pectoral fins protrude from the body trunk behind the base of the Cuvierian ducts. The eminences of liver rudiment are clearly seen on the left side beneath the 1st-3rd somites, and the gut tube can be seen beneath the 1st-13th somites curving to the left-ventral in the region between the 1st and 3rd somites. The arterial end of the heart has shifted to the right. The tail is free of the yolk sphere, and its vein is observed from the 10th to the 16th somites. - 2 days 10 hrs </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">24 somite stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000300</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Appearance of pectoral fin bud</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 27</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000300"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 2 days 10 hrs  Stage 27 (2 days 10 hrs) 24 somite stage (Appearance of pectoral fin bud): The tip of the tail where the notochord attaches is pointed. The embryonic body with the tail free from the yolk sphere encircles 5/8 of the yolk sphere. The rudiments of the pectoral fins protrude from the body trunk behind the base of the Cuvierian ducts. The eminences of liver rudiment are clearly seen on the left side beneath the 1st-3rd somites, and the gut tube can be seen beneath the 1st-13th somites curving to the left-ventral in the region between the 1st and 3rd somites. The arterial end of the heart has shifted to the right. The tail is free of the yolk sphere, and its vein is observed from the 10th to the 16th somites. - 2 days 10 hrs </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000310 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000310">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000300"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 2 days 16 hrs  Stage 28 (2 days 16 hrs) 30 somite stage (Onset of retinal pigmentation): The embryonic body with a caudal vein between the 10th and 22th somites encircles about 2/3 of the yolk sphere. Pigmentation advances around the retina, and several melanophores occupy the dorsal wall of the viscera beneath the 1st to the 5th somites. The bulge of the liver becomes definitive in the left side of the 3rd to 4th somites. The anlage of the pancreas appears as a ventral eminence on the right side beneath and slightly anterior to the 3rd somite. Three sinuous portions of the vitelline veins consisting of the left and right ducts of Cuvier and 4 sinuous portions of the vitello-caudal vein meander on the yolk sphere. The blood cells (8.7 m in diameter) flatten slightly. The posterior of the two otoliths in each otocyst is slightly larger than the anterior. - 2 days 16 hrs </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">30 somite stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000310</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Onset of retinal pigmentation</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 28</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000310"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 2 days 16 hrs  Stage 28 (2 days 16 hrs) 30 somite stage (Onset of retinal pigmentation): The embryonic body with a caudal vein between the 10th and 22th somites encircles about 2/3 of the yolk sphere. Pigmentation advances around the retina, and several melanophores occupy the dorsal wall of the viscera beneath the 1st to the 5th somites. The bulge of the liver becomes definitive in the left side of the 3rd to 4th somites. The anlage of the pancreas appears as a ventral eminence on the right side beneath and slightly anterior to the 3rd somite. Three sinuous portions of the vitelline veins consisting of the left and right ducts of Cuvier and 4 sinuous portions of the vitello-caudal vein meander on the yolk sphere. The blood cells (8.7 m in diameter) flatten slightly. The posterior of the two otoliths in each otocyst is slightly larger than the anterior. - 2 days 16 hrs </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000320 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000320">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000310"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 3 days 2 hrs  Stage 29 (3 days 2 hrs) 34 somite stage (Internal ear formation): The embryonic body encircles about 3/4 of the yolk sphere. The anlage of the pineal gland is recognized as a disc-shaped, round structure at the dorsal surface of the 3rd ventricle. In the heart, the sinus venosus, atrium, ventricle and bulbus arteriosus are differentiated. There is a large, transparent membranous protrusion inside the outer wall and another inside the inner wall of the otic vesicle (internal ear formation). In the region posterior to the eye (where gills will form), a group of large hatching enzyme cells has differentiated from endodermal cells [7,28]. A ventral eminence is prominent behind the otic vesicles, and an- other eminence (the presumptive swim bladder) is discernible at the ventral side of the 3rd somite. The pectoral fin is apparent, and membranous fins are also seen in the tail, which has 19 somites beyond the gut tube. Guanophores begin to disperse on the dorsal surface of the body trunk. The anterior tip of the notochord is located where the branches of the dorsal aorta join. - 3 days 2 hrs </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">34 somite stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000320</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Internal ear formation</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 29</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000320"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 3 days 2 hrs  Stage 29 (3 days 2 hrs) 34 somite stage (Internal ear formation): The embryonic body encircles about 3/4 of the yolk sphere. The anlage of the pineal gland is recognized as a disc-shaped, round structure at the dorsal surface of the 3rd ventricle. In the heart, the sinus venosus, atrium, ventricle and bulbus arteriosus are differentiated. There is a large, transparent membranous protrusion inside the outer wall and another inside the inner wall of the otic vesicle (internal ear formation). In the region posterior to the eye (where gills will form), a group of large hatching enzyme cells has differentiated from endodermal cells [7,28]. A ventral eminence is prominent behind the otic vesicles, and an- other eminence (the presumptive swim bladder) is discernible at the ventral side of the 3rd somite. The pectoral fin is apparent, and membranous fins are also seen in the tail, which has 19 somites beyond the gut tube. Guanophores begin to disperse on the dorsal surface of the body trunk. The anterior tip of the notochord is located where the branches of the dorsal aorta join. - 3 days 2 hrs </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000330 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000330">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000320"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 3 days 10 hrs </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">35 somite stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000330</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blood vessel development</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 30</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000330"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 3 days 10 hrs </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000340 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000340">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000330"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 3 days 23 hrs  Stage 31 (3 days 23 hrs) Gill blood vessel formation stage: Large cells of the hatching enzyme gland migrate up to the region under the central part of the eye, which now has a cornea. Blood circulation is seen in the gill arches. Pigmentation of the melanophores in the choroidea proceeds as a dark network in the eye. The pronephric kidney appears as a bright structure adjacent to the 1st somite. The transparent, colorless gallbladder first appears at the posterior region of the liver. Four transparent, membranous protrusions (the structures of the internal ear) are recognized in the otic vesicles. The anterior region of the oral cavity is formed. The tail has 21 somites and a membranous fin which is wider on the ventral side. - 3 days 23 hrs </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gill blood vessel formation stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000340</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 31</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000340"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 3 days 23 hrs  Stage 31 (3 days 23 hrs) Gill blood vessel formation stage: Large cells of the hatching enzyme gland migrate up to the region under the central part of the eye, which now has a cornea. Blood circulation is seen in the gill arches. Pigmentation of the melanophores in the choroidea proceeds as a dark network in the eye. The pronephric kidney appears as a bright structure adjacent to the 1st somite. The transparent, colorless gallbladder first appears at the posterior region of the liver. Four transparent, membranous protrusions (the structures of the internal ear) are recognized in the otic vesicles. The anterior region of the oral cavity is formed. The tail has 21 somites and a membranous fin which is wider on the ventral side. - 3 days 23 hrs </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000350 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000350">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000340"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 4 days 5 hrs  Stage 32 (4 days 5 hrs) Somite completion stage (Formation of pronephros and air bladder): The swim (air)bladder is recognized as a transparent vacuolar body beneath the 3rd somite, and the distinct kidneys (pronephroi) lie in contact with the bilateral sides of the notochord in the 1st somite. In the otic vesicles, a tubular (semicircular canals) membranous labyrinth can be seen. In the posterior end of the tail, the somites are indistinct. The number of whole somites counted is 30. Two hours later, the blood stream is twisted in the posterior end of the tail. - 4 days 5 hrs </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">somite completion stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000350</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Formation of pronephros and air bladder</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 32</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000350"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 4 days 5 hrs  Stage 32 (4 days 5 hrs) Somite completion stage (Formation of pronephros and air bladder): The swim (air)bladder is recognized as a transparent vacuolar body beneath the 3rd somite, and the distinct kidneys (pronephroi) lie in contact with the bilateral sides of the notochord in the 1st somite. In the otic vesicles, a tubular (semicircular canals) membranous labyrinth can be seen. In the posterior end of the tail, the somites are indistinct. The number of whole somites counted is 30. Two hours later, the blood stream is twisted in the posterior end of the tail. - 4 days 5 hrs </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000360 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000360">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000350"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 4 days 10 hrs  Stage 33 (4 days 10 hrs) Stage at which notochord vacuolization is completed: The tail tip has not yet reached within inter ocular distance of the eye. Because the eyeball (choroidea) is very dark, the lenses can be seen only with strong trans illumination. The notochord is completely vacuolized to the end of the tail. The pineal gland is distinct at the dorsal surface of the vascularized forebrain. The tips of the membranous margins of the pectoral fins reach the 4th somite. - 4 days 10 hrs </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stage at which notochord vacuolization is completed</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000360</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 33</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000360"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 4 days 10 hrs  Stage 33 (4 days 10 hrs) Stage at which notochord vacuolization is completed: The tail tip has not yet reached within inter ocular distance of the eye. Because the eyeball (choroidea) is very dark, the lenses can be seen only with strong trans illumination. The notochord is completely vacuolized to the end of the tail. The pineal gland is distinct at the dorsal surface of the vascularized forebrain. The tips of the membranous margins of the pectoral fins reach the 4th somite. - 4 days 10 hrs </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000370 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000370">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000360"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 5 days 1 hr  Stage 34 (5 days 1 hr) Pectoral fin blood circulation stage: The tip of the caudal fin has several melanophores and reaches the eye. Blood circulation is apparent in the pectoral fins, which frequently move (flutter). The choroidea of the eye becomes so black that it is almost impervious to light. - 5 days 1 hr </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pectoral fin blood circulation stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000370</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 34</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000370"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 5 days 1 hr  Stage 34 (5 days 1 hr) Pectoral fin blood circulation stage: The tip of the caudal fin has several melanophores and reaches the eye. Blood circulation is apparent in the pectoral fins, which frequently move (flutter). The choroidea of the eye becomes so black that it is almost impervious to light. - 5 days 1 hr </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000380 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000380">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000370"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 5 days 12 hrs  Stage 35 (5 days 12 hrs) Stage at which visceral blood vessels form: The tip of the caudal fin reaches beyond the posterior border of the eye. Guanophores are distributed from the head to the vicinity of the tail tip. Blood circulates through the internal tissues of the head and the viscera to Cuvier&apos;s ducts. The tubular structure of the spinal cord is revealed. The opening of the oral cavity to the mouth and the presence of several pit organs on the frontal bone can be recognized. - 5 days 12 hrs </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stage at which visceral blood vessels form</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000380</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 35</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000380"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 5 days 12 hrs  Stage 35 (5 days 12 hrs) Stage at which visceral blood vessels form: The tip of the caudal fin reaches beyond the posterior border of the eye. Guanophores are distributed from the head to the vicinity of the tail tip. Blood circulates through the internal tissues of the head and the viscera to Cuvier&apos;s ducts. The tubular structure of the spinal cord is revealed. The opening of the oral cavity to the mouth and the presence of several pit organs on the frontal bone can be recognized. - 5 days 12 hrs </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000390 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000390">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000380"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 6 days  Stage 36 (6 days) Heart development stage: The tip of the tail reaches the otic vesicle. Guanophores and melanophores are distributed on the dorsal wall (peritoneum) of the peritoneal cavity beneath the 1st to the 4th somites. The extent of flexion of the atrio-ventricular region of the heart increases so that in a lateral view, the atrium and the ventricle lie adjacent to each other. - 6 days </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heart development stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000390</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 36</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000390"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 6 days  Stage 36 (6 days) Heart development stage: The tip of the tail reaches the otic vesicle. Guanophores and melanophores are distributed on the dorsal wall (peritoneum) of the peritoneal cavity beneath the 1st to the 4th somites. The extent of flexion of the atrio-ventricular region of the heart increases so that in a lateral view, the atrium and the ventricle lie adjacent to each other. - 6 days </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000400 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000400">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000390"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 7 days  Stage 37 (7 days) Pericardial cavity formation stage: The tip of the tail lies just past the otic vesicle (total length ca. 3.1 mm). The pharyngeal teeth are visible in the posterior region of the gills between the otic vesicles. The pericardial cavity (cardiac sac) surrounding the heart is easily observed. The slowly moving gut tube has a narrow lumen. - 7 days </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pericardial cavity formation stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000400</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 37</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000400"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 7 days  Stage 37 (7 days) Pericardial cavity formation stage: The tip of the tail lies just past the otic vesicle (total length ca. 3.1 mm). The pharyngeal teeth are visible in the posterior region of the gills between the otic vesicles. The pericardial cavity (cardiac sac) surrounding the heart is easily observed. The slowly moving gut tube has a narrow lumen. - 7 days </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000410 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000410">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000400"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 8 days  Stage 38 (8 days) Spleen development stage (Differentiation of caudal fin begins): The tip of the tail extends beyond the otic vesicle (total length ca. 3.6 mm), and the rudiments of the caudal fin rays can be seen within the round membranous fin. The spleen is recognized as a small reddish globule dorsal to the gut tube beneath the left region of the 3rd-4th somites. The gut tube curves to the left between the 1st and the 4th somites, appearing to detour around the swim bladder (3rd-4th somites). A large well- developed gallbladder can be identified by its yellow or yellowish green tint. Both eyes move actively at the same time accompanying movement of the mouth and the pectoral fins. - 8 days </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spleen development stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000410</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Differentiation of caudal fin begins</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 38</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000410"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 8 days  Stage 38 (8 days) Spleen development stage (Differentiation of caudal fin begins): The tip of the tail extends beyond the otic vesicle (total length ca. 3.6 mm), and the rudiments of the caudal fin rays can be seen within the round membranous fin. The spleen is recognized as a small reddish globule dorsal to the gut tube beneath the left region of the 3rd-4th somites. The gut tube curves to the left between the 1st and the 4th somites, appearing to detour around the swim bladder (3rd-4th somites). A large well- developed gallbladder can be identified by its yellow or yellowish green tint. Both eyes move actively at the same time accompanying movement of the mouth and the pectoral fins. - 8 days </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000420 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000420">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000410"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 9 days  Stage 39 (9 days) Hatching stage: The tip of the tail extends to the base of the pectoral fin or to the posterior region of the swim bladder (total length 3.8- 4.2 mm). After hatching, the internal wall of the swim bladder expands remarkably. Cells of hatching gland have already disappeared. The embryos dissolve the inner layers of the chorion [27], tear the single outer layer by moving the body and escape from the chorion tail-first. - 9 days </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hatching stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000420</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 39</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000420"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) - 9 days  Stage 39 (9 days) Hatching stage: The tip of the tail extends to the base of the pectoral fin or to the posterior region of the swim bladder (total length 3.8- 4.2 mm). After hatching, the internal wall of the swim bladder expands remarkably. Cells of hatching gland have already disappeared. The embryos dissolve the inner layers of the chorion [27], tear the single outer layer by moving the body and escape from the chorion tail-first. - 9 days </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000430 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000430">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000420"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) -   Stage 40 1st fry stage: This period extends from hatching until fin rays appear in the caudal and pectoral fins (total length about 4.5 mm). -  </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1st fry stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000430</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 40</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000430"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) -   Stage 40 1st fry stage: This period extends from hatching until fin rays appear in the caudal and pectoral fins (total length about 4.5 mm). -  </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000440 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000440">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000430"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) -   Stage 41 2nd fry stage: This period begins after the appearance of jointed rays in the pectoral fins and continues until fin rays appear in the dorsal and anal fins (total length about 5.5 mm). -  </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2nd fry stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000440</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 41</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000440"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) -   Stage 41 2nd fry stage: This period begins after the appearance of jointed rays in the pectoral fins and continues until fin rays appear in the dorsal and anal fins (total length about 5.5 mm). -  </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000450 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000450">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000440"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) -   Stage 42 3rd fry stage: This stage follows the appearance of ventral fin rays and scales in addition and extends to the formation of the jointed fin rays in the dorsal and anal fins (total length about 7 mm). -  </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3rd fry stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000450</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 42</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000450"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) -   Stage 42 3rd fry stage: This stage follows the appearance of ventral fin rays and scales in addition and extends to the formation of the jointed fin rays in the dorsal and anal fins (total length about 7 mm). -  </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000460 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000460">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000450"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) -   Stage 43 1st young fish stage: This is the period before the secondary sexual characteristics are manifested (total length about 22 mm). -  </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1st young fish stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000460</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 43</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000460"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) -   Stage 43 1st young fish stage: This is the period before the secondary sexual characteristics are manifested (total length about 22 mm). -  </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OlatDv_0000470 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OlatDv_0000470">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000460"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) -   Stage 44 2nd young fish stage: At this stage the mature fish ejaculate sperm and spawn eggs (total length about 23 mm ). -  </obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000113</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2nd young fish stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medaka_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:0000470</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medaka stage 44</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OlatDv_0000470"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoological Science 11: 825-839 (1994) -   Stage 44 2nd young fish stage: At this stage the mature fish ejaculate sperm and spawn eggs (total length about 23 mm ). -  </owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OlatDv:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+

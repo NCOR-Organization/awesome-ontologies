@@ -1,0 +1,963 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY dsw "http://purl.org/dsw/" >
+    <!ENTITY edam "http://edamontology.org/" >
+    <!ENTITY swo "http://www.ebi.ac.uk/swo/" >
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY prov "http://www.w3.org/ns/prov#" >
+    <!ENTITY swo2 "http://www.ebi.ac.uk/efo/swo/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="&obo;miapa.owl#"
+     xml:base="&obo;miapa.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:swo2="http://www.ebi.ac.uk/efo/swo/"
+     xmlns:swo="http://www.ebi.ac.uk/swo/"
+     xmlns:dsw="http://purl.org/dsw/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:edam="http://edamontology.org/">
+    <owl:Ontology rdf:about="&obo;miapa.owl">
+        <dc:creator>Phylotastic Tree Annotation Team</dc:creator>
+        <dc:rights>http://creativecommons.org/publicdomain/zero/1.0/</dc:rights>
+        <dc:title>Minimum Information for A Phylogenetic Analysis (MIAPA) Ontology</dc:title>
+        <dc:description>The MIAPA ontology is intended to be an application ontology for the purpose of semantic annotation of phylogenetic data according to the requirements and recommendations of the Minimum Information for A Phylogenetic Analysis (MIAPA) metadata reporting standard. The ontology leverages (imports) primarily from the CDAO (Comparative Data Analysis Ontology), PROV (W3C Provenance Ontology), and SWO (Software Ontology, which includes the EDAM ontologies) ontologies. It adds some assertions of its own, as well as some classes and individuals that may eventually get pushed down into one of the respective source ontologies.
+
+This ontology is maintained at http://github.com/miapa/miapa, and requests for changes or additions should be filed at the issue tracker there. The discussion list is at miapa-discuss@googlegroups.com. Further resources about MIAPA can be found at the project&apos;s main page at http://evoio.org/wiki/MIAPA.</dc:description>
+        <dc:creator>Hilmar Lapp</dc:creator>
+        <owl:imports rdf:resource="&obo;cdao.owl"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/prov-o"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000193 -->
+
+    <rdf:Description rdf:about="&obo;CDAO_0000193">
+        <rdfs:comment>For providing MIAPA-compliant edge lengths, one should normally use its subproperty miapa:edgeLength. The alternative is to use the miapa:&apos;has edge length&apos; data property or one of its subproperties.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000008 -->
+
+    <owl:ObjectProperty rdf:about="&obo;MIAPA_0000008">
+        <rdfs:label xml:lang="en">edgeLength</rdfs:label>
+        <rdfs:comment>This object property is one way for providing MIAPA-compliant edge lengths. The object is an instance of the appropriate cdao:EdgeLength subclass, which its value described by cdao:has_Value. The alternative is to use the miapa:&apos;has edge length&apos; data property or one of its subproperties.</rdfs:comment>
+        <rdfs:range rdf:resource="&obo;CDAO_0000046"/>
+        <rdfs:subPropertyOf rdf:resource="&obo;CDAO_0000193"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/references -->
+
+    <owl:ObjectProperty rdf:about="&dcterms;references">
+        <rdfs:comment>For MIAPA reporting, recommended for referencing sequence and other identifiers for a TU as applicable.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dsw/derivedFrom -->
+
+    <owl:ObjectProperty rdf:about="&dsw;derivedFrom">
+        <rdfs:comment>For MIAPA reporting, recommended to associate the taxonomic unit to a specimen. Use a unique identifier for the specimen, or create an instance of type dsw:Specimen described by the &quot;Darwin Core triplet&quot; (dwc:institutionCode, dwc:collectionCode, dwc:catalogNumber).</rdfs:comment>
+        <obo:IAO_0000112>:otu1
+    a cdao:TU ;
+    dsw:derivedFrom [
+        a dsw:Specimen ;
+        dwc:institutionCode &quot;MVZ&quot; ;
+        dwc:collectionCode  &quot;Birds&quot; ;
+        dwc:catalogNumber &quot;35287&quot; ;
+    ]
+.</obo:IAO_0000112>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://rs.tdwg.org/ontology/voc/TaxonConcept#toTaxon -->
+
+    <owl:ObjectProperty rdf:about="http://rs.tdwg.org/ontology/voc/TaxonConcept#toTaxon">
+        <rdfs:comment>For MIAPA reporting, recommended as the property relating an OTU to a taxonomic concept (an entry in a taxonomy, such as an NCBI taxonomy reference) that has been obtained through taxonomic name or other kinds of name resolution or reconciliation procedures.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000740 -->
+
+    <owl:ObjectProperty rdf:about="&swo2;SWO_0000740">
+        <rdfs:label>implements</rdfs:label>
+        <rdfs:domain rdf:resource="&obo;IAO_0000010"/>
+        <rdfs:range rdf:resource="&obo;IAO_0000064"/>
+        <owl:inverseOf rdf:resource="&swo;SWO_0000085"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000085 -->
+
+    <owl:ObjectProperty rdf:about="&swo;SWO_0000085">
+        <rdfs:label>is implemented by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0004000 -->
+
+    <owl:ObjectProperty rdf:about="&swo;SWO_0004000">
+        <rdfs:label>has version</rdfs:label>
+        <rdfs:range rdf:resource="&obo;IAO_0000129"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#location -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#location">
+        <rdfs:comment>For MIAPA reporting, recommended as the property for indicating a spatial location for OTUs and/or specimens. An exact location can be described using geo:lat, geo:long, and geo:alt. These are the same terms DBpedia uses (see http://wiki.dbpedia.org/Datasets#h18-17). Inexact locations known by name can be described using dc:description.</rdfs:comment>
+        <rdfs:range rdf:resource="&dcterms;Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#used -->
+
+    <owl:ObjectProperty rdf:about="&prov;used">
+        <rdfs:comment>For provenance reporting in MIAPA, the property linking an activity that generated an output (such as a tree inference procedure involving software) to the parameter specification that was the plan for executing the software.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&prov;wasInfluencedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasAssociatedWith -->
+
+    <owl:ObjectProperty rdf:about="&prov;wasAssociatedWith">
+        <rdfs:comment>For provenance reporting in MIAPA, the property linking the activity that generated an output to the agent that was involved in (responsible for) it. For software procedures, this will be a SoftwareAgent, and for manual procedures it will be a Person.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&prov;wasInfluencedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
+
+    <owl:ObjectProperty rdf:about="&prov;wasDerivedFrom">
+        <rdfs:comment>For MIAPA reporting, recommended as the property relating a phylogenetic tree to the data matrix (or matrices) from which it was derived.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&prov;wasInfluencedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasGeneratedBy -->
+
+    <owl:ObjectProperty rdf:about="&prov;wasGeneratedBy">
+        <rdfs:comment>For provenance reporting in MIAPA, the property linking the tree or the data matrix to the activity that generated it.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&prov;wasInfluencedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasInfluencedBy -->
+
+    <owl:ObjectProperty rdf:about="&prov;wasInfluencedBy"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000214 -->
+
+    <rdf:Description rdf:about="&obo;CDAO_0000214">
+        <rdfs:subPropertyOf rdf:resource="&obo;MIAPA_0000014"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000004 -->
+
+    <owl:DatatypeProperty rdf:about="&obo;MIAPA_0000004">
+        <rdfs:label xml:lang="en">branch length</rdfs:label>
+        <rdfs:comment>This data property is one way for providing MIAPA-compliant edge lengths, in this case branch lengths. The alternative is using the miapa:edgeLength (or its superproperty cdao:has_Annotation) object property, with an instance of the appropriate cdao:EdgeLength subclass as the object, which itself may have its value described by cdao:has_Value.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&obo;MIAPA_0000014"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000006 -->
+
+    <owl:DatatypeProperty rdf:about="&obo;MIAPA_0000006">
+        <rdfs:label xml:lang="en">bootstrap value</rdfs:label>
+        <rdfs:comment>This data property is one way for providing MIAPA-compliant edge lengths, in this case bootstrap values. The alternative is using the miapa:edgeLength (or its superproperty cdao:has_Annotation) object property, with an instance of the appropriate cdao:EdgeLength subclass as the object, which itself may have its value described by cdao:has_Value.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&obo;CDAO_0000214"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000007 -->
+
+    <owl:DatatypeProperty rdf:about="&obo;MIAPA_0000007">
+        <rdfs:label xml:lang="en">posterior probability</rdfs:label>
+        <rdfs:comment>This data property is one way for providing MIAPA-compliant edge lengths, in this case posterior probabilities. The alternative is using the miapa:edgeLength (or its superproperty cdao:has_Annotation) object property, with an instance of the appropriate cdao:EdgeLength subclass as the object, which itself may have its value described by cdao:has_Value.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&obo;CDAO_0000214"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000014 -->
+
+    <owl:DatatypeProperty rdf:about="&obo;MIAPA_0000014">
+        <rdfs:label xml:lang="en">has edge length</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#value -->
+
+    <owl:DatatypeProperty rdf:about="&prov;value">
+        <rdfs:comment>For provenance reporting in MIAPA, the property for giving the literal value of a provenance entity, specifically the value of parameter specifications (which are instances of prov:Plan, a subclass of prov:Entity).</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://edamontology.org/operation_0004 -->
+
+    <owl:Class rdf:about="&edam;operation_0004">
+        <rdfs:label>Operation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&prov;Activity"/>
+        <rdfs:comment>For the purposes of MIAPA annotation and cross-ontology interoperability, instances of edam:Operation are instances of a prov:Activity. They need to be further classified as to whether they are maipa:&apos;Manual procedure&apos; or miapa:&apos;Software procedure&apos; instances.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_0323 -->
+
+    <owl:Class rdf:about="&edam;operation_0323">
+        <rdfs:label>Phylogenetic tree construction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&edam;operation_0004"/>
+        <rdfs:subClassOf rdf:resource="&obo;CDAO_0000014"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_0539 -->
+
+    <owl:Class rdf:about="&edam;operation_0539">
+        <rdfs:label>Phylogenetic tree construction (method centric)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&edam;operation_0323"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_2928 -->
+
+    <owl:Class rdf:about="&edam;operation_2928">
+        <rdfs:label>Alignment construction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&edam;operation_0004"/>
+        <rdfs:subClassOf rdf:resource="&obo;CDAO_0000032"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000007 -->
+
+    <rdf:Description rdf:about="&obo;CDAO_0000007">
+        <rdfs:subClassOf rdf:resource="&obo;MIAPA_0000010"/>
+        <rdfs:comment>For MIAPA-compliant reporting, the model description is a kind of miapa:&apos;Parameter specification&apos;, and this a kind of prov:Plan.
+
+Alternatively, we could model this as dc:isPartOf some prov:Plan.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000014 -->
+
+    <rdf:Description rdf:about="&obo;CDAO_0000014">
+        <rdfs:subClassOf rdf:resource="&prov;Activity"/>
+        <obo:IAO_0000115>A procedure that generates the tree.</obo:IAO_0000115>
+        <rdfs:comment>For provenance annotation in MIAPA, the activity that generated the tree should be asserted as an instance of cdao:TreeProcedure.</rdfs:comment>
+    </rdf:Description>
+    <owl:Axiom>
+        <obo:IAO_0000116>See https://github.com/miapa/miapa/issues/5</obo:IAO_0000116>
+        <owl:annotatedSource rdf:resource="&obo;CDAO_0000014"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+        <owl:annotatedTarget rdf:resource="&prov;Activity"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000032 -->
+
+    <rdf:Description rdf:about="&obo;CDAO_0000032">
+        <rdfs:subClassOf rdf:resource="&prov;Activity"/>
+        <obo:IAO_0000115>A procedure that generates the alignment.</obo:IAO_0000115>
+        <rdfs:comment>For provenance annotation in MIAPA, the activity that generated the alignment should be asserted as an instance of cdao:AlignmentProcedure.</rdfs:comment>
+    </rdf:Description>
+    <owl:Axiom>
+        <obo:IAO_0000116>https://github.com/miapa/miapa/issues/5</obo:IAO_0000116>
+        <owl:annotatedSource rdf:resource="&obo;CDAO_0000032"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+        <owl:annotatedTarget rdf:resource="&prov;Activity"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000046 -->
+
+    <rdf:Description rdf:about="&obo;CDAO_0000046">
+        <owl:equivalentClass rdf:resource="&obo;CDAO_0000063"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <obo:IAO_0000116>To be proposed to and fixed in CDAO. That would then make the has_type some EdgeLengthType restriction obsolete.</obo:IAO_0000116>
+        <owl:annotatedSource rdf:resource="&obo;CDAO_0000046"/>
+        <owl:annotatedTarget rdf:resource="&obo;CDAO_0000063"/>
+        <owl:annotatedProperty rdf:resource="&owl;equivalentClass"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000063 -->
+
+    <rdf:Description rdf:about="&obo;CDAO_0000063"/>
+    <owl:Axiom>
+        <obo:IAO_0000116>To be proposed to and fixed in CDAO. That would then make the has_type some EdgeLengthType restriction obsolete.</obo:IAO_0000116>
+        <owl:annotatedSource rdf:resource="&obo;CDAO_0000046"/>
+        <owl:annotatedTarget rdf:resource="&obo;CDAO_0000063"/>
+        <owl:annotatedProperty rdf:resource="&owl;equivalentClass"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000010 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000010">
+        <rdfs:label>software</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000104"/>
+        <rdfs:subClassOf rdf:resource="&prov;SoftwareAgent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000028 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000028">
+        <rdfs:label>symbol</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000030"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000033 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000033">
+        <rdfs:label>directive information entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000064 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000064">
+        <rdfs:label>algorithm</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000104 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000104">
+        <rdfs:label>plan specification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000033"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000129 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000129">
+        <rdfs:label>version number</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000028"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000001 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000001">
+        <rdfs:label xml:lang="en">Gene tree</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CDAO_0000110"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000002 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000002">
+        <rdfs:label xml:lang="en">Consensus tree</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CDAO_0000110"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000003 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000003">
+        <rdfs:label xml:lang="en">Software procedure</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&prov;Activity"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&prov;used"/>
+                        <owl:someValuesFrom rdf:resource="&prov;Plan"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&prov;wasInfluencedBy"/>
+                        <owl:someValuesFrom rdf:resource="&prov;SoftwareAgent"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A procedure (a type of prov:Activity) that involves running software to generate the output, and is therefore associated with a piece of software, and uses a parameter specification as the plan for running the software.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000009 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000009">
+        <rdfs:label xml:lang="en">Manual procedure</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&prov;Activity"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&prov;wasInfluencedBy"/>
+                        <owl:someValuesFrom rdf:resource="&prov;Person"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A procedure (a type of prov:Activity) that involves a person making manual manipulations to data, such as manually editing an alignment. An alignment procedure can involve both running software and manual editing to generate the output, and therefore ManualProcedure and SoftwareProcedure are not disjoint.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000010 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000010">
+        <rdfs:label xml:lang="en">Parameter specification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&prov;Plan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000015 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000015">
+        <rdfs:label xml:lang="en">Maximum likelihood method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo2;SWO_0000592"/>
+        <obo:IAO_0000116>Should be pushed down to SWO.</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000016 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000016">
+        <rdfs:label xml:lang="en">RAxML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000010"/>
+        <obo:IAO_0000116>Should be pushed down to SWO.</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000020 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000020">
+        <rdfs:label xml:lang="en">MAFFT</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000010"/>
+        <obo:IAO_0000116>Should be pushed down to SWO.</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000022 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000022">
+        <rdfs:label xml:lang="en">SINA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000010"/>
+        <obo:IAO_0000116>Should be pushed down to SWO.</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000024 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000024">
+        <rdfs:label xml:lang="en">PRANK</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000010"/>
+        <obo:IAO_0000116>Should be pushed down to SWO.</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000025 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000025">
+        <rdfs:label xml:lang="en">PAUP*</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000010"/>
+        <obo:IAO_0000116>Should be pushed down to SWO.</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000026 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000026">
+        <rdfs:label xml:lang="en">TNT</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000010"/>
+        <obo:IAO_0000116>Should be pushed down to SWO.</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000027 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000027">
+        <rdfs:label xml:lang="en">PhyML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000010"/>
+        <obo:IAO_0000116>Should be pushed down to SWO.</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000028 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000028">
+        <rdfs:label xml:lang="en">AMPHORA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000010"/>
+        <obo:IAO_0000116>Should be pushed down to SWO.</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000032 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000032">
+        <rdfs:label xml:lang="en">GTR+GAMMA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CDAO_0000020"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000033 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000033">
+        <rdfs:label xml:lang="en">GTR+CAT</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CDAO_0000020"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000034 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000034">
+        <rdfs:label xml:lang="en">WAG</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CDAO_0000020"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000037 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000037">
+        <rdfs:label xml:lang="en">Parsimony method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
+        <obo:IAO_0000115>A method for finding the minimum transitions to account for a character given a phylogenetic tree, and by extension, a character-based phylogeny inference method in which the inferred phylogenetic tree (the &quot;maximum parsimony tree&quot;) is the phylogenetic tree that minimizes evolutionary transitions over all characters.</obo:IAO_0000115>
+        <obo:IAO_0000116>Should be pushed down to SWO.</obo:IAO_0000116>
+        <obo:IAO_0000119>Prosdocimi, Francisco, Brandon Chisham, Enrico Pontelli, J.D. Thompson, and Arlin Stoltzfus. 2009. “Initial Implementation of a Comparative Data Analysis Ontology.” Evolutionary Bioinformatics Online (5): 47–66. http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2747124/</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.nescent.org/wg_evoinfo/Concept_Glossary#Parsimony_Method</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000038 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000038">
+        <rdfs:label xml:lang="en">Phylogenetic tree construction (pruning and grafting)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&edam;operation_0539"/>
+        <obo:IAO_0000115>Phylogenetic tree construction that prunes and grafts a collection of one or more source trees to create the resulting tree.</obo:IAO_0000115>
+        <obo:IAO_0000116>Should be pushed down to SWO.</obo:IAO_0000116>
+        <obo:IAO_0000117>Hilmar Lapp</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000039 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000039">
+        <rdfs:label xml:lang="en">SetOfNetworks</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;CDAO_0000118"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;CDAO_0000198"/>
+                        <owl:allValuesFrom rdf:resource="&obo;CDAO_0000006"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&prov;Collection"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&prov;hadMember"/>
+                        <owl:allValuesFrom rdf:resource="&obo;CDAO_0000006"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000116>To be pushed down to CDAO. This would retain though in MIAPA the equivalence to &quot;prov:Collection and provhadMember only cdao:Network&quot;.</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000040 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000040">
+        <rdfs:label xml:lang="en">SetOfTrees</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;MIAPA_0000039"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;CDAO_0000198"/>
+                        <owl:allValuesFrom rdf:resource="&obo;CDAO_0000110"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&prov;Collection"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&prov;hadMember"/>
+                        <owl:allValuesFrom rdf:resource="&obo;CDAO_0000110"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000116>To be pushed down to CDAO. This would retain though in MIAPA the equivalence to &quot;prov:Collection and provhadMember only cdao:Network&quot;.</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000041 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000041">
+        <rdfs:label xml:lang="en">MrBayes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000010"/>
+        <obo:IAO_0000116>Should be pushed down to SWO.</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000044 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000044">
+        <rdfs:label xml:lang="en">BEAST</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000010"/>
+        <obo:IAO_0000116>Should be pushed down to SWO.</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/Location -->
+
+    <owl:Class rdf:about="&dcterms;Location"/>
+    
+
+
+    <!-- http://purl.org/dsw/Specimen -->
+
+    <owl:Class rdf:about="&dsw;Specimen"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000592 -->
+
+    <owl:Class rdf:about="&swo2;SWO_0000592">
+        <rdfs:label>Likelihood method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000060 -->
+
+    <owl:Class rdf:about="&swo;SWO_0000060">
+        <rdfs:label xml:lang="en">MUSCLE</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Activity -->
+
+    <owl:Class rdf:about="&prov;Activity">
+        <rdfs:comment>For provenance annotation in MIAPA, instances of prov:Activity (or one of its subclasses) generate parts of the data such as the alignment and the tree. They are linked to tree or alignment through the property prov:wasGeneratedBy.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Agent -->
+
+    <rdf:Description rdf:about="&prov;Agent">
+        <rdfs:comment>For provenance annotation in MIAPA, instances of prov:Agent, or more specifically an instance of prov:Person and/or prov:SoftwareAgent, are involved in (associated with, responsible for) the prov:Activity that generated a certain piece of the data (such as an alignment, or a tree).</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Entity -->
+
+    <owl:Class rdf:about="&prov;Entity">
+        <rdfs:comment>For provenance annotation in MIAPA, the instances of a tree and of an alignment are entities for which provenance information (how they were generated) is required to be tracked (and thus annotated).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Person -->
+
+    <owl:Class rdf:about="&prov;Person">
+        <rdfs:subClassOf rdf:resource="&prov;Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Plan -->
+
+    <owl:Class rdf:about="&prov;Plan">
+        <rdfs:subClassOf rdf:resource="&prov;Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#SoftwareAgent -->
+
+    <owl:Class rdf:about="&prov;SoftwareAgent">
+        <rdfs:subClassOf rdf:resource="&prov;Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000012 -->
+
+    <owl:NamedIndividual rdf:about="&obo;MIAPA_0000012">
+        <rdf:type rdf:resource="&obo;MIAPA_0000010"/>
+        <rdfs:label xml:lang="en">default parameters</rdfs:label>
+        <rdfs:comment>It is possible that this really should be a class instead of an individual, namely the class of all default parameter specifications (which would then have instances specific to programs).</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000013 -->
+
+    <owl:NamedIndividual rdf:about="&obo;MIAPA_0000013">
+        <rdf:type rdf:resource="&obo;MIAPA_0000010"/>
+        <rdfs:label xml:lang="en">unspecified parameters</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000017 -->
+
+    <owl:NamedIndividual rdf:about="&obo;MIAPA_0000017">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">7.2.8</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000019 -->
+
+    <owl:NamedIndividual rdf:about="&obo;MIAPA_0000019">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">3.7</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000021 -->
+
+    <owl:NamedIndividual rdf:about="&obo;MIAPA_0000021">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">6.712b</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000029 -->
+
+    <owl:NamedIndividual rdf:about="&obo;MIAPA_0000029">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">4.0b10</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000030 -->
+
+    <owl:NamedIndividual rdf:about="&obo;MIAPA_0000030">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">7.2.7</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000031 -->
+
+    <owl:NamedIndividual rdf:about="&obo;MIAPA_0000031">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">10</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000036 -->
+
+    <owl:NamedIndividual rdf:about="&obo;MIAPA_0000036">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">7.2.6, Pthreads-based and SSE3-vectorized</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000042 -->
+
+    <owl:NamedIndividual rdf:about="&obo;MIAPA_0000042">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">3.2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000043 -->
+
+    <owl:NamedIndividual rdf:about="&obo;MIAPA_0000043">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">1.5.1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="&obo;CDAO_0000196">
+        <rdfs:comment>For MIAPA reporting, recommended to be used for referencing the corresponding tree (tip) node(s) from a data matrix row</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;CDAO_0000187">
+        <rdfs:comment>For MIAPA reporting, this property (and/or its inverse) should be used to establish the relationship between rows of the data matrix and nodes in the tree(s).</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;CDAO_0000215">
+        <rdfs:comment>In MIAPA-compliant reporting, can be used to provide the value for instances of cdao:EdgeLength (or one of its subclasses) used for annotating edges with lengths.</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+

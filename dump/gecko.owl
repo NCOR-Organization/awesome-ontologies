@@ -1,0 +1,2441 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/gecko.owl#"
+     xml:base="http://purl.obolibrary.org/obo/gecko.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/gecko.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gecko/releases/2021-01-18/gecko.owl"/>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ontology to represent genomics cohort attributes.</dc:description>
+        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genomics Cohorts Knowledge Ontology</dc:title>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The GECKO is maintained by the CINECA project, https://www.cineca-project.eu, and standardises attributes commonly used for genomics cohort description as well as individual-level data items. A series of tools is being developed to enable automated generation of harmonised data files based on a JSON schema mapping file. For more information please contact info@cineca-project.eu</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_9000000 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/GECKO_9000000">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IHCC category</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_9000001 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/GECKO_9000001">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IHCC browser label</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">example of usage</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alternative term</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition source</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_alternative_id</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_broad_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_exact_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_narrow_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_related_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">comment</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">label</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">see also</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">part of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is about</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000052">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inheres in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
+        <obo:IAO_0000112 xml:lang="en">a process of cell-division, \ a beating of the heart</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a process of meiosis</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a process of sleeping</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the course of a disease</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the flight of a bird</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the life of an organism</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">your process of aging.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <obo:IAO_0000112 xml:lang="en">an atom of element X has the disposition to decay to an atom of element Y</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">certain people have a predisposition to colon cancer</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">children are innately disposed to categorize objects in certain ways.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the cell wall is disposed to filter chemicals in endocytosis and exocytosis</obo:IAO_0000112>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disposition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000017">
+        <obo:IAO_0000112 xml:lang="en">the disposition of this piece of metal to conduct electricity.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the disposition of your blood to coagulate</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the function of your reproductive organs</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the role of being a doctor</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the role of this boundary to delineate where Utah and Colorado meet</obo:IAO_0000112>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">realizable entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019">
+        <obo:IAO_0000112 xml:lang="en">the ambient temperature of this portion of air</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the color of a tomato</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the length of the circumference of your waist</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the mass of this piece of gold.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the shape of your nose</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the shape of your nostril</obo:IAO_0000112>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
+        <obo:IAO_0000112 xml:lang="en">Manhattan Canyon)</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a hole in the interior of a portion of cheese</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a rabbit hole</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">an air traffic control region defined in the airspace above an airport</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the Grand Canyon</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the Piazza San Marco</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the cockpit of an aircraft</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the hold of a ship</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the interior of a kangaroo pouch</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the interior of the trunk of your car</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the interior of your bedroom</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the interior of your office</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the interior of your refrigerator</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the lumen of your gut</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">your left nostril (a fiat part – the opening – of your left nasal cavity)</obo:IAO_0000112>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">site</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
+        <obo:IAO_0000112 xml:lang="en">a flame</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a forest fire</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a human being</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a hurricane</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a photon</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a puff of smoke</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a sea wave</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a tornado</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">an aggregate of human beings.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">an energy wave</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">an epidemic</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the undetached arm of a human being</obo:IAO_0000112>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">material entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000141 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000141">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immaterial entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">questionnaire/survey data</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physiological measurements</obo:GECKO_9000001>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clinical measurement data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000000"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physiological measurements</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circulation and respiration</obo:GECKO_9000001>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cardiovascular measurement data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000001"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circulation and respiration</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood pressure</obo:GECKO_9000001>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood pressure measurement data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000021"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anthropometry</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">weight</obo:GECKO_9000001>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">body weight data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000000"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physiological measurements</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anthropometry</obo:GECKO_9000001>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">body morphological measurement data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000106 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000106">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000021"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anthropometry</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">height</obo:GECKO_9000001>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">body height data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000294 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CMO_0000294">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000001"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circulation and respiration</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heart rate (HR)</obo:GECKO_9000001>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pulse data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EUPATH_0000147 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0000147">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">other questionnaire/survey data</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cause of death</obo:GECKO_9000001>
+        <obo:IAO_0000115>An information content entity indicating the cause of death for a participant in the study.</obo:IAO_0000115>
+        <obo:IAO_0000119>Penn Group</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cause of participant death</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EUPATH_0000305 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0000305">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">healthcare information</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">routine clincial visits</obo:GECKO_9000001>
+        <obo:IAO_0000115 xml:lang="en">a data item that is about an investigation and is the specified output of a data transformation that has only clinical visit data as input</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">EuPathDB</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aggregated clinical visit information</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EUPATH_0000308 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0000308">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">healthcare information</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hospitalizations</obo:GECKO_9000001>
+        <obo:IAO_0000115 xml:lang="en">an information content entity that is about a part of a health care encounter that occurs in a hospital facility</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">EuPathDB</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hospitalization information</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EUPATH_0000359 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0000359">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">occupation</obo:GECKO_9000001>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is about an activity that realizes a social role and is often performed for payment.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">occupation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EUPATH_0000374 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0000374">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">marital status</obo:GECKO_9000001>
+        <obo:IAO_0000115 xml:lang="en">a categorical value specification that is about a human being and specifies whether that human being is joined to another human being in marriage</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">EuPathDB, BFO&apos;s &apos;relational quality&apos; examples</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">marital status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EUPATH_0000451 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0000451">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">questionnaire/survey data</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">healthcare information</obo:GECKO_9000001>
+        <obo:IAO_0000115>An information content entity about healthcare that is private or public.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">healthcare information</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EUPATH_0010032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EUPATH_0010032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">questionnaire/survey data</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical environment</obo:GECKO_9000001>
+        <obo:IAO_0000115>environmental system associated with the dwelling used by humans.</obo:IAO_0000115>
+        <obo:IAO_0000119>Penn Group</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">environment associated with human dwelling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">basic cohort attributes</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">timeline</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A directive information entity that specifies the sequence in which a series of events occurred or will occur.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">timeline</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000005">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCO_0000000"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">basic cohort attributes</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">population data</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data item that is about a population of organisms.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">population data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">population data</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">location</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A population data item that is about the geographical location of a population of organisms.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">population location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000106"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCO_0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">population data</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">num. participants</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A sample size that is about the count of individual organisms in a population.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">population size</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000009">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PCO_0000000"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">basic cohort attributes</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">demographic data</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality which inheres in a population of organisms.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">population quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000009"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">demographic data</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sex(es) studied in cohort</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A population quality concerning the sex or sexes of the population.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">population sex or sexes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000009"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">demographic data</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gender(s) studied in cohort</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A population quality concerning the gender or genders of the population.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">population gender or genders</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000009"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">demographic data</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">age range</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A population quality concerning the age range of a population.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">population age range</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">basic cohort attributes</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data collection events</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A planned process that is a part of an investigation in which raw data is collected.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data collection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000178"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fasting or non-fasting</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blood that is collected from an organism which has been fasting for a given amount of time.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood collected from fasting subject</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0302893"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biosample</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">storage method</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A storage process for a biosample collected from an organism.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biosample storage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory measures</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genomics</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An assay that investigates the genome or genomes of an individual organism or population of organisms.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Merged GECKO &apos;data type&apos; into &apos;genomics&apos;.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genomic assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000032"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genomics</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microbiome markers (rRNA, etc)</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A genomic assay that profiles the microorganisms present in a sample.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Potential new OBI request</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microbiome sequencing assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000032"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genomics</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eQTL (Cis eQTLs and/or Trans eQTLs)</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A genomic assay that identifies genetic loci and candidate genes correlated with phenotypes.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:27964730</obo:IAO_0000119>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Potential new OBI request</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eQTL analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000044">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000047"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biosample</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sample size</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A count of the number of biosamples collected for an investigation.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biosample size</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biosample</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">processing method</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A material processing which prepares a biosample for investigation.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biosample processing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">survey administration</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unique identifiers</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An identifier that is guaranteed to be unique among all identifiers in a particular domain.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Unique_identifier</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unique identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gender</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organismal quality inhering in a bearer by virtue of the bearer&apos;s preference towards a range of characteristics pertaining to, and differentiating between, masculinity and femininity.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Gender|PATO:0000047</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gender</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ethnicity/race</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organismal quality inhering in a bearer by virtue of the bearer&apos;s identification with a group of other individuals on the basis of presumed similarities such as language or common ancestry.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Ethnic_group</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ethnicity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000063 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000063">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">birthplace</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A geographical location in which an individual was born.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">birthplace location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">residence</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A geographical location in which an individual currently resides.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">residence location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000065">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">education</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organismal quality inhering in a bearer by virute of the bearer&apos;s highest level of formal education completed.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">education level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000066">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family and household structure</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information that is about the structure of an individual&apos;s family and/or household.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family and household structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000067 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000067">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000015"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">questionnaire/survey data</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lifestyle and behaviours</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A clinical history that is about the lifestyle and behaviors of an individual which may impact health outcomes.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lifestyle history</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000068 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000068">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000067"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lifestyle and behaviours</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco use history</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lifestyle history that is about the tobacco use or exposure of an individual.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco use history</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000069 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000069">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000067"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lifestyle and behaviours</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol use history</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lifestyle history that is about the alcohol consumption of an individual.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol use history</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000071 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000071">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000067"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lifestyle and behaviours</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sleep history</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lifestyle history that is about the sleep quality and duration of an individual.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sleep history</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000072 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000072">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000067"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lifestyle and behaviours</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dietary history</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lifestyle history that is about the diet and nutrition of an individual.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nutritional history</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000073 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000073">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">healthcare information</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physician/practitioner info</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A textual entity that contains contact details for an individual&apos;s physician, which may include: name, phone number, address, etc.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physician contact textual entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000091 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000091">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000115"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">questionnaire/survey data</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-pharmacological interventions</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A treatment history that is about any non-pharamacological treatments such as surgery or physical therapy.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-pharmacological treatment history</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000092 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000092">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000091"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-pharmacological interventions</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surgical interventions</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A clinical history that is about surgical operations performed on an individual.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surgical history</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000093 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000093">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000115"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">questionnaire/survey data</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medication</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A clinical history that is about the prescription drugs taken by an individual.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prescription drug history</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000094 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000094">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000093"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medication</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">associated disease(s)</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information that is about the disease treated by a drug prescribed to an individual.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease treated by prescription drug</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000096 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000096">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medication</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drug response(s)</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A biological process that results from a drug stimulus.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">response to medication</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000102 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000102">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000039"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">statistics</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">summary statistics for additional data from federated sources</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A statistic that summarizes a set of federated data.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">summary statistic for federated data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000103">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000067"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lifestyle and behaviours</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">recreational drug history</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lifestyle history that is about the use of unprescribed and/or non-prescription drugs.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">recreational drug history</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000104">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000067"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lifestyle and behaviours</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical activity history</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lifestyle history that is about the typical physical activity of an individual.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical activity history</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000106 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000106">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000047"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A count which represents the subset of a collection chosen for an investigation, survey, or assay.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sample size</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000113 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000113">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000612"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000463"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biosample</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">availability</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An availability textual entity that is about a substance from an organism (a biosample).</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biosample availability textual entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000114 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000114">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000015"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">other questionnaire/survey data</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reproduction</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A clinical history that is about pregnancy, maternity, fertility, menses, and any other reproductive aspect.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reproductive history</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000115 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000115">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000015"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A clinical history that is about any treatment (surgical, prescription, etc.) for disease, disorder, or symptom.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">treatment history</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000118 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000118">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">questionnaire/survey data</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cognitive and psychological measurements</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A measurement datum of some aspect of human psychology.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0009095</obo:IAO_0000119>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">See also EFO:0009095</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">psychological measurement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000119 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000119">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000118"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cognitive and psychological measurements</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cognitive functioning</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A psychological measurement of some aspect of intellectual functions such as memory, problem solving, and comprehension.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Cognition</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cognitive measurement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000120 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000120">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000118"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cognitive and psychological measurements</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">personality</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A psychological measurement of a person&apos;s individual sets of behaviours, cognitions, and emotional patterns.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Personality</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">personality measurement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000121 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000121">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cognitive and psychological measurements</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">psychological distress and emotions</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A biological process that results from neurophysiological changes in response to internal and external events.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Emotion</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">emotion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000122 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000122">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000067"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lifestyle and behaviours</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oral health history</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lifestyle history that is about oral health and hygiene.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oral health history</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000123 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000123">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000091"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-pharmacological interventions</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">psychological interventions</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A non-pharmacological treatment history that is about psychological treatments such as counselling.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">psychological treatment history</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000124 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000124">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000091"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-pharmacological interventions</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiological interventions</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A non-pharmacological treatment history that is about use of radiology for treatment of disease, disorder, or symptom.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiological treatment history</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000125 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000125">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000091"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-pharmacological interventions</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical therapy interventions</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A non-pharmacological treatment history that is about physical therapy treatments such as physical rehabilitation.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical therapy history</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000126 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000126">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000118"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">perception of health and quality of life</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">perception of health</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A psychological measurement of an individual&apos;s subjective perception of health.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">perception of health measurement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000127 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000127">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000118"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">perception of health and quality of life</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality of life</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A psychological measurement of an individual&apos;s perception of their quality of life.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality of life measurement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000128 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000128">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">perception of health and quality of life</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">functional limitations</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information that is about an individual&apos;s limitations in activities that involve caring for an moving the body.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maelstrom:Act_daily_living</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">information on functional limitations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000129 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000129">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">perception of health and quality of life</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">use of assistive devices</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information about an individual&apos;s use of assistive devices in performing daily activities.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maelstrom:Use_devices</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">information on use of assistive devices</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000130 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000130">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">religion</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information about an individual&apos;s association with a religion, denomiation, or sub- or non-denominational religious group.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://archive.stats.govt.nz/methods/classifications-and-standards/classification-related-stats-standards/religious-affiliation/definition.aspx</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">religious affiliation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000131 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000131">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">other questionnaire/survey data</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">social environment</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An immaterial entity that encompasses the domain made up of interactions between the individual&apos;s physical environment, social processes, and relationships with other individuals and groups.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10352860</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human social environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000132 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000132">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000015"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">other questionnaire/survey data</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family history of disease</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A clinical history that is about any family history of disease.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family history of disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000133 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000133">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000091"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-pharmacological interventions</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnostic interventions</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A non-pharmacological treatment history that is about diagnostic procedures to determine a condition or disease.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes procedures such as colonoscopies, ultrasounds, etc., but excludes laboratory tests.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnostic procedure history</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000134 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000134">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000119"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cognitive functioning</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADAS</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cognitive measurement that is an output (score) from the Alzheimer&apos;s Disease Assessment Scale.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alzheimer&apos;s Disease Assessment Scale score</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000135 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000135">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000119"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cognitive functioning</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MMSE</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cognitive measurement that is an output (score) from the Mini-Mental State Exam.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mini-Mental State Exam score</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000136 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000136">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">native language</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information about the language an individual has been exposed to from birth and is their first language.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:https://en.wikipedia.org/wiki/First_language</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">native language of individual</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000137 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000137">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000119"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cognitive functioning</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MoCA</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cognitive measurement that is the output (score) from the Montreal Cognitive Assessment Test (MoCA) for Dementia</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Montreal Cognitive Assessment Test score</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000138 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000138">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000119"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cognitive functioning</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CERAD Battery</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cognitive measurement that is the output (score) from the CERAD Neurophyschological Battery.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CERAD Neuropsychological Battery score</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000139 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000139">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000119"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cognitive functioning</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Penn CNB</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cognitive measurement that is the output (score) from the Penn Computerized Neurocognitive Battery.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Penn Computerized Neurocognitive Battery score</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000140 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000140">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">congenital and genetic disorders</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A disorder that is present at birth due to genetics or environmental factors during development.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">congenital disorder</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000141 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000141">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000119"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cognitive functioning</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SIB</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cognitive measurement that is the output (score) from the Severe Impairment Battery.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Severe Impairment Battery score</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000142 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000142">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000119"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cognitive functioning</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPI</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cognitive measurement that is the output (score) from the Neuropsychiatric Inventory.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neuropsychiatric Inventory score</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GECKO_0000143 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GECKO_0000143">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000119"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cognitive functioning</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDR</obo:GECKO_9000001>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cognitive measurement that is the output (score) from the Clinical Dementia Rating Scale.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinical Dementia Rating Scale score</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008150">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>A biological process represents a specific objective that the organism is genetically programmed to achieve. Biological processes are often described by their outcome or ending state, e.g., the biological process of cell division results in the creation of two daughter cells (a divided cell) from a single parent cell. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>GO:0000004</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>GO:0007582</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>GO:0044699</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym>biological process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>physiological process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>single organism process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>single-organism process</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code &apos;no data&apos; (ND), is used to indicate this.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological_process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">basic cohort attributes</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aims and objectives</obo:GECKO_9000001>
+        <obo:IAO_0000112 xml:lang="en">In the protocol of a ChIP assay the objective specification says to identify protein and DNA interaction.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">goal specification</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">OBI Plan and Planned Process/Roles Branch</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000217</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">objective specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000112 xml:lang="en">Data items include counts of things, analyte concentrations, and statistical summaries.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">data</obo:IAO_0000118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
+        <obo:IAO_0000112 xml:lang="en">Examples of information content entites include journal articles, data, graphical layouts, and graphs.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A generically dependent continuant that is about some thing.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000142</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity whose concretizations indicate to their bearer how to realize them in a process.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">directive information entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000104">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <obo:IAO_0000112 xml:lang="en">PMID: 18323827.Nat Med. 2008 Mar;14(3):226.New plan proposed to help resolve conflicting medical advice.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A directive information entity with action specifications and objective specifications as parts that, when concretized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">OBI Plan and Planned Process branch</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000344</obo:IAO_0000119>
+        <rdfs:comment xml:lang="en">2/3/2009 Comment from OBI review.
+
+Action specification not well enough specified.
+Conditional specification not well enough specified.
+Question whether all plan specifications have objective specifications.
+
+Request that IAO either clarify these or change definitions not to use them</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plan specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000109 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000109">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000112 xml:lang="en">Examples of measurement data are the recoding of the weight of a mouse as {40,mass,&quot;grams&quot;}, the recording of an observation of the behavior of the mouse {,process,&quot;agitated&quot;}, the recording of the expression level of a gene as measured through the process of microarray experiment {3.4,luminosity,}.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000305</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000300 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000300">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000112 xml:lang="en">Words, sentences, paragraphs, and the written (non-figure) parts of publications are all textual entities</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A textual entity is a part of a manifestation (FRBR sense), a generically dependent continuant whose concretizations are patterns of glyphs intended to be interpreted as words, formulas, etc.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">text</obo:IAO_0000118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">textual entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000310 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000310">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000112 xml:lang="en">A journal article, patent application, laboratory notebook, or a book</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A collection of information content entities intended to be understood together as a whole</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">document</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000612 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000612">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+        <obo:IAO_0000112 xml:lang="en">From Qi et al. BMC Bioinformatics. 2014; 15: 11. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3897912/):
+
+Project home page:http://krux.googlecode.com</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A textual entity expressing the location of a resource, e.g. software, or the manner in which a resource can be obtained.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">availability textual entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000619 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000619">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">survey administration</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">consent/accessibility</obo:GECKO_9000001>
+        <obo:IAO_0000112 xml:lang="en">From Shiba et al. Acta Neuropathol Commun. 2013; 1: 45. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3893467/):
+
+Written informed consent was obtained from the patient’s parents for publication of this Case report and any accompanying images. A copy of the written consent is available for review by the Editor-in chief of this journal.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A textual entity that documents the consenting process used to enroll patients in a study.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">consent textual entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An identifier is an information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">other questionnaire/survey data</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">personal beliefs and values</obo:GECKO_9000001>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">belief</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">questionnaire/survey data</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</obo:GECKO_9000001>
+        <obo:IAO_0000115>A disease is a disposition to undergo pathological processes that exists in an organism because of one or more disorders in that organism.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>condition</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder, non-neoplastic</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>diseases and disorders</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorders</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>medical condition</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>other disease</oboInOwl:hasExactSynonym>
+        <rdfs:label>disease or disorder</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0002051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skin and subcutaneous tissue diseases</obo:GECKO_9000001>
+        <obo:IAO_0000115>A disease involving the integumental system.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>MONDO:0045027</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym>disease of integumental system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder of integumental system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of integumental system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>integumental system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>integumental system disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>integumentary disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>disorder of integument</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>disorder of integumental system</oboInOwl:hasRelatedSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">integumentary system disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0002081 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002081">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">musculoskeletal system diseases</obo:GECKO_9000001>
+        <obo:IAO_0000115>A disease involving the musculoskeletal system.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>disease of musculoskeletal system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder of musculoskeletal system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of musculoskeletal system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>musculoskeletal disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>musculoskeletal system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>musculoskeletal system disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>musculoskeletal system disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>disorder of musculoskeletal system</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>musculoskeletal disorder</oboInOwl:hasRelatedSynonym>
+        <rdfs:label>musculoskeletal system disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0002118 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002118">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urinary system diseases</obo:GECKO_9000001>
+        <obo:IAO_0000115>A disease involving the renal system.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>disease of renal system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder of renal system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of renal system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of the urinary system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of urinary system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>non-neoplastic urinary tract disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>renal disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>renal system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>renal system disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>urinary system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>urinary tract disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>urinary tract disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>urologic disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>urological disorders</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>disease, urinary tract</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>disease, urologic</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>disease, urological</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>diseases, urinary tract</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>diseases, urologic</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>diseases, urological</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>disorder of renal system</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>urinary disease</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>urinary system disorder</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>urinary tract diseases</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>urologic disease</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>urological disease</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>urological diseases</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>urological disorder</oboInOwl:hasRelatedSynonym>
+        <rdfs:label>urinary system disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0004335 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0004335">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">digestive system diseases</obo:GECKO_9000001>
+        <obo:IAO_0000115>A disease or disorder that involves the digestive system.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>alimentary system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>digestive disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>digestive system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>digestive system disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>digestive system disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease of digestive system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder of digestive system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of digestive system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>gastroenterological system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>gastroenterological system disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>gastroenteropathy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>gastrointestinal disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>gastrointestinal disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>gastrointestinal system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>gastrointestinal system disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>git disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>stomach or intestinal disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>disorder of digestive system</oboInOwl:hasRelatedSynonym>
+        <rdfs:label>digestive system disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0004992 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0004992">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cancer</obo:GECKO_9000001>
+        <obo:IAO_0000115>A tumor composed of atypical neoplastic, often pleomorphic cells that invade other tissues. Malignant neoplasms often metastasize to distant anatomic sites and may recur after excision. The most common malignant neoplasms are carcinomas (adenocarcinomas or squamous cell carcinomas), Hodgkin and non-Hodgkin lymphomas, leukemias, melanomas, and sarcomas.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>CA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cancer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>cell type cancer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignancy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant Growth</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant neoplasm (disease)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant neoplastic disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>malignant tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>neoplasm (disease), malignant</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>neoplasm, malignant</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>organ system cancer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>primary cancer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>MT</oboInOwl:hasRelatedSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cancer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0004995 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0004995">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cardiovascular diseases</obo:GECKO_9000001>
+        <obo:IAO_0000115>A disease involving the cardiovascular system.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>cardiovascular disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>cardiovascular disease (CVD)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>cardiovascular disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>cardiovascular system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>cardiovascular system disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease of cardiovascular system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease of subdivision of hemolymphoid system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder of cardiovascular system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of cardiovascular system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>circulatory system disease</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>disorder of cardiovascular system</oboInOwl:hasRelatedSynonym>
+        <rdfs:label>cardiovascular disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reproductive system diseases</obo:GECKO_9000001>
+        <obo:IAO_0000115>A disease involving the reproductive system.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>disease of reproductive system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder of reproductive system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of reproductive system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>genital disorders</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>genital system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>reproductive disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>reproductive system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>reproductive system disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>reproductive system disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>disorder of reproductive system</oboInOwl:hasRelatedSynonym>
+        <rdfs:label>reproductive system disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immune system diseases</obo:GECKO_9000001>
+        <obo:IAO_0000115>A disorder resulting from an abnormality in the immune system.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>disease of immune system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder of immune system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of immune system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>immune disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>immune disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>immune dysfunction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>immune system disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>immune system disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>disorder of immune system</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>immune disorder, NOS</oboInOwl:hasRelatedSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immune system disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005071 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005071">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nervous system disorders</obo:GECKO_9000001>
+        <obo:IAO_0000115>A non-neoplastic or neoplastic disorder that affects the brain, spinal cord, or peripheral nerves.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>disease of nervous system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder of nervous system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of nervous system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>nervous system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>nervous system disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>nervous system disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>neurologic disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>neurologic disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>neurological disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>neurological disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>disorder of nervous system</oboInOwl:hasRelatedSynonym>
+        <rdfs:label>nervous system disorder</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005084 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005084">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mental and behaviour disorders</obo:GECKO_9000001>
+        <obo:IAO_0000115>A disease that has its basis in the disruption of mental process.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>disorder of mental process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>mental or behavioural disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>mental process disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>disorder of mental process</oboInOwl:hasRelatedSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mental disorder</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005087 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005087">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">respiratory system diseases</obo:GECKO_9000001>
+        <obo:IAO_0000115>A non-neoplastic or neoplastic disorder that affects the respiratory system. Representative examples include pneumonia, chronic obstructive pulmonary disease, pulmonary failure, lung adenoma, lung carcinoma, and tracheal carcinoma.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>disease of respiratory system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder of respiratory system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of respiratory system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>respiratory disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>respiratory disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>respiratory system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>respiratory system disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>respiratory system disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>disorder of respiratory system</oboInOwl:hasRelatedSynonym>
+        <rdfs:label>respiratory system disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005151 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005151">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endocrine system diseases</obo:GECKO_9000001>
+        <obo:IAO_0000115>A disease involving the endocrine system.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>disease of endocrine system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder of endocrine system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of endocrine system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>endocrine disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>endocrine disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>endocrine system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>endocrine system disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>endocrine system disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>endocrinopathy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>thyroid or other glandular disorders</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>disorder of endocrine system</oboInOwl:hasRelatedSynonym>
+        <rdfs:label>endocrine system disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005550 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005550">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">infectious diseases</obo:GECKO_9000001>
+        <obo:IAO_0000115>A disorder resulting from the presence and activity of a microbial, viral, or parasitic agent. It can be transmitted by direct or indirect contact.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>ID</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>clinical infection</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>communicable disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>infection</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>infectious</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>infectious disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>infectious diseases and manifestations</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>infectious disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>transmissible disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>disease by infectious agent</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Replaces &apos;infection&apos; in disease hierarchy. OBI imported term infection is moved to pathologic process. This class is a container class for infectious diseases, not the process of infection itself.</rdfs:comment>
+        <rdfs:label>infectious disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0005570 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005570">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood-related disorders</obo:GECKO_9000001>
+        <obo:IAO_0000115>A disease involving the hematopoietic system.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>blood disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>blood disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>blood dyscrasia</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease of hematopoietic system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease of the blood and blood-forming organs</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder of hematopoietic system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of hematopoietic system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hematologic and lymphocytic disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hematologic disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hematological disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hematological disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hematological system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hematopoietic disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hematopoietic system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hematopoietic system disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>rare hematologic disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>blood dyscrasia NOS</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>disorder of hematopoietic system</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>hematological disorders and malignancies</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>placeholder for lymphoid disease</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hematologic disease</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/monarch-initiative/mondo/issues/254</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0021178 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0021178">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">injuries</obo:GECKO_9000001>
+        <obo:IAO_0000115>Damage inflicted on the body as the direct or indirect result of an external force, with or without disruption of structural continuity.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>injury</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>trauma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>traumatic injury</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>wound</oboInOwl:hasExactSynonym>
+        <rdfs:label>injury</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0024458 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0024458">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">visual system diseases</obo:GECKO_9000001>
+        <obo:IAO_0000115>A disease that involves the visual system.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>disease of visual system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disease or disorder of visual system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>disorder of visual system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>visual system disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>visual system disease or disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>visual system disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>disorder of visual system</oboInOwl:hasRelatedSynonym>
+        <rdfs:label>disease of visual system</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0024623 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0024623">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases of the ear, nose, and/or throat</obo:GECKO_9000001>
+        <obo:IAO_0000115>Pathological processes of the ear, the nose, and the throat, also known as the ENT diseases.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>ear, nose and throat disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ear, nose or throat disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ear/nose/throat disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>otolaryngologic disorder</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>otorhinolaryngologic disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>ENT disease</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>ENT diseases</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>disease, ENT</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>disease, otolaryngologic</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>disease, otolaryngological</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>disease, otorhinolaryngologic</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>disease, otorhinolaryngological</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>diseases, ENT</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>diseases, otolaryngologic</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>diseases, otolaryngological</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>diseases, otorhinolaryngologic</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>diseases, otorhinolaryngological</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>otolaryngologic disease</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>otolaryngologic diseases</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>otolaryngological disease</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>otolaryngological diseases</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>otorhinolaryngological disease</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>otorhinolaryngological diseases</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Editor note: consider uberon class</rdfs:comment>
+        <rdfs:label>otorhinolaryngologic disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0029000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0029000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">poisoning</obo:GECKO_9000001>
+        <obo:IAO_0000115>A condition or physical state produced by the ingestion, injection, inhalation of or exposure to a deleterious agent.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>Poisonings</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>intoxication</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>poisoning syndrome</oboInOwl:hasRelatedSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">poisoning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000112>Injecting mice with a vaccine in order to test its efficacy</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A process that realizes a plan which is the concretization of a plan specification.</obo:IAO_0000115>
+        <obo:IAO_0000119>branch derived</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">planned process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000112>Assay the wavelength of light emitted by excited Neon atoms. Count of geese flying over a house.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A planned process with the objective to produce information about the material entity that is the evaluant, by physically examining it or its proxies.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">measuring</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">scientific observation</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000094 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000094">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000112>A cell lysis, production of a cloning vector, creating a buffer.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A planned process which results in physical changes in a specified input material</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">material transformation</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">material processing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000185 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000185">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory measures</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">imaging</obo:GECKO_9000001>
+        <obo:IAO_0000115>An assay that produces a picture of an entity.</obo:IAO_0000115>
+        <obo:IAO_0000119>OBI branch derived</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">imaging assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000435 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000435">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000032"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genomics</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DNA/Genotyping</obo:GECKO_9000001>
+        <obo:IAO_0000112>High-throughput genotyping of oncogenic human papilloma viruses with MALDI-TOF mass spectrometry. Clin Chem. 2008 Jan;54(1):86-92. Epub 2007 Nov 2.PMID: 17981923</obo:IAO_0000112>
+        <obo:IAO_0000115>An assay which generates data about a genotype from a specimen of genomic DNA. A variety of techniques and instruments can be used to produce information about sequence variation at particular genomic positions.</obo:IAO_0000115>
+        <obo:IAO_0000118>SNP analysis</obo:IAO_0000118>
+        <obo:IAO_0000118>genotype profiling</obo:IAO_0000118>
+        <obo:IAO_0000119>OBI Biomaterial</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genotyping assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000537 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000537">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000032"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genomics</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sequence variants (CNV, SNP arrays)</obo:GECKO_9000001>
+        <obo:IAO_0000112>Profiling of copy number variations (CNVs) in healthy individuals from three ethnic groups using a human genome 32 K BAC-clone-based array. PMID:18058796</obo:IAO_0000112>
+        <obo:IAO_0000115>An assay that determines lost or amplified genomic regions of DNA by comparing genomic DNA originating from tissues from the same or different individuals using specific techniques such as CGH, array CGH, SNP genotyping</obo:IAO_0000115>
+        <obo:IAO_0000118>CNV analysis</obo:IAO_0000118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">copy number variation profiling assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001271 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001271">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000032"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genomics</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq/gene expression</obo:GECKO_9000001>
+        <obo:IAO_0000115>An transcription profiling assay that determines an RNA sequence by analyzing the transcibed regions of the genome and or to quantitate transcript abundance.</obo:IAO_0000115>
+        <obo:IAO_0000118>transcription profiling by high throughput sequencing</obo:IAO_0000118>
+        <obo:IAO_0000119>EFO:0002770</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNA-seq assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001624 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001624">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory measures</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microbiology</obo:GECKO_9000001>
+        <obo:IAO_0000115>An assay that identifies the organism species in a specimen.</obo:IAO_0000115>
+        <obo:IAO_0000119>NIAID GSCID-BRC metadata working group</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organism identification assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000032"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genomics</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Epigenetics</obo:GECKO_9000001>
+        <obo:IAO_0000115>An assay that identifies epigenetic modifications including histone modifications, open chromatin, and DNA methylation.</obo:IAO_0000115>
+        <obo:IAO_0000119>Penn group</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epigenetic modification assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002117 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002117">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000032"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genomics</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WGS</obo:GECKO_9000001>
+        <obo:IAO_0000112>WGS permits comprehensive sequencing of introns and exons, whereas whole exome sequencing (WES) allows deeper sequencing of exonic regions at a lower cost. Due to the large number of genetic variants found in each genome, it is necessary to use filtering approaches to distinguish deleterious from benign variants. WES has been used successfully to identify novel genetic causes of primary immunodeficiency. Complex structural variations and non-Mendelian disorders remain challenges for WGS.</obo:IAO_0000112>
+        <obo:IAO_0000115>A DNA sequencing assay that intends to provide information about the sequence of an entire genome of an organism.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WGS</obo:IAO_0000118>
+        <obo:IAO_0000119>PMID:23095910</obo:IAO_0000119>
+        <obo:IAO_0000119>PMID:25827230</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">whole genome sequencing assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002118 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002118">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000032"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genomics</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WES</obo:GECKO_9000001>
+        <obo:IAO_0000112>DNA was extracted from the Ficoll pellet of blood taken from congenital asplenia patients. Unamplified, high-molecular weight, RNase-treated genomic DNA (4_6 _g) was used for whole exome sequencing (WES) with the use of Agilent 71 Mb (V4 + UTR) singlesample capture and an Illumina HiSeq 2000. Sequencing was carried out so as to obtain 30_ coverage from 2 _ 100-bp paired-end reads. We used the Annovar tool (25) to annotate the resulting highquality (HQ) variants. In the regions targeted by WES capture (81.5% of the consensus coding genome), the mean numbers of single-nucleotide variants (SNVs) and small insertions/deletions (indels) detected per sample were 84,192 and13,325, respectively. After filtering, a mean of 74,398 (95.3%) high-quality (HQ) SNVs and 9,033 (70.6%) HQ indels were called. A mean of 105 coding HQ SNVs and 32 indels was identified.</obo:IAO_0000112>
+        <obo:IAO_0000115>A DNA sequencing assay that intends to provide information about the sequence of the protein coding components of a genome (exons).</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WES</obo:IAO_0000118>
+        <obo:IAO_0000119>PMID:25827230</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">exome sequencing assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002415 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002415">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical environment</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">exposure to carcinogens</obo:GECKO_9000001>
+        <obo:IAO_0000115>A information content entity that indicates the exposure of an individual to carcinogens in the workplace or environment.</obo:IAO_0000115>
+        <obo:IAO_0000119>OBIB</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">exposure to environmental and workplace carcinogens history</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002623 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002623">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GECKO_0000032"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genomics</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metagenomics</obo:GECKO_9000001>
+        <obo:IAO_0000115>A DNA sequencing assay that intends to provide information on the DNA sequences of multiple genomes (a metagenome) from different organisms present in the same input sample.</obo:IAO_0000115>
+        <obo:IAO_0000118>WMS</obo:IAO_0000118>
+        <obo:IAO_0000119>Bjoern Peters</obo:IAO_0000119>
+        <obo:IAO_0000119>Michelle Giglio</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">whole metagenome sequencing assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0302893 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0302893">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000112 xml:lang="en">PMID: 18550121.Total Prostate Specific Antigen Stability Confirmed After Long-Term Storage of Serum at -80C. J Urol. 2008 Jun 10.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A maintenance process by which material entities that are not actively metabolizing are placed in well identified location and possibly under controlled environment in ad-hoc devices/structures in order to preserve and protect them from decay/alteration and maintain availability</obo:IAO_0000115>
+        <obo:IAO_0000119>OBI-Branch</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">storage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0500000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0500000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">basic cohort attributes</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">study design</obo:GECKO_9000001>
+        <obo:IAO_0000112 xml:lang="en">a matched pairs study design describes criteria by which subjects are identified as pairs which then undergo the same protocols, and the data generated is analyzed by comparing the differences between the paired subjects, which constitute the results of the executed study design.</obo:IAO_0000112>
+        <obo:IAO_0000115>A plan specification comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of an investigation and is realized during a study design execution.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">experimental design</obo:IAO_0000118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">study design</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0500027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0500027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">population data</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">criteria for enrollment and recruitment procedures</obo:GECKO_9000001>
+        <obo:IAO_0000112 xml:lang="en">PMID: 23979341-The major inclusion criterion was patients in whom severe cerebral embolism was diagnosed at age 75 or younger (more than 9 in the NIHSS score on day 7 after the onset of stroke) .</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">an inclusion criterion (rule) is_a *eligibility criterion*  which defines and states a condition which, if met, makes an entity suitable for a given task or participation in a given process. For instance, in a study protocol, inclusion criteria indicate the conditions that prospective subjects MUST meet to be eligible for participation in a study.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">inclusion condition</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">inclusion rule</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">Adapted from Clinical Research Glossary Version 4.0 CDICS glossary group</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inclusion criterion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">A series of statements representing health-relevant qualities of a patient and of a patient&apos;s family.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clinical history</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">other questionnaire/survey data</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">signs and symptoms</obo:GECKO_9000001>
+        <obo:IAO_0000115 xml:lang="en">A process experienced by the patient, which can only be experienced by the patient, that is hypothesized to be clinically relevant.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">symptom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000501 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000501">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">income and possessions</obo:GECKO_9000001>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">income data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">age/birthdate</obo:GECKO_9000001>
+        <obo:IAO_0000115>A time quality inhering in a bearer by virtue of how long the bearer has existed.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">age</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological sex</obo:GECKO_9000001>
+        <obo:IAO_0000115>An organismal quality inhering in a bearer by virtue of the bearer&apos;s ability to undergo sexual reproduction in order to differentiate the individuals or types involved.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological sex</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001995 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001995">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">questionnaire/survey data</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</obo:GECKO_9000001>
+        <obo:IAO_0000115>A quality that inheres in an entire organism or part of an organism.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organismal quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCO_0000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCO_0000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000112>Examples include: population, community, species (meaning the collection of organisms that makes up a species, not the taxonomic rank), and family.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A material entity that consists of two or more organisms, viruses, or viroids.</obo:IAO_0000115>
+        <obo:IAO_0000118>group of organism</obo:IAO_0000118>
+        <obo:IAO_0000118>organism collection</obo:IAO_0000118>
+        <rdfs:comment>May be of the same or different species.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">collection of organisms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PDRO_0000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PDRO_0000024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medication</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prescription</obo:GECKO_9000001>
+        <obo:IAO_0000112>&quot;Prescription for John Smith : Ativan 2mg tablets, take 1 tablet twice daily by mouth as needed if anxious, dispense 60 tablets, renew 12 times. Signed by Dr Hazard. Date: 15/10/29&quot;</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A health care prescription specifying the initiation, modification or cessation of a drug administration.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drug prescription</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PDRO_0010022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PDRO_0010022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medication</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">administration</obo:GECKO_9000001>
+        <obo:IAO_0000112>&apos;take Aspirin 81 mg oral tablet, 1 tablet once daily by mouth, start today&apos; or the synonymous abbreviated version &apos;Aspirin 81 mg tablet PO DIE&apos;</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A drug administration description that specifies a drug administration prescribed or reported by an healthcare provider.
+
+It specifies:
+- The drug product
+- The posology
+
+It may also specify a starting drug administration condition</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drug administration specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000112 xml:lang="en"></obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">a statistic is a measurement datum to describe a dataset or a variable. It is generated by a calculation on set of observed data.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">STATO, adapted from wikipedia (http://en.wikipedia.org/wiki/Statistic).</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000112 xml:lang="en">a count of 4 resulting from counting limbs in humans</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">a count is a data item denoted by an integer and represented the number of instances or occurences of an entity</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">STATO</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000093 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000093">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">survey administration</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">date and time-related information</obo:GECKO_9000001>
+        <obo:IAO_0000115 xml:lang="en">Information about a calendar date or timestamp indicating day, month, year and time of an event.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">STATO</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000105 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000105">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">other questionnaire/survey data</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">life stage/time point</obo:GECKO_9000001>
+        <obo:IAO_0000115>A spatiotemporal region encompassing some part of the life cycle of an organism.</obo:IAO_0000115>
+        <oboInOwl:hasNarrowSynonym>developmental stage</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>stage</oboInOwl:hasNarrowSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">life cycle stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000178 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000178">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000463"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sample type</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood</obo:GECKO_9000001>
+        <obo:IAO_0000115>A fluid that is composed of blood plasma and erythrocytes.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>portion of blood</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>vertebrate blood</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>whole blood</oboInOwl:hasRelatedSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000463 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000463">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biosample</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sample type</obo:GECKO_9000001>
+        <obo:IAO_0000115>Material anatomical entity in a gaseous, liquid, semisolid or solid state; produced by anatomical structures or derived from inhaled and ingested substances that have been modified by anatomical structures as they pass through the body.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>body fluid or substance</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>body substance</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>organism substance</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>portion of body substance</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>portion of organism substance</oboInOwl:hasExactSynonym>
+        <rdfs:label>organism substance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001088 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001088">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000463"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sample type</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine</obo:GECKO_9000001>
+        <obo:IAO_0000115>Excretion that is the output of a kidney</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001836 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001836">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000463"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sample type</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">saliva</obo:GECKO_9000001>
+        <obo:IAO_0000115>A fluid produced in the oral cavity by salivary glands, typically used in predigestion, but also in other functions.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>salivary gland secretion</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>sailva normalis</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>saliva atomaris</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>saliva molecularis</oboInOwl:hasRelatedSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">saliva</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001988 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001988">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000463"/>
+        <obo:GECKO_9000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sample type</obo:GECKO_9000000>
+        <obo:GECKO_9000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stool</obo:GECKO_9000001>
+        <obo:IAO_0000115>Portion of semisolid bodily waste discharged through the anus[MW,modified]</obo:IAO_0000115>
+        <oboInOwl:hasBroadSynonym>excreta</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym>faeces</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>fecal material</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>fecal matter</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>matières fécales@fr</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>merde@fr</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>partie de la merde@fr</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>piece of shit</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>porción de mierda@es</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>portion of excrement</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>portion of faeces</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>portion of fecal material</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>portion of fecal matter</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>portion of feces</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>portionem cacas</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stool</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>teil der fäkalien@de</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>cow dung</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>cow pat</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>dung</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>fewmet</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>frass</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>guano</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>portion of dung</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>portion of guano</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>portion of scat</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>scat</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>spraint</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasRelatedSynonym>droppings</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>excrement</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>ordure</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>spoor</oboInOwl:hasRelatedSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">feces</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+

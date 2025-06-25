@@ -1,0 +1,1449 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/one"
+     xml:base="http://purl.obolibrary.org/obo/one"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:one="http://purl.obolibrary.org/obo/one_"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ONE">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/obi/2020-12-16/obi.owl"/>
+        <obo:IAO_0000117>Chen Yang</obo:IAO_0000117>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/in_minimal_requirements_subset -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/in_minimal_requirements_subset"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#isDefinedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel">
+        <obo:IAO_0000115 xml:lang="en">An alternative lexical label for a resource.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">The range of skos:altLabel is the class of RDF plain literals.</rdfs:comment>
+        <rdfs:comment xml:lang="en">skos:prefLabel, skos:altLabel and skos:hiddenLabel are pairwise disjoint properties.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <rdfs:label xml:lang="en">alternative label</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label xml:lang="en">has part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000067 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000067"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136">
+        <rdfs:label xml:lang="en">is about</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0003009 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ONE_0003009">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0003009"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ONE_0003001"/>
+        <obo:IAO_0000115>a relation between a food-based dietary guideline and an information content entity, in which the information content entity specifies the quality of the food-based dietary guideline.</obo:IAO_0000115>
+        <obo:IAO_0000117>SYSTEMIC WP5</obo:IAO_0000117>
+        <rdfs:label>object property of food-based dietary guidelines</rdfs:label>
+        <skos:altLabel>quality indicator of food-based dietary guidelines</skos:altLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0003012 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ONE_0003012">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0003009"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ONE_0003001"/>
+        <obo:IAO_0000115>a relation between a food-based dietary guideline and a geographic location, in which the geographic location specifies where to apply the food-based dietary guideline.</obo:IAO_0000115>
+        <obo:IAO_0000117>SYSTEMIC WP5</obo:IAO_0000117>
+        <rdfs:label>target area</rdfs:label>
+        <skos:altLabel>target area of food-based dietary guidelines</skos:altLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0003015 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ONE_0003015">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0003009"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ONE_0003001"/>
+        <obo:IAO_0000115>a relation between a food-based dietary guideline and an independent party, in which people from the independent party contributes to the development of the food-based dietary guideline.</obo:IAO_0000115>
+        <obo:IAO_0000117>SYSTEMIC WP5</obo:IAO_0000117>
+        <rdfs:label>stakeholder</rdfs:label>
+        <skos:altLabel>stakeholder of food-based dietary guidelines</skos:altLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0003016 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ONE_0003016">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0003009"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ONE_0003001"/>
+        <obo:IAO_0000115>a relation between a food-based dietary guideline and a group of individuals , in which the food-based dietary guideline is developed for the group of individuals.</obo:IAO_0000115>
+        <obo:IAO_0000117>SYSTEMIC WP5</obo:IAO_0000117>
+        <rdfs:label>target audience</rdfs:label>
+        <skos:altLabel>target audience of food-based dietary guidelines</skos:altLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0003017 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ONE_0003017">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0003009"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ONE_0003001"/>
+        <obo:IAO_0000115>a relation between a food-based dietary guideline and a promotion method , in which the promotion method encourages individuals to adopt and maintain healthy behaviours indicated in the food-based dietary guideline.</obo:IAO_0000115>
+        <obo:IAO_0000117>SYSTEMIC WP5</obo:IAO_0000117>
+        <rdfs:label>promotion method</rdfs:label>
+        <skos:altLabel>promotion method of food-based dietary guidelines</skos:altLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0003018 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ONE_0003018">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0003009"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ONE_0003001"/>
+        <obo:IAO_0000112>local evidence, international evidence, used background method (e.g. eating pattern modelling / a priori dietary pattern; criteria (nutrient adequacy, epi data for long-term health, food contaminants; departure from observed diets)); background data reviewing method (grading quality)</obo:IAO_0000112>
+        <obo:IAO_0000115>a relation between a food-based dietary guideline and an evidence characteristic , in which the evidence (e.g. scientific reports, articles, etc.) with the characteristic is used to support the food-based dietary guideline.</obo:IAO_0000115>
+        <obo:IAO_0000117>SYSTEMIC WP5</obo:IAO_0000117>
+        <rdfs:label>evidence characteristic</rdfs:label>
+        <skos:altLabel>evidence characteristic of food-based dietary guidelines</skos:altLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000059 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000059"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0003013 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ONE_0003013">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0003019"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ONE_0003001"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <obo:IAO_0000117>SYSTEMIC WP5</obo:IAO_0000117>
+        <rdfs:label>has publication year</rdfs:label>
+        <skos:altLabel>a relation between a food-based dietary guideline and its publication year.</skos:altLabel>
+        <skos:altLabel>publication year of food-based dietary guidelines</skos:altLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0003014 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ONE_0003014">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0003019"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ONE_0003001"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <obo:IAO_0000115>a relation between a food-based dietary guideline and its update frequency.</obo:IAO_0000115>
+        <obo:IAO_0000117>SYSTEMIC WP5</obo:IAO_0000117>
+        <rdfs:label>has update frequency</rdfs:label>
+        <skos:altLabel>update frequency of food-based dietary guidelines</skos:altLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0003019 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ONE_0003019">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ONE_0003001"/>
+        <obo:IAO_0000115>a relation between a food-based dietary guideline and an information content entity, in which the information content entity specifies the quality of the food-based dietary guideline.</obo:IAO_0000115>
+        <obo:IAO_0000117>SYSTEMIC WP5</obo:IAO_0000117>
+        <rdfs:label>data property of food-based dietary guidelines</rdfs:label>
+        <skos:altLabel>quality indicator of food-based dietary guidelines</skos:altLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000015"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000078 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000078"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000315 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000315"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000317 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000317"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000318 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000318"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000319 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000319"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000326 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000326"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000620 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000620"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000644 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000644"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000066"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000115 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000115">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0500000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000750"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000931"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0500000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ONE_0000001"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intervention design</obo:IAO_0000111>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID: 18208636.Br J Nutr. 2008 Jan 22;:1-11.Effect of vitamin D supplementation on bone and vitamin D status among Pakistani immigrants in Denmark: a randomised double-blinded placebo-controlled intervention study.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An intervention design is a study design in which a controlled process applied to the subjects (the intervention) serves as the independent variable manipulated by the experimentalist. The treatment (perturbation or intervention) defined can be defined as a combination of values taken by independent variable manipulated by the experimentalists are applied to the recruited subjects assigned (possibly by applying specific methods) to treatment groups. The specificity of intervention design is the fact that independent variables are being manipulated and a response of the biological system is evaluated via response variables as monitored by possibly a series of assays.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Philppe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI branch derived</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intervention design</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000750 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000750">
+        <rdfs:label xml:lang="en">study design independent variable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000931 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000931">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">study intervention</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0500000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0500000">
+        <rdfs:label xml:lang="en">study design</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:IAO_0000115 xml:lang="en">An investigation of food and nutrient intake and dietary pattern of an individual or individuals.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Carl Lachat</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">http://www.fao.org/3/I9940EN/i9940en.pdf</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">dietary survey method</rdfs:label>
+        <skos:altLabel xml:lang="en">dietary assessment method</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0000001"/>
+        <obo:IAO_0000115 xml:lang="en">A type of dietary survey method that is based on a recall of food or drink intake that have already been consumed.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Carl Lachat</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">http://www.fao.org/3/I9940EN/i9940en.pdf</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">retrospective dietary survey method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0000001"/>
+        <obo:IAO_0000115 xml:lang="en">A type of dietary survey method that involves recording the diet when the foods or drinks are being consumed.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Carl Lachat</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">http://www.fao.org/3/I9940EN/i9940en.pdf</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">prospective dietary survey method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0000002"/>
+        <obo:IAO_0000115 xml:lang="en">A retrospective dietary survey method that provides a score that represents a number of different foods, drinks and/or food groups consumed over a given reference period.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Carl Lachat</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">Dietary Diversity Score (DDS)</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">http://www.fao.org/3/I9940EN/i9940en.pdf</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">retrospective method for assessing dietary diversity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0000002"/>
+        <obo:IAO_0000115 xml:lang="en">A type of retrospective dietary survey method where respondents are asked, by a nutritionist or dietitian who has been trained in interviewing techniques, to recall and report all foods and beverages consumed over the preceding 24 hours.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Carl Lachat</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">http://www.fao.org/3/I9940EN/i9940en.pdf</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">24-hour dietary recall method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0000002"/>
+        <obo:IAO_0000115 xml:lang="en">A type of retrospective dietary survey method that is a detailed assessment to describe usual food intake and its variation over a long period of time.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Carl Lachat</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">http://www.fao.org/3/I9940EN/i9940en.pdf</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">dietary history method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0000002"/>
+        <obo:IAO_0000115 xml:lang="en">A retrospective dietary survey method that assesses the frequency with which foods and/or food groups are eaten over a certain time period. The questionnaire includes a food list (commonly close-ended), a frequency category section, and can be self- or interviewer administered.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Carl Lachat</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">FFQ</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">http://www.fao.org/3/I9940EN/i9940en.pdf</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Food Frequency Questionnaire method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0000003"/>
+        <obo:IAO_0000115 xml:lang="en">A type of prospective dietary survey method that involves setting aside duplicate portions of all foods and beverages consumed throughout a specific time period. These duplicate portions are set aside, weighed, either by the respondent or fieldworker, and then sent to a laboratory for chemical analysis to determine content.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Carl Lachat</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">http://www.fao.org/3/I9940EN/i9940en.pdf</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">duplicate diet method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0000003"/>
+        <obo:IAO_0000115 xml:lang="en">A type of prospective dietary survey method collecting data about the foods and beverages consumed over a previously specified period of time.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Carl Lachat</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">https://doi.org/10.3305/nh.2015.31.sup3.8749</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">dietary records method</rdfs:label>
+        <skos:altLabel xml:lang="en">food dairies</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0000004"/>
+        <obo:IAO_0000115 xml:lang="en">A retrospective method for assessing dietary diversity with the &quot;Infant and Young Child Dietary Diversity Score&quot; (IYCDDS, defined as the Proportion of children 6–23 months of age who receive foods from four or more predefined food groups.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Carl Lachat</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">http://www.fao.org/3/I9940EN/i9940en.pdf</obo:IAO_0000119>
+        <rdfs:label>retrospective method for assessing dietary diversity of infant and yong child</rdfs:label>
+        <skos:altLabel xml:lang="en">IYCDDS</skos:altLabel>
+        <skos:altLabel xml:lang="en">Infant and Young Child Dietary Diversity Score</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0000004"/>
+        <obo:IAO_0000115 xml:lang="en">A retrospective method for assessing dietary diversity in women. Minimum Dietary Diversity-Women is a dichotomous indicator of whether or not women of 15–49 years of age have consumed at least five out of ten predefined food groups during the previous 24 hours.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Carl Lachat</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">http://www.fao.org/3/I9940EN/i9940en.pdf</obo:IAO_0000119>
+        <rdfs:label>retrospective method for assessing dietary diversity of women</rdfs:label>
+        <skos:altLabel xml:lang="en">MDD-W</skos:altLabel>
+        <skos:altLabel xml:lang="en">Minimum Dietary Diversity–Women</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0000007"/>
+        <obo:IAO_0000115 xml:lang="en">A retrospective dietary survey method that uses modified versions of longer Food Frequency Questionnaires varying in length, frequency categories and number of foods listed.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Carl Lachat</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">http://www.fao.org/3/I9940EN/i9940en.pdf</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">screener method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0000007"/>
+        <obo:IAO_0000115 xml:lang="en">A type of Food Frequency Questionnaire method that collects only frequency of food or drink intake.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Carl Lachat</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">non-quantitative FFQ method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0000007"/>
+        <obo:IAO_0000115 xml:lang="en">A type of Food Frequency Questionnaire method that includes information about both the frequency and quantity of food or drink intake.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Carl Lachat</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">http://www.fao.org/3/I9940EN/i9940en.pdf</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">semi-quantitative FFQ method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0000009"/>
+        <obo:IAO_0000115 xml:lang="en">A type of dietary records method that adopts the same methodological principles as the estimated food record method. However, in this method respondents are asked to weigh foods or drinks using weighing scales.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Carl Lachat</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">http://www.fao.org/3/I9940EN/i9940en.pdf</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">weighed food records method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0000009"/>
+        <obo:IAO_0000115 xml:lang="en">A type of dietary records method that instructions respondents to document all foods and beverages consumed during a predefined period.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Carl Lachat</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">http://www.fao.org/3/I9940EN/i9940en.pdf</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">estimated food records method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0001001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0001001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that specifies the quality of a dietary survey.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Carl Lachat</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">https://doi.org/10.3945/an.117.015651</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">quality indicator of a dietary survey</rdfs:label>
+        <skos:altLabel xml:lang="en">quality of a dietary assessment</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0001002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0001002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0001001"/>
+        <obo:IAO_0000115 xml:lang="en">: An indicator that specifies the quality of a diet recall method.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Carl Lachat</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">https://doi.org/10.3945/an.117.015651</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">quality indicator of a diet recall method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0001003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0001003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0001001"/>
+        <obo:IAO_0000115 xml:lang="en">An indicator that specifies the quality of dietary survey questionnaires that includes a predetermined set of questions used to collect diet intake information.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Carl Lachat</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">https://www.oxfordreference.com/view/10.1093/acref/9780195314496.001.0001/acref-9780195314496</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">quality indicator of a diet survey questionnaire</rdfs:label>
+        <skos:altLabel xml:lang="en">quality of a data collection instrument</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0001004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0001004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0001001"/>
+        <obo:IAO_0000115 xml:lang="en">An indicator that specifies the representativeness of days of a dietary survey.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Carl Lachat</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">https://doi.org/10.3945/an.117.015651</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">representativeness of days as a quality indicator of a dietary survey</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0001005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0001005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0001001"/>
+        <obo:IAO_0000115 xml:lang="en">An indicator that specifies the accuracy of a food quantification process (i.e. a process that helps express food intake into units of weights or volume.).</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Carl Lachat</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">https://doi.org/10.3945/an.117.015651</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">quality indicator of a food quantification method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0001006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0001006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0001002"/>
+        <obo:IAO_0000115 xml:lang="en">An indicator that specifies the administration type of a diet recall method. A diet recall method can be proxy administered, self-administered or interview administered.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Carl Lachat</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">https://doi.org/10.3945/an.117.015651</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">administration type of a diet recall method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0001007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0001007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0001002"/>
+        <obo:IAO_0000115 xml:lang="en">An indicator that specifies when the dietary intake was recorded. (e.g. during eating occasion, immediately after eating occasion, or later).</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Carl Lachat</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">https://doi.org/10.3945/an.117.015651</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">time of dietary record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0001008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0001008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0001003"/>
+        <obo:IAO_0000115 xml:lang="en">An indicator that specifies how the questionnaire was developed (e.g. de novo self-developed questionnaire, standardized questionnaire, questionnaire adapted from another questionnaires, etc.).</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Carl Lachat</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">https://doi.org/10.3945/an.117.015651</obo:IAO_0000119>
+        <dc:contributor xml:lang="en">Chen Yang</dc:contributor>
+        <rdfs:label>origin of a diet survey questionnaire</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0001009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0001009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0001003"/>
+        <obo:IAO_0000115 xml:lang="en">An indicator that specifies the content validity of a diet survey questionnaire in another comparable population in terms of both age and dietary habits. The reference, the type of the validation, and validation estimates are important pieces of information.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Carl Lachat</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">https://doi.org/10.3945/an.117.015651</obo:IAO_0000119>
+        <rdfs:label>content validity of a diet survey questionnaire</rdfs:label>
+        <skos:altLabel>content validity</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0001013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0001013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0001004"/>
+        <obo:IAO_0000115 xml:lang="en">An indicator that specifies if data collection was seasonality representative.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Carl Lachat</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">https://doi.org/10.3945/an.117.015651</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">representativeness of seasons of a dietary survey</rdfs:label>
+        <skos:altLabel>representativeness of seasons</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0001014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0001014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0001004"/>
+        <obo:IAO_0000115 xml:lang="en">An indicator that specifies the representativeness of week/weekend days when conducting a dietary survey.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Carl Lachat</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">https://doi.org/10.3945/an.117.015651</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">representativeness of week/weekend days of a dietary survey</rdfs:label>
+        <skos:altLabel>representativeness of week/weekend days</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0001015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0001015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0001004"/>
+        <obo:IAO_0000115 xml:lang="en">An indicator that specifies the number of days of a dietary recall/measurement per individual.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Carl Lachat</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">https://doi.org/10.3945/an.117.015651</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">number of days of a dietary survey</rdfs:label>
+        <skos:altLabel>number of days</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0001016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0001016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0001004"/>
+        <obo:IAO_0000115 xml:lang="en">An indicator that specifies how the recall/measurement days of a dietary survey were selected.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Carl Lachat</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">https://doi.org/10.3945/an.117.015651</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">selection of recall/measurement days of a dietary survey</rdfs:label>
+        <skos:altLabel>selection of recall/measurement days</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0001017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0001017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0001005"/>
+        <obo:IAO_0000115 xml:lang="en">An indicator that specifies how the quantity of the portion sizes is estimated.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Carl Lachat</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">https://doi.org/10.3945/an.117.015651</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">quantification of a food portion size</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0001018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0001018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0001005"/>
+        <obo:IAO_0000115 xml:lang="en">An indicator that specifies how food intake data are expressed into units of weights or volume.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Carl Lachat</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">https://doi.org/10.3945/an.117.015651</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">quantification of food intake data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0001019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0001019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0001005"/>
+        <obo:IAO_0000115 xml:lang="en">An indicator for food quantification method that indicates whether a food quantification method is geography matched to the area where the food is estimated.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Carl Lachat</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">http://www.fao.org/fileadmin/templates/food_composition/images/FCD.pdf</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">geographically specific food quantification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0001020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0001020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0001005"/>
+        <obo:IAO_0000115 xml:lang="en">An indicator for food quantification method that indicates whether a food quantification method is tailored to the characteristics of the assessed population.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Carl Lachat</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">https://doi.org/10.3945/an.117.015651</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">customized food quantification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0001021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0001021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0001005"/>
+        <obo:IAO_0000115 xml:lang="en">An indicator that indicates how the measured food intake data are matched to food composition data.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Carl Lachat</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">https://doi.org/10.3945/an.117.015651</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">referred food composition data for quantification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0002001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0002001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000315"/>
+        <obo:IAO_0000115 xml:lang="en">An abstract which states the dietary/nutritional assessment method(s) used in the research (STROBE-nut-1).</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">https://www.strobe-nut.ugent.be/content/recommendations</obo:IAO_0000119>
+        <dc:contributor>Carl Lachat</dc:contributor>
+        <rdfs:label xml:lang="en">abstract of a published study based on dietary survey(s)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0002002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0002002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0002004"/>
+        <obo:IAO_0000115 xml:lang="en">A results section that reports the number of individuals excluded based on missing, incomplete or implausible dietary/nutritional data.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">https://www.strobe-nut.ugent.be/content/recommendations</obo:IAO_0000119>
+        <dc:contributor xml:lang="en">Carl Lachat</dc:contributor>
+        <rdfs:label xml:lang="en">participants result section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0002003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0002003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000317"/>
+        <obo:IAO_0000115 xml:lang="en">a methods section that includes a few sections to describe particular characterisitics of study methods based on dietary surveys.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">methods of a published study based on dietary survey(s)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0002004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0002004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000318"/>
+        <obo:IAO_0000115 xml:lang="en">A results section that includes a few sections to describe particular characterisitics of research results of a study based on dietary surveys.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">results section of a published study based on dietary survey(s)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0002005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0002005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000319"/>
+        <obo:IAO_0000115 xml:lang="en">A discussion section that interprets particular characterisitics of a study based on dietary surveys.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">discussion of a published study based on dietary survey(s)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0002006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0002006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000620"/>
+        <obo:IAO_0000115 xml:lang="en">an ethical approval section that describes the procedure for consent and study approval from ethics committee(s).</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">https://www.strobe-nut.ugent.be/content/recommendations</obo:IAO_0000119>
+        <dc:contributor>Carl Lachat</dc:contributor>
+        <rdfs:label xml:lang="en">ethics of a published study based on dietary survey(s)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0002007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0002007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0002005"/>
+        <obo:IAO_0000115 xml:lang="en">A discussion section that describes the main limitations of the data sources and assessment methods used and implications for the interpretation of the findings.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">https://www.strobe-nut.ugent.be/content/recommendations</obo:IAO_0000119>
+        <dc:contributor>Carl Lachat</dc:contributor>
+        <rdfs:label xml:lang="en">limitation section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0002008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0002008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000326"/>
+        <obo:IAO_0000115 xml:lang="en">a supplementary (online) material that provides data collection tools and data as online material or explain how they can be accessed.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Lachat C, Hawwash D, Ocké MC, Berg C, Forsum E, Hörnell A, Larsson C, Sonestedt E, Wirfält E, Åkesson A, Kolsteren P, Byrnes G, De Keyzer W, Van Camp J, Cade JE, Slimani N, Cevallos M, Egger M, Huybrechts I. Strengthening the Reporting of Observational Studies in Epidemiology-Nutritional Epidemiology (STROBE-nut): An Extension of the STROBE Statement. PLoS Med. 2016 Jun 7;13(6):e1002036. doi: 10.1371/journal.pmed.1002036.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">supplementary material of a published study based on dietary survey(s)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0002009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0002009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0002003"/>
+        <obo:IAO_0000115 xml:lang="en">A methods section that describes any characteristics of the study settings that might affect the dietary intake or nutritional status of the participants, if applicable.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">https://www.strobe-nut.ugent.be/content/recommendations</obo:IAO_0000119>
+        <dc:contributor xml:lang="en">Carl Lachat</dc:contributor>
+        <rdfs:label xml:lang="en">settings section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0002010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0002010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0002003"/>
+        <obo:IAO_0000115 xml:lang="en">A methods section that reports particular dietary, physiological or nutritional characteristics that were considered when selecting the target population.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">https://www.strobe-nut.ugent.be/content/recommendations</obo:IAO_0000119>
+        <dc:contributor xml:lang="en">Carl Lachat</dc:contributor>
+        <rdfs:label xml:lang="en">participants section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0002011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0002011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0002003"/>
+        <obo:IAO_0000115 xml:lang="en">A methods section that a) clearly defines foods, food groups, nutrients, or other food components.b) when using dietary patterns or indices, describes the methods to obtain them and their nutritional properties.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">https://www.strobe-nut.ugent.be/content/recommendations</obo:IAO_0000119>
+        <dc:contributor xml:lang="en">Carl Lachat</dc:contributor>
+        <rdfs:label xml:lang="en">variables section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0002012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0002012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0002003"/>
+        <obo:IAO_0000115 xml:lang="en">A methods section that includes 6 elements for the description of data measurements of a study based on dietary survey(s).</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">https://www.strobe-nut.ugent.be/content/recommendations</obo:IAO_0000119>
+        <dc:contributor>Carl Lachat</dc:contributor>
+        <rdfs:label xml:lang="en">data measurements section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0002013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0002013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0002003"/>
+        <obo:IAO_0000115 xml:lang="en">A method section that reports how bias in dietary or nutritional assessment was addressed, e.g., misreporting, changes in habits as a result of being measured, or data imputation from other sources</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">https://www.strobe-nut.ugent.be/content/recommendations</obo:IAO_0000119>
+        <dc:contributor>Carl Lachat</dc:contributor>
+        <rdfs:label xml:lang="en">bias section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0002014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0002014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0002003"/>
+        <obo:IAO_0000115 xml:lang="en">A methods section that explains categorization of dietary/nutritional data (e.g., use of N-tiles and handling of nonconsumers) and the choice of reference category, if applicable.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">https://www.strobe-nut.ugent.be/content/recommendations</obo:IAO_0000119>
+        <dc:contributor xml:lang="en">Carl Lachat</dc:contributor>
+        <rdfs:label xml:lang="en">quantitative variables section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0002015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0002015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000644"/>
+        <obo:IAO_0000115 xml:lang="en">A statistical analysis section that a) describes any statistical method used to combine dietary or nutritional data, if applicable; b) describes and justifies the method for energy adjustments, intake modeling, and use of weighting factors, if applicable; c) reports any adjustments for measurement error, i.e,. from a validity or calibration study.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Lachat C, Hawwash D, Ocké MC, Berg C, Forsum E, Hörnell A, Larsson C, Sonestedt E, Wirfält E, Åkesson A, Kolsteren P, Byrnes G, De Keyzer W, Van Camp J, Cade JE, Slimani N, Cevallos M, Egger M, Huybrechts I. Strengthening the Reporting of Observational Studies in Epidemiology-Nutritional Epidemiology (STROBE-nut): An Extension of the STROBE Statement. PLoS Med. 2016 Jun 7;13(6):e1002036. doi: 10.1371/journal.pmed.1002036.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">statistical analysis section of a published study based on dietary survey(s)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0002016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0002016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0002012"/>
+        <obo:IAO_0000115 xml:lang="en">A data measurements section that describes the dietary assessment method(s), e.g., portion size estimation, number of days and items recorded, how it was developed and administered, and how quality was assured, and report if and how supplement intake was assessed.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">https://www.strobe-nut.ugent.be/content/recommendations</obo:IAO_0000119>
+        <dc:contributor>Carl Lachat</dc:contributor>
+        <rdfs:label xml:lang="en">dietary assessment method(s) section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0002017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0002017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0002012"/>
+        <obo:IAO_0000115 xml:lang="en">A data measurements section that describes and justifies food composition data used. (e.g. explain the procedure to match food composition with consumption data and describe the use of conversion factors, if applicable.)</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">https://www.strobe-nut.ugent.be/content/recommendations</obo:IAO_0000119>
+        <dc:contributor xml:lang="en">Carl Lachat</dc:contributor>
+        <rdfs:label xml:lang="en">food composition data section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0002018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0002018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0002012"/>
+        <obo:IAO_0000115 xml:lang="en">A data measurements section that describes the nutrient requirements, recommendations, or dietary guidelines and the evaluation approach used to compare intake with the dietary reference values, if applicable.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">https://www.strobe-nut.ugent.be/content/recommendations</obo:IAO_0000119>
+        <dc:contributor>Carl Lachat</dc:contributor>
+        <rdfs:label xml:lang="en">dietary reference values section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0002019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0002019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0002012"/>
+        <obo:IAO_0000115 xml:lang="en">A data measurements section that reports the type of biomarkers used and their usefulness as dietary exposure markers. When using nutritional biomarkers, additionally use the STROBE Extension for Molecular Epidemiology (STROBE-ME).</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">https://www.strobe-nut.ugent.be/content/recommendations</obo:IAO_0000119>
+        <dc:contributor>Carl Lachat</dc:contributor>
+        <rdfs:label xml:lang="en">biomarkers section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0002020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0002020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0002012"/>
+        <obo:IAO_0000115 xml:lang="en">A data measurements section that describes the assessment of nondietary data (e.g., nutritional status and influencing factors) and timing of the assessment of these variables in relation to dietary assessment.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">https://www.strobe-nut.ugent.be/content/recommendations</obo:IAO_0000119>
+        <dc:contributor xml:lang="en">Carl Lachat</dc:contributor>
+        <rdfs:label xml:lang="en">nondietary data section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0002021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0002021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0002012"/>
+        <obo:IAO_0000115 xml:lang="en">A data measurements section that reports on the validity of the dietary or nutritional assessment methods and any internal or external validation used in the study, if applicable.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">https://www.strobe-nut.ugent.be/content/recommendations</obo:IAO_0000119>
+        <dc:contributor xml:lang="en">Carl Lachat</dc:contributor>
+        <rdfs:label xml:lang="en">study validation section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0002022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0002022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0002004"/>
+        <obo:IAO_0000115 xml:lang="en">A results section that gives the distribution of participant characteristics across the exposure variables if applicable, specifies if food consumption of total population or consumers only were used to obtain results.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">https://www.strobe-nut.ugent.be/content/recommendations</obo:IAO_0000119>
+        <dc:contributor xml:lang="en">Carl Lachat</dc:contributor>
+        <rdfs:label xml:lang="en">descriptive data section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0002023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0002023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0002004"/>
+        <obo:IAO_0000115 xml:lang="en">A result section that specifies if nutrient intakes are reported with or without inclusion of dietary supplement intake, if applicable.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">https://www.strobe-nut.ugent.be/content/recommendations</obo:IAO_0000119>
+        <dc:contributor xml:lang="en">Carl Lachat</dc:contributor>
+        <rdfs:label xml:lang="en">main results section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0002024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0002024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0002004"/>
+        <obo:IAO_0000115 xml:lang="en">A results section that reports any sensitivity analysis (e.g., exclusion of misreporters or outliers) and data imputation, if applicable.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">https://www.strobe-nut.ugent.be/content/recommendations</obo:IAO_0000119>
+        <dc:contributor xml:lang="en">Carl Lachat</dc:contributor>
+        <rdfs:label xml:lang="en">other analyses section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0002025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0002025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0002005"/>
+        <obo:IAO_0000115 xml:lang="en">A discussion section that reports the nutritional relevance of the findings, given the complexity of diet or nutrition as an exposure.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">https://www.strobe-nut.ugent.be/content/recommendations</obo:IAO_0000119>
+        <dc:contributor>Carl Lachat</dc:contributor>
+        <rdfs:label xml:lang="en">interpretation section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0003001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0003001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000311"/>
+        <obo:IAO_0000115 xml:lang="en">A publication that provides science-based dietary advice to promote healthy eating of the general public.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">SYSTEMIC WP5</obo:IAO_0000117>
+        <obo:IAO_0000119>http://www.fao.org/nutrition/education/food-dietary-guidelines/en/</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/books/NBK235267/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">food-based dietary guideline</rdfs:label>
+        <skos:altLabel xml:lang="en">FBDG</skos:altLabel>
+        <skos:altLabel xml:lang="en">dietary guideline</skos:altLabel>
+        <skos:altLabel xml:lang="en">dietary recommendation</skos:altLabel>
+        <skos:altLabel xml:lang="en">healthy eating plan</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0003002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0003002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0003001"/>
+        <obo:IAO_0000115 xml:lang="en">A food-based dietary guideline that provides qualitative dietary advice.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">SYSTEMIC WP5</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">qualitative food-based dietary guideline</rdfs:label>
+        <skos:altLabel xml:lang="en">qualitative FBDG</skos:altLabel>
+        <skos:altLabel xml:lang="en">qualitative dietary guideline</skos:altLabel>
+        <skos:altLabel xml:lang="en">qualitative dietary recommendation</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0003003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0003003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0003001"/>
+        <obo:IAO_0000115 xml:lang="en">A food-based dietary guideline that provides quantitative dietary advice.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">SYSTEMIC WP5</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">quantitative food-based dietary guideline</rdfs:label>
+        <skos:altLabel xml:lang="en">quantitative FBDG</skos:altLabel>
+        <skos:altLabel xml:lang="en">quantitative dietary guideline</skos:altLabel>
+        <skos:altLabel xml:lang="en">quantitative dietary recommendation</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0003004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0003004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0003001"/>
+        <obo:IAO_0000115 xml:lang="en">A food-based dietary guideline that provides a guide about breastfeeding, baby food and nutrition.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">SYSTEMIC WP5</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">food-based dietary guideline for infants</rdfs:label>
+        <skos:altLabel xml:lang="en">FBDG for infants</skos:altLabel>
+        <skos:altLabel xml:lang="en">dietary guideline for infants</skos:altLabel>
+        <skos:altLabel xml:lang="en">dietary recommendation for infants</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0003005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0003005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0003001"/>
+        <obo:IAO_0000115 xml:lang="en">A food-based dietary guideline that provides dietary advice for children.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">SYSTEMIC WP5</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">food-based dietary guideline for children</rdfs:label>
+        <skos:altLabel xml:lang="en">FBDG for children</skos:altLabel>
+        <skos:altLabel xml:lang="en">dietary guideline for children</skos:altLabel>
+        <skos:altLabel xml:lang="en">dietary recommendation for children</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0003006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0003006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0003001"/>
+        <obo:IAO_0000115 xml:lang="en">A food-based dietary guideline that provides dietary advice for adolescents.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">SYSTEMIC WP5</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">food-based dietary guideline for adolescents</rdfs:label>
+        <skos:altLabel xml:lang="en">FBDG for adolescents</skos:altLabel>
+        <skos:altLabel xml:lang="en">dietary guideline for adolescents</skos:altLabel>
+        <skos:altLabel xml:lang="en">dietary recommendation for adolescents</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0003007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0003007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0003001"/>
+        <obo:IAO_0000115 xml:lang="en">A food-based dietary guideline that provides dietary advice for adults.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">SYSTEMIC WP5</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">food-based dietary guideline for adults</rdfs:label>
+        <skos:altLabel xml:lang="en">FBDG for adults</skos:altLabel>
+        <skos:altLabel xml:lang="en">dietary guideline for adults</skos:altLabel>
+        <skos:altLabel xml:lang="en">dietary recommendation for adults</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0003008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0003008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0003001"/>
+        <obo:IAO_0000115 xml:lang="en">A food-based dietary guideline that provides dietary advice for elderly people.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">SYSTEMIC WP5</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">food-based dietary guideline for elderly people</rdfs:label>
+        <skos:altLabel xml:lang="en">FBDG for elderly people</skos:altLabel>
+        <skos:altLabel xml:lang="en">dietary guideline for elderly people</skos:altLabel>
+        <skos:altLabel xml:lang="en">dietary recommendation for elderly people</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0003010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0003010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0003001"/>
+        <obo:IAO_0000115>A food-based dietary guideline that provides dietary advice regarding food diversity.</obo:IAO_0000115>
+        <obo:IAO_0000117>SYSTEMIC WP5</obo:IAO_0000117>
+        <rdfs:label>food-based dietary guideline regarding food diversity</rdfs:label>
+        <skos:altLabel>FBDG regarding food diversity</skos:altLabel>
+        <skos:altLabel>dietary guideline regarding food diversity</skos:altLabel>
+        <skos:altLabel>dietary recommendation regarding food diversity</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONE_0003011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONE_0003011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONE_0003001"/>
+        <obo:IAO_0000115>A food-based dietary guideline that provides dietary advice regarding the eating frequency/quantity of processed food.</obo:IAO_0000115>
+        <obo:IAO_0000117>SYSTEMIC WP5</obo:IAO_0000117>
+        <rdfs:label>food-based dietary guideline regarding processed food</rdfs:label>
+        <skos:altLabel>FBDG regarding processed food</skos:altLabel>
+        <skos:altLabel>dietary guideline regarding processed food</skos:altLabel>
+        <skos:altLabel>dietary recommendation regarding processed food</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000070">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0500000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ONE_0000001"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
+        <obo:IAO_0000115>Data are obtained from groups who have been exposed, or not exposed, to the new technology or factor of interest (eg from databases). No allocation of exposure is made by the researcher. Best for study the effect of predictive risk factors on an outcome.</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <obo:in_minimal_requirements_subset rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obo:in_minimal_requirements_subset>
+        <rdfs:label>Cohort Study</rdfs:label>
+        <rdfs:seeAlso>http://www.cebm.net/study-designs/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000071 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000071">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0500000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ONE_0000001"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
+        <obo:IAO_0000115>Patients with a certain outcome or disease and an appropriate group of controls without the outcome or disease are selected (usually with careful consideration of appropriate choice of controls, matching, etc) and then information is obtained on whether the subjects have been exposed to the factor under investigation.</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <obo:in_minimal_requirements_subset rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obo:in_minimal_requirements_subset>
+        <rdfs:label>Case-Control Studies</rdfs:label>
+        <rdfs:seeAlso>http://www.cebm.net/study-designs/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000072 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000072">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0500000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ONE_0000001"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
+        <obo:IAO_0000115>A study that examines the relationship between diseases (or other health-related characteristics) and other variables of interest as they exist in a defined population at one particular time (ie exposure and outcomes are both measured at the same time). Best for quantifying the prevalence of a disease or risk factor, and for quantifying the accuracy of a diagnostic test.</obo:IAO_0000115>
+        <obo:IAO_0000117>ENPADASI_WP4</obo:IAO_0000117>
+        <obo:in_minimal_requirements_subset rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obo:in_minimal_requirements_subset>
+        <rdfs:label>Cross-Sectional Survey</rdfs:label>
+        <rdfs:seeAlso>http://www.cebm.net/study-designs/</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000125 -->
+
+    <owl:Thing rdf:about="http://purl.obolibrary.org/obo/IAO_0000125">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000078"/>
+        <rdfs:label xml:lang="en">pending final vetting</rdfs:label>
+    </owl:Thing>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Language" content="en-US">
+    <meta property="og:title" content="Linked Open Vocabularies (LOV)">
+    <meta property="og:image" content="/img/LOV.png">
+    <meta property="og:description" content="Your entry point to high quality and reusable Vocabularies to describe Linked Data.">
+    <meta name="title" content="Linked Open Vocabularies (LOV)">
+    <meta name="description" content="Your entry point to high quality and reusable Vocabularies to describe Linked Data.">
+    <title>Linked Open Vocabularies</title>
+    <link rel="icon" href="/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" media="all" href="/css/style.css">
+    <!--link(rel='stylesheet', type='text/css', media='all', href='/css/parts/table.css')-->
+    <link rel="stylesheet" type="text/css" media="all" href="/css/parts/search.css">
+    <link rel="stylesheet" type="text/css" media="all" href="/css/parts/agent.css">
+    <link rel="stylesheet" type="text/css" media="all" href="/css/parts/header.css">
+    <link rel="stylesheet" type="text/css" media="all" href="/css/parts/boutton.css">
+    <link rel="stylesheet" type="text/css" media="all" href="/css/parts/form.css">
+    <link rel="stylesheet" type="text/css" media="all" href="/css/parts/flatTable.css">
+    <link rel="stylesheet" type="text/css" media="all" href="/css/parts/ribbon.css">
+    <link rel="stylesheet" type="text/css" media="all" href="/css/parts/aside.css">
+    <link rel="stylesheet" type="text/css" media="all" href="/css/parts/graph.css">
+    <link rel="stylesheet" type="text/css" media="all" href="/css/parts/api.css">
+    <link rel="stylesheet" type="text/css" media="all" href="/css/parts/suggest.css">
+    <link rel="stylesheet" type="text/css" media="all" href="/css/parts/about.css">
+    <link rel="stylesheet" type="text/css" media="all" href="/css/parts/edition.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/style_ext.css">
+    <!--link(rel='stylesheet', type='text/css', media='all', href='/css/grid.css')-->
+    <link href="/css/nv.d3.css" rel="stylesheet" type="text/css">
+    <link href="/css/jquery/jquery.ui.all.css" rel="stylesheet" type="text/css">
+    <!-- Application styles-->
+    <!--link(rel="stylesheet", href="/css/bootstrap.min.css")-->
+    <!--link(rel="stylesheet", href="/css/bootstrap-responsive.min.css")-->
+    <!--link(rel="stylesheet", href="/css/jquery.tagsinput.css")-->
+    <!---->
+    <!--link(rel="stylesheet", href="/css/bootstrap-responsive.min.css")-->
+    <!--link(rel="stylesheet", href="/css/app.css")-->
+    <!--script(src='/js/vis.min.js')-->
+    <!--link(href='/css/vis.min.css', rel='stylesheet', type='text/css')-->
+    <script src="/js/d3.v3.min.js"></script>
+    <script src="/js/nv.d3.js"></script>
+    <script src="/js/timeline/2.3.1/timeline-api.js?bundle=true"></script>
+    <script src="/js/dagre-d3.min.js"></script>
+    <script src="/js/dagre.min.js"></script>
+    <!--script(src='/js/utils.js')-->
+    <script src="/js/jquery-1.10.2.min.js"></script>
+    <script src="/js/jquery-ui-1.11.2/jquery-ui.min.js"></script>
+    <!--script(src='/js/jquery.fittext.js')-->
+    <script src="/js/jquery.easing.min.js"></script>
+    <script src="/js/validate.min.js"></script>
+    <!--script(src="/js/multiselect/jquery-gentleSelect.js")-->
+    <!--link(rel='stylesheet', type='text/css', media='all', href='/js/multiselect/jquery-gentleSelect.css')-->
+    <link rel="stylesheet" type="text/css" media="all" href="/css/yasqe_2.0.1.min.css">
+    <link rel="stylesheet" type="text/css" media="all" href="/css/yasr_1.2.3.min.css">
+    <script src="/js/form2js/form2js.js"></script>
+    <script src="/js/form2js/jquery.toObject.js"></script>
+    <script src="/js/form2js/js2form.js"></script>
+    <script src="/js/tooltip/jquery.toolbar.js"></script>
+    <!--script(src='/js/tooltip/script.js')-->
+    <!--link(href='/js/tooltip/style.css', rel='stylesheet', type='text/css')-->
+    <script src="https://www.googletagmanager.com/gtag/js?id=UA-32519453-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-32519453-1');
+    </script>
+  </head>
+  <body class="home">
+    <div class="container">
+      <header><a id="logo" title="Linked Open Vocabularies" href="/dataset/lov"><img itemprop="image" alt="Linked Open Vocabularies" src="/img/icon-LOV.png" height="86" width="86"></a>
+        <nav>
+          <ul>
+            <li class="wrpl"><a title="" href="/dataset/lov/vocabs">Vocabs</a></li>
+            <li class="wrpl"><a title="" href="/dataset/lov/terms">Terms</a></li>
+            <li class="wrpl"><a title="" href="/dataset/lov/agents">Agents</a></li>
+            <li class="wrpl"><a title="" href="/dataset/lov/sparql">SPARQL/Dump</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section id="post" class="postBlue">
+        <article>
+          <header class="wrpl w-3-3">
+            <h1><a href="dsv">Data Specification Vocabulary <span>(dsv)</span></a>
+            </h1>
+          </header>
+        </article>
+      </section>
+      <section id="posts" class="default-area">
+        <article>
+          <div id="greenContainer" class="contents clear col-2 split wrplGreen">
+            <h2>Metadata</h2>
+            <div class="metadataFrame">
+              <div class="metadataContainerVocab">
+                <table style="width:100%" class="metadata-table noheader flat-table-3">
+                  <tbody>
+                    <tr>
+                      <td>URI</td>
+                      <td><a href="https://w3id.org/dsv#" target="_blank">https://w3id.org/dsv#</a></td>
+                    </tr>
+                    <tr>
+                      <td>Namespace</td>
+                      <td>https://w3id.org/dsv#</td>
+                    </tr>
+                    <tr>
+                      <td>Description</td>
+                      <td><span>Data Specification Vocabulary (DSV) is a vocabulary for describing semantic data specifications, namely vocabularies and application profiles.</span><span class="lang"> @en</span></td>
+                    </tr>
+                    <tr>
+                      <td>Language</td>
+                      <!--td !{utils.valueLangDisplay(lastVersion.languageIds,'label','iso639P3PCode','/dataset/lov/languages/')}-->
+                      <td><a href="/dataset/lov/languages/ces">
+                          <div class="AgentThumb">
+                            <div class="agentThumbInnerBodylanguage">
+                              <div class="agentThumbName">Czech</div>
+                              <div class="agentThumbPrefUri">cs</div>
+                            </div>
+                          </div></a><a href="/dataset/lov/languages/eng">
+                          <div class="AgentThumb">
+                            <div class="agentThumbInnerBodylanguage">
+                              <div class="agentThumbName">English</div>
+                              <div class="agentThumbPrefUri">en</div>
+                            </div>
+                          </div></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Creator</td>
+                      <!--td !{utils.valueLangDisplay(vocab.creatorIds,'name','name','/dataset/lov/agents/')}-->
+                      <td><a href="/dataset/lov/agents/Jakub Klímek">
+                          <div class="AgentThumb">
+                            <div class="agentThumbInnerBodyperson">
+                              <div class="agentThumbName">Jakub Klímek</div>
+                              <div class="agentThumbPrefUri">http://www.wikidata.org/entity/Q57585169</div>
+                            </div>
+                          </div></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Contributor</td>
+                      <!--td !{utils.valueLangDisplay(vocab.contributorIds,'name','name','/dataset/lov/agents/')}-->
+                      <td><a href="/dataset/lov/agents/Petr Škoda">
+                          <div class="AgentThumb">
+                            <div class="agentThumbInnerBodyperson">
+                              <div class="agentThumbName">Petr Škoda</div>
+                              <div class="agentThumbPrefUri">http://www.wikidata.org/entity/Q57232642</div>
+                            </div>
+                          </div></a><a href="/dataset/lov/agents/Štěpán Stenchlák">
+                          <div class="AgentThumb">
+                            <div class="agentThumbInnerBodyperson">
+                              <div class="agentThumbName">Štěpán Stenchlák</div>
+                              <div class="agentThumbPrefUri">https://orcid.org/0000-0003-4843-2470</div>
+                            </div>
+                          </div></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Publisher</td>
+                      <!--td !{utils.valueLangDisplay(vocab.publisherIds,'name','name','/dataset/lov/agents/')}-->
+                      <td><a href="/dataset/lov/agents/Faculty of Mathematics and Physics, Charles University">
+                          <div class="AgentThumb">
+                            <div class="agentThumbInnerBodyorganization">
+                              <div class="agentThumbName">Faculty of Mathematics and Physics, Charles University</div>
+                              <div class="agentThumbPrefUri">http://dbpedia.org/resource/Faculty_of_Mathematics_and_Physics,_Charles_University</div>
+                            </div>
+                          </div></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Comment</td>
+                      <td><div>(2025-05-13)</span> <a href="/dataset/lov/agents/María Poveda-Villalón">María Poveda-Villalón</a>: <span>added to LOV</div></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <aside class="wrpl">
+            <div class="h-padding">
+              <div class="asideListFloat">
+                <div style="float:left; padding-right:0.5em; border-right:1px solid #d0d7da">
+                  <div id="normal-button" style="width:38px; height:38px; cursor:pointer" class="moreAppButton"><img src="/img/more.png" title="Use external tools to visualise, interact with the vocabulary"></div>
+                </div>
+                <div id="user-options" style="display: none;" classes="tool-container tool-top" class="toolbar-icons"><a href="http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/dsv#" target="_blank"><img src="/img/viz.png" style="width:38px; height:38px; padding-left:.4em; padding-right:.4em;" title="Visualise this vocabulary in WebVOWL"></a><a href="http://oops.linkeddata.es/response.jsp?uri=https://w3id.org/dsv#" target="_blank"><img src="/img/oops.png" style="width:76px; height:38px" title="Detect pitfalls in this vocabulary"></a><a href="https://labs.mondeca.com/parrot/parrot?&amp;mimetype=default&amp;profile=technical&amp;language=en&amp;documentUri=https://w3id.org/dsv#" target="_blank"><img src="/img/parrot.png" style="width:31px; height:38px; padding-left:.4em; padding-right:.4em;" title="See the vocabulary documentation with Parrot"></a><a href="http://linkeddata.uriburner.com:8000/vapour?uri=https://w3id.org/dsv#" target="_blank"><img src="/img/vapour.gif" style="width:76px; height:34px; padding-left:.4em; padding-right:.4em;" title="Check content negotiation with Vapour"></a><a href="http://graphite.ecs.soton.ac.uk/checker/?uri=https://w3id.org/dsv#" target="_blank"><img src="/img/check.png" style="width:34px; height:34px; padding-left:.4em; padding-right:.4em;" title="Check vocabulary namespace typos with RDF Triple-Checker"></a></div>
+                <div style="float:left; padding-left:0.5em; border-right:1px solid white"><a href="https://lov.linkeddata.es/dataset/lov/vocabs/dsv/versions/2025-05-13.n3" target="_blank" style="display: table; "><img src="/img/n3_small.gif" style="width:61px; height:38px" title="dsv 2025-05-13">
+                    <!--span(style="padding-left:.5em; display: table-cell;   vertical-align: middle; " title="#{vocab.prefix+' '+utils.dateToYMD(lastVersion.issued)}") //#{vocab.prefix}.n3--></a></div>
+              </div>
+              <h2>Statistics</h2>
+              <div class="line"></div>
+              <div class="asideListFloat">
+                <svg id="chartElements" style="height:150px;"></svg>
+              </div>
+              <h2>Expressivity</h2>
+              <div class="line"></div>
+              <div class="asideListFloat">
+                <ul class="expressivities">
+                  <li><a href="/dataset/lov/vocabs/rdf" class="expressivity">RDF</a></li>
+                  <li><a href="/dataset/lov/vocabs/rdfs" class="expressivity">RDFS</a></li>
+                </ul>
+              </div>
+              <div class="clear"></div>
+              <h2>Tags</h2>
+              <div class="line"></div>
+              <div class="asideListFloat">
+                <ul class="tagsVocab">
+                  <li><a href="/dataset/lov/vocabs?tag=Vocabularies" class="tag">Vocabularies</a></li>
+                  <li><a href="/dataset/lov/vocabs?tag=RDF" class="tag">RDF</a></li>
+                </ul>
+              </div>
+              <div class="clear"></div>
+              <h2>LOD</h2>
+              <div class="line"></div>
+              <div class="blabla"> <span>Vocabulary used in </span><a href="http://stats.lod2.eu/" target="_blank"><b>0 datasets </b></a><span> </span></div>
+              <div class="clear"></div>
+            </div>
+          </aside>
+        </article>
+      </section>
+      <section id="post" class="postMediumDarkBlue">
+        <h2 style="width:50%; float:left;" title="Vocabularies using dsv. The relation type between a vocabulary and dsv is indicated by the color.">0 Incoming Links</h2>
+        <h2 style="width:50%; float:left;" title="Vocabularies used by dsv. The relation type between dsv and a vocabulary is indicated by the color."> 10 Outgoing Links</h2>
+        <div class="visus">
+          <div class="visusContainerVocab">
+            <div id="visIn" style="width:50%; float:left;"> </div>
+            <div id="visOut" style="width:50%; float:left;"></div>
+          </div>
+        </div>
+        <ul class="visusLegend">
+          <li><span style="background-color:#f7b6d2" class="color"></span><span class="linkName">Metadata</span></li>
+          <li><span style="background-color:#2ca02c" class="color"> </span><span class="linkName">Extends</span></li>
+          <li><span style="background-color:#1f77b4" class="color"> </span><span class="linkName">Specializes</span></li>
+          <li><span style="background-color:#aec7e8" class="color"> </span><span class="linkName">Generalizes</span></li>
+          <li><span style="background-color:#7f7f7f" class="color"> </span><span class="linkName">Has Equivalences with</span></li>
+          <li><span style="background-color:#c7c7c7" class="color"> </span><span class="linkName">Has Disjunction with</span></li>
+          <li><span style="background-color:#d62728" class="color"> </span><span class="linkName">Imports</span></li>
+        </ul>
+        <script>
+          //configure toolbar
+          jQuery(document).ready(function($) {
+            $('#normal-button').toolbar({content: '#user-options', position: 'top'});
+          });
+          
+          
+          var width = 600,
+              height = 600,
+              nodeMinSize = 20,
+              nodeMaxSize = 60,
+              linkDistance = 60,
+              chargeFactor = 30;
+          var category20 = d3.scale.category20();
+          var color=[];
+          for(i=0; i<20; i++){color[i]=(category20(i));}
+          
+          var graph = {"nodes":[{"name":"dsv","nbIncomingLinks":1,"group":2},{"name":"cc","nbIncomingLinks":183,"group":13},{"name":"dcterms","nbIncomingLinks":763,"group":13},{"name":"vann","nbIncomingLinks":453,"group":13},{"name":"rdf","nbIncomingLinks":970,"group":13},{"name":"vs","nbIncomingLinks":141,"group":13},{"name":"rdf","nbIncomingLinks":970,"group":4},{"name":"rdfs","nbIncomingLinks":1795,"group":4},{"name":"skos","nbIncomingLinks":342,"group":4},{"name":"rdfs","nbIncomingLinks":1795,"group":0},{"name":"prof","nbIncomingLinks":3,"group":0}],"links":[{"source":1,"target":0,"value":2},{"source":2,"target":0,"value":2},{"source":3,"target":0,"value":2},{"source":4,"target":0,"value":2},{"source":5,"target":0,"value":2},{"source":6,"target":0,"value":2},{"source":7,"target":0,"value":2},{"source":8,"target":0,"value":2},{"source":9,"target":0,"value":2},{"source":10,"target":0,"value":2}]};
+          var dataOutMin = d3.min(graph.nodes, function(d) { return d.nbIncomingLinks; });
+          var dataOutMax = d3.max(graph.nodes, function(d) { return d.nbIncomingLinks; });
+          var linearScale = d3.scale.linear().domain([dataOutMin,dataOutMax]).range([nodeMinSize,nodeMaxSize]);
+          
+          var force = d3.layout.force()
+              .charge(function(d) {return -chargeFactor * linearScale(d.nbIncomingLinks);})
+              .linkDistance(linkDistance)
+              .size([width, height])
+              .nodes(graph.nodes)
+              .links(graph.links)
+              .start();
+          
+          var svg = d3.select("#visOut").append("svg")
+              .attr("viewBox","0 0 600 600")
+              .attr("perserveAspectRatio","xMinYMin")
+              .attr("width", width)
+              .attr("height", height)
+              .attr("class", "bubble");
+          
+            var link = svg.selectAll(".link")
+                .data(graph.links)
+                .enter().append("line")
+                  .attr("class", "link")
+                  .style("stroke", "#000000")
+                  .style("stroke-opacity", ".6")
+                  .style("stroke-width", function(d) { return d.value; });
+          
+           var node = svg.selectAll(".node")
+               .data(graph.nodes).enter().append('g').classed('node', true)
+               .on("click", function(d) { self.location= "/dataset/lov/vocabs/"+ d.name});;
+                
+            node.append("circle")
+                .attr("r", function(d) { return linearScale(d.nbIncomingLinks); })
+                .style("fill", function(d) { return color[d.group]; });
+                
+            node.append("text")
+                .style("text-anchor", "middle")
+                .attr("dy", ".35em")
+                .text(function(d) { return d.name.substring(0, linearScale(d.nbIncomingLinks) / 2); })
+                .style("font-size", function (d) { return ((linearScale(d.nbIncomingLinks) / 20)) + "em"; });
+                
+            node.append("title")
+                .text(function(d) { return d.name; });
+          
+            force.on("tick", function() {
+              link.attr("x1", function(d) { return d.source.x; })
+                  .attr("y1", function(d) { return d.source.y; })
+                  .attr("x2", function(d) { return d.target.x; })
+                  .attr("y2", function(d) { return d.target.y; });
+          
+              node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+            });
+            
+            
+            
+          var graphIn = {"nodes":[{"name":"dsv","nbIncomingLinks":1,"group":2}],"links":[]};
+          var dataInMin = d3.min(graphIn.nodes, function(d) { return d.nbIncomingLinks; });
+          var dataInMax = d3.max(graphIn.nodes, function(d) { return d.nbIncomingLinks; });
+          var linearScaleIn = d3.scale.linear().domain([dataInMin,dataInMax]).range([nodeMinSize,nodeMaxSize]);
+          
+          var forceIn = d3.layout.force()
+              .charge(function(d) {return -chargeFactor * linearScaleIn(d.nbIncomingLinks);})
+              .linkDistance(linkDistance)
+              .size([width, height])
+              .nodes(graphIn.nodes)
+              .links(graphIn.links)
+              .start();
+          
+          var svgIn = d3.select("#visIn").append("svg")
+              .attr("viewBox","0 0 600 600")
+              .attr("perserveAspectRatio","xMinYMin")
+              .attr("width", width)
+              .attr("height", height)
+              .attr("class", "bubble2");
+          
+            var linkIn = svgIn.selectAll(".link")
+                .data(graphIn.links)
+                .enter().append("line")
+                  .attr("class", "link")
+                  .style("stroke", "#000000")
+                  .style("stroke-opacity", ".6")
+                  .style("stroke-width", function(d) { return d.value; });
+          
+           var nodeIn = svgIn.selectAll(".node")
+               .data(graphIn.nodes).enter().append('g').classed('node', true)
+               .on("click", function(d) { self.location= "/dataset/lov/vocabs/"+ d.name});;
+                
+            nodeIn.append("circle")
+                .attr("r", function(d) { return linearScaleIn(d.nbIncomingLinks); })
+                .style("fill", function(d) { return color[d.group]; });
+                
+            nodeIn.append("text")
+                .style("text-anchor", "middle")
+                .attr("dy", ".35em")
+                .text(function(d) { return d.name.substring(0, linearScaleIn(d.nbIncomingLinks) / 2); })
+                .style("font-size", function (d) { return ((linearScaleIn(d.nbIncomingLinks) / 20)) + "em"; });
+                
+            nodeIn.append("title")
+                .text(function(d) { return d.name; });
+          
+            forceIn.on("tick", function() {
+              linkIn.attr("x1", function(d) { return d.source.x; })
+                  .attr("y1", function(d) { return d.source.y; })
+                  .attr("x2", function(d) { return d.target.x; })
+                  .attr("y2", function(d) { return d.target.y; });
+          
+              nodeIn.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+            });
+            
+          var chartVis = $(".bubble"),
+              aspectVis = chartVis.width() / chartVis.height(),
+              containerVis = chartVis.parent();
+          var chartVisIn = $(".bubble2"),
+              aspectVisIn = chartVisIn.width() / chartVisIn.height(),
+              containerVisIn = chartVisIn.parent();
+          $(window).on("resize", function() {
+              var targetWidthVis = containerVis.width();
+              chartVis.attr("width", targetWidthVis);
+              chartVis.attr("height", Math.round(targetWidthVis / aspectVis));
+              var targetWidthVisIn = containerVisIn.width();
+              chartVisIn.attr("width", targetWidthVisIn);
+              chartVisIn.attr("height", Math.round(targetWidthVisIn / aspectVisIn));
+          }).trigger("resize");
+          
+          
+          
+        </script>
+      </section>
+      <script>
+        nv.addGraph(function() {
+          var chart = nv.models.multiBarHorizontalChart()
+              .x(function(d) { return d.label })
+              .y(function(d) { return d.value })
+              .margin({top: 0, right: -25, bottom: 0})
+              .valueFormat(d3.format(''))
+              .barColor(['#FFA500','#53A3B4', '#2ca02c', '#9467bd'])
+              .showLegend(false)
+              .showValues(true)           //Show bar value next to each bar.
+              .tooltips(false)             //Show tooltips on hover.
+              .showControls(false);        //Allow user to switch between "Grouped" and "Stacked" mode.
+              
+          d3.select('#chartElements')
+              .datum([{"key":"Number of","values":[{"label":"Classes","value":10},{"label":"Properties","value":14},{"label":"Datatypes","value":0},{"label":"Instances","value":0}]}])
+              .transition().duration(200)
+              .call(chart);
+        
+          nv.utils.windowResize(chart.update);
+          return chart;
+        });
+        
+        // Timeline using http://visjs.org/
+        /*var container = document.getElementById('timeline');
+        var items = new vis.DataSet({"events":[{"start":"2025-05-13","icon":"/img/cursor.png","color":"#9CF","description":"","textColor":"#666","title":"v2025-05-13","caption":"dsv v2025-05-13","link":"https://lov.linkeddata.es/dataset/lov/vocabs/dsv/versions/2025-05-13.n3"}]}); 
+        var options = {
+          zoomMin: 1000 * 60 * 60 * 24 * 31, // limit the zoom to a month
+        };
+         var timeline = new vis.Timeline(container, items, options);*/
+        
+      </script>
+      <section id="post" class="postMediumDarkBlue">
+        <h2>Vocabulary Version History</h2>
+        <div id="timeline"></div>
+        <script>
+          var tl;
+          $(document).ready(function(){
+                  var tl_el = document.getElementById("timeline");
+                  var eventSource1 = new Timeline.DefaultEventSource();
+                  
+                  var theme1 = Timeline.ClassicTheme.create();
+                  theme1.autoWidth = true; // Set the Timeline's "width" automatically.
+                                                                   // Set autoWidth on the Timeline's first band's theme,
+                                                                   // will affect all bands.
+                  theme1.timeline_start = new Date(Date.UTC(1990, 0, 1));
+                  theme1.timeline_stop  = new Date(Date.UTC(2100, 0, 1));
+                  
+                  var d = Timeline.DateTime.parseGregorianDateTime("2018")
+                  var bandInfos = [
+                          Timeline.createBandInfo({
+                                  width:          45, // set to a minimum, autoWidth will then adjust
+                                  intervalUnit:   Timeline.DateTime.YEAR, 
+                                  intervalPixels: 100,
+                                  eventSource:    eventSource1,
+                                  date:           d,
+                                  theme:          theme1,
+                                  layout:         'original'  // original, overview, detailed
+                          })
+                  ];
+                  
+                  Timeline.OriginalEventPainter.prototype._showBubble = function(x, y, evt) {
+                    if(evt.getLink())window.open(evt.getLink(),'_blank');
+                  }
+                                                                                                                  
+                  // create the Timeline
+                  tl = Timeline.create(tl_el, bandInfos, Timeline.HORIZONTAL);
+                  
+                  var url = '.'; // The base url for image, icon and background image
+                                             // references in the data
+                  eventSource1.loadJSON({"events":[{"start":"2025-05-13","icon":"/img/cursor.png","color":"#9CF","description":"","textColor":"#666","title":"v2025-05-13","caption":"dsv v2025-05-13","link":"https://lov.linkeddata.es/dataset/lov/vocabs/dsv/versions/2025-05-13.n3"}]}, url); // The data was stored into the 
+                                                                                                     // timeline_data variable.
+                  tl.layout(); // display the Timeline
+          });
+              
+        </script>
+      </section>
+      <footer id="footer">
+        <div class="wrpl"><a href="/dataset/lov">
+            <dl>
+              <dt><img src="/img/LOV_white_small.png"></dt>
+              <dd><strong>Linked Open Vocabularies</strong></dd>
+            </dl></a></div>
+        <div class="wrpl"><br>
+          <div class="bookmarks"><b>Documentation</b>
+            <ul>
+              <li><a href="/dataset/lov/about" title="About LOV">About</a></li>
+              <li><a href="/dataset/lov/api" title="API documentation">API documentation</a></li>
+              <li><a href="https://github.com/pyvandenbussche/lov" title="Source in GitHub" target="_blank">Source code</a></li>
+              <li><a href="mailto:py.vandenbussche@gmail.com;ghislain.atemezing@gmail.com;mpoveda@fi.upm.es" title="Contact LOV team">Contact</a></li>
+            </ul>
+          </div>
+          <div class="bookmarks"><b>Publication</b>
+            <ul>
+              <li><a href="http://www.semantic-web-journal.net/content/linked-open-vocabularies-lov-gateway-reusable-semantic-vocabularies-web-1" title="Linked Open Vocabularies" target="_blank">Semantic Web Journal '16</a></li>
+              <li><a href="http://ercim-news.ercim.eu/en96/special/linked-open-vocabularies" title="Linked Open Vocabularies" target="_blank">ERCIM News '14</a></li>
+              <li><a href="http://bit.ly/1sGxzXZ" title="Requirements for vocabulary preservation and governance" target="_blank">Library Hi Tech '13</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="wrpl"><a id="mt" href="http://www.oeg-upm.net/" target="_blank">
+            <div class="logo"></div>
+            <div class="logoText">Hosted by the Ontology Engineering Group - UPM</div></a>
+          <div style="float:right"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0; margin:1.2em;" src="https://i.creativecommons.org/l/by/4.0/88x31.png"></a></div>
+        </div>
+      </footer>
+      <!--script.
+      //  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      //  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      //  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      //  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      //  ga('create', 'UA-32519453-1', 'okfn.org');
+      //  ga('send', 'pageview');
+      -->
+    </div>
+  </body>
+</html>

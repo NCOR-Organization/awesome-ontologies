@@ -1,0 +1,2591 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY GO "http://purl.org/obo/owl/GO#" >
+    <!ENTITY PATO "http://purl.org/obo/owl/PATO#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY TRANS "http://purl.org/obo/owl/TRANS#" >
+    <!ENTITY CHEBI "http://purl.org/obo/owl/CHEBI#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY roproposed "http://purl.org/obo/owl/OBO_REL#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY NCBITaxon "http://purl.org/obo/owl/NCBITaxon#" >
+    <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
+    <!ENTITY span "http://www.ifomis.org/bfo/1.1/span#" >
+    <!ENTITY ro "http://www.obofoundry.org/ro/ro.owl#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY j.0 "http://www.geneontology.org/formats/oboInOwl#" >
+    <!ENTITY protege "http://protege.stanford.edu/plugins/owl/protege#" >
+]>
+
+
+<rdf:RDF xmlns="&obo;flu/dev/flu.owl#"
+     xml:base="&obo;flu/dev/flu.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:PATO="http://purl.org/obo/owl/PATO#"
+     xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
+     xmlns:NCBITaxon="http://purl.org/obo/owl/NCBITaxon#"
+     xmlns:j.0="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:roproposed="http://purl.org/obo/owl/OBO_REL#"
+     xmlns:GO="http://purl.org/obo/owl/GO#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:CHEBI="http://purl.org/obo/owl/CHEBI#"
+     xmlns:TRANS="http://purl.org/obo/owl/TRANS#"
+     xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
+    <owl:Ontology rdf:about="&obo;flu/dev/flu.owl">
+        <owl:versionInfo xml:lang="en">0.9.0</owl:versionInfo>
+        <dc:date xml:lang="en">2010-02-11</dc:date>
+        <dc:contributor xml:lang="en">Alan Ruttenberg</dc:contributor>
+        <dc:creator xml:lang="en">Burke Squires</dc:creator>
+        <dc:title xml:lang="en">Influenza ontology</dc:title>
+        <dc:creator xml:lang="en">Joanne Luciano</dc:creator>
+        <dc:contributor xml:lang="en">Lindsay Cowell</dc:contributor>
+        <dc:creator xml:lang="en">Lynn Schriml</dc:creator>
+        <dc:creator xml:lang="en">Melanie Courtot</dc:creator>
+        <dc:contributor xml:lang="en">Meredith Keybl</dc:contributor>
+        <dc:creator xml:lang="en">Richard Scheuermann</dc:creator>
+        <dc:creator xml:lang="en">Ryan Brinkman</dc:creator>
+        <dc:description xml:lang="en">The influenza ontology is an application ontology that covers the natural, experimental and clinical realms related to influenza virus life cycle, infection and disease. It is an extension of the infectious disease ontology (IDO).</dc:description>
+        <dc:creator xml:lang="en">Timothy Lebo</dc:creator>
+        <owl:imports rdf:resource="&obo;flu/dev/external-byhand.owl"/>
+        <owl:imports rdf:resource="&obo;flu/dev/external.owl"/>
+        <owl:imports rdf:resource="&obo;flu/dev/externalDerived.owl"/>
+        <owl:imports rdf:resource="&obo;iao/iao-main.owl"/>
+        <owl:imports rdf:resource="&obo;ido/2010-12-02/ido-main-workaround.owl"/>
+        <owl:imports rdf:resource="http://www.ifomis.org/bfo/1.1"/>
+        <owl:imports rdf:resource="http://www.obofoundry.org/ro/ro_bfo_bridge.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    <owl:AnnotationProperty rdf:about="&dc;description"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    <owl:AnnotationProperty rdf:about="&j.0;replacedBy"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000116"/>
+    <owl:AnnotationProperty rdf:about="&j.0;hasDbXref"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000232"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000117"/>
+    <owl:AnnotationProperty rdf:about="&dc;date"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000231"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118"/>
+    <owl:AnnotationProperty rdf:about="&dc;title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="&obo;IAO_0000136"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000294 -->
+
+    <owl:ObjectProperty rdf:about="&obo;OBI_0000294"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000297 -->
+
+    <owl:ObjectProperty rdf:about="&obo;OBI_0000297"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000404 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000404">
+        <rdfs:label xml:lang="en">amplified virus preparation</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&snap;MaterialEntity"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                        <owl:someValuesFrom rdf:resource="&obo;FLU_0001032"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&roproposed;has_role"/>
+                        <owl:someValuesFrom rdf:resource="&obo;OBI_0000112"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">RBS:rbs</obo:IAO_0000119>
+        <obo:IAO_0000116>MC, 20101203: redefined as defined class after adding virus amplification process</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">An amplified virus preparation is an organimal group representing a large number of copies of one or more viruses.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000411 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000411">
+        <rdfs:label rdf:datatype="&xsd;string">enriched cell fraction</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&GO;GO_0000267"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                        <owl:someValuesFrom rdf:resource="&obo;FLU_0001030"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">RBS:rbs</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">An enriched cell fraction is a cell fraction that has an increased concentration of one or more cell fraction components.</obo:IAO_0000115>
+        <obo:IAO_0000116>MC, 20101203: added enrichment process and cell fraction from GO and restrictions to make this a defined class</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000419 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000419">
+        <rdfs:label rdf:datatype="&xsd;string">complementary ribonucleic acid role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Role"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">RBS:rbs</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A complementary ribonucleic acid is a biological macromolecule role played by a RNA molecule that serves as a complementary copy (positive copy for negative stranded RNA and vice versa).</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000508 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000508">
+        <rdfs:label rdf:datatype="&xsd;string">sequencing facility role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000202"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">RBS:rbs</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A sequencing laboratory role is a laboratory role played by a population that performs the assay process of nucleotide or amino acid sequenceing analysis.</obo:IAO_0000115>
+        <obo:IAO_0000116>MC, 08092009: moved as subclass of new mireoted term OBI_0000202, investigation agent role, which can be borne by either individuals or insitutions</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000751 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000751">
+        <rdfs:label>influenza virion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IDO_0000508"/>
+        <obo:IAO_0000232>MC, 20100212: submitted tracker item to IDO at http://code.google.com/p/infectious-disease-ontology/issues/detail?id=25 to clarify definition of parent term virion</obo:IAO_0000232>
+        <obo:IAO_0000118>influenza assembled virus</obo:IAO_0000118>
+        <obo:IAO_0000117>person: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://www.medterms.com/script/main/art.asp?articlekey=11558</obo:IAO_0000119>
+        <obo:IAO_0000118>influenza virus particle</obo:IAO_0000118>
+        <obo:IAO_0000115>A complete virus particle of influenza virus with its DNA or RNA core and protein coat as it exists outside the cell.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000752 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000752">
+        <rdfs:label>influenza hemagglutinin</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;FLU_0001028"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&ro;part_of"/>
+                        <owl:someValuesFrom rdf:resource="&obo;FLU_0000751"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000115>Influenza hemagglutinin is a type of hemagglutinin  found on the surface of the influenza  viruses. It is an antigenic  glycoprotein. It is responsible for binding the virus to the cell that is being infected.</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Hemagglutinin_%28influenza%29</obo:IAO_0000119>
+        <obo:IAO_0000116>MC, 20101201: added as subclass of hemagglutinin</obo:IAO_0000116>
+        <obo:IAO_0000117>person: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000118>Influenza haemagglutinin</obo:IAO_0000118>
+        <obo:IAO_0000116>20100203: submitted to PRO: http://sourceforge.net/tracker/?func=detail&amp;atid=1135711&amp;aid=2945554&amp;group_id=266825</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000753 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000753">
+        <rdfs:label>neuraminidase</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;PR_000000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&roproposed;has_function"/>
+                        <owl:someValuesFrom rdf:resource="&GO;GO_0016997"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000115>Neuraminidase enzymes are glycoside hydrolase enzymes (EC 3.2.1.18) that cleave the glycosidic linkages of neuraminic acids. Neuraminidase enzymes are a large family, found in a range of organisms. The most commonly known neuraminidase is the viral neuraminidase, a drug target for the prevention of influenza infection. The viral neuraminidases are frequently used as an antigenic determinants found on the surface of the Influenza  virus. Some variants of the influenza neuraminidase confer more virulence to the virus than others. 
+Neuraminidases, also called sialidases, catalyze the hydrolysis of terminal sialic acid residues from the newly formed virions and from the host cell receptors.[2] Sialidase activities include assistance in the mobility of virus particles through the respiratory tract mucus and in the elution of virion progeny from the infected cell.[3][4]</obo:IAO_0000115>
+        <obo:IAO_0000117>person: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000119>MC, 20101202: added definition</obo:IAO_0000119>
+        <obo:IAO_0000116>20100203: submitted to PRO: http://sourceforge.net/tracker/?func=detail&amp;aid=2945634&amp;group_id=266825&amp;atid=1135711</obo:IAO_0000116>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Neuraminidase</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000754 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000754">
+        <rdfs:label xml:lang="en">virus isolation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0302884"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;FLU_0000756"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&roproposed;realizes"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000294"/>
+                        <owl:someValuesFrom rdf:resource="&obo;FLU_0000988"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">WEB: http://virology-online.com/general/Test1.htm</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">a material separation to recover the virusfraction of an input material</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000755 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000755">
+        <rdfs:label xml:lang="en">haemadsorption</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;FLU_0000756"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&ro;has_part"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&NCBITaxon;NCBITaxon_11320"/>
+                                            <rdf:Description rdf:about="&NCBITaxon;NCBITaxon_11520"/>
+                                            <rdf:Description rdf:about="&NCBITaxon;NCBITaxon_11552"/>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">Influenza and parainfluenza viruses do not ordinarily induce CPE, however they possess haemagglutinins and thus the ability to absorb guinea pig RBCs as they bud from the cell. This phenomenon is known as haemadsorption. Commonly employed cell cultures include primary monkey kidney, LLC-MK2 and MDCK cells. The cell cultures are incubated with a suspension of guinea pig RBCs at 4oC or RT for 30 minutes. The unabsorbed RBCs are then removed and the cell sheet observed microscopically for the presence of haemadsorption. </obo:IAO_0000112>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">WEB: http://virology-online.com/general/Test1.htm</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">the absorption of red blood cells by haemagglutinins</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000756 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000756">
+        <rdfs:label xml:lang="en">viral isolate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&obo;FLU_0000754"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;has_part"/>
+                <owl:someValuesFrom rdf:resource="&NCBITaxon;NCBITaxon_10239"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000757 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000757">
+        <rdfs:label rdf:datatype="&xsd;string">GenBank submission event</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0200000"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:http://www.ncbi.nlm.nih.gov/Genbank/</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A data transformation event that encompasses the process of submitting new or updated sequence information or annotation to GenBank.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000758 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000758">
+        <rdfs:label xml:lang="en">trypsin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PR_000000001"/>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000116 xml:lang="en">Submitted to PRO, see https://sourceforge.net/tracker/?func=detail&amp;atid=1135711&amp;aid=3397087&amp;group_id=266825</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">Trypsin (EC 3.4.21.4) is a serine protease found in the digestive system of many vertebrates, where it hydrolyses proteins. Trypsin is produced in the pancreas as the inactive proenzyme trypsinogen.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/Trypsin</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000759 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000759">
+        <rdfs:label rdf:datatype="&xsd;string">disease severity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000938"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:http://www.nationalasthma.org.au/html/strategy/camia/camia002.asp</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A disease phenotype that descrives the inherent severity of the disease independent of its management, including drug and other interventions.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000760 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000760">
+        <rdfs:label rdf:datatype="&xsd;string">tissue culture infectious dose 50</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000032"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:http://aleffgroup.com/AVISFMD/A010-fmd/mod2/0550-karber.html</obo:IAO_0000119>
+        <obo:IAO_0000116>MC, 20101119: moved from quality&gt;output assessment &gt; measure to scalar measurement datum</obo:IAO_0000116>
+        <obo:IAO_0000118>TCID50</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="en">The quantity of virus in a specified suspension volume (e.g., 0.1 ml) that will infect 50% of a number (n) of cell culture microplate wells, or tubes</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000761 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000761">
+        <rdfs:label xml:lang="en">trypsin auxotrophic organism</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;OBI_0100026"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000298"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&PATO;PATO_0000422"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&roproposed;towards"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;FLU_0000758"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
+        <obo:IAO_0000115 xml:lang="en">An organism that requires tryspin to grow</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000763 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000763">
+        <rdfs:label rdf:datatype="&xsd;string">immature</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0000987"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:http://elibrary.unm.edu/sora/JFO/v017n01/p0027-p0033.pdf</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A bird after completing the post-juvenal molt, but has not acquired the complete adult plumage. A life stage of any bird older than a nestling or chick that has not reached sexual maturity or its basic winter or first winter plumage.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000764 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000764">
+        <rdfs:label rdf:datatype="&xsd;string">cough</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000020"/>
+        <j.0:hasDbXref rdf:datatype="&xsd;string">SYMP:614</j.0:hasDbXref>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&amp;va=cough</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">An explosive expulsion of air from the lungs acting as a protective mechanism to clear the air passages or as a symptom of pulmonary disturbance.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000767 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000767">
+        <rdfs:label rdf:datatype="&xsd;string">intensity of body moult</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000109"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A intensity of body moult is a measurement datum that describes the intensity of the periodic replacement of epidermis (skin), pelage (hair, fur, wool), or other external layer. In some species, other body parts may be shed, for example, wings in some insects. Examples include old feathers in birds, old hairs in mammals (especially dogs and other canidae), old skin in reptiles, and the entire exoskeleton in arthropods.</obo:IAO_0000115>
+        <j.0:hasDbXref rdf:datatype="&xsd;string">http://en.wikipedia.org/wiki/Moult</j.0:hasDbXref>
+        <obo:IAO_0000232>20110823, MC: need to check on the unit for this. If it has a unit it should be asserted under scalar measurement datum</obo:IAO_0000232>
+        <obo:IAO_0000232>20110823: this term initially refered only to bird in its definition. We may also need to create a moulting process.</obo:IAO_0000232>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000769 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000769">
+        <rdfs:label rdf:datatype="&xsd;string">virus passage date</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0000786"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;FLU_0000812"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">FLU:MK</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">Date that the virus passage(s) took place.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000770 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000770">
+        <rdfs:label rdf:datatype="&xsd;string">annotation event</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0200000"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:http://www.ncbi.nlm.nih.gov/projects/genome/guide/E132</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">An annotation event is a data transformation event which encompasses adding biological information to genome sequence. This is a very complex task, and the process for doing this is rapidly evolving. Several groups are doing automated computational annotation of several genomes. Features that are added to the genome often include gene models, SNPs, and STSs.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000772 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000772">
+        <rdfs:label rdf:datatype="&xsd;string">GenBank name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0001010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000773 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000773">
+        <rdfs:label rdf:datatype="&xsd;string">GenBank notes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0001010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000776 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000776">
+        <rdfs:label rdf:datatype="&xsd;string">collection latitude GPS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0000885"/>
+       <obo:IAO_0000119 xml:lang="en">GROUP: FLU</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">The GPS latitude coordinate where the sample was collected.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000778 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000778">
+        <rdfs:label rdf:datatype="&xsd;string">data about a laboratory</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">RBS:rbs</obo:IAO_0000119>
+        <obo:IAO_0000116>MC, 20101118: this is a placeholder meant to be removed when we will have a laboratory, which will allow us to define current subclass using the is_about relation</obo:IAO_0000116>
+        <obo:IAO_0000116>MC, 08092009: moved from quality to GDC. Those are information entities. Need additional clean up. There is no laboratory role.</obo:IAO_0000116>
+        <obo:IAO_0000116>MC, 20101118: moved under data item and renamed data about a laboratory from &quot;quality of a laboratory&quot;
+Those should be outsourced towards the organization ontology.</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000779 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000779">
+        <rdfs:label>neuraminidase typing</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;OBI_0000070"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&obo;IAO_0000109"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;FLU_0000753"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:http://www.springerprotocols.com/Full/doi/10.1007/978-1-59745-279-3_8?encCode=REZJOjhfMy05NzItNTQ3OTUtMS04Nzk=&amp;tokenString=ycLy0AkcLqNgMccOI6y30w==</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">An assay which aims at determining the neuraminidase type of an influenza virus.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">N typing</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000781 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000781">
+        <rdfs:label rdf:datatype="&xsd;string">juvenile</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0000987"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:http://elibrary.unm.edu/sora/JFO/v017n01/p0027-p0033.pdf</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A young bird out of the nest and able to take care of itself, but which has not completed the post-juvenal molt.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000784 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000784">
+        <rdfs:label rdf:datatype="&xsd;string">initial oxygen saturation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000032"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:http://gyre.umeoce.maine.edu/data/gomoos/buoy/doc/buoy_system_doc/buoy_system/g6572.html</obo:IAO_0000119>
+        <obo:IAO_0000116>MC, 20101119: moved from quality to scalar measurement datum.</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">Initial oxygen saturation is a scalar measurement datum that describes the initial volume of oxygen gas (STP) absorbed from humidity-saturated air at a total pressure of one atmosphere, per unit volume of the liquid at the temperature of measurement (units ml/l).</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000786 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000786">
+        <rdfs:label rdf:datatype="&xsd;string">date</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000416"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:http://www.gnu.org/software/radius/manual/html_node/radius_36.html</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A date in the format: MON DD CCYY, where MON is the usual three-character abbreviation for month, DD is day of month (1-31), CCYY is the year, including the century. Date may also be reported as year CCYY. (DDMMYY).</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000788 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000788">
+        <rdfs:label rdf:datatype="&xsd;string">fledgling</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0000987"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000789 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000789">
+        <rdfs:label xml:lang="en">specimen identification number</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000297"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&snap;SpecificallyDependentContinuant"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&roproposed;inheres_in"/>
+                                <owl:someValuesFrom rdf:resource="&obo;OBI_0100051"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000116>MC, 20101118: removed dbxref to PATO_0001226, count. Updated from &quot;sample number&quot; to &quot;specimen identification number&quot; as per Burke&#39;s use case</obo:IAO_0000116>
+        <obo:IAO_0000119 xml:lang="en">GROUP: FLU</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">The unique number inhering in and identifying the specimen</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000793 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000793">
+        <rdfs:label rdf:datatype="&xsd;string">fatigue</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000020"/>
+        <j.0:hasDbXref rdf:datatype="&xsd;string">MP:0002899 &#39;Mammalian phenotype&#39;</j.0:hasDbXref>
+        <j.0:hasDbXref rdf:datatype="&xsd;string">SYMP:0019177</j.0:hasDbXref>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&amp;va=fatigue</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">Weariness or exhaustion from labor, exertion, or stress.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000795 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000795">
+        <rdfs:label rdf:datatype="&xsd;string">myalgia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000020"/>
+        <j.0:hasDbXref rdf:datatype="&xsd;string">SYMP:0000626</j.0:hasDbXref>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&amp;va=myalgia</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">Pain in one or more muscles.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000797 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000797">
+        <rdfs:label>virus pathogenicity after passage</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;IAO_0000032"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="&obo;IDO_0000450"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&obo;FLU_0000812"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:http://www.pnas.org/cgi/content/abstract/97/13/6974</obo:IAO_0000119>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">virus passage level</obo:IAO_0000118>
+        <obo:IAO_0000116>MC, 20101119: moved from quality of specimen to scalar measurement datum</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">A scalar measurement datum denoting the pathogenicity of a virus after several passages in cell culture.</obo:IAO_0000115>
+        <obo:IAO_0000116>MC, 20101201: updated definition and label</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000798 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000798">
+        <rdfs:label rdf:datatype="&xsd;string">collection province</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0000885"/>
+       <obo:IAO_0000119 xml:lang="en">GROUP: FLU</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">The name of the geographic province where the collection occurred.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000800 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000800">
+        <rdfs:label rdf:datatype="&xsd;string">yearling</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0000987"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">Flu:ls</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A bird that was observed the summer following its year of hatch.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000801 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000801">
+        <rdfs:label rdf:datatype="&xsd;string">sequence submission date</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0000786"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">FLU:MK</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">Date that the sequence was submitted (i.e. to GenBank).</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000803 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000803">
+        <rdfs:label rdf:datatype="&xsd;string">GenBank district</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0001010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000805 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000805">
+        <rdfs:label rdf:datatype="&xsd;string">specimen collection date</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0000786"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;FLU_0001036"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">FLU:MK</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">Calendar date that the specimen was collected.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000811 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000811">
+        <rdfs:label rdf:datatype="&xsd;string">GenBank projected_timeline</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0001010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000812 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000812">
+        <rdfs:label xml:lang="en">virus passage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000094"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&NCBITaxon;NCBITaxon_10239"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;IAO_0000109"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:someValuesFrom rdf:resource="&obo;IDO_0000450"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A virus passage is a transforming material transformation that involves the incubation of a pathogen (as a virus) in a tissue culture, a developing egg, or a living organism to increase the amount of pathogen or to alter its characteristics </obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">WEB:http://www.merriam-webster.com/medical/passage</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000813 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000813">
+        <rdfs:label rdf:datatype="&xsd;string">GenBank template_id</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0001010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000814 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000814">
+        <rdfs:label rdf:datatype="&xsd;string">vaccinated organism</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&obo;IDO_0000499"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+       <obo:IAO_0000119 xml:lang="en">GROUP: FLU</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">An organism which has been vaccinated</obo:IAO_0000115>
+        <rdfs:comment>vaccination status is an IA about a vaccinated host</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000815 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000815">
+        <rdfs:label rdf:datatype="&xsd;string">collection district</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0000885"/>
+       <obo:IAO_0000119 xml:lang="en">GROUP: FLU</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">The name of the district where the sample was collected.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000818 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000818">
+        <rdfs:label rdf:datatype="&xsd;string">GenBank submission date</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0001010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000824 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000824">
+        <rdfs:label rdf:datatype="&xsd;string">sample quantity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000032"/>
+       <obo:IAO_0000119 xml:lang="en">GROUP: FLU</obo:IAO_0000119>
+        <j.0:hasDbXref rdf:datatype="&xsd;string">PATO:0001226</j.0:hasDbXref>
+        <obo:IAO_0000116>MC, 20101118: moved from specimen quality to scalar measurement datum</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">The sample amount as measured in grams, milliliters or other standard unit of measurement.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000825 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000825">
+        <rdfs:label rdf:datatype="&xsd;string">RNA extraction protocol</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0001003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000297"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&snap;SpecificallyDependentContinuant"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&roproposed;realized_by"/>
+                                <owl:someValuesFrom rdf:resource="&obo;OBI_0666666"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000829 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000829">
+        <rdfs:label xml:lang="en">viral RNA extraction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0666666"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&NCBITaxon;NCBITaxon_10239"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000116>A RNA extraction from a virus</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000830 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000830">
+        <rdfs:label xml:lang="en">primaries flight feather</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;part_of"/>
+                <owl:someValuesFrom rdf:resource="&NCBITaxon;NCBITaxon_8782"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:http://volusia.org/birding/glossary.htm</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">Large outermost flight feathers on wing. Can vary from 9-11, but the number remains constant within a species.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000831 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000831">
+        <rdfs:label rdf:datatype="&xsd;string">collection country</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0000885"/>
+       <obo:IAO_0000119 xml:lang="en">GROUP: FLU</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">The name of the country where the sample was collected.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000833 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000833">
+        <rdfs:label rdf:datatype="&xsd;string">lethal dose 50</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000032"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:http://www.virology.net/ATVGlossary.html</obo:IAO_0000119>
+        <obo:IAO_0000116>MC, 20101119: moved from quality&gt;output assessment &gt; measure to scalar measurement datum</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">The measure that describes the dosage of a drug or poison that is toxic to 50% of the organisms it is tested against.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000838 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000838">
+        <rdfs:label rdf:datatype="&xsd;string">specimen collector role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000202"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&roproposed;realized_by"/>
+                <owl:someValuesFrom rdf:resource="&obo;FLU_0001036"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A specimen collector role is a study personnel role that is performed by a erson who collects the specimen from the environment.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000840 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000840">
+        <rdfs:label rdf:datatype="&xsd;string">strain taxonomy name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000009"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:http://www.niwa.cri.nz/rc/freshwater/fishatlas/glossary</obo:IAO_0000119>
+        <obo:IAO_0000116>MC: 20101119: moved from strain specimen quality to label. Not sure this term is required.</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">The taxonomic name for a strain species, consisting of two words, the genus and species.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000845 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000845">
+        <rdfs:label xml:lang="en">secondaries flight feather
+</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;part_of"/>
+                <owl:someValuesFrom rdf:resource="&NCBITaxon;NCBITaxon_8782"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:http://volusia.org/birding/glossary.htm</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">Flight feathers, smaller than the primaries, occurring in series along rear edge of wing between scapulars, inward of primaries.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000846 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000846">
+        <rdfs:label rdf:datatype="&xsd;string">GenBank subtype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0001010"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:http://www.ncbi.nlm.nih.gov/Sequin/sequin.hlp.html</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">The subtype is a quality that describes the subtype of organism from which sequence was obtained.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000847 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000847">
+        <rdfs:label rdf:datatype="&xsd;string">rural environment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0000879"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:http://en.wiktionary.org/wiki/rural</obo:IAO_0000119>
+        <obo:IAO_0000232 xml:lang="en">20110826, MC: renamed from &quot;rural&quot; to &quot;rural environment&quot;. Moved under environment.</obo:IAO_0000232>
+        <obo:IAO_0000115 xml:lang="en">Rural environment is an environment that is characterized by sparsely-populated non-urban areas, such as found in farming communities or the countryside.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000848 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000848">
+        <rdfs:label rdf:datatype="&xsd;string">sequence coverage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000109"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">wiki:http://en.wikipedia.org/wiki/Shotgun_sequencing</obo:IAO_0000119>
+        <obo:IAO_0000115>Sequence coverage is the average number of reads representing a given nucleotide  in the reconstructed sequence. It can be calculated from the length of the original genome (G), the number of reads(N), and the average read length(L) as N * L/G. For example, a hypothetical genome with 2,000 base pairs reconstructed from 8 reads with an average length of 500 nucleotides will have 2x redundancy. This parameter also enables one to estimate other quantities, such as the percentage of the genome covered by reads (sometimes also called coverage).</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">MC, 20101201: old definition was &quot;A sequencing specification that describes the average number of times a nucleotide position was sequenced to obtain a consensus.&quot; Moved from sequencing specification to measurement datum</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000849 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000849">
+        <rdfs:label>virus passage history record</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0001025"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;FLU_0000812"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:http://www.pnas.org/cgi/content/abstract/97/13/6974</obo:IAO_0000119>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">virus passage number</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="en">A virus passage history record is a passage history record that details the number of times a virus has been passaged in cell culture.</obo:IAO_0000115>
+        <obo:IAO_0000116>MC, 20111123: moved from quality of specimen to passage history record, and renamed accordingly (with addition of alt term)</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000851 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000851">
+        <rdfs:label rdf:datatype="&xsd;string">Genbank reject date</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0001010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000855 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000855">
+        <rdfs:label rdf:datatype="&xsd;string">nucleic acid sequence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <obo:IAO_0000116>has been scheduled for inclusion in OBI: nucleic acid sequence: A data item that is is a string of characters (e.g., A, G, C,T, U, N, R, Y, etc.) and represents the order of nucleotides found somewhere in nature or synthesized.</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000856 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000856">
+        <rdfs:label rdf:datatype="&xsd;string">sequence submitter role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000202"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">RBS:rbs</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A sequence submitter role is a study personnel role that is repsponsible for sending sequence (DNA, RNA, Protein) data to a repository, usually GenBank.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000857 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000857">
+        <rdfs:label rdf:datatype="&xsd;string">collection sub-district</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0000815"/>
+       <obo:IAO_0000119 xml:lang="en">GROUP: FLU</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">The name of the sub-district where collection occurred.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000858 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000858">
+        <rdfs:label rdf:datatype="&xsd;string">sequencing protocol</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000272"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000297"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&snap;SpecificallyDependentContinuant"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&roproposed;realized_by"/>
+                                <owl:someValuesFrom rdf:resource="&obo;OBI_0600047"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000116>MC, 20101201: updated label from sequencing specification to sequencing protocol to match position in hierarchy</obo:IAO_0000116>
+        <obo:IAO_0000115>A protocol which specifies conditions, parameters and instructions to be used when performing sequencing assays</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Melanie Courtot</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000859 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000859">
+        <rdfs:label rdf:datatype="&xsd;string">GenBank length</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0001010"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">wiki:http://en.wikipedia.org/wiki/Length</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">The length is a quality that describes measure of the nucleotide or amino acid sequence from beginning to end.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000860 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000860">
+        <rdfs:label rdf:datatype="&xsd;string">GenBank prep_date</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0001010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000864 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000864">
+        <rdfs:label rdf:datatype="&xsd;string">transmission environment</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;FLU_0000879"/>
+                    <owl:Restriction>
+                        <owl:onProperty>
+                            <rdf:Description>
+                                <owl:inverseOf rdf:resource="&roproposed;unfolds_in"/>
+                            </rdf:Description>
+                        </owl:onProperty>
+                        <owl:someValuesFrom rdf:resource="&TRANS;TRANS_0000000"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">FLU:MK</obo:IAO_0000119>
+        <obo:IAO_0000232 xml:lang="en">20110826, MC: trasnformed into a defined class. Subclasses rural and urban were renamde and asserted under environment</obo:IAO_0000232>
+        <obo:IAO_0000115 xml:lang="en">A transmission environment is the environment in which the etiologic agent was harbored and spread from host to host.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000865 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000865">
+        <rdfs:label rdf:datatype="&xsd;string">extraction date</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0000786"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0302884"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">FLU:MK</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">Calendar date that the sample was extracted.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000866 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000866">
+        <rdfs:label rdf:datatype="&xsd;string">lab isolation date</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0000786"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">FLU:MK</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">Date that the laboratory isolated the sample.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000867 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000867">
+        <rdfs:label rdf:datatype="&xsd;string">viral replication titer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000032"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:http://www.springerprotocols.com/Full/doi/10.1007/978-1-59745-279-3_8?encCode=REZJOjhfMy05NzItNTQ3OTUtMS04Nzk=&amp;tokenString=ycLy0AkcLqNgMccOI6y30w==</obo:IAO_0000119>
+        <obo:IAO_0000116>MC, 20101119: updated label from &quot;replication titer&quot; to &quot;viral replication titer&quot;</obo:IAO_0000116>
+        <obo:IAO_0000116>MC, 20101119: moved from quality to scalar mesurement dtum and updated defintiion accordingly</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">A scalar measurement datum that denotes the virus replication level.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000869 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000869">
+        <rdfs:label rdf:datatype="&xsd;string">mature</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0000987"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:http://www.dfw.state.or.us/resources/hunting/upland_bird/projects/mtn-quail.asp</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A bird after hatch year.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000871 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000871">
+        <rdfs:label rdf:datatype="&xsd;string">bird wing length unflattened</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000408"/>
+       <obo:IAO_0000119 xml:lang="en">GROUP: FLU</obo:IAO_0000119>
+        <obo:IAO_0000116>MC, 20101118: moved from winged organism anatomy to length measurement datum</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">The measured length of the bird wing as the wing is held without being flattened.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000875 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000875">
+        <rdfs:label rdf:datatype="&xsd;string">throat pain</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000020"/>
+        <j.0:hasDbXref rdf:datatype="&xsd;string">SYMP:505</j.0:hasDbXref>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&amp;va=sore%20throat</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">Painful throat due to inflammation of the fauces and pharynx.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000876 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000876">
+        <rdfs:label rdf:datatype="&xsd;string">egg infectious dose 50</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000032"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">:1938. L. Reed and H. Muench</obo:IAO_0000119>
+        <obo:IAO_0000116>MC, 20101119: moved from quality&gt;output assessment &gt; measure to scalar measurement datum</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">A strain specimen phenotype that describes the egg infectious dose 50 amount of a virus which is required to kill 50% of the eggs.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000877 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000877">
+        <rdfs:label rdf:datatype="&xsd;string">GenBank accession</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0001010"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:http://www.ornl.gov/sci/techresources/Human_Genome/posters/chromosome/genejargon.shtml</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">An accession number is a quality that describes the unique identifier assigned to the entire sequence record when the record is submitted to GenBank.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000879 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000879">
+        <rdfs:label rdf:datatype="&xsd;string">environment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Site"/>
+       <obo:IAO_0000119 xml:lang="en">GROUP: FLU</obo:IAO_0000119>
+        <obo:IAO_0000116>MC, 20101202: moved under site and definition updated from &quot;An environment is a spatial region having environmental qualities which may sustain an organism or a community of organisms.&quot;</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">An environment is a site having environmental qualities which may sustain an organism or a community of organisms.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000883 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000883">
+        <rdfs:label rdf:datatype="&xsd;string">nucleotide sequencer role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000202"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&roproposed;realized_by"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0600047"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A nucleotide sequencer role is a study personnel role that is performed by a person who determines the genetic sequence for a biomateral.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000885 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000885">
+        <rdfs:label rdf:datatype="&xsd;string">data about a collection location</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <obo:IAO_0000116>MC, 20101118: this is a placeholder meant to be removed when we will have the collection process, which will allow us to define current subclass using the is_about relation</obo:IAO_0000116>
+        <obo:IAO_0000116>MC, 20101118: renamed from collection location context</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000886 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000886">
+        <rdfs:label xml:lang="en">organism treated with antibiotics</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;OBI_0100026"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&obo;OBI_0600007"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;IDO_0000562"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
+        <obo:IAO_0000116 xml:lang="en">20110824, MC: renamed from &quot;antibiotics administered&quot; after adding correct restrictions. Note that even thought we say &quot;organism treated with antibiotic&quot; the sense of treated is not the one from OGMS:treatment - there doesn&#39;t have to be therapeutic intent.</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">An organism which has been treated with antibiotics</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000894 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000894">
+        <rdfs:label rdf:datatype="&xsd;string">bird length head to beak</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000408"/>
+       <obo:IAO_0000119 xml:lang="en">GROUP: FLU</obo:IAO_0000119>
+        <obo:IAO_0000116>MC, 20101118: moved from winged organism anatomy to length measurement datum</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">The measured length from the birds head to beak.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000895 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000895">
+        <rdfs:label rdf:datatype="&xsd;string">genbank virion RNA submission event</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0000757"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;IAO_0000027"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&CHEBI;CHEBI_33697"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                                                <owl:someValuesFrom rdf:resource="&obo;FLU_0000829"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000116>MC, 20101207: I am trying to say logically that the info submitted is about the RNA sequence that has been obtained by sequencing the RNA that had been extracted from the virion</obo:IAO_0000116>
+        <obo:IAO_0000115>A GenBank submission event in which the RNA sequence of a virion is submitted</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON; Melanie Courtot</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000897 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000897">
+        <rdfs:label rdf:datatype="&xsd;string">hemagglutinin titer</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&obo;FLU_0000939"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;IAO_0000032"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="&obo;FLU_0001028"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:http://www.virology.net/ATVGlossary.html</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A measure of the amount or concentration of hemagluttanin in solution.</obo:IAO_0000115>
+        <obo:IAO_0000116>MC, 20101119: moved from quality&gt;output assessment &gt; measure to scalar measurement datum</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000898 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000898">
+        <rdfs:label rdf:datatype="&xsd;string">bird beak length</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000408"/>
+       <obo:IAO_0000119 xml:lang="en">GROUP: FLU</obo:IAO_0000119>
+        <obo:IAO_0000116>MC, 20101118: moved from winged organism anatomy to length measurement datum</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">The measured length of the birds beaks.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000904 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000904">
+        <rdfs:label rdf:datatype="&xsd;string">runny nose</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000020"/>
+        <j.0:hasDbXref rdf:datatype="&xsd;string">SYMP:0000372</j.0:hasDbXref>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&amp;va=Rhinorrhea</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">Excessive mucous secretion from the nose.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000906 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000906">
+        <rdfs:label rdf:datatype="&xsd;string">fever</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000020"/>
+        <j.0:hasDbXref rdf:datatype="&xsd;string">GO:0001660 &#39;Gene ontology&#39;</j.0:hasDbXref>
+        <j.0:hasDbXref rdf:datatype="&xsd;string">SYMP:613</j.0:hasDbXref>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&amp;va=fever</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A rise of body temperature above the normal whether a natural response (as to infection) or artificially induced for therapeutic reasons.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000907 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000907">
+        <rdfs:label rdf:datatype="&xsd;string">nestling</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0000987"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:http://elibrary.unm.edu/sora/JFO/v059n03/p0235-p0238.html</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A young bird confined to the nest. Nestlings are infant birds having little or no feathering. They may be pink and naked, covered with down feathers, or covered with needle-like feathers (called pin feathers).</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000909 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000909">
+        <rdfs:label rdf:datatype="&xsd;string">sample name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000009"/>
+        <obo:IAO_0000116>MC: 20101119: moved from strain specimen quality to label. Not sure this term is required.</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000910 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000910">
+        <rdfs:label rdf:datatype="&xsd;string">extraction time</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000416"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">FLU:MK</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A defined period when the sample was extracted.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000913 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000913">
+        <rdfs:label rdf:datatype="&xsd;string">GenBank lot</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0001010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000914 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000914">
+        <rdfs:label rdf:datatype="&xsd;string">laboratory address</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0000778"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:http://www.gnu.org/software/radius/manual/html_node/radius_36.html</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">The address that describes the physical (geographic) location of the laboratory facility.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000918 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000918">
+        <rdfs:label rdf:datatype="&xsd;string">RNA amount shipped for sequencing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000032"/>
+        <obo:IAO_0000117>PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000115>The amount of RNA that has been sent to the lab for sequencing purposes</obo:IAO_0000115>
+        <obo:IAO_0000116>MC, 20101201: added definition for this term. Not sure how to deal with it though.</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000920 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000920">
+        <rdfs:label rdf:datatype="&xsd;string">plaque forming units per size</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000032"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:http://en.wikipedia.org/wiki/Plaque_forming_units</obo:IAO_0000119>
+        <obo:IAO_0000116>MC, 20101119: moved from quality&gt;output assessment &gt; measure to scalar measurement datum</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">A plaque forming unit per size is a measure that is used in the assessment of the concentration of viruses in a sample.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000923 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000923">
+        <rdfs:label rdf:datatype="&xsd;string">GenBank modification date</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0001010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000924 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000924">
+        <rdfs:label rdf:datatype="&xsd;string">collection city</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0000885"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:http://www.epa-echo.gov/echo/case_report_dd.html</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">The name of the city, town, or village where the sample was collected.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000925 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000925">
+        <rdfs:label rdf:datatype="&xsd;string">GenBank created_by_person/group</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0001010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000926 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000926">
+        <rdfs:label rdf:datatype="&xsd;string">GenBank origin_lab</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0001010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000928 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000928">
+        <rdfs:label rdf:datatype="&xsd;string">bird wing length flat</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000408"/>
+       <obo:IAO_0000119 xml:lang="en">GROUP: FLU</obo:IAO_0000119>
+        <obo:IAO_0000116>MC, 20101118: moved from winged organism anatomy to length measurement datum</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">The measured length of the bird wing as the wing is held flat.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000929 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000929">
+        <rdfs:label rdf:datatype="&xsd;string">collection longitude GPS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0000885"/>
+       <obo:IAO_0000119 xml:lang="en">GROUP: FLU</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">The GPS longitude coordinate where the sample was collected.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000933 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000933">
+        <rdfs:label rdf:datatype="&xsd;string">specimen collection protocol</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000272"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000297"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&snap;SpecificallyDependentContinuant"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&roproposed;realized_by"/>
+                                <owl:someValuesFrom rdf:resource="&obo;FLU_0001036"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+       <obo:IAO_0000119 xml:lang="en">GROUP: FLU</obo:IAO_0000119>
+        <obo:IAO_0000116>MC, 20101203: updated sample to specimen</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">The protocol specifying how to collect the specimen</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000937 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000937">
+        <rdfs:label rdf:datatype="&xsd;string">hatch year</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0000987"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">Flu:ls</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A bird in the first year after hatching.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000939 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000939">
+        <rdfs:label rdf:datatype="&xsd;string">hemagglutinin typing</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;OBI_0000070"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&obo;IAO_0000109"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;FLU_0001028"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:http://www.springerprotocols.com/Full/doi/10.1007/978-1-59745-279-3_8?encCode=REZJOjhfMy05NzItNTQ3OTUtMS04Nzk=&amp;tokenString=ycLy0AkcLqNgMccOI6y30w==</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">An assay which aims at determining the hemagglutanin subtype of an influenza virus.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">HA typing</obo:IAO_0000118>
+        <obo:IAO_0000232 xml:lang="en">MC, 20101202: made it a defined class as there are several methods to identify the heagglutinin type as per http://www.sciencedirect.com/science?_ob=ArticleURL&amp;_udi=B6T32-4C47KNC-5&amp;_user=1022551&amp;_coverDate=07%2F31%2F2004&amp;_rdoc=1&amp;_fmt=high&amp;_orig=search&amp;_origin=search&amp;_sort=d&amp;_docanchor=&amp;view=c&amp;_searchStrId=1565330571&amp;_rerunOrigin=google&amp;_acct=C000050484&amp;_version=1&amp;_urlVersion=0&amp;_userid=1022551&amp;md5=c5d1a3bc08abe655acb70076b13e3a74&amp;searchtype=a
+
+The haemagglutination-inhibition assay that is routinely used for subtyping and antigenic characterisation of influenza  strains does not distinguish between A(H1N1) and A(H1N2) strains; therefore, alternative tests are required for typing the NA. The standard test used to determine neuraminidase type is a rather cumbersome and time-consuming procedure (approximately 18 h) which relies on inhibition, by antibody, of n-acetyl neuraminic acid release from a substrate such as fetuin  (Aymard-Henry et al., 1973). Alternative methods of neuraminidase assay have been described, one for example relying on the agglutination of neuraminidase-treated erythrocytes by lectins (Fiszon and Hannoun, 1990 B Fiszon and C Hannoun, Comparison of neuraminidases of the same subtype but from different species using a new method of titration, J. Virol. Methods 27 (1990), pp. 79–90. Abstract  |  PDF (587 K)  | View Record in Scopus | Cited By in Scopus (4)Fiszon and Hannoun, 1990)</obo:IAO_0000232>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000940 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000940">
+        <rdfs:label rdf:datatype="&xsd;string">laboratory name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0000778"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">wiki:http://en.wikipedia.org/wiki/Laboratory</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">The name of the laboratory conducting the scientific research, experiments, analysis or sequencing may be performed.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000941 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000941">
+        <rdfs:label rdf:datatype="&xsd;string">nasal congestion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000020"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A nasal congestion is a symptom that is characterized by the blockage of the nasal passages usually due to membranes lining the nose becoming swollen from inflamed blood vessels.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">stuffy nose</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000944 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000944">
+        <rdfs:label rdf:datatype="&xsd;string">influenza virus antigenic data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&NCBITaxon;NCBITaxon_11320"/>
+                            <rdf:Description rdf:about="&NCBITaxon;NCBITaxon_11520"/>
+                            <rdf:Description rdf:about="&NCBITaxon;NCBITaxon_11552"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000875"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000116>MC, 20101130: &quot;Antibodies against the viral surface glycoprotein hemagglutinin (HA) provide protective immunity to influenza virus infection, and this protein is therefore the primary component of influenza vaccines. However, the antigenic structure of HA has changed significantly over time, a process known as antigenic drift (6), and in most years, the influenza vaccine has to be updated to ensure sufficient efficacy against newly emerging variants (7, 8). The World Health Organization coordinates a global influenza surveillance network, currently consisting of 112 national influenza centers and four collaborating centers for reference and research. This network routinely characterizes the antigenic properties of influenza viruses using a hemagglutination inhibition (HI) assay &quot;</obo:IAO_0000116>
+        <obo:IAO_0000116>MC, 20101130: renamed antigenic data (from strain antigenic data) and moved under data item from strain specimen quality</obo:IAO_0000116>
+        <obo:IAO_0000115>Data reflecting the antigenic properties of influenza viruses characterized using a hemagglutination inhibition (HI) assay</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: http://www.sciencemag.org/content/305/5682/371.full</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000949 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000949">
+        <rdfs:label rdf:datatype="&xsd;string">sequence annotator role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000202"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">Flu:ls</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">The sequence annotator role is a study personnel role of a scientist who assigns a set of characteristics to a sequence for the purpose of documenting relevant infromation from experimental results to aid in their interpretation.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000954 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000954">
+        <rdfs:label rdf:datatype="&xsd;string">Genbank isolation source</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0001010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000955 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000955">
+        <rdfs:label rdf:datatype="&xsd;string">extractor role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000202"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A extractor role is a study personnel role that is performed by a person who extracts genetic material from a biomaterial.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000957 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000957">
+        <rdfs:label>viral RNA segment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&CHEBI;CHEBI_33697"/>
+        <obo:IAO_0000117>person: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000115>RNA molecule constituting the genome of viruses</obo:IAO_0000115>
+        <obo:IAO_0000118>vRNA segment</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000962 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000962">
+        <rdfs:label rdf:datatype="&xsd;string">principal investigator role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000202"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">OBI:0000103</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A person with the lead role on the project, as a scientist or engineer.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000966 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000966">
+        <rdfs:label rdf:datatype="&xsd;string">GenBank size</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0001010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000967 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000967">
+        <rdfs:label xml:lang="en">treatment event</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000652"/>
+        <obo:IAO_0000116>MC, 20101207: I believe this term reflects the biochemical treatment of a sample and is therefore not equivalent to ogms: treatment which is a treatment to alleviate a disorder</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000969 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000969">
+        <rdfs:label rdf:datatype="&xsd;string">collection location name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0000885"/>
+       <obo:IAO_0000119 xml:lang="en">GROUP: FLU</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">The name of the place where the sample was collected.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000970 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000970">
+        <rdfs:label rdf:datatype="&xsd;string">laboratory tracking number</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0000789"/>
+        <obo:IAO_0000117>PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000116>MC, 20101119: moved from &quot;data about a laboratory&quot; to &quot;specimen identification nmber&quot;. See http://groups.google.com/group/influenza-ontology/browse_thread/thread/91adb05b5e6b80aa?hl=en</obo:IAO_0000116>
+        <obo:IAO_0000115>A laboratory specimen tracking number is a specimen identification number assigned to a specimen by a laboratory with the objective to uniquely identify and follow the specimen.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000972 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000972">
+        <rdfs:label rdf:datatype="&xsd;string">antiviral treatment date</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0000786"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;FLU_0001009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">FLU:MK</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">Calendar date that antiviral treatment was administered.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000973 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000973">
+        <rdfs:label rdf:datatype="&xsd;string">GenBank center_project</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0001010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000976 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000976">
+        <rdfs:label rdf:datatype="&xsd;string">onset date</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0000786"/>
+       <obo:IAO_0000119 xml:lang="en">GROUP: FLU</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">Date when host first experienced clinical symptoms.</obo:IAO_0000115>
+        <obo:IAO_0000116>MC, 20101119: moved from quality&gt;output assessment &gt; measure to date</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000979 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000979">
+        <rdfs:label rdf:datatype="&xsd;string">collection time</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000416"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">FLU:MK</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A defined period when the sample was collected.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000980 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000980">
+        <rdfs:label rdf:datatype="&xsd;string">GenBank gi</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0001010"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:http://www.ncbi.nlm.nih.gov/Class/FieldGuide/glossary.html#G</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A GI number is a quality that is an identifier assigned to all sequences at the NCBI, which points to a specific version of a sequence record. GI stands for GenInfo, a database system at NCBI that preceded the Entrez system.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000985 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000985">
+        <rdfs:label rdf:datatype="&xsd;string">collection quantity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000032"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A collection quantity is a generically dependant continuant that specifies the quantity of material collected.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000987 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000987">
+        <rdfs:label rdf:datatype="&xsd;string">life stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0000992"/>
+        <j.0:hasDbXref rdf:datatype="&xsd;string">PATO:0000261</j.0:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000988 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000988">
+        <rdfs:label rdf:datatype="&xsd;string">virus isolation protocol</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0001003"/>
+       <obo:IAO_0000119 xml:lang="en">GROUP: FLU</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">Method by which virus is isolated.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000992 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000992">
+        <rdfs:label rdf:datatype="&xsd;string">quality of organism</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Quality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000993 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000993">
+        <rdfs:label rdf:datatype="&xsd;string">GenBank lib_name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0001010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000994 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000994">
+        <rdfs:label rdf:datatype="&xsd;string">collection state</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0000885"/>
+       <obo:IAO_0000119 xml:lang="en">GROUP: FLU</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">The name of the state where the collection occurred.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000995 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000995">
+        <rdfs:label rdf:datatype="&xsd;string">sequence received date</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0000786"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">FLU:MK</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">Date that the laboratory received the sequence.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000996 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000996">
+        <rdfs:label rdf:datatype="&xsd;string">genomic sequencing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0600047"/>
+        <obo:IAO_0000116>MC, 20101207: we can&#39;t say that the output information is about the input material</obo:IAO_0000116>
+        <obo:IAO_0000116>MC, 20101207: moved under DNA sequencing</obo:IAO_0000116>
+        <obo:IAO_0000116>MC, 20101207: I think genomic sequencing is an assay that has specified input some DNA (genome?) and has specified output some genotype or ICE about a sequence</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000997 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000997">
+        <rdfs:label rdf:datatype="&xsd;string">urban environment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0000879"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:http://wordnet.princeton.edu/perl/webwn?s=urban</obo:IAO_0000119>
+        <obo:IAO_0000232 xml:lang="en">20110826, MC: renamed from &quot;urban&quot; to &quot;urban environment&quot;. Moved under environment.</obo:IAO_0000232>
+        <obo:IAO_0000115 xml:lang="en">Urban environment is an environment that is characterized by densely-populated areas, such as found in cities.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0000998 -->
+
+    <owl:Class rdf:about="&obo;FLU_0000998">
+        <rdfs:label rdf:datatype="&xsd;string">human social group</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000181"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:en.wiktionary.org/wiki/social group</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A human social group is a material entitiy that is a collection of humans, who share certain characteristics, interact with one another, accept expectations and obligations as members of the group, and share a common identity.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0001000 -->
+
+    <owl:Class rdf:about="&obo;FLU_0001000">
+        <rdfs:label rdf:datatype="&xsd;string">amplification protocol</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000272"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000297"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&snap;SpecificallyDependentContinuant"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&roproposed;realized_by"/>
+                                <owl:someValuesFrom rdf:resource="&obo;FLU_0001032"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0001001 -->
+
+    <owl:Class rdf:about="&obo;FLU_0001001">
+        <rdfs:label rdf:datatype="&xsd;string">headache</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000020"/>
+        <j.0:hasDbXref rdf:datatype="&xsd;string">SYMP:504</j.0:hasDbXref>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&amp;va=headache</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A pain in the head.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0001002 -->
+
+    <owl:Class rdf:about="&obo;FLU_0001002">
+        <rdfs:label xml:lang="en">organism treated with antiviral drug</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;OBI_0100026"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                        <owl:someValuesFrom rdf:resource="&obo;FLU_0001009"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An organism which has been treated with antiviral drugs.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0001003 -->
+
+    <owl:Class rdf:about="&obo;FLU_0001003">
+        <rdfs:label rdf:datatype="&xsd;string">extraction protocol</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000272"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000297"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&snap;SpecificallyDependentContinuant"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&roproposed;realized_by"/>
+                                <owl:someValuesFrom rdf:resource="&obo;OBI_0302884"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0001005 -->
+
+    <owl:Class rdf:about="&obo;FLU_0001005">
+        <rdfs:label xml:lang="en">hospitalized host</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;IDO_0000531"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                        <owl:someValuesFrom rdf:resource="&obo;OGMS_0000098"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
+        <obo:IAO_0000115 xml:lang="en">A host hospitalized is a condition that indicates whether or not an organism has been hospitalized.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0001007 -->
+
+    <owl:Class rdf:about="&obo;FLU_0001007">
+        <rdfs:label rdf:datatype="&xsd;string">GenBank bac_name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0001010"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:http://www.ncbi.nlm.nih.gov/Class/FieldGuide/glossary.html#B</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A bac_name is a quality that identifies the bacterial artifical chromosome (bac), a large insert cloning vector capable of handling large segments of cloned DNA, typically around 150 kb, which are used in the construction of genomic libraries for genome scale sequencing projects including human, mouse, Arabidopsis, and rice.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0001008 -->
+
+    <owl:Class rdf:about="&obo;FLU_0001008">
+        <rdfs:label xml:lang="en">bird band identification number</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&NCBITaxon;NCBITaxon_8782"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000297"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&snap;SpecificallyDependentContinuant"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&roproposed;inheres_in"/>
+                                <owl:someValuesFrom rdf:resource="&obo;FLU_0001026"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A bird band identification number is a number identifies the individual (often the host) - analagous to a name in a human.</obo:IAO_0000115>
+        <obo:IAO_0000119>GROUP: FLU</obo:IAO_0000119>
+        <obo:IAO_0000116>MC, 20101118: moved from quality of organism to identification number</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0001009 -->
+
+    <owl:Class rdf:about="&obo;FLU_0001009">
+        <rdfs:label rdf:datatype="&xsd;string">antiviral treatment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OBI_0100026"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&roproposed;has_role"/>
+                                <owl:someValuesFrom rdf:resource="&obo;IDO_0000629"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;FLU_0001031"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:http://www.cdc.gov/flu/professionals/antivirals/indications.htm</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A treatment that specifies which, if any, antiviral treatment has been administered to a host.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0001010 -->
+
+    <owl:Class rdf:about="&obo;FLU_0001010">
+        <rdfs:label rdf:datatype="&xsd;string">data about a genbank entry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <obo:IAO_0000116>MC, 20101118: renamed &quot;data about a genbank entry&quot; from &quot;qualities of genbank&quot; and moved under data item. We should create a genbank record and use the is_about relation to link both</obo:IAO_0000116>
+        <obo:IAO_0000116>MC, 20101118: this is a placeholder meant to be removed when we will have the class &quot;genbank entry&quot;, which will allow us to define current subclass using the is_about relation</obo:IAO_0000116>
+        <obo:IAO_0000116>MC, 08092009: those need clean up</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0001012 -->
+
+    <owl:Class rdf:about="&obo;FLU_0001012">
+        <rdfs:label rdf:datatype="&xsd;string">ligated ends molecule</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000047"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A ligated ends molecule is a  biological macromolecule with overhanging nucleotides that assist in the ligation process.</obo:IAO_0000115>
+        <obo:IAO_0000116>MC, 20101118: moved under processed material and updated definition</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0001015 -->
+
+    <owl:Class rdf:about="&obo;FLU_0001015">
+        <rdfs:label rdf:datatype="&xsd;string">post disease onset sample collection period</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000416"/>
+       <obo:IAO_0000119 xml:lang="en">GROUP: FLU</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">The time period that comprises the sample collection period when the sample was  collected following the disease onset.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0001016 -->
+
+    <owl:Class rdf:about="&obo;FLU_0001016">
+        <rdfs:label rdf:datatype="&xsd;string">adult</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0000987"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">URL:http://www.okaponds.com/tips.htm</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A bird with definitive plumage or sexually mature. Adult birds are mature, independent birds who are fully feathered for flight and capable of surviving on their own (in regards to food, shelter, etc.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0001017 -->
+
+    <owl:Class rdf:about="&obo;FLU_0001017">
+        <rdfs:label rdf:datatype="&xsd;string">duration of illness</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000416"/>
+       <obo:IAO_0000119 xml:lang="en">GROUP: FLU</obo:IAO_0000119>
+        <obo:IAO_0000116>MC, 20101123: moved from quality of infectious disease to duration</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">The number of days the patient was ill.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0001019 -->
+
+    <owl:Class rdf:about="&obo;FLU_0001019">
+        <rdfs:label rdf:datatype="&xsd;string">specimen barcode</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0000789"/>
+        <obo:IAO_0000115 xml:lang="en">A specimen barcode is a specimen identification number formatted as an optical machine-readable representation.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Barcode</obo:IAO_0000119>
+        <obo:IAO_0000116>MC, 20101118: moved from &quot;quality of specimen&quot; under specimen identification number.</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0001024 -->
+
+    <owl:Class rdf:about="&obo;FLU_0001024">
+        <rdfs:label rdf:datatype="&xsd;string">antibody titer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000032"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A antibody titer is output of a measurement that describes the measure of antibodies in a biomaterial.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0001025 -->
+
+    <owl:Class rdf:about="&obo;FLU_0001025">
+        <rdfs:label>passage history record</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <obo:IAO_0000116>See http://groups.google.com/group/influenza-ontology/browse_thread/thread/12b3fb5ef0501b5b?hl=en</obo:IAO_0000116>
+        <obo:IAO_0000115>A passage history record is a data item recording in sequential order the hosts in which the strain has been previously subcultured in.</obo:IAO_0000115>
+        <obo:IAO_0000119>PERSON: Burke Squires</obo:IAO_0000119>
+        <obo:IAO_0000117>PERSON: Melanie Courtot</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0001026 -->
+
+    <owl:Class rdf:about="&obo;FLU_0001026">
+        <rdfs:label>bird identification band</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&roproposed;bearer_of"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000294"/>
+                        <owl:someValuesFrom rdf:resource="&obo;FLU_0001008"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A plastic or metal ring attached usually to the ankle of the bird and bearing a band identification number</obo:IAO_0000115>
+        <obo:IAO_0000117>MC, 20101201: added as bearer of band identification number as per Burke&#39;s email at http://groups.google.com/group/influenza-ontology/msg/8781d389ec670463?hl=en</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0001027 -->
+
+    <owl:Class rdf:about="&obo;FLU_0001027">
+        <rdfs:label>hemagglutination disposition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Disposition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&roproposed;realized_by"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000906"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A disposition to initiate an hemagglutination process</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Melanie Courtot</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0001028 -->
+
+    <owl:Class rdf:about="&obo;FLU_0001028">
+        <rdfs:label>hemagglutinin</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&snap;MaterialEntity"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&roproposed;bearer_of"/>
+                        <owl:someValuesFrom rdf:resource="&obo;FLU_0001027"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000117>PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Hemagglutinin</obo:IAO_0000119>
+        <obo:IAO_0000116>MC, 20101201: added as request to PRO tracker unanswered. See http://sourceforge.net/tracker/?func=detail&amp;aid=2945554&amp;group_id=266825&amp;atid=1135711</obo:IAO_0000116>
+        <obo:IAO_0000115>Hemagglutinin is a substance that causes red blood cells to agglutinate (has disposition hemagglutination)</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0001030 -->
+
+    <owl:Class rdf:about="&obo;FLU_0001030">
+        <rdfs:label>enrichment process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
+        <obo:IAO_0000115>the process of increasing the concentration of a particule of interest in a sample</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Melanie Courtot</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0001031 -->
+
+    <owl:Class rdf:about="&obo;FLU_0001031">
+        <rdfs:label xml:lang="en">antiviral drug</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IDO_0000559"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000295"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000090"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A drug used specifically for treating viral  infections.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/Antiviral_drug</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0001032 -->
+
+    <owl:Class rdf:about="&obo;FLU_0001032">
+        <rdfs:label>virus amplification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000094"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&NCBITaxon;NCBITaxon_10239"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0100051"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A material processing aiming at increasing the number of viruses in a specimen</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Melanie Courtot</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0001033 -->
+
+    <owl:Class rdf:about="&obo;FLU_0001033">
+        <rdfs:label xml:lang="en">neuraminidase inhibitor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Function"/>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">The function of inhibiting the viral neuraminidase protein, thus preventing the virus from reproducing by budding from the host cell.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/Neuraminidase_inhibitor</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0001034 -->
+
+    <owl:Class rdf:about="&obo;FLU_0001034">
+        <rdfs:label>influenza neuraminidase</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;FLU_0000753"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&ro;part_of"/>
+                        <owl:someValuesFrom rdf:resource="&obo;FLU_0000751"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000115 xml:lang="en">A type of neuraminidase found on the surface of influenza viruses that enables the virus to be released from the host cell.</obo:IAO_0000115>
+        <obo:IAO_0000232 xml:lang="en">MC, 20101202: When influenza virus replicates, it attaches to the cell surface using hemagglutinin, a molecule found on the surface of the virus which binds to sialic acid groups. Sialic acids are found on various glycoproteins  at the host cell surface, and the virus exploits these groups to bind the host cell. In order for the virus to be released from the cell, neuraminidase must enzymatically cleave the sialic acid groups from host glycoproteins. As an integral part of influenza replication, blocking the synthesis of neuraminidase with neuraminidase inhibitors is an effective way to treat influenza.</obo:IAO_0000232>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/Viral_neuraminidase</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0001035 -->
+
+    <owl:Class rdf:about="&obo;FLU_0001035">
+        <rdfs:label xml:lang="en">neuraminidase inhibitor drug</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FLU_0001031"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&roproposed;has_function"/>
+                <owl:someValuesFrom rdf:resource="&obo;FLU_0001033"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A drug targeted at the influenza virus, which work by blocking the function of the viral neuraminidase protein, thus preventing the virus from reproducing by budding from the host cell.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/Neuraminidase_inhibitor</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FLU_0001036 -->
+
+    <owl:Class rdf:about="&obo;FLU_0001036">
+        <rdfs:label>specimen collection</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;OBI_0600005"/>
+                    <rdf:Description rdf:about="&obo;OBI_0600012"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
+        <obo:IAO_0000117>PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000116>MC, 20101203: added this class to realize the concretization of the collection protocol</obo:IAO_0000116>
+        <obo:IAO_0000115>the process of collecting a specimen, either from an organism or from an environment</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000009 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000009"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000032 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000032"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000408 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000408"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000416 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000416"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000577 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000577"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000875 -->
+
+    <owl:Class rdf:about="&obo;OBI_0000875">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;IAO_0000109"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:someValuesFrom rdf:resource="&obo;FLU_0000753"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;IAO_0000109"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:someValuesFrom rdf:resource="&obo;FLU_0001028"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000906 -->
+
+    <owl:Class rdf:about="&obo;OBI_0000906">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000308"/>
+                <owl:someValuesFrom rdf:resource="&obo;FLU_0001027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0302884 -->
+
+    <rdf:Description rdf:about="&obo;OBI_0302884">
+        <obo:IAO_0000118 xml:lang="en">isolation event</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0666666 -->
+
+    <rdf:Description rdf:about="&obo;OBI_0666666">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&roproposed;realizes"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000294"/>
+                        <owl:someValuesFrom rdf:resource="&obo;FLU_0000825"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&CHEBI;CHEBI_33697"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/obo/owl/GO#GO_0030880 -->
+
+    <owl:Class rdf:about="&GO;GO_0030880">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&roproposed;has_function"/>
+                <owl:someValuesFrom rdf:resource="&GO;GO_0034062"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/GO#GO_0031379 -->
+
+    <owl:Class rdf:about="&GO;GO_0031379">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&roproposed;has_function"/>
+                <owl:someValuesFrom rdf:resource="&GO;GO_0003968"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

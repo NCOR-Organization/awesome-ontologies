@@ -1,0 +1,2919 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+     xml:base="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cdao.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cdao/2024-01-25/cdao.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl"/>
+        <terms:coverage>Comparison of two or more biological entities of the same class when the similarities and differences of the entities are treated explicitly as the product of an evolutionary process of descent with modification.</terms:coverage>
+        <terms:creator xml:lang="en">CDAO Team</terms:creator>
+        <terms:description>The Comparative Data Analysis Ontology (CDAO) provides a framework for understanding data in the context of evolutionary-comparative analysis.  This comparative approach is used commonly in bioinformatics and other areas of biology to draw inferences from a comparison of differently evolved versions of something, such as differently evolved versions of a protein.  In this kind of analysis, the things-to-be-compared typically are classes called &apos;OTUs&apos; (Operational Taxonomic Units).  The OTUs can represent biological species, but also may be drawn from higher or lower in a biological hierarchy, anywhere from molecules to communities.  The features to be compared among OTUs are rendered in an entity-attribute-value model sometimes referred to as the &apos;character-state data model&apos;.  For a given character, such as &apos;beak length&apos;, each OTU has a state, such as &apos;short&apos; or &apos;long&apos;.  The differences between states are understood to emerge by a historical process of evolutionary transitions in state, represented by a model (or rules) of transitions along with a phylogenetic tree.  CDAO provides the framework for representing OTUs, trees, transformations, and characters.  The representation of characters and transformations may depend on imported ontologies for a specific type of character.</terms:description>
+        <terms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+        <terms:subject xml:lang="en">comparative analysis; comparative data analysis; evolutionary comparative analysis; evolution;  phylogeny; phylogenetics</terms:subject>
+        <terms:title xml:lang="en">Comparative Data Analysis Ontology</terms:title>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/coverage -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/coverage"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/language -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/language"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/subject -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/subject"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/coverage -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/coverage"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/subject -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/subject"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000142 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000142">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000178"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000056"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000071"/>
+        <terms:description>This property associates a character data matrix with a character (a column) represented in the matrix.</terms:description>
+        <rdfs:label>has_Character</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000143 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000143">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000146"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000209"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000139"/>
+        <terms:description>The property links a Node to the Edge it belongs to in the child position.</terms:description>
+        <rdfs:label>belongs_to_Edge_as_Child</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000144 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000144">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000178"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000174"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+        <terms:description>The property links a node to any of the other nodes that are its ancestors in a rooted tree.</terms:description>
+        <rdfs:label>has_Ancestor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000145 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000145">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000184"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000002"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000015"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000133"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms:description>This property associates a nucleotide character-state instance with a state value from the domain of nucleotide states.</terms:description>
+        <rdfs:label>has_Nucleotide_State</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000146 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000146">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000190"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000099"/>
+        <terms:description>The property links a Node to one of the edges that are incident on such node.</terms:description>
+        <rdfs:label>belongs_to_Edge</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000147 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000147">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000190"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000071"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000138"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000056"/>
+        <rdfs:label>belongs_to_Character_State_Data_Matrix</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000148 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000148">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000178"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000203"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000012"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+        <terms:description>The property links a rooted tree to the specific node that represents the unique root of the tree.</terms:description>
+        <rdfs:label>has_Root</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000149 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000149">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000174"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000179"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000177"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000209"/>
+        </owl:propertyChainAxiom>
+        <terms:description>The property links a node to a node that is an immediate descendant in the tree.</terms:description>
+        <rdfs:label>has_Child</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000150 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000150">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000178"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000092"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000003"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000095"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms:description>The property that relates a coordinate list to the first item in the list.</terms:description>
+        <rdfs:label>has_First_Coordinate_Item</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000151 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000151">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000178"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000098"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000022"/>
+        <rdfs:label>has_Coordinate</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000152 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000152">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000205"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000019"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000068"/>
+        <rdfs:label>belongs_to_Continuous_Character</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000153 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000153">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000178"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000071"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000138"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000098"/>
+        <terms:description>This property relates a character to a state datum for the character.</terms:description>
+        <rdfs:label>has_Datum</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000154 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000154">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000183"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000075"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000138"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000008"/>
+        <rdfs:label>has_Standard_Datum</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000155 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000155">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000006"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000006"/>
+        <terms:description>This property links two networks where the latter is a substructure of the former</terms:description>
+        <rdfs:label>subtree_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000156 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000156">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000184"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000112"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000015"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000076"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms:description>This property associates a amino acid character-state instance with a state value from the domain of amino acid states.</terms:description>
+        <rdfs:label>has_Amino_Acid_State</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000157 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000157">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000193"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000040"/>
+        <rdfs:label>is_annotation_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000158 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000158">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000206"/>
+        <rdfs:label>has_RNA_Datum</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000159 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000159">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000182"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000097"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000091"/>
+        <terms:description>This property relates a transformation to a &apos;left&apos; state (the state associated with the &apos;left&apos; node).</terms:description>
+        <rdfs:label>has_Left_State</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000160 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000160">
+        <rdfs:label>precedes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000161 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000161">
+        <rdfs:label>exclude</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000162 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000162">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000178"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000099"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+        <terms:description>Property that associates to each Edge the Nodes it connects.</terms:description>
+        <rdfs:label>has_Node</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000163 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000163">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000059"/>
+        <rdfs:label>nca_node_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000164 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000164">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000138"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Associates a TU to some external taxonomy reference.</rdfs:comment>
+        <rdfs:label>has_External_Reference</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000165 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000165">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000022"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000104"/>
+        <terms:description>This property links a coordinate to the coordinate system it references.</terms:description>
+        <rdfs:label>has_Coordinate_System</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000166 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000166">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000205"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000002"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000094"/>
+        <rdfs:label>belongs_to_Nucleotide_Character</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000167 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000167">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000167"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:label>connects_to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000168 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000168">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000206"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000131"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000138"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000112"/>
+        <terms:description>This property relates an amino acid character (a column in a protein sequence alignment) to a state datum for the character (an individual cell in the alignment column).</terms:description>
+        <rdfs:label>has_Amino_Acid_Datum</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000169 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000169">
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000071"/>
+        <terms:description>This property relates a type of evolutionary change (an Edge_Transformation) to the character that undergoes the change.  The change is a transformation_of the affected character.</terms:description>
+        <rdfs:label>hereditary_change_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000170 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000170">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000183"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000078"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000138"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000136"/>
+        <terms:description>This property relates a compound character (a character with some states that are subdividable) to a state datum for the character.</terms:description>
+        <rdfs:label>has_Compound_Datum</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000171 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000171">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000178"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000080"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000059"/>
+        <rdfs:label>has_Descendants</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000172 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000172">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000030"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000110"/>
+        <rdfs:label>reconciliation_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000173 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000173">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000205"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000112"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000131"/>
+        <rdfs:label>belongs_to_Amino_Acid_Character</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000174 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000174">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000178"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+        <terms:description>A property that links a node to any of its descendants in a rooted tree.</terms:description>
+        <rdfs:label>has_Descendant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000175 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000175">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000184"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000019"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000031"/>
+        <terms:description>This property associates a character-state instance with a state value on a continuous numeric scale.</terms:description>
+        <rdfs:label>has_Continuous_State</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000176 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000176">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000178"/>
+        <rdfs:label>has_Type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000177 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000177">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000146"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000201"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000139"/>
+        <terms:description>The property links a Node to one of the Edges where the node appears in the parent position (i.e., closer to the root).</terms:description>
+        <rdfs:label>belongs_to_Edge_as_Parent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000178 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000178">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000190"/>
+        <terms:description>Generic &apos;has&apos; property.</terms:description>
+        <rdfs:label>has</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000179 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000179">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000144"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000143"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000201"/>
+        </owl:propertyChainAxiom>
+        <terms:description>The property that links a node to its unique parent in a rooted tree.</terms:description>
+        <rdfs:label>has_Parent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000180 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000180">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000205"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000136"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000078"/>
+        <rdfs:label>belongs_to_Compound_Character</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000181 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000181">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000098"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000098"/>
+        <terms:description>This propery relates different instances of the same character, including the case when the states of the character differ (e.g., large_beak of beak_size_character of TU A is homologous_to small_beak of beak_size_character of TU B).</terms:description>
+        <rdfs:label>homologous_to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000182 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000182">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000178"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000097"/>
+        <terms:description>This property relates a transformation to the components that compose it.</terms:description>
+        <rdfs:label>has_Change_Component</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000183 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000183">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000153"/>
+        <rdfs:label>has_Categorical_Datum</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000184 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000184">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000178"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000098"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000091"/>
+        <terms:description>This property associates a character-state instance with its state value, e.g., a state value expressed in terms of an imported domain ontology.</terms:description>
+        <rdfs:label>has_State</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000185 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000185">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000182"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000097"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+        <terms:description>This property relates a transformation to a &apos;left&apos; node (the node that has the &apos;left&apos; state).</terms:description>
+        <rdfs:label>has_Left_Node</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000186 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000186">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000182"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000097"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000091"/>
+        <terms:description>This property relates a transformation to a &apos;right&apos; state (the state associated with the &apos;right&apos; node).</terms:description>
+        <rdfs:label>has_Right_State</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000187 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000187">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000196"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000138"/>
+        <terms:description>This property relates a TU or taxonomic unit (typically associated with character data) to a phylogenetic history (Tree).</terms:description>
+        <rdfs:label>represents_TU</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000188 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000188">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000161"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+        <rdfs:label>exclude_Node</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000189 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000189">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000184"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000136"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000015"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000055"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms:description>This property associates a compound character-state instance with its compound state value.</terms:description>
+        <rdfs:label>has_Compound_State</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000190 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000190">
+        <owl:equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000194"/>
+        <terms:description>Generic property that links a concept to another concept it is a constituent of. The property is a synonym of part_of.</terms:description>
+        <rdfs:label>belongs_to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000191 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000191">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000190"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000098"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000138"/>
+        <terms:description>This property relates a character-state datum to its TU.</terms:description>
+        <rdfs:label>belongs_to_TU</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000192 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000192">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000190"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000099"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000006"/>
+        <rdfs:label>belongs_to_Network</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000193 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000193">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000178"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000040"/>
+        <rdfs:label>has_Annotation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000194 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000194">
+        <rdfs:label>obsolete part_of</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000195 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000195">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000206"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000094"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000138"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000002"/>
+        <terms:description>This property relates a nucleotide character (a column in a nucleotide alignment) to a state datum for the character (an individual cell in the alignment column).</terms:description>
+        <rdfs:label>has_Nucleotide_Datum</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000196 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000196">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000138"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+        <terms:description>This property relates a TU to a node that represents it in a network.</terms:description>
+        <rdfs:label>represented_by_Node</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000197 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000197">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000178"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000092"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000092"/>
+        <terms:description>The property that relates a coordinate list to the item in the list beyond the first item.</terms:description>
+        <rdfs:label>has_Remaining_Coordinate_List</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000198 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000198">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000178"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000118"/>
+        <rdfs:label>has_Element</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000199 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000199">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000161"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000070"/>
+        <rdfs:label>exclude_Subtree</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000200 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000200">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000190"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000099"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000110"/>
+        <rdfs:label>belongs_to_Tree</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000201 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000201">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000162"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000139"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+        <terms:description>Associates to a Directed Edge the Node that is in the parent position in the edge (i.e., the node touched by the edge and closer to the root of the tree)</terms:description>
+        <rdfs:label>has_Parent_Node</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000202 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000202">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000178"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000004"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+        <rdfs:label>has_Lineage_node</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000203 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000203">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000190"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000110"/>
+        <rdfs:label>belongs_to_Tree_as_Root</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000204 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000204">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000178"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000099"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000097"/>
+        <rdfs:label>has_Hereditary_Change</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000205 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000205">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000190"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000098"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000071"/>
+        <rdfs:label>belongs_to_Character</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000206 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000206">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000183"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000115"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000138"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000050"/>
+        <rdfs:label>has_Molecular_Datum</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000207 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000207">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000153"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000068"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000138"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000019"/>
+        <terms:description>This property relates a continuous character to a state datum for the character.</terms:description>
+        <rdfs:label>has_Continuous_Datum</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000208 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000208">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000178"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000056"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000138"/>
+        <terms:description>This property associates a character data matrix with a TU (a row) represented in the matrix.</terms:description>
+        <rdfs:label>has_TU</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000209 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000209">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000162"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000139"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+        <terms:description>The property associates to a Directed Edge the Node that is in the child position in the edge, i.e., the node touched by the edge and closer to the leaves of the tree.</terms:description>
+        <rdfs:label>has_Child_Node</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000210 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000210">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000182"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000097"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+        <terms:description>This property relates a transformation to a &apos;right&apos; node (the node that has the &apos;right&apos; state).</terms:description>
+        <rdfs:label>has_Right_Node</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000211 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000211">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>has_Precision</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000212 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000212">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000003"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>has_Point_Coordinate_Value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000213 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000213">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000215"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label>has_Int_Value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000214 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000214">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>has_Support_Value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000215 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000215">
+        <rdfs:label>has_Value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000216 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000216">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>has_Uncertainty_Factor</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000217 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000217">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000095"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>has_Range_End_Value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000218 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000218">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000215"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>has_Float_Value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000219 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/CDAO_0000219">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000095"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>has_Range_Start_Value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000050"/>
+        <rdfs:label>DesoxiRibonucleotideResidueStateDatum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000022"/>
+        <rdfs:label>CoordinatePoint</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000012"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Lineage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000074"/>
+        <rdfs:label>Phylo4Tree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000006">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000178"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000099"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Network</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000040"/>
+        <terms:description>Description of a model of transformations.</terms:description>
+        <rdfs:comment>This is a non-computible description of a model, not the fully specified mathematical model, which typically relates the probability of a transformation to various parameters.</rdfs:comment>
+        <rdfs:label>ModelDescription</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000089"/>
+        <rdfs:label>StandardStateDatum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000063"/>
+        <rdfs:label>ContinuousCharacterLengthType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000009"/>
+        <rdfs:label>ContinuousCharBayesianLengthType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000074"/>
+        <rdfs:label>NEXUSTreeBlock</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000110"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000155"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000012"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000178"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000139"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000148"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000088"/>
+        <rdfs:label>RootedTree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000020"/>
+        <rdfs:label>Kimura2Parameters</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000044"/>
+        <rdfs:label>TreeProcedure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000015">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000221"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000222"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000223"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000039"/>
+        <terms:description>This concept is tied to the verbally ambiguous &apos;gap&apos; concept and to the use of a gap character (often the en dash &apos;-&apos;) in text representations of sequence alignments. In general, this represents the absence of any positively diagnosed Character-State. As such, the gap may be interpreted as an additional Character-State, as the absence of the Character, or as an unknown value.  In some cases it is helpful to separate these.</terms:description>
+        <rdfs:comment>This class should be renamed.  These are not generic states but non-concrete states including gap, unknown and missing.</rdfs:comment>
+        <rdfs:label>Generic_State</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000070"/>
+        <rdfs:label>UnrootedSubtree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000110"/>
+        <rdfs:label>UnresolvedTree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000018">
+        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000130"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000110"/>
+        <rdfs:label>BifurcatingTree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000098"/>
+        <rdfs:label>ContinuousStateDatum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000007"/>
+        <rdfs:label>SubstitutionModel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000020"/>
+        <rdfs:label>JukesCantor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000022">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000165"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000104"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <terms:description>A positional coordinate giving the source of a character state, used for molecular sequences.</terms:description>
+        <rdfs:comment>drawing from seqloc categories from NCBI at http://www.ncbi.nlm.nih.gov/IEB/ToolBox/SDKDOCS/SEQLOC.HTML#_Seq-loc:_Locations_on</rdfs:comment>
+        <rdfs:label>DatumCoordinate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000017"/>
+        <rdfs:label>UnresolvedRootedTree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000024">
+        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000099"/>
+        <terms:description>&apos;Branch&apos; is the domain-specific synonym for an edge of a (Phylogenetic) Tree or Network.  Branches may have properties such as length and degree of support.</terms:description>
+        <rdfs:label>Branch</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000025">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000040"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000157"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000056"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <terms:description>Meta-information associated with a character matrix, such as, for the case of a sequence alignment, the method of alignment.</terms:description>
+        <rdfs:label>CharacterStateDataMatrixAnnotation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000174"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000190"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000012"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>AncestralNode</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000017"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000088"/>
+        <rdfs:label>UnresolvedUnrootedTree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000091"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000216"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>UncertainStateDomain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000110"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000172"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000110"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>ReconcileTree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000091"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000215"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <terms:description>This class describes a continuous value. The link to the actual float value is through the property has_Value. It could have also other properties attached (e.g., has_Precision).</terms:description>
+        <rdfs:label>Continuous</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000025"/>
+        <rdfs:label>AlignmentProcedure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000033">
+        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000124"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000026"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000042"/>
+        <rdfs:label>Dichotomy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000039"/>
+        <rdfs:label>Molecular</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000009"/>
+        <rdfs:label>ContinuousCharParsimonyLengthType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000091"/>
+        <rdfs:label>Categorical</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000040">
+        <terms:description>The base class of annotations in CDAO.</terms:description>
+        <rdfs:comment>Its possible that this base class should be discarded and that annotations should inherit from an imported base class if one exists.</rdfs:comment>
+        <rdfs:label>CDAOAnnotation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000041">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000190"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000097"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>originationEvent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000042">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000177"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000026"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000124"/>
+        <rdfs:label>Polytomy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000091"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000216"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>PolymorphicStateDomain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000044">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000040"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000157"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000110"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label>TreeAnnotation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000039"/>
+        <rdfs:label>Standard</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000101"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000176"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000063"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000215"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <terms:description>The length of an edge (branch) of a Tree or Network, typically in units of evolutionary changes in character-state per character.</terms:description>
+        <rdfs:comment>Its possible that this should not be classed as an &apos;annotation&apos; since it contains data rather than meta-data.</rdfs:comment>
+        <rdfs:label>EdgeLength</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000034"/>
+        <rdfs:label>RibonucleotideResidue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000048">
+        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000129"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000110"/>
+        <rdfs:label>Clade</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000100"/>
+        <rdfs:label>DiscreteCharParsimonyLengthType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000089"/>
+        <rdfs:label>MolecularStateDatum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000188"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000127"/>
+        <rdfs:label>PolyphyleticGroup</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000107"/>
+        <rdfs:label>NexusDataBlock</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000053">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000177"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000026"/>
+        <rdfs:label>BranchingNode</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000039"/>
+        <rdfs:label>Compound</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000056">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000142"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000071"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000178"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000025"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000208"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000138"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <terms:description>A matrix of character-state data, typically containing observed data, though in some cases the states in the matrix might be simulated or hypothetical. Synonyms: character Data matrix, character-state matrix</terms:description>
+        <rdfs:label>CharacterStateDataMatrix</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000050"/>
+        <rdfs:label>RibonucleotideResidueStateDatum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000063"/>
+        <rdfs:label>TimeCalibratedLengthType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000059">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000118"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000198"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label>SetOfNodes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000080"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000163"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000118"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>MRCANode</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000107"/>
+        <rdfs:label>FASTADataMatrix</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000062">
+        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000065"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000097"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000159"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000091"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000169"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000071"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000186"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000091"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>evolutionaryTransition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000063 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000063">
+        <rdfs:label>EdgeLengthType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000097"/>
+        <rdfs:label>cladogeneticChange</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000065">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000097"/>
+        <rdfs:label>anageneticChange</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000066">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000040"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000157"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000138"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label>TUAnnotation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000067 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000067">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000074"/>
+        <rdfs:label>PhyloTree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000068 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000068">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000207"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000153"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>ContinuousCharacter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000069 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000069">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000074"/>
+        <rdfs:label>PHYLIPTree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000110"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000155"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000110"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Subtree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000071 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000071">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000153"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000098"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Traits shown to be relevant for phylogenetic classification</rdfs:comment>
+        <rdfs:label>Character</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000072 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000072">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000006"/>
+        <rdfs:label>GalledTree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000073 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000073">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000110"/>
+        <rdfs:label>SpeciesTree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000074 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000074">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000044"/>
+        <rdfs:label>TreeFormat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000075 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000075">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000111"/>
+        <rdfs:label>StandardCharacter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000076 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000076">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000034"/>
+        <terms:description>This class will be declared equivalent ot the amino acid class description imported</terms:description>
+        <rdfs:label>AminoAcidResidue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000077 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000077">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000064"/>
+        <rdfs:label>geneDuplication</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000078 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000078">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000111"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000142"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000071"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000170"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000136"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000153"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000136"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <terms:description>A character that could be divided into separate characters but is not due to the non-independence of changes that would result, e.g., as in the case of a subsequence that is either present or absent as a block.</terms:description>
+        <rdfs:label>CompoundCharacter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000079 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000079">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000074"/>
+        <rdfs:label>SIMMAPTree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000080 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000080">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000026"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000053"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000174"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000053"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label>CommonAncestralNode</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000081 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000081">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000074"/>
+        <rdfs:label>NewickTree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000082">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000063"/>
+        <rdfs:label>TimeProportionalLengthType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000083 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000083">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000100"/>
+        <rdfs:label>DiscreteCharDistanceLengthType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000084 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000084">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000012"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000149"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000108"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>StarTree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000085 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000085">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000018"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000088"/>
+        <rdfs:label>FullyResolvedUnrootedTree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000086 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000086">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000127"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000199"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000070"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000129"/>
+        <rdfs:label>ParaphyleticGroup</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000087 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000087">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000041"/>
+        <rdfs:label>geneticEvent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000088 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000088">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000110"/>
+        <rdfs:label>UnrootedTree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000089 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000089">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000098"/>
+        <rdfs:label>CategoricalStateDatum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000090 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000090">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000100"/>
+        <rdfs:label>DiscreteCharLikelihoodLengthType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000091 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000091">
+        <terms:description>The universe of possible states for a particular type of character, e.g., the states of an Amino_Acid character come from the Amino_Acid domain.</terms:description>
+        <rdfs:label>CharacterStateDomain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000092 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000092">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000022"/>
+        <rdfs:label>CoordinateList</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000093 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000093">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000020"/>
+        <rdfs:label>GammaDistribution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000094 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000094">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000115"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000195"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000153"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>DesoxiRibonucleotideResidueCharacter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000095 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000095">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000022"/>
+        <rdfs:label>CoordinateRange</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000096 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000096">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000006"/>
+        <rdfs:label>ReticulateEvolution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000097 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000097">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000159"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000091"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000169"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000071"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000186"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000091"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>hereditaryChange</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000098 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000098">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000191"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000138"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000205"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000071"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <terms:description>The instance of a given character for a given TU.  Its state is an object property drawn from a particular character state domain, e.g., the state of an Amino_Acid_State_Datum is an object property drawn from the domain Amino_Acid.</terms:description>
+        <rdfs:label>CharacterStateDatum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000099 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000099">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000193"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000101"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000162"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <terms:description>An edge connecting two nodes in a (Phylogenetic) Tree or Network, also known as a &apos;branch&apos;.  Edges may have attributes such as length, degree of support, and direction.  An edge can be a surrogate for a &apos;split&apos; or bipartition, since each edge in a tree divides the terminal nodes into two sets.</terms:description>
+        <rdfs:label>Edge</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000100 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000100">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000063"/>
+        <rdfs:label>DiscreteCharacterLengthType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000101 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000101">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000040"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000157"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000099"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label>EdgeAnnotation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000102 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000102">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000018"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000178"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000033"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000099"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000108"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>FullyResolvedRootedTree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000103">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000063"/>
+        <rdfs:label>GrafenLengthType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000104">
+        <terms:description>A reference to an external coordinate system.  Coordinates for data must refer to some such external coordinate system.</terms:description>
+        <rdfs:label>CoordinateSystem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000105 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000105">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000107"/>
+        <rdfs:label>GenBankDataMatrix</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000107 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000107">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000025"/>
+        <rdfs:label>DataMatrixFormat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000108 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000108">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000149"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+        <rdfs:label>TerminalNode</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000109 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000109">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000115"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000153"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000057"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>RibonucleotideResidueCharacter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000110 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000110">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000006"/>
+        <rdfs:label>Tree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000111 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000111">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000071"/>
+        <rdfs:label>CategoricalCharacter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000112 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000112">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000050"/>
+        <rdfs:label>AminoAcidResidueStateDatum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000113 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000113">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000107"/>
+        <rdfs:label>PHYLIPDataMatrix</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000114 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000114">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000009"/>
+        <rdfs:label>ContinuousCharLikelihoodLengthType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000115 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000115">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000111"/>
+        <rdfs:label>MolecularCharacter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000116 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000116">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000190"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000097"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>hereditaryPersistance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000117 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000117">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000118"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000198"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000071"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label>SetOfCharacters</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000118 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000118">
+        <terms:description>The class is used to describe colletions of phylogenetic data elements. Examples include sets of trees for annotating consensus tree provenance, and sets of characters or higher order grouping (e.g., groups of groups of characters) that extends the CharSet block of NEXUS.</terms:description>
+        <rdfs:label>SetOfThings</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000120 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000120">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000178"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000098"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000178"/>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000151"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000022"/>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <terms:description>A set of ordered states, typically the residues in a macromolecular sequence.</terms:description>
+        <rdfs:label>Sequence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000121 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000121">
+        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000122"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000064"/>
+        <rdfs:label>speciation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000122 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000122">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000064"/>
+        <rdfs:label>cladogenesis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000124 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000124">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000026"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000177"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Bifurcation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000125 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000125">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000100"/>
+        <rdfs:label>DiscreteCharBayesianLengthType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000126 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000126">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000066"/>
+        <terms:description>Link to an externally defined taxonomic hierarchy.</terms:description>
+        <rdfs:label>TaxonomicLink</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000127 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000127">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000006"/>
+        <rdfs:label>MonophyleticGroup</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000128 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000128">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000132"/>
+        <rdfs:label>molecularRecombination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000129 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000129">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000127"/>
+        <rdfs:label>HolophyleticGroup</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000130 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000130">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000110"/>
+        <rdfs:label>FullyResolvedTree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000131 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000131">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000115"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000168"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000112"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000153"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000112"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>AminoAcidResidueCharacter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000132 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000132">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000087"/>
+        <rdfs:label>recombination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000133 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000133">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000034"/>
+        <rdfs:label>DesoxiRibonucleotideResidue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000134 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000134">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000070"/>
+        <rdfs:label>RootedSubtree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000136 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000136">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000089"/>
+        <rdfs:label>CompoundStateDatum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000137 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000137">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000007"/>
+        <rdfs:label>GapCost</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000138 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000138">
+        <terms:description>A unit of analysis that may be tied to a node in a tree and to a row in a character matrix.  It subsumes the traditional concepts of &apos;OTU&apos; and &apos;HTU&apos;.</terms:description>
+        <rdfs:label>TU</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000139 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000139">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000099"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000201"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000209"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <terms:description>A directed edge. Rooted trees have directed edges. The direction is specified by way of the parent and child relationships of nodes that the edge connects.</terms:description>
+        <rdfs:label>DirectedEdge</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000140 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000140">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000190"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000143"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000139"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Node</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000141 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDAO_0000141">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000009"/>
+        <rdfs:label>ContinuousCharDistanceLengthType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000220 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CDAO_0000220">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000133"/>
+        <rdfs:label>dA</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000221 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CDAO_0000221">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000015"/>
+        <rdfs:label>absent</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000222 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CDAO_0000222">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000015"/>
+        <rdfs:label>unknown</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000223 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CDAO_0000223">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000015"/>
+        <rdfs:label>gap</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000224 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CDAO_0000224">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000133"/>
+        <rdfs:label>dG</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000225 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CDAO_0000225">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000057"/>
+        <rdfs:label>rU</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000226 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CDAO_0000226">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000133"/>
+        <rdfs:label>dC</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000227 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CDAO_0000227">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000133"/>
+        <rdfs:label>dT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000002"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000019"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000112"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000068"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000094"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000131"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
