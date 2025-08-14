@@ -10,7 +10,7 @@ This list is populated by volunteers. A scoreboard is provided below displaying 
 
 | 🏅 Rank | Contributor | Score |
 |--------|-------------|------------------|
-| 🥇 | `@Gregory D` | 61 |
+| 🥇 | `@John Beverley` | 72 |
 
 <!-- END_SCOREBOARD -->
 
