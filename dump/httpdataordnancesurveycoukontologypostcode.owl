@@ -1,0 +1,22 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <owl:Ontology rdf:about="http://data.ordnancesurvey.co.uk/ontology/postcode/">
+    <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    <owl:imports>
+      <rdf:Description rdf:about="http://data.ordnancesurvey.co.uk/ontology/admingeo/">
+        <rdfs:label xml:lang="en">The administrative geography and civil voting area ontology</rdfs:label>
+      </rdf:Description>
+    </owl:imports>
+    <dct:publisher rdf:resource="http://data.ordnancesurvey.co.uk/id/ordnancesurvey"/>
+    <dc:creator xml:lang="en">Ordnance Survey</dc:creator>
+    <dct:creator rdf:resource="http://data.ordnancesurvey.co.uk/id/ordnancesurvey"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.ordnancesurvey.co.uk/ontology/postcode.owl"/>
+    <rdfs:label xml:lang="en">Postcode Ontology</rdfs:label>
+    <rdfs:comment xml:lang="en">An ontology describing the postcode geography in Great Britain.</rdfs:comment>
+  </owl:Ontology>
+</rdf:RDF>

@@ -1,0 +1,17 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <owl:Ontology rdf:about="http://data.ordnancesurvey.co.uk/ontology/50kGazetteer/">
+    <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An ontology describing the 50K Gazetteer.</dc:description>
+    <dct:publisher rdf:resource="http://data.ordnancesurvey.co.uk/id/ordnancesurvey"/>
+    <dc:creator rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"
+    >Ordnance Survey</dc:creator>
+    <dct:creator rdf:resource="http://data.ordnancesurvey.co.uk/id/ordnancesurvey"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.ordnancesurvey.co.uk/ontology/50KGazetteer.owl"/>
+  </owl:Ontology>
+</rdf:RDF>

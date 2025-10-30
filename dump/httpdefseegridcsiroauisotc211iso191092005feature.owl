@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:basic="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:gf="http://def.seegrid.csiro.au/isotc211/iso19109/2005/feature#"
+	xmlns:gm="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#"
+	xmlns:h2o="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:spin="http://spinrdf.org/spin#"
+	xmlns:tm="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#"
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19109/2005/feature">
+	<rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An OWL representation of part of the General Feature Model described in ISO 19109 and the General Feature Instance model described in Annex C of ISO 19156:2011. 
+
+This vocabulary is provisional, pending finalization of ISO 19150-2.
+
+The URI stem http://def.seegrid.csiro.au/isotc211/ is temporary. The vocabulary is expected to be ultimately published in the domain http://def.isotc211.org/</rdfs:comment>
+	<dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simon J D Cox
+CSIRO</dc:creator>
+	<dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An OWL representation of part of the General Feature Model described in ISO 19109 and the General Feature Instance model described in Annex C of ISO 19156:2011</dc:description>
+	<dc:rights rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Copyright © 2012-2013 CSIRO</dc:rights>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO 19109 Geographic Information - Rules for Application Schema</dc:source>
+	<dc:source>ISO 19156:2011
+Geographic Information - Observations and Measurements</dc:source>
+	<dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OWL representation of ISO 19109 (General Feature Model)</dc:title>
+	<dc:type rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.w3.org/2002/07/owl</dc:type>
+	<dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-10-27T00:00:00</dct:created>
+	<dct:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19109/2005/feature#AnyFeature"/>
+	<dct:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-11-14T00:00:00</dct:modified>
+	<vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gf</vann:preferredNamespacePrefix>
+	<vann:preferredNamespaceUri rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19109/2005/feature#"/>
+	<owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry"/>
+	<owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+	<owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic"/>
+	<owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic"/>
+	<owl:priorVersion rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19109/20120605/feature"/>
+	<owl:versionIRI rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201207-Toulouse/ISOTC211/feature.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19109/2005/feature#AnyFeature">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In ISO 19156 the class GFI_Feature is defined as an instance of GF_FeatureType. In this OWL representation we do not have a specific class for GF_FeatureType because this would imply subclassing owl:Class which is inconsistent with OWL-DL restrictions.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19109/2005/feature"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geographic feature</rdfs:label>
+	<h2o:isAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</h2o:isAbstract>
+	<owl:disjointWith rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Object"/>
+	<owl:disjointWith rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#Object"/>
+	<skos:notation rdf:datatype="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#ISOClassName">GFI_Feature</skos:notation>
+</rdf:Description>
+
+</rdf:RDF>

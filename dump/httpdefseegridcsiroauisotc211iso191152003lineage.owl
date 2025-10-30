@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:h2o="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#"
+	xmlns:li="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataquality#Element">
+	<h2o:isAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</h2o:isAbstract>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataquality#Result">
+	<h2o:isAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</h2o:isAbstract>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+	<dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simon Jonathan David COX
+CSIRO</dc:creator>
+	<dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-05-25T00:00:00</dc:date>
+	<dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An OWL representation of parts of the Geographic Metadata model described in ISO 19115:2003 with Corrigendum 2006 - LI Package</dc:description>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO 19115:2003
+ISO 19115:2006 Corrigendum</dc:source>
+	<dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OWL representation of ISO 19115 (Geographic Information - Metadata - Lineage package)</dc:title>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-05-18T00:00:00</dcterms:created>
+	<dcterms:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#Source"/>
+	<dcterms:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#description"/>
+	<dcterms:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#Lineage"/>
+	<dcterms:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#processor"/>
+	<dcterms:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#scaleDenominator"/>
+	<dcterms:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#sourceReferenceSystem"/>
+	<dcterms:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#ProcessStep"/>
+	<dcterms:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#statement"/>
+	<dcterms:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#source"/>
+	<dcterms:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#sourceCitation"/>
+	<dcterms:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#dateTime"/>
+	<dcterms:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#sourceStep"/>
+	<dcterms:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#processStep"/>
+	<dcterms:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#sourceExtent"/>
+	<dcterms:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#rationale"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-10-26T00:00:00</dcterms:modified>
+	<owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic"/>
+	<owl:priorVersion rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201210/ISOTC211/HM/lineage.rdf"/>
+	<owl:versionIRI rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201305/ISOTC211/HM/lineage.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#Lineage">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lineage</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc54gcpx1">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#ProcessStep"/>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#processStep"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#Lineage">
+	<rdfs:subClassOf rdf:nodeID="node19fc54gcpx1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc54gcpx2">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#statement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#Lineage">
+	<rdfs:subClassOf rdf:nodeID="node19fc54gcpx2"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc54gcpx3">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#Source"/>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#source"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#Lineage">
+	<rdfs:subClassOf rdf:nodeID="node19fc54gcpx3"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc54gcpx4">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#source"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#Lineage">
+	<rdfs:subClassOf rdf:nodeID="node19fc54gcpx4"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc54gcpx5">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#processStep"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#Lineage">
+	<rdfs:subClassOf rdf:nodeID="node19fc54gcpx5"/>
+	<skos:notation rdf:datatype="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#ISOClassName">LI_Lineage</skos:notation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#ProcessStep">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process step</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc54gcpx6">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#dateTime"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#ProcessStep">
+	<rdfs:subClassOf rdf:nodeID="node19fc54gcpx6"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc54gcpx7">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#source"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#ProcessStep">
+	<rdfs:subClassOf rdf:nodeID="node19fc54gcpx7"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc54gcpx8">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#description"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#ProcessStep">
+	<rdfs:subClassOf rdf:nodeID="node19fc54gcpx8"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc54gcpx9">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#rationale"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#ProcessStep">
+	<rdfs:subClassOf rdf:nodeID="node19fc54gcpx9"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc54gcpx10">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#Source"/>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#source"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#ProcessStep">
+	<rdfs:subClassOf rdf:nodeID="node19fc54gcpx10"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc54gcpx11">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#processor"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#ProcessStep">
+	<rdfs:subClassOf rdf:nodeID="node19fc54gcpx11"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc54gcpx12">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#ResponsibleParty"/>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#processor"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#ProcessStep">
+	<rdfs:subClassOf rdf:nodeID="node19fc54gcpx12"/>
+	<skos:notation rdf:datatype="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#ISOClassName">LI_ProcessStep</skos:notation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#Source">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Source</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc54gcpx13">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#ReferenceSystem"/>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#sourceReferenceSystem"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#Source">
+	<rdfs:subClassOf rdf:nodeID="node19fc54gcpx13"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc54gcpx14">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#RepresentativeFraction"/>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#scaleDenominator"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#Source">
+	<rdfs:subClassOf rdf:nodeID="node19fc54gcpx14"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc54gcpx15">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#sourceReferenceSystem"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#Source">
+	<rdfs:subClassOf rdf:nodeID="node19fc54gcpx15"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc54gcpx16">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#scaleDenominator"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#Source">
+	<rdfs:subClassOf rdf:nodeID="node19fc54gcpx16"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc54gcpx17">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#ProcessStep"/>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#sourceStep"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#Source">
+	<rdfs:subClassOf rdf:nodeID="node19fc54gcpx17"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc54gcpx18">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#sourceStep"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#Source">
+	<rdfs:subClassOf rdf:nodeID="node19fc54gcpx18"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc54gcpx19">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#sourceCitation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#Source">
+	<rdfs:subClassOf rdf:nodeID="node19fc54gcpx19"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc54gcpx20">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#Extent"/>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#sourceExtent"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#Source">
+	<rdfs:subClassOf rdf:nodeID="node19fc54gcpx20"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc54gcpx21">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#Citation"/>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#sourceCitation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#Source">
+	<rdfs:subClassOf rdf:nodeID="node19fc54gcpx21"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc54gcpx22">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#description"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#Source">
+	<rdfs:subClassOf rdf:nodeID="node19fc54gcpx22"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc54gcpx23">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#sourceExtent"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#Source">
+	<rdfs:subClassOf rdf:nodeID="node19fc54gcpx23"/>
+	<skos:notation rdf:datatype="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#ISOClassName">LI_Source</skos:notation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#dateTime">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:domain rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#ProcessStep"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">date time</rdfs:label>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#description">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc54gcpx24">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc54gcpx25">
+	<rdf:first rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#Source"/>
+	<rdf:rest rdf:nodeID="node19fc54gcpx26"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc54gcpx26">
+	<rdf:first rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#ProcessStep"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc54gcpx24">
+	<owl:unionOf rdf:nodeID="node19fc54gcpx25"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#description">
+	<rdfs:domain rdf:nodeID="node19fc54gcpx24"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">description</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#processStep">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:domain rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#Lineage"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">process step</rdfs:label>
+	<rdfs:range rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#ProcessStep"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#processor">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:domain rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#ProcessStep"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">processor</rdfs:label>
+	<rdfs:range rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#ResponsibleParty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#rationale">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:domain rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#ProcessStep"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rationale</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#scaleDenominator">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:domain rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#Source"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">scale denominator</rdfs:label>
+	<rdfs:range rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#RepresentativeFraction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#source">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc54gcpx27">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc54gcpx28">
+	<rdf:first rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#Lineage"/>
+	<rdf:rest rdf:nodeID="node19fc54gcpx29"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc54gcpx29">
+	<rdf:first rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#ProcessStep"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc54gcpx27">
+	<owl:unionOf rdf:nodeID="node19fc54gcpx28"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#source">
+	<rdfs:domain rdf:nodeID="node19fc54gcpx27"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">source</rdfs:label>
+	<rdfs:range rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#Source"/>
+	<owl:inverseOf rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#sourceStep"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#sourceCitation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:domain rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#Source"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">source citation</rdfs:label>
+	<rdfs:range rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#Citation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#sourceExtent">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:domain rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#Source"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">source extent</rdfs:label>
+	<rdfs:range rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#Extent"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#sourceReferenceSystem">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:domain rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#Source"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">source reference system</rdfs:label>
+	<rdfs:range rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#ReferenceSystem"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#sourceStep">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:domain rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#Source"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">source step</rdfs:label>
+	<rdfs:range rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#ProcessStep"/>
+	<owl:inverseOf rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#source"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#statement">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:domain rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#Lineage"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">statement</rdfs:label>
+</rdf:Description>
+
+</rdf:RDF>

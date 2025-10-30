@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:basic="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:gm="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#"
+	xmlns:h2o="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry">
+	<rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An OWL representation of part of the model for geometry and space from ISO 19107:2003 Geographic Information - Spatial Schema. 
+
+This vocabulary is provisional, pending finalization of ISO 19150-2.
+
+The URI stem http://def.seegrid.csiro.au/isotc211/ is temporary. The vocabulary is expected to be ultimately published in the domain http://def.isotc211.org/. </rdfs:comment>
+	<dc:creator rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Simon Jonathan David COX
+CSIRO</dc:creator>
+	<dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An OWL representation of part of the model for geometry and space from ISO 19107:2003 Geographic Information - Spatial Schema</dc:description>
+	<dc:rights rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Copyright © 2012-2013 CSIRO</dc:rights>
+	<dc:source rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ISO 19107:2003</dc:source>
+	<dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OWL representation of ISO 19107 (Geographic Information - Spatial Schema)</dc:title>
+	<dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-10-27T00:00:00</dct:created>
+	<dct:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Curve"/>
+	<dct:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Surface"/>
+	<dct:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Object"/>
+	<dct:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Position"/>
+	<dct:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Primitive"/>
+	<dct:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#boundingBox"/>
+	<dct:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Envelope"/>
+	<dct:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Complex"/>
+	<dct:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#position"/>
+	<dct:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Aggregate"/>
+	<dct:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#OrientablePrimitive"/>
+	<dct:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#upperCorner"/>
+	<dct:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#srs"/>
+	<dct:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#coordinates"/>
+	<dct:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#lowerCorner"/>
+	<dct:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#OrientableCurve"/>
+	<dct:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Solid"/>
+	<dct:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Point"/>
+	<dct:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#OrientableSurface"/>
+	<dct:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-11-14T00:00:00</dct:modified>
+	<vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gm</vann:preferredNamespacePrefix>
+	<vann:preferredNamespaceUri rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#"/>
+	<owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic"/>
+	<owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic"/>
+	<owl:priorVersion rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201305/ISOTC211/HM/geometry.rdf"/>
+	<owl:versionIRI rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201311/ISOTC211/HM/geometry.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Aggregate">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geometry Aggregate</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Object"/>
+	<h2o:isAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</h2o:isAbstract>
+	<skos:notation rdf:datatype="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#ISOClassName">GM_Aggregate</skos:notation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Complex">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geometric complex
+set of disjoint geometric primitives such that the boundary of each primitive can be represented as the union of other geometric primitives within the complex
+
+NOTE:  The geometric primitives in the set are mutually exclusive in the sense that no point is interior to more than one primitive.  The set is closed under boundary operations, meaning that for each element in the complex, there is a collection (also a complex) of geometric primitives that represents the boundary of that element.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geometry Complex</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Object"/>
+	<h2o:isAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</h2o:isAbstract>
+	<owl:equivalentClass rdf:resource="http://www.opengis.net/ont/gml#GeometricComplex"/>
+	<skos:notation rdf:datatype="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#ISOClassName">GM_Complex</skos:notation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Curve">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Curve</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#OrientableCurve"/>
+	<owl:equivalentClass rdf:resource="http://www.opengis.net/ont/gml#Curve"/>
+	<skos:notation rdf:datatype="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#ISOClassName">GM_Curve</skos:notation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Envelope">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GM_Envelope is often referred to as a minimum bounding box or rectangle. Regardless of dimension, a GM_Envelope can be represented without ambiguity as two direct positions (coordinate points). To encode a GM_Envelope, it is sufficient to encode these two points. This is consistent with all of the data types in this standard, their state is represented by their publicly accessible attributes. </rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Envelope</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc4cjvdx1">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:onClass rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Position"/>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#upperCorner"/>
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Envelope">
+	<rdfs:subClassOf rdf:nodeID="node19fc4cjvdx1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc4cjvdx2">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#srs"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Envelope">
+	<rdfs:subClassOf rdf:nodeID="node19fc4cjvdx2"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc4cjvdx3">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:onClass rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Position"/>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#lowerCorner"/>
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Envelope">
+	<rdfs:subClassOf rdf:nodeID="node19fc4cjvdx3"/>
+	<skos:notation rdf:datatype="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#ISOClassName">GM_Envelope</skos:notation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Object">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GM_Object (Figure 6) is the root class of the geometric object taxonomy and supports interfaces common to all geographically referenced geometric objects. GM_Object instances are sets of direct positions in a particular coordinate reference system. A GM_Object can be regarded as an infinite set of points that satisfies the set operation interfaces for a set of direct positions, TransfiniteSet&lt;DirectPosition&gt;. Since an infinite collection class cannot be implemented directly, a Boolean test for inclusion shall be provided by the GM_Object interface. This international standard concentrates on vector geometry classes, but future work may use GM_Object as a root class without modification.
+NOTE As a type, GM_Object does not have a well-defined default state or value representation as a data type. Instantiated subclasses of GM_Object will.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geometry object</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc4cjvdx4">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#srs"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Object">
+	<rdfs:subClassOf rdf:nodeID="node19fc4cjvdx4"/>
+	<h2o:isAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</h2o:isAbstract>
+	<owl:equivalentClass rdf:resource="http://www.opengis.net/ont/gml#AbstractGeometry"/>
+	<skos:notation rdf:datatype="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#ISOClassName">GM_Object</skos:notation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#OrientableCurve">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orientable Curve</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#OrientablePrimitive"/>
+	<owl:equivalentClass rdf:resource="http://www.opengis.net/ont/gml#OrientableCurve"/>
+	<skos:notation rdf:datatype="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#ISOClassName">GM_OrientableCurve</skos:notation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#OrientablePrimitive">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orientable primitive</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Primitive"/>
+	<h2o:isAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</h2o:isAbstract>
+	<skos:notation rdf:datatype="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#ISOClassName">GM_OrientablePrimitive</skos:notation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#OrientableSurface">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orientable Surface</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#OrientablePrimitive"/>
+	<owl:equivalentClass rdf:resource="http://www.opengis.net/ont/gml#OrientableSurface"/>
+	<skos:notation rdf:datatype="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#ISOClassName">GM_OrientableSurface</skos:notation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Point">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spatial point</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Primitive"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc4cjvdx5">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#position"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Point">
+	<rdfs:subClassOf rdf:nodeID="node19fc4cjvdx5"/>
+	<owl:equivalentClass rdf:resource="http://www.opengis.net/ont/gml#Point"/>
+	<skos:notation rdf:datatype="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#ISOClassName">GM_Point</skos:notation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Position">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DirectPosition object data types (Figure 14) hold the coordinates for a position within some coordinate reference system. The coordinate reference system is described in ISO 19111. Since DirectPositions, as data types, will often be included in larger objects (such as GM_Objects) that have references to ISO19111::SC_CRS, the DirectPosition::cordinateReferenceSystem may be left NULL if this particular DirectPosition is included in a larger object with such a reference to a SC_CRS. In this case, the DirectPosition::coordinateReferenceSystem is implicitly assumed to take on the value of the containing object's SC_CRS. </rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geometry position</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc4cjvdx6">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#srs"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Position">
+	<rdfs:subClassOf rdf:nodeID="node19fc4cjvdx6"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc4cjvdx7">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#coordinates"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Position">
+	<rdfs:subClassOf rdf:nodeID="node19fc4cjvdx7"/>
+	<skos:notation rdf:datatype="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#ISOClassName">DirectPosition</skos:notation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Primitive">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GM_Primitive (Figure 8) is the abstract root class of the geometric primitives. Its main purpose is to define the basic "boundary" operation that ties the primitives in each dimension together. A geometric primitive (GM_Primitive) is a geometric object that is not decomposed further into other primitives in the system. This includes curves and surfaces, even though they are composed of curve segments and surface patches, respectively. This composition is a strong aggregation: curve segments and surface patches cannot exist outside the context of a primitive.
+NOTE Most geometric primitives are decomposable infinitely many times. Adding a centre point to a line may split that line into two separate lines. A new curve drawn across a surface may divide that surface into two parts, each of which is a surface. This is the reason that the normal definition of primitive as "non-decomposable" is not plausible in a geometry model - the only non-decomposable object in geometry is a point.
+Any geometric object that is used to describe a feature is a collection of geometric primitives. A collection of geometric primitives may or may not be a geometric complex. Geometric complexes have additional properties such as closure by boundary operations and mutually exclusive component parts.
+GM_Primitive and GM_Complex share most semantics, in the meaning of operations, attributes and associations. There is an exception in that a GM_Primitive shall not contain its boundary (except in the trivial case of GM_Point where the boundary is empty), while a GM_Complex shall contain its boundary in all cases. This means that if an instantiated object implements GM_Object operations both as GM_Primitive and as a GM_Complex, the semantics of each set theoretic operation is determined by the its name resolution. Specifically, for a particular object such as GM_CompositeCurve, GM_Primitive::contains (returns FALSE for end points) is different from GM_Complex::contains (returns TRUE for end points). Further, if that object is cast as a GM_Primitive value and as a GM_Complex value, then the two values need not be equal as GM_Objects.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geometry Primitive</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Object"/>
+	<h2o:isAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</h2o:isAbstract>
+	<owl:disjointWith rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Aggregate"/>
+	<owl:disjointWith rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Complex"/>
+	<owl:equivalentClass rdf:resource="http://www.opengis.net/ont/gml#AbstractGeometricPrimitive"/>
+	<skos:notation rdf:datatype="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#ISOClassName">GM_Primitive</skos:notation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Solid">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Solid</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Primitive"/>
+	<owl:equivalentClass rdf:resource="http://www.opengis.net/ont/gml#Solid"/>
+	<skos:notation rdf:datatype="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#ISOClassName">GM_Solid</skos:notation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Surface">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Surface</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#OrientableSurface"/>
+	<owl:equivalentClass rdf:resource="http://www.opengis.net/ont/gml#Surface"/>
+	<skos:notation rdf:datatype="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#ISOClassName">GM_Surface</skos:notation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#boundingBox">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bounding box</rdfs:label>
+	<rdfs:range rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#coordinates">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:domain rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Position"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coordinates</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#lowerCorner">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:domain rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Envelope"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lower corner</rdfs:label>
+	<rdfs:range rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Position"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#position">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geometric position</rdfs:label>
+	<rdfs:range rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Position"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#srs">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc4cjvdx8">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc4cjvdx9">
+	<rdf:first rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Object"/>
+	<rdf:rest rdf:nodeID="node19fc4cjvdx10"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc4cjvdx10">
+	<rdf:first rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Envelope"/>
+	<rdf:rest rdf:nodeID="node19fc4cjvdx11"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc4cjvdx11">
+	<rdf:first rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Position"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc4cjvdx8">
+	<owl:unionOf rdf:nodeID="node19fc4cjvdx9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#srs">
+	<rdfs:domain rdf:nodeID="node19fc4cjvdx8"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spatial reference system</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#upperCorner">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:domain rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Envelope"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upper corner</rdfs:label>
+	<rdfs:range rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#Position"/>
+</rdf:Description>
+
+</rdf:RDF>

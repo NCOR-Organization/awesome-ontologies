@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:my="http://example.org/my/"
+	xmlns:oml="http://def.seegrid.csiro.au/ontology/om/om-lite#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+	<dc:creator>Simon Jonathan David COX
+CSIRO</dc:creator>
+	<dc:description>An OWL representation of the Observation Schema described in clauses 7-8 of ISO 19156:2011 Geographic Information - Observations and Measurements / OGC Abstract Specification - Topic 20.</dc:description>
+	<dc:rights>Copyright © 2014, 2015, 2016 CSIRO</dc:rights>
+	<dc:source>ISO 19156:2011</dc:source>
+	<dc:title>OWL for Observations</dc:title>
+	<dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-07</dct:created>
+	<dct:creator rdf:resource="http://orcid.org/0000-0002-3884-3420"/>
+	<dct:license rdf:resource="http://creativecommons.org/licenses/by/3.0/au/"/>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-10-27</dct:modified>
+	<vann:preferredNamespacePrefix>oml:</vann:preferredNamespacePrefix>
+	<vann:preferredNamespaceUri rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#"/>
+	<rdfs:comment>An OWL representation of the Observation Schema described in clauses 7-8 of ISO 19156:2011 Geographic Information - Observations and Measurements. 
+In contrast to previous versions developed through SSN and in conjunction with ISO 19150-2, this ontology has minimal dependencies on existing ontologies, particularly those that trigger extended chains of imports. Stub classes are provided for time, geometry and measure (scaled number), which can be substituted at run-time by a suitable concrete representation of the concept. 
+Observation Collection has been (re-)introduced, to support the common case where a collection is homogeneous in one or more properties (feature-of-interest, phenomenon-time, observed-property, units-of-measure, procedure). The value of the common property may be recorded against the collection instead of repetitively against every member.   
+
+In this revision, the observation result is an Object Property, in order to conform to strict OWL2 semantics. The type constraints on Observation specializations TruthObservation and CountObservation have been changed, so that the range of oml:result is an Object containing the xsd type, rather than the data-type itself. </rdfs:comment>
+	<rdfs:label>OWL for Observations</rdfs:label>
+	<rdfs:seeAlso rdf:resource="http://www.semantic-web-journal.net/content/ontology-observations-and-sampling-features-alignments-existing-models-0"/>
+	<owl:imports rdf:resource="http://purl.org/dc/elements/1.1/"/>
+	<owl:priorVersion rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19156/2011/observation"/>
+	<skos:changeNote>2015-03-06	Added samplingStrategy property, in order to separate sampling from the feature of interest</skos:changeNote>
+	<skos:changeNote>2015-08-18 Added ObservationCollection class; added to domain of key Observation properties (except oml:result) to support inheritance of common properties from a container. </skos:changeNote>
+	<skos:changeNote>2015-11-17 Added oml:member property, with fixed domain (ObservationCollection) and range (Observation), in place of rdfs:member, which is not liked by OWL-API. </skos:changeNote>
+	<skos:changeNote>2016-01-20 In order to satisfy OWLAPI requirements, changed oml:result to an ObjectProperty; changed the constraints on CountObservation and TruthObservation to refer to newly created CountObject and TruthObject to encapsulate the values as objects. </skos:changeNote>
+	<skos:changeNote>2016-10-27 Add stimulus-time property</skos:changeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#CountObject">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment>Object to wrap a count value</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite"/>
+	<rdfs:label>Count object</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx1">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#count"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#CountObject">
+	<rdfs:subClassOf rdf:nodeID="node1b4030homx1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#CountObservation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<dct:description>Observation whose result is an integer</dct:description>
+	<rdfs:comment>Observation whose result is an integer</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite"/>
+	<rdfs:label xml:lang="en">Count Observation</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#Observation"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx2">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#CountObject"/>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#result"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#CountObservation">
+	<rdfs:subClassOf rdf:nodeID="node1b4030homx2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#GeometryObject">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<dct:description>Geometry object has properties relating to geometry, incuding positional and topological attributes, reference system, accuracy and precision. Might be geolocated. </dct:description>
+	<rdfs:comment>This stub is included in the om: ontology to support references to geometry as the result of a GeometryObservation.  An existing OWL class that represents the notion of a geometry may be asserted to be a sub-class of this stub, without requiring use of a specific representation of Geometry in the context of observations instance.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite"/>
+	<rdfs:label>Geometry object</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#GeometryObservation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<dct:description>Observation whose result is a geometry object, such as a point, curve, surface or solid</dct:description>
+	<rdfs:comment>Observation whose result is a geometry object, such as a point, curve, surface or solid</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite"/>
+	<rdfs:label xml:lang="en">Geometry Observation</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#Observation"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx3">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#GeometryObject"/>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#result"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#GeometryObservation">
+	<rdfs:subClassOf rdf:nodeID="node1b4030homx3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#MeasureObject">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<dct:description>Scaled number</dct:description>
+	<rdfs:comment>Scaled number
+
+This is an abstract class, which should be substituted by a suitable concrete representation of a measure or quantity at run-tme. 
+
+oml:SimpleMeasure 
+qudt:QuantityValue &lt;http://qudt.org/schema/qudt#QuantityValue&gt; 
+DUL:Region &lt;http://www.loa-cnr.it/ontologies/DUL.owl#Region&gt; 
+
+are candidates. </rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite"/>
+	<rdfs:label>Measure</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#Measurement">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<dct:description>Observation whose result is a scaled number</dct:description>
+	<rdfs:comment>Observation whose result is a scaled number</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite"/>
+	<rdfs:label xml:lang="en">Measurement</rdfs:label>
+	<rdfs:label xml:lang="fr">Mesure</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#Observation"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx4">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#MeasureObject"/>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#result"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#Measurement">
+	<rdfs:subClassOf rdf:nodeID="node1b4030homx4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#Observation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<dct:description>An observation is an act associated with a discrete time instant or period through which a number, term or other symbol is assigned to a phenomenon [2]. It involves application of a specified procedure, such as a sensor, instrument, algorithm or process chain. The procedure may be applied in-situ, remotely, or ex-situ with respect to the sampling location. The result of an observation is an estimate of the value of a property of some feature. Use of a common model allows observation data using different procedures to be combined unambiguously.
+
+The observation itself is also a feature, since it has properties and identity.
+
+Observation details are important for data discovery and for data quality estimation.
+
+The observation could be considered to carry metadata about an instance of a property (of the feature of interest). This property-value metadata complements the dataset and feature metadata that have been conventionally considered (e.g. ISO 19115). </dct:description>
+	<rdfs:comment>An observation is an act associated with a discrete time instant or period through which a number, term or other symbol is assigned to a phenomenon [2]. It involves application of a specified procedure, such as a sensor, instrument, algorithm or process chain. The procedure may be applied in-situ, remotely, or ex-situ with respect to the sampling location. The procedure may take inputs from the environment (as stimuli) or from the results of prior observations or processes. The result of an observation is an estimate of the value of a property of some feature. 
+
+Use of a common model allows observation data using different procedures to be combined unambiguously.
+
+The observation itself is also a feature, since it has properties and identity.
+
+Observation details are important for data discovery and for data quality estimation.
+
+The observation could be considered to carry metadata about an instance of a property (of the feature of interest). This property-value metadata complements the dataset and feature metadata that have been conventionally considered (e.g. ISO 19115).
+
+The values for the properties 'procedure', 'featureOfInterest', 'observedProperty', 'phenomenonTime', 'resultTime' may be inherited from a container resource.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite"/>
+	<rdfs:label xml:lang="en">Observation</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx5">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#featureOfInterest"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#Observation">
+	<rdfs:subClassOf rdf:nodeID="node1b4030homx5"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx6">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#observedProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#Observation">
+	<rdfs:subClassOf rdf:nodeID="node1b4030homx6"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx7">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#phenomenonTime"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#Observation">
+	<rdfs:subClassOf rdf:nodeID="node1b4030homx7"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx8">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#procedure"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#Observation">
+	<rdfs:subClassOf rdf:nodeID="node1b4030homx8"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx9">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#result"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#Observation">
+	<rdfs:subClassOf rdf:nodeID="node1b4030homx9"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx10">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#resultTime"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#Observation">
+	<rdfs:subClassOf rdf:nodeID="node1b4030homx10"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx11">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#stimulusTime"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#Observation">
+	<rdfs:subClassOf rdf:nodeID="node1b4030homx11"/>
+	<owl:disjointWith rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#Process"/>
+	<skos:altLabel>Generic observation</skos:altLabel>
+	<skos:changeNote>A new property oml:samplingStrategy is scoped to this class. In this  formulation, the (mandatory) feature-of-interest always refers to the ultimate feature of interest, whose type can carry the observed property, and the (optional) sampling strategy allows the sampling feature to be made explicit as an additional relationship. This overcomes some semantic sleight-of-hand in ISO 19156, in which the constraint the the observed property was commensurate with the feature-of-interest was allowed to be 'transitive' via the sampledFeature property.</skos:changeNote>
+	<skos:prefLabel xml:lang="en">Observation</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Observation</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#ObservationCollection">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<dct:description>A collection of observations  or collections. 
+
+The collection may be homogeneous any of the feature-of-interest, observed-property, procedure, phenomenon-time or result-time. If only one value for any of these properties is provided on the collection, then it may be inferred to be a common (default) value for all the member observations or collections, unless locally overridden.</dct:description>
+	<rdfs:comment>A collection of observations  or collections. 
+
+The collection may be homogeneous in any of the feature-of-interest, observed-property, procedure, phenomenon-time or result-time. If only one value for any of these properties is provided on the collection, then it may be inferred to be a common (default) value for all the member observations or collections, unless locally overridden.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite"/>
+	<rdfs:label xml:lang="en">Collection of observations</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx12">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#member"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#ObservationCollection">
+	<rdfs:subClassOf rdf:nodeID="node1b4030homx12"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#ObservationContext">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<dct:description>Context linking two or more observations</dct:description>
+	<rdfs:comment>Some observations depend on other observations to provide context which is important, sometimes essential, in understanding the result. These dependencies are stronger than mere spatio-temporal coincidences, requiring explicit representation. If present, the association class class ObservationContext (Figure 2) shall link a OM_Observation to another OM_Observation, with the role name relatedObservation for the target. It shall support one attribute.
+
+EXAMPLES	Some examples include the conditions associated with experimental replicates (e.g., experimental plots and treatments used), biotic factors (e.g., ecological community), interactions among features (e.g., predator-prey), or other temporary relationships occurring at the time of observation that are are not inherent to the observed features themselves (i.e., they change over time), or the related observation may provide input to a process that generates a new result.
+This association complements the Intention association which describes relationships between a sampling feature and domain features.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite"/>
+	<rdfs:label xml:lang="en">Observation context</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx13">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#relatedObservation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#ObservationContext">
+	<rdfs:subClassOf rdf:nodeID="node1b4030homx13"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#Process">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<dct:description>Agent, device, sensor, software, protocol, computational method, algorithm or plan responsible for generating an observation result. Input may be a sensor stimulus, or the output from a previous process. An oml:Process might be involved in many observations. </dct:description>
+	<rdfs:comment>Agent, device, sensor, software, protocol, computational method, algorithm or plan responsible for generating an observation result. Input may be a sensor stimulus, or the output from a previous process. An oml:Process is re-usable, and might be involved in many observations.
+
+This terminology is consistent with SensorML, which defines Process as the super-class of all sensors and sensor systems. But this usage is different to the use of the term "Process" in BCO and OBOE, where it denotes an observation occurrence. </rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite"/>
+	<rdfs:label xml:lang="en">Observation process</rdfs:label>
+	<owl:disjointWith rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#Observation"/>
+	<skos:historyNote>Original description from ISO 19156 says: 
+
+The class OM_Process (Figure 2) is an instance of the «metaclass» GF_FeatureType (ISO 19109:2005), which therefore represents a feature type. OM_Process is abstract, and has no attributes, operations or associations. It serves as the base class for observation processes. The purpose of an observation process is to generate an observation result. An instance of OM_Process is often an instrument or sensor, but may be a human observer, a simulator, or a process or algorithm applied to more primitive results used as inputs. 
+
+NOTE	ISO 19115-2:2008 provides MI_Instrument, LE_Processing and LE_Algorithm, which could all be modelled as specializations of OM_Process. OGC SensorML [10] provides a model which is suitable for many observation procedures.</skos:historyNote>
+	<skos:historyNote>Original description from OGC SensorML says:
+
+In SensorML, all components are modeled as processes. This includes components normally viewed as hardware, including transducers, actuators, and processors (which are viewed as process components) and sensors and platforms (which are modeled as systems). All components are modeled as processes that take input, and which through the application of an algorithm defined by a method and parameter values, generate output. All such components can therefore participate in process chains. Process chains are themselves processes with inputs, outputs, and parameters.
+
+Hence, SensorML can be viewed as a specialized process description language with an emphasis on application to sensor data. Process descriptions in SensorML are agnostic of the development environment in which they might be executed, or the protocol by which data is transported between process execution modules. SensorML does not try to replace other existing technologies (such as BPEL or MATLAB Simulink). It is also conceived that SensorML-defined processes could be imported and executed within other execution environments, such as BPEL or MATLAB Simulink, as well as within SenosrML-enabled process execution software.</skos:historyNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#SimpleMeasure">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<dct:description>Simple implementation of a scaled number as an (amount, unit) pair</dct:description>
+	<rdfs:comment>Simple implementation of a scaled number as an (amount, unit) pair</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite"/>
+	<rdfs:label>Simple measure (quantity)</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#MeasureObject"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx14">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#SimpleMeasure">
+	<rdfs:subClassOf rdf:nodeID="node1b4030homx14"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx15">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#amount"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#SimpleMeasure">
+	<owl:equivalentClass rdf:nodeID="node1b4030homx15"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#TemporalObject">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<dct:description>Temporal object has properties relating to time only. </dct:description>
+	<rdfs:comment>Temporal geometry or topology, collection or complex. 
+
+Temporal object has properties relating to time only.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite"/>
+	<rdfs:label>Temporal object</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#TemporalObservation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<dct:description>Observation whose result is a temporal object, such as a time instant or period</dct:description>
+	<rdfs:comment>Observation whose result is a temporal object, such as a time instant or period</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite"/>
+	<rdfs:label xml:lang="en">Temporal Observation</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#Observation"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx16">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#TemporalObject"/>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#result"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#TemporalObservation">
+	<rdfs:subClassOf rdf:nodeID="node1b4030homx16"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#TruthObject">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment>Object to wrap a truth value</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite"/>
+	<rdfs:label>Truth object</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx17">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#truth"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#TruthObject">
+	<rdfs:subClassOf rdf:nodeID="node1b4030homx17"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#TruthObservation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<dct:description>Observation whose result is either true or false</dct:description>
+	<rdfs:comment>Observation whose result is either true or false</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite"/>
+	<rdfs:label xml:lang="en">Truth Observation</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#Observation"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx18">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#TruthObject"/>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#result"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#TruthObservation">
+	<rdfs:subClassOf rdf:nodeID="node1b4030homx18"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#amount">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:domain rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#SimpleMeasure"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite"/>
+	<rdfs:label>numeric amount value</rdfs:label>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#context">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<dct:description>link to related observation</dct:description>
+	<rdfs:comment>link to related observation
+
+The first half of the property named 'relatedObservation' in the UML model. (The rule for implementing association classes needs clarification.)</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx19">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx20">
+	<rdf:first rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#Observation"/>
+	<rdf:rest rdf:nodeID="node1b4030homx21"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx21">
+	<rdf:first rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#ObservationCollection"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx19">
+	<owl:unionOf rdf:nodeID="node1b4030homx20"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#context">
+	<rdfs:domain rdf:nodeID="node1b4030homx19"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite"/>
+	<rdfs:label xml:lang="en">observation context</rdfs:label>
+	<rdfs:range rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#ObservationContext"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#count">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite"/>
+	<rdfs:label>Count value</rdfs:label>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#featureOfInterest">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment>feature of interest of an observation
+
+Links the Observation to the Feature that is the ultimate subject of the observation and carries the observed property. This feature is the real-world object whose properties are under observation. An observation instance serves as a propertyValueProvider for its feature-of-interest.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx22">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx23">
+	<rdf:first rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#Observation"/>
+	<rdf:rest rdf:nodeID="node1b4030homx24"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx24">
+	<rdf:first rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#ObservationCollection"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx22">
+	<owl:unionOf rdf:nodeID="node1b4030homx23"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#featureOfInterest">
+	<rdfs:domain rdf:nodeID="node1b4030homx22"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite"/>
+	<rdfs:label xml:lang="en">feature of interest</rdfs:label>
+	<skos:definition>Links the Observation to the Feature that is the ultimate subject of the observation and carries the observed property. This feature is the real-world object whose properties are under observation. An observation instance serves as a propertyValueProvider for its feature-of-interest.</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#member">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment>links from a collection to a member collection or observation</rdfs:comment>
+	<rdfs:domain rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#ObservationCollection"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite"/>
+	<rdfs:label>has member</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx25">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx26">
+	<rdf:first rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#Observation"/>
+	<rdf:rest rdf:nodeID="node1b4030homx27"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx27">
+	<rdf:first rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#ObservationCollection"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx25">
+	<owl:unionOf rdf:nodeID="node1b4030homx26"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#member">
+	<rdfs:range rdf:nodeID="node1b4030homx25"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#memberOf">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite"/>
+	<rdfs:label>is member of</rdfs:label>
+	<owl:inverseOf rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#member"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#observedProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment>property whose value is the result of the observation
+
+Link from the Observation to the PropertyType for which the Observation:result provides an estimate of its value. 
+
+The observed property shall be a phenomenon associated with the feature-of-interest.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx28">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx29">
+	<rdf:first rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#Observation"/>
+	<rdf:rest rdf:nodeID="node1b4030homx30"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx30">
+	<rdf:first rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#ObservationCollection"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx28">
+	<owl:unionOf rdf:nodeID="node1b4030homx29"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#observedProperty">
+	<rdfs:domain rdf:nodeID="node1b4030homx28"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite"/>
+	<rdfs:label xml:lang="en">observed property</rdfs:label>
+	<skos:definition>property whose value is the result of the observation
+
+Link from the Observation to the PropertyType for which the Observation:result provides an estimate of its value. 
+
+The observed property shall be a phenomenon associated with the feature-of-interest.
+
+The target of this shall describe a property that is either assignable or observable such as “temperature”, “height”, “colour”, “material”. A property type may be an operation or function such as a spatiotemporal coverage. Property-type definitions may be organized into a hierarchy or ontology and managed in a register and catalogued to support discovery functions. The observed property supports semantic or thematic classification of observations, which is useful for discovery and data fusion.
+
+NOTE In general, the value of a specific observedProperty can be associated with different feature types in different observations, thus allowing the results of observations made in different projects or campaigns, and even from different disciplines, to be combined when required. A property-type register used in observations is most useful if each property type is not tied to a single feature type, or if equivalence relationships between similar property types from different feature types are provided.</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#phenomenonTime">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment>time at which the estimate of the property that is the result of the observation is associated with the feature of interest</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx31">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx32">
+	<rdf:first rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#Observation"/>
+	<rdf:rest rdf:nodeID="node1b4030homx33"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx33">
+	<rdf:first rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#ObservationCollection"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx31">
+	<owl:unionOf rdf:nodeID="node1b4030homx32"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#phenomenonTime">
+	<rdfs:domain rdf:nodeID="node1b4030homx31"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite"/>
+	<rdfs:label xml:lang="en">phenomenon time</rdfs:label>
+	<rdfs:range rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#TemporalObject"/>
+	<skos:definition>The attribute phenomenonTime:TM_Object shall describe the time that the result (7.2.2.9) applies to the property of the feature-of-interest (7.2.2.7). This is often the time of interaction by a sampling procedure (9.1.3) or observation procedure (7.2.2.10) with a real-world feature.
+
+NOTE The phenomenonTime is the temporal parameter normally used in geospatial analysis of the result.
+
+If the observedProperty of an observation is ‘occurrence time’ then the result should be the same as the phenomenonTime.</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#procedure">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment>re-usable procedure used in making observation. Typically a sensor or sensor-system, algorithm, computational procedure.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx34">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx35">
+	<rdf:first rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#Observation"/>
+	<rdf:rest rdf:nodeID="node1b4030homx36"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx36">
+	<rdf:first rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#ObservationCollection"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx34">
+	<owl:unionOf rdf:nodeID="node1b4030homx35"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#procedure">
+	<rdfs:domain rdf:nodeID="node1b4030homx34"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite"/>
+	<rdfs:label xml:lang="en">observation procedure</rdfs:label>
+	<rdfs:range rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#Process"/>
+	<skos:definition>The association ProcessUsed shall link the OM_Observation to the OM_Process (7.2.3) used to generate the result. The process has the role procedure with respect to the observation. A process might be responsible for more than one generatedObservation.
+
+The OM_Process shall be suitable for the observed property. As a corollary, details of the observed property are constrained by the procedure used.
+
+EXAMPLE Observed radiance wavelength is determined by the response characteristics of the sensor.
+
+A description of the observation procedure provides or implies an indication of the reliability or quality of the observation result.</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#relatedObservation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment>related observation</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite"/>
+	<rdfs:label xml:lang="en">related observation</rdfs:label>
+	<rdfs:range rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#Observation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#result">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment>estimate of the value of the observed property</rdfs:comment>
+	<rdfs:domain rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#Observation"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite"/>
+	<rdfs:label xml:lang="en">observation result</rdfs:label>
+	<skos:definition>The association Range shall link the OM_Observation to the value generated by the procedure. The value has the role result with respect to the observation. The type of the result is shown as “Any”, since it may represent the value of any feature property.
+
+NOTE 1 OGC SWE Common [20] provides a model suitable for describing many kinds of observation results.
+
+The type of the observation result shall be consistent with the observed property, and the scale or scope for the value shall be consistent with the quantity or category type. If the observed property (7.2.2.8) is a spatial operation or function, the type of the result may be a coverage.
+
+NOTE 2 In some contexts, particularly in earth and environmental sciences, the term “observation” is used to refer to the result itself.</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#resultTime">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+	<rdfs:comment>time at which the result became available, after all processing steps were completed</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx37">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx38">
+	<rdf:first rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#Observation"/>
+	<rdf:rest rdf:nodeID="node1b4030homx39"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx39">
+	<rdf:first rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#ObservationCollection"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx37">
+	<owl:unionOf rdf:nodeID="node1b4030homx38"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#resultTime">
+	<rdfs:domain rdf:nodeID="node1b4030homx37"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite"/>
+	<rdfs:label xml:lang="en">result time</rdfs:label>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+	<skos:definition>The attribute resultTime:TM_Instant shall describe the time when the result became available, typically when the procedure (7.2.2.10) associated with the observation was completed. For some observations, this is identical to the phenomenonTime. However, there are important cases where they differ.
+
+EXAMPLE 1 Where a measurement is made on a specimen in a laboratory, the phenomenonTime is the time the specimen was retrieved from its host, while the resultTime is the time the laboratory procedure was applied.
+
+EXAMPLE 2 The resultTime also supports disambiguation of repeat measurements made of the same property of a feature using the same procedure.
+
+EXAMPLE 3 Where sensor observation results are post-processed, the resultTime is the post-processing time, while the phenomenonTime is the time of initial interaction with the world.
+
+EXAMPLE 4 Simulations can estimate the values for phenomena in the future or past. The phenomenonTime is the time that the result applies to, while the resultTime is the time that the simulation was executed.</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#role">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment>role of related observation with respect to the observation of interest</rdfs:comment>
+	<rdfs:domain rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#ObservationContext"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite"/>
+	<rdfs:label xml:lang="en">role</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#samplingStrategy">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment>Links to a feature intended to sample the real-world object, as described in Clause 9 of ISO 19156:2011. 
+
+N.B. this formulation varies from the UML model in ISO 19156, in which a sampling-feature is substitutable for the feature-of-interest. In this more explicit formulation, the (mandatory) feature-of-interest always refers to the ultimate feature of interest, whose type can carry the observed property, and the (optional) sampling strategy allows the sampling feature to be made explicit as an additional relationship. This overcomes some semantic sleight-of-hand in ISO 19156, in which the constraint the the observed property was commensurate with the feature-of-interest was allowed to be 'transitive' via the sampledFeature property.</rdfs:comment>
+	<rdfs:comment>description of the sampling strategy used in an observation (usually a sampling-feature). </rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx40">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx41">
+	<rdf:first rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#Observation"/>
+	<rdf:rest rdf:nodeID="node1b4030homx42"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx42">
+	<rdf:first rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#ObservationCollection"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx40">
+	<owl:unionOf rdf:nodeID="node1b4030homx41"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#samplingStrategy">
+	<rdfs:domain rdf:nodeID="node1b4030homx40"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite"/>
+	<rdfs:label xml:lang="en">sampling strategy</rdfs:label>
+	<skos:definition>Links to a feature intended to sample the real-world object, as described in Clause 9 of ISO 19156:2011. </skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#stimulusTime">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment>the time when the sensor stimulus occurred. Usually the beginning of the observation activity (the result time is the end). </rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx43">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx44">
+	<rdf:first rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#Observation"/>
+	<rdf:rest rdf:nodeID="node1b4030homx45"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx45">
+	<rdf:first rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#ObservationCollection"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx43">
+	<owl:unionOf rdf:nodeID="node1b4030homx44"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#stimulusTime">
+	<rdfs:domain rdf:nodeID="node1b4030homx43"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite"/>
+	<rdfs:label>Stimulus time</rdfs:label>
+	<rdfs:range rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#TemporalObject"/>
+	<skos:definition>the time when the sensor stimulus occurred. Usually the beginning of the observation activity, with the result time being the end. May be the same as the phenomenon-time (e.g. most monitoring applications). May define the time of observations used to condition simulations and forecasting. 
+
+The relative positions of stimulus-time, phenomenon-time, result-time define whether the observation is monitoring, forecasting, or retrospective, as follows:
+* st = pt &lt;= rt    is monitoring
+* st &lt; rt &lt; pt   is forecast
+* pt &lt; st &lt;=rt   is retrospective (e.g. geology, archeology) </skos:definition>
+	<skos:historyNote>This property was introduced after discussions in the jint W3C/OGC Spatial Data on the Web Working Group in October 2016</skos:historyNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#truth">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite"/>
+	<rdfs:label>Truth value</rdfs:label>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#uom">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment>Unit of measure or scale</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx46">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx47">
+	<rdf:first rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#SimpleMeasure"/>
+	<rdf:rest rdf:nodeID="node1b4030homx48"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx48">
+	<rdf:first rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite#ObservationCollection"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1b4030homx46">
+	<owl:unionOf rdf:nodeID="node1b4030homx47"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/ontology/om/om-lite#uom">
+	<rdfs:domain rdf:nodeID="node1b4030homx46"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/ontology/om/om-lite"/>
+</rdf:Description>
+
+</rdf:RDF>

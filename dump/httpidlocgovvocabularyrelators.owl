@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+            "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html version="XHTML+RDFa 1.0" xmlns="http://www.w3.org/1999/xhtml" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:ri="http://id.loc.gov/ontologies/RecordInfo#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:cs="http://www.w3.org/2003/06/sw-vocab-status/ns#" xmlns:dcterms="http://purl.org/dc/terms/">
+  <head>
+    <title> - LC Linked Data Service: Authorities and Vocabularies | Library of Congress</title>
+    <meta name="description" content=" The Linked Data Service provides access to commonly found standards and vocabularies promulgated by the Library of Congress. This includes data values and the controlled vocabularies that house them.   Datasets available include LCSH, BIBFRAME, LC Name Authorities, LC Classification, MARC codes, PREMIS vocabularies, ISO language codes, and more."/>
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"/>
+    <link rel="dc.relation.isPartOf" href="//www.loc.gov/" title="Library of Congress"/>
+    <meta name="dc.title" content=" LC Linked Data Service: Authorities and Vocabularies (Library of Congress)"/>
+    <meta name="dc.contributor" content="The Library of Congress"/>
+    <meta name="dc.subject" content="Library of Congress Subject Headings"/>
+    <meta name="dc.subject" content="Subject Headings"/>
+    <meta name="dc.subject" content="Name Authorities"/>
+    <meta name="dc.subject" content="Library of Congress Name Authorities"/>
+    <meta name="dc.subject" content="LCSH"/>
+    <meta name="dc.subject" content="BIBFRAME"/>
+    <meta name="dc.subject" content="id.loc.gov"/>
+    <meta name="dc.identifier" content="http://id.loc.gov/"/>
+    <meta name="dc.type" content="webpage"/>
+    <meta name="dc.language" content="eng"/>
+    <link rel="shortcut icon" type="image/png" href="/static/images/favicon.ico"/>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="search" href="/opensearch/" type="application/opensearchdescription+xml" title="Library of Congress Authorities and Vocabularies Search"/>
+    <link rel="apple-touch-icon" href="//www.loc.gov/static/images/apple-touch-icon.png?35836.31053"/>
+    <meta name="msapplication-config" content="none"/>
+    <meta name="keywords" content=" - LC Linked Data Service: Authorities and Vocabularies | Library of Congress , Library of Congress Subject Headings, Library of Congress Name Authorities, subject headings, name authorities, lcsh, lcnaf, id.loc.gov,  linked data, authorities, standards, vocabularies"/>
+    <!-- CSS -->
+    <link type="text/css" media="screen" rel="stylesheet" href="/static/css/2012/styles.css"/>
+    <link type="text/css" media="print" rel="stylesheet" href="/static/css/2012/loc_print_v2.css"/>
+    <!--[if lte IE 7]><link type="text/css" media="screen" rel="stylesheet" href="/static/css/2012/loc_lte_ie6.css" /><![endif]-->
+    <!-- End CSS -->
+    <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> -->
+    <script type="text/javascript" src="//cdn.loc.gov/js/lib/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/static/js/loc_expandcollapse.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.form.js"></script>
+  </head>
+  <body><a id="skip" href="#skip_menu">skip navigation</a><div id="container"><div id="branding"><h2>Library of Congress</h2><h3>Authorities &amp; Vocabularies</h3></div><div id="h-wrapper" class="fix-float"><div id="header" class="fix-float"><div class="logo"><a href="//www.loc.gov" accesskey="1"><img src="/static/images/2012/img-head/logo-loc.png" width="141" height="32" alt="Library of Congress"/></a></div><div class="nav" style="box-sizing: content-box;"><ul>
+	      <li><a class="btn-loc" href="//www.loc.gov/rr/askalib/" accesskey="2">Ask a Librarian</a></li>
+	      <li><a class="btn-loc" href="//www.loc.gov/library/libarch-digital.html" accesskey="3">Digital Collections</a></li>
+	      <li><a class="btn-loc" href="//catalog.loc.gov/" accesskey="4">Library Catalogs</a></li>
+	    </ul></div><div class="search"><form action="//www.loc.gov/search" method="get">
+	      <label class="search_label" for="search">Search</label>
+	      <div class="search_wrap"><input type="hidden" name="new" value="true"/><input id="search" type="search" name="q" maxlength="200" accesskey="/" title="Search the Library of Congress website" placeholder="Search Loc.gov" class="locsuggest"/><button class="button" id="search_button" type="submit">GO</button></div>
+	    </form></div></div><script src="//cdn.loc.gov/suggest/library-of-congress.js" type="text/javascript"><!-- space --></script></div><div id="crumb_nav"><a href="//www.loc.gov">The Library of Congress</a><span> &gt; </span><a href="/">Linked Data Service</a><span> &gt; </span>Contact</div><!-- end id:topnav --><div id="content"><div id="left_nav"><div class="box leftnavtitle"><a href="/"><img src="/static/images/2012/left-img-head-new.gif" alt="LC Linked Data Service" width="219" height="50"/></a></div><div class="box leftnavimg">Left nav image goes here</div><div class="box"><ul class="bold arrow_o">
+	      <li><a href="/">Linked Data Service</a></li>
+	      <li><a href="/about/">About</a></li>
+	      <li><a href="/descriptions/">Main Dataset Descriptions</a></li>
+	      <li><a href="/preservationdescriptions/">Preservation Dataset Descriptions</a></li>
+	      <li><a href="/smallsets/">Small Datasets Descriptions</a></li>
+	      <li><a href="/search/">Search</a></li>
+	      <li><a href="/download/">Download</a></li>
+	      <li><a href="/techcenter/">Technical Center</a></li>
+	      <li><a href="/contact/">Contact Us</a></li>
+	      <li><a href="//www.loc.gov/homepage/legal.html#privacy_policy">Privacy Policy</a></li>
+	    </ul></div></div><div id="main_body"><div id="page_head"><span style="width: 100%;"><a name="skip_menu"></a></span><h1 class="oneline">Contact</h1></div><div id="tab3" class="tab_content"><div><h2 class="noborder">The Library of Congress Linked Data Service</h2><p>Please consider telling us how you will use this service so that we can learn how it is used.</p><p>Contact us using the below form.</p><p>Or if you would like to discuss the Authorities and Vocabularies service with other users and developers in more detail, please consider <a href="//listserv.loc.gov/cgi-bin/wa?SUBED1=ID&amp;A=1">subscribing to our listserv</a> or perusing <a href="//sun8.loc.gov/cgi-bin/wa?A0=ID">its archives</a>.</p></div><p><strong>Fields denoted with an asterisk (*) are required</strong>.</p><form action="/contact/sendmail?mode=general" accept-charset="utf-8" method="post" id="commentform">
+	      <div><span id="submitresult1"></span><span id="load1"></span><br/><label for="name">* Name</label><br/><input name="name" size="50" id="name" value="" class="required"/><br/><br/><label for="email">* E-mail</label><br/><input name="email" size="50" id="email" value="" class="required email"/><br/><br/><label for="message">* Question/Comment</label><br/><textarea name="message" id="message" rows="20" cols="58" class="required"></textarea><br/><br/><label for="use">How will you use this service?</label><br/><textarea name="use" id="use" rows="20" cols="58"></textarea><br/><br/><span id="submitresult2"></span><span id="load2"></span><label for="email">* <question num="6" answer="2|two">If you can only see a boy and his dad, how many people can you see?</question></label><br/><input name="qanswer" size="50" id="qanswer" value="" class="required"/><input type="hidden" name="qnum" value="6"/><br/><br/><span id="buttonSet"><input id="submitB" class="submit" type="submit" value="Send"/><input id="cancelB" class="submit" type="reset" value="Cancel"/></span></div>
+	    </form><div id="privacy"><a href="//www.loc.gov/homepage/legal.html#privacy_policy">Privacy policy</a></div></div></div></div><div id="f-wrapper" class="fix-float"><!-- begin: global footer --><div id="footer" class="fix-float"><div class="cols heading"><h2>Connect with the Library</h2><p><a class="ar-more foot" href="//www.loc.gov/homepage/connect.html">All ways to connect</a></p></div><div class="cols"><h3>Find Us On</h3><a href="http://www.facebook.com/libraryofcongress"><img src="/static/images/2012/img-foot/facebook.gif" alt="Facebook" width="16" height="16"/></a>   <a href="//twitter.com/#!/librarycongress"><img src="/static/images/2012/img-foot/twitter.gif" alt="Twitter" width="16" height="16"/></a>   <a href="//www.youtube.com/libraryofcongress"><img src="/static/images/2012/img-foot/youtube.gif" alt="YouTube" width="16" height="16"/></a>   <a href="http://www.flickr.com/photos/library_of_congress/"><img src="/static/images/2012/img-foot/flickr.gif" alt="Flickr" width="16" height="16"/></a></div><div class="cols"><h3>Subscribe &amp; Comment</h3><ul class="plain">
+	      <li><a href="//www.loc.gov/rss/">RSS &amp; E-Mail</a></li>
+	      <li><a href="//blogs.loc.gov/">Blogs</a></li>
+	    </ul></div><div class="cols"><h3>Download &amp; Play</h3><ul class="plain">
+	      <li><a href="//www.loc.gov/podcasts/">Podcasts</a></li>
+	      <li><a href="//www.loc.gov/today/cyberlc/index.php">Webcasts</a></li>
+	      <li><a href="//itunes.apple.com/us/institution/library-of-congress/id386017159" class="external foot mod">iTunesU<span> (external link)</span></a></li>
+	    </ul></div><div class="cols"><h3>Questions</h3><ul class="plain">
+	      <li><a href="//www.loc.gov/rr/askalib/">Ask a Librarian</a></li>
+	      <li><a href="//www.loc.gov/help/contact-general.html" accesskey="8">Contact Us</a></li>
+	    </ul></div><div class="clear"><!-- --></div><p class="links"><a href="//www.loc.gov/about/">About</a> |
+            <a href="//www.loc.gov/pressroom/login">Press</a> |
+            <a href="//www.loc.gov/hr/employment/index.php">Jobs</a> |
+            <a href="//www.loc.gov/philanthropy/index.php">Donate</a><br/><a href="//www.loc.gov/about/oig/">Inspector General</a> |
+            <a href="//www.loc.gov/homepage/legal.html" accesskey="9">Legal</a> |
+            <a href="//www.loc.gov/access/" accesskey="0">Accessibility</a> |
+            <a href="//www.loc.gov/global/disclaim.html">External Link Disclaimer</a> |
+            <a href="//www.usa.gov/">USA.gov</a></p><span class="speech"><a href="//www.loc.gov/access/web.html">Speech Enabled</a></span></div><!-- end id:footer --><!-- end id:f-wrapper --><!-- end: global footer --></div><div class="clear"><!-- blah --></div></div><div><script type="text/javascript" src="//cdn.loc.gov/js/global/metrics/sc/s_code.js"></script><!-- /DO NOT REMOVE THIS COMMENT. IT WILL CAUSE IE8 PROBLEMS./ --></div></body>
+</html>

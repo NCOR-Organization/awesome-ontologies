@@ -1,0 +1,24 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <owl:Thing rdf:about="http://data.ordnancesurvey.co.uk/ontology/spatialrelations/">
+    <dc:title xml:lang="en">Spatial Relations Ontology</dc:title>
+    <dct:creator rdf:resource="http://data.ordnancesurvey.co.uk/id/ordnancesurvey"/>
+    <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Ordnance Survey</dc:creator>
+    <owl:imports rdf:resource="http://www.opengis.net/ont/geosparql"/>
+    <dct:publisher rdf:resource="http://data.ordnancesurvey.co.uk/id/ordnancesurvey"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dc:contributor>John Goodwin</dc:contributor>
+    <rdfs:isDefinedBy rdf:resource="http://www.ordnancesurvey.co.uk/ontology/spatialrelations.owl"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Spatial Relations Ontology</rdfs:label>
+    <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An ontology describing basic spatial relations.</dc:description>
+  </owl:Thing>
+</rdf:RDF>

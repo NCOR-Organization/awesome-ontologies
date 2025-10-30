@@ -1,0 +1,283 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://dati.cdec.it/lod/shoah/" xml:base="http://dati.cdec.it/lod/shoah/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#" xmlns:vann="http://purl.org/vocab/vann/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#">
+	<owl:Ontology rdf:about="http://dati.cdec.it/lod/shoah/">
+		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta version</owl:versionInfo>
+		<owl:versionIRI rdf:resource="http://dati.cdec.it/lod/shoah/0.1"/>
+		<owl:imports rdf:resource="http://purl.org/vocab/bio/0.1/"/>
+		<owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+		<vann:preferredNamespacePrefix>shoah</vann:preferredNamespacePrefix>
+		<vann:preferredNamespaceUri>http://dati.cdec.it/lod/shoah/</vann:preferredNamespaceUri>
+		<dc:description xml:lang="en">The ontology describing the Shoah domain, proposed here in beta version, aims to formally describe concepts and relationships that characterize the process of persecution and deportation of Jews in Italy between 1943 and 1945.</dc:description>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-01-01</dcterms:issued>
+		<cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+		<dcterms:creator rdf:resource="www.cdec.it"/>
+		<dcterms:creator rdf:resource="www.regesta.com"/>
+		<dcterms:creator rdf:resource="https://plus.google.com/+silviamazzini_lod/"/>
+		<dc:creator>Laura Brazzo</dc:creator>
+	</owl:Ontology>
+	<!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+	
+	<!-- http://dati.cdec.it/lod/shoah/persecution -->
+	<owl:ObjectProperty rdf:about="http://dati.cdec.it/lod/shoah/persecution">
+		<rdfs:label xml:lang="en">Persecution</rdfs:label>
+		<rdfs:range rdf:resource="http://dati.cdec.it/lod/shoah/Persecution"/>
+		<rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	</owl:ObjectProperty>
+	<!-- http://dati.cdec.it/lod/shoah/arrestPlace -->
+	<owl:ObjectProperty rdf:about="http://dati.cdec.it/lod/shoah/arrestPlace">
+		<rdfs:label xml:lang="en">Arrest Place</rdfs:label>
+		<rdfs:domain rdf:resource="http://dati.cdec.it/lod/shoah/Persecution"/>
+		<rdfs:range rdf:resource="http://dati.cdec.it/lod/shoah/Place"/>
+	</owl:ObjectProperty>
+	<!-- http://dati.cdec.it/lod/shoah/naziCampTransfer -->
+	<owl:ObjectProperty rdf:about="http://dati.cdec.it/lod/shoah/naziCampTransfer">
+		<rdfs:label xml:lang="en">Nazi Camp Transfer</rdfs:label>
+		<rdfs:range rdf:resource="http://dati.cdec.it/lod/shoah/NaziCampTransfer"/>
+		<rdfs:domain rdf:resource="http://dati.cdec.it/lod/shoah/Persecution"/>
+	</owl:ObjectProperty>
+	<!-- http://dati.cdec.it/lod/shoah/fromNaziCamp -->
+	<owl:ObjectProperty rdf:about="http://dati.cdec.it/lod/shoah/fromNaziCamp">
+		<rdfs:label xml:lang="en">from Camp</rdfs:label>
+		<rdfs:domain rdf:resource="http://dati.cdec.it/lod/shoah/NaziCampTransfer"/>
+		<rdfs:range rdf:resource="http://dati.cdec.it/lod/shoah/NaziCamp"/>
+	</owl:ObjectProperty>
+	<!-- http://dati.cdec.it/lod/shoah/toNaziCamp -->
+	<owl:ObjectProperty rdf:about="http://dati.cdec.it/lod/shoah/toNaziCamp">
+		<rdfs:label xml:lang="en">to Nazi Camp</rdfs:label>
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="http://dati.cdec.it/lod/shoah/NaziCampTransfer"/>
+					<owl:Class rdf:about="http://dati.cdec.it/lod/shoah/Persecution"/>
+					<owl:Class rdf:about="http://dati.cdec.it/lod/shoah/Convoy"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:range rdf:resource="http://dati.cdec.it/lod/shoah/NaziCamp"/>
+	</owl:ObjectProperty>
+	<!-- http://dati.cdec.it/lod/shoah/massacre -->
+	<owl:ObjectProperty rdf:about="http://dati.cdec.it/lod/shoah/massacre">
+		<rdfs:label xml:lang="en">Massacre in Italy</rdfs:label>
+		<rdfs:range rdf:resource="http://dati.cdec.it/lod/shoah/Massacre"/>
+		<rdfs:domain rdf:resource="http://dati.cdec.it/lod/shoah/Persecution"/>
+	</owl:ObjectProperty>
+	<!-- http://dati.cdec.it/lod/shoah/convoy -->
+	<owl:ObjectProperty rdf:about="http://dati.cdec.it/lod/shoah/convoy">
+		<rdfs:label xml:lang="en">Convoy</rdfs:label>
+		<rdfs:range rdf:resource="http://dati.cdec.it/lod/shoah/Convoy"/>
+		<rdfs:domain rdf:resource="http://dati.cdec.it/lod/shoah/Persecution"/>
+	</owl:ObjectProperty>
+	<!-- http://dati.cdec.it/lod/shoah/convoyDeparturePlace -->
+	<owl:ObjectProperty rdf:about="http://dati.cdec.it/lod/shoah/convoyDeparturePlace">
+		<rdfs:label xml:lang="en">Last Place before Deportation</rdfs:label>
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="http://dati.cdec.it/lod/shoah/Persecution"/>
+					<owl:Class rdf:about="http://dati.cdec.it/lod/shoah/Convoy"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:range rdf:resource="http://dati.cdec.it/lod/shoah/DetentionPlace"/>
+	</owl:ObjectProperty>
+	<!-- http://dati.cdec.it/lod/shoah/detentionPlace -->
+	<owl:ObjectProperty rdf:about="http://dati.cdec.it/lod/shoah/detentionPlace">
+		<rdfs:label xml:lang="en">Detention Place</rdfs:label>
+		<rdfs:domain rdf:resource="http://dati.cdec.it/lod/shoah/Persecution"/>
+		<rdfs:range rdf:resource="http://dati.cdec.it/lod/shoah/DetentionPlace"/>
+	</owl:ObjectProperty>
+	<!-- http://dati.cdec.it/lod/shoah/detentionPlaceTransfer -->
+	<owl:ObjectProperty rdf:about="http://dati.cdec.it/lod/shoah/detentionPlaceTransfer">
+		<rdfs:label xml:lang="en">Detention Place Transfer</rdfs:label>
+		<rdfs:domain rdf:resource="http://dati.cdec.it/lod/shoah/Persecution"/>
+		<rdfs:range rdf:resource="http://dati.cdec.it/lod/shoah/DetentionPlaceTransfer"/>
+	</owl:ObjectProperty>
+	<!-- http://dati.cdec.it/lod/shoah/fromPrison -->
+	<owl:ObjectProperty rdf:about="http://dati.cdec.it/lod/shoah/fromPrison">
+		<rdfs:label xml:lang="en">from Prison</rdfs:label>
+		<rdfs:domain rdf:resource="http://dati.cdec.it/lod/shoah/DetentionPlaceTransfer"/>
+		<rdfs:range rdf:resource="http://dati.cdec.it/lod/shoah/DetentionPlace"/>
+	</owl:ObjectProperty>
+	<!-- http://dati.cdec.it/lod/shoah/toPrison -->
+	<owl:ObjectProperty rdf:about="http://dati.cdec.it/lod/shoah/toPrison">
+		<rdfs:label xml:lang="en">to Prison</rdfs:label>
+		<rdfs:domain rdf:resource="http://dati.cdec.it/lod/shoah/DetentionPlaceTransfer"/>
+		<rdfs:range rdf:resource="http://dati.cdec.it/lod/shoah/DetentionPlace"/>
+	</owl:ObjectProperty>
+	<!-- http://dati.cdec.it/lod/shoah/subCampOf -->
+	<owl:ObjectProperty rdf:about="http://dati.cdec.it/lod/shoah/subCampOf">
+		<rdfs:label xml:lang="en">Sub Camp of</rdfs:label>
+		<rdfs:range rdf:resource="http://dati.cdec.it/lod/shoah/NaziCamp"/>
+		<rdfs:domain rdf:resource="http://dati.cdec.it/lod/shoah/NaziCamp"/>
+	</owl:ObjectProperty>
+	<!-- http://dati.cdec.it/lod/shoah/liberation -->
+	<owl:ObjectProperty rdf:about="http://dati.cdec.it/lod/shoah/liberation">
+		<rdfs:label xml:lang="en">Liberation</rdfs:label>
+		<rdfs:range rdf:resource="http://dati.cdec.it/lod/shoah/Liberation"/>
+		<rdfs:domain rdf:resource="http://dati.cdec.it/lod/shoah/Persecution"/>
+	</owl:ObjectProperty>
+	
+	<!-- http://dati.cdec.it/lod/shoah/massacrePlace -->
+	<owl:ObjectProperty rdf:about="http://dati.cdec.it/lod/shoah/massacrePlace">
+		<rdfs:label xml:lang="en">Massacre Place</rdfs:label>
+		<rdfs:range rdf:resource="http://dati.cdec.it/lod/shoah/Place"/>
+		<rdfs:domain rdf:resource="http://dati.cdec.it/lod/shoah/Massacre"/>
+	</owl:ObjectProperty>
+	<!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+	<!-- http://dati.cdec.it/lod/shoah/arrestDate -->
+	<owl:DatatypeProperty rdf:about="http://dati.cdec.it/lod/shoah/arrestDate">
+		<rdfs:label xml:lang="en">Arrest Date</rdfs:label>
+		<rdfs:domain rdf:resource="http://dati.cdec.it/lod/shoah/Persecution"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+	</owl:DatatypeProperty>
+	<!-- http://dati.cdec.it/lod/shoah/arrestedBy -->
+	<owl:DatatypeProperty rdf:about="http://dati.cdec.it/lod/shoah/arrestedBy">
+		<rdfs:label xml:lang="en">Arrested By</rdfs:label>
+		<rdfs:domain rdf:resource="http://dati.cdec.it/lod/shoah/Persecution"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+	</owl:DatatypeProperty>
+	<!-- http://dati.cdec.it/lod/shoah/arrivalDate -->
+	<owl:DatatypeProperty rdf:about="http://dati.cdec.it/lod/shoah/arrivalDate">
+		<rdfs:label xml:lang="en">Arrival Date</rdfs:label>
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="http://dati.cdec.it/lod/shoah/Convoy"/>
+					<owl:Class rdf:about="http://dati.cdec.it/lod/shoah/Persecution"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+	</owl:DatatypeProperty>
+	<!-- http://dati.cdec.it/lod/shoah/campSerialNumber -->
+	<owl:DatatypeProperty rdf:about="http://dati.cdec.it/lod/shoah/campSerialNumber">
+		<rdfs:label xml:lang="en">Camp Serial Number</rdfs:label>
+		<rdfs:domain rdf:resource="http://dati.cdec.it/lod/shoah/Persecution"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+	</owl:DatatypeProperty>
+	<!-- http://dati.cdec.it/lod/shoah/convoyNumber -->
+	<owl:DatatypeProperty rdf:about="http://dati.cdec.it/lod/shoah/convoyNumber">
+		<rdfs:label xml:lang="en">Convoy Number</rdfs:label>
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Class rdf:about="http://dati.cdec.it/lod/shoah/Convoy"/>
+					<owl:Class rdf:about="http://dati.cdec.it/lod/shoah/Persecution"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+	</owl:DatatypeProperty>
+
+	<!-- http://dati.cdec.it/lod/shoah/persecutionCategory -->
+	<owl:DatatypeProperty rdf:about="http://dati.cdec.it/lod/shoah/persecutionCategory">
+		<rdfs:label xml:lang="en">Reason of Deportation</rdfs:label>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+		<rdfs:domain rdf:resource="http://dati.cdec.it/lod/shoah/Persecution"/>
+	</owl:DatatypeProperty>
+	<!-- http://dati.cdec.it/lod/shoah/departureDate -->
+	<owl:DatatypeProperty rdf:about="http://dati.cdec.it/lod/shoah/departureDate">
+		<rdfs:label xml:lang="en">Departure Date</rdfs:label>
+		<rdfs:domain rdf:resource="http://dati.cdec.it/lod/shoah/Persecution"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+	</owl:DatatypeProperty>
+	<!-- http://dati.cdec.it/lod/shoah/liberationDate -->
+	<owl:DatatypeProperty rdf:about="http://dati.cdec.it/lod/shoah/liberationDate">
+		<rdfs:label xml:lang="en">Liberation Date</rdfs:label>
+		<rdfs:domain rdf:resource="http://dati.cdec.it/lod/shoah/Liberation"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+	</owl:DatatypeProperty>
+	<!-- http://dati.cdec.it/lod/shoah/returnDate -->
+	<owl:DatatypeProperty rdf:about="http://dati.cdec.it/lod/shoah/returnDate">
+		<rdfs:domain rdf:resource="http://dati.cdec.it/lod/shoah/Liberation"/>
+		<rdfs:label xml:lang="en">Return Date</rdfs:label>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+	</owl:DatatypeProperty>
+	<!-- http://dati.cdec.it/lod/shoah/returnPlace -->
+	<owl:DatatypeProperty rdf:about="http://dati.cdec.it/lod/shoah/returnPlace">
+		<rdfs:label xml:lang="en">Return Place</rdfs:label>
+		<rdfs:domain rdf:resource="http://dati.cdec.it/lod/shoah/Liberation"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+	</owl:DatatypeProperty>
+	<!-- http://dati.cdec.it/lod/shoah/shoahSurvivor -->
+	<owl:DatatypeProperty rdf:about="http://dati.cdec.it/lod/shoah/shoahSurvivor">
+		<rdfs:label xml:lang="en">Shoah Survivor</rdfs:label>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+		<rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	</owl:DatatypeProperty>
+	<!-- http://dati.cdec.it/lod/shoah/transferDate -->
+	<owl:DatatypeProperty rdf:about="http://dati.cdec.it/lod/shoah/transferDate">
+		<rdfs:label xml:lang="en">Transfer Date</rdfs:label>
+		<rdfs:domain rdf:resource="http://dati.cdec.it/lod/shoah/NaziCampTransfer"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+	</owl:DatatypeProperty>
+	<!-- http://dati.cdec.it/lod/shoah/deathDescriptionIntegration -->
+	<owl:DatatypeProperty rdf:about="http://dati.cdec.it/lod/shoah/deathDescriptionIntegration">
+		<rdfs:label xml:lang="en">Death Description Integration</rdfs:label>
+		<rdfs:domain rdf:resource="http://dati.cdec.it/lod/shoah/Persecution"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+	</owl:DatatypeProperty>
+	<!-- http://dati.cdec.it/lod/shoah/toNaziCampLabel -->
+	<owl:DatatypeProperty rdf:about="http://dati.cdec.it/lod/shoah/toNaziCampLabel">
+		<rdfs:label xml:lang="en">To Nazi Camp Label</rdfs:label>
+		<rdfs:domain rdf:resource="http://dati.cdec.it/lod/shoah/Persecution"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+	</owl:DatatypeProperty>
+	<!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+	<!-- http://dati.cdec.it/lod/shoah/Persecution -->
+	<owl:Class rdf:about="http://dati.cdec.it/lod/shoah/Persecution">
+		<rdfs:label xml:lang="en">Persecution</rdfs:label>
+	</owl:Class>
+	<!-- http://dati.cdec.it/lod/shoah/Place -->
+	<owl:Class rdf:about="http://dati.cdec.it/lod/shoah/Place">
+		<rdfs:label xml:lang="en">Place</rdfs:label>
+	</owl:Class>
+	<!-- http://dati.cdec.it/lod/shoah/NaziCamp -->
+	<owl:Class rdf:about="http://dati.cdec.it/lod/shoah/NaziCamp">
+		<rdfs:label xml:lang="en">Nazi Camp</rdfs:label>
+	</owl:Class>
+	<!-- http://dati.cdec.it/lod/shoah/DetentionPlace -->
+	<owl:Class rdf:about="http://dati.cdec.it/lod/shoah/DetentionPlace">
+		<rdfs:label xml:lang="en">Detention Place</rdfs:label>
+	</owl:Class>
+	<!-- http://dati.cdec.it/lod/shoah/NaziCampTransfer -->
+	<owl:Class rdf:about="http://dati.cdec.it/lod/shoah/NaziCampTransfer">
+		<rdfs:label xml:lang="en">Nazi Camp Transfer</rdfs:label>
+	</owl:Class>
+	<!-- http://dati.cdec.it/lod/shoah/DetentionPlaceTransfer -->
+	<owl:Class rdf:about="http://dati.cdec.it/lod/shoah/DetentionPlaceTransfer">
+		<rdfs:label xml:lang="en">Detention Place Transfer</rdfs:label>
+	</owl:Class>
+	<!-- http://dati.cdec.it/lod/shoah/Convoy -->
+	<owl:Class rdf:about="http://dati.cdec.it/lod/shoah/Convoy">
+		<rdfs:label xml:lang="en">Convoy</rdfs:label>
+	</owl:Class>
+	<!-- http://dati.cdec.it/lod/shoah/Massacre -->
+	<owl:Class rdf:about="http://dati.cdec.it/lod/shoah/Massacre">
+		<rdfs:label xml:lang="en">Massacre</rdfs:label>
+	</owl:Class>
+	<!-- http://dati.cdec.it/lod/shoah/Liberation -->
+	<owl:Class rdf:about="http://dati.cdec.it/lod/shoah/Liberation">
+		<rdfs:label xml:lang="en">Liberation</rdfs:label>
+	</owl:Class>
+</rdf:RDF>
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->

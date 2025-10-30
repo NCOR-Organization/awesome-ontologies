@@ -1,0 +1,19 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <owl:Ontology rdf:about="http://data.ordnancesurvey.co.uk/ontology/geometry/">
+    <dct:publisher rdf:resource="http://data.ordnancesurvey.co.uk/id/ordnancesurvey"/>
+    <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Ordnance Survey.</dc:creator>
+    <dct:creator rdf:resource="http://data.ordnancesurvey.co.uk/id/ordnancesurvey"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.ordnancesurvey.co.uk/ontology/geometry.owl"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Geometry Ontology</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A ontology to describe abstract geometries.</rdfs:comment>
+  </owl:Ontology>
+</rdf:RDF>

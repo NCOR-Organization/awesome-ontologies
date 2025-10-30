@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:h2o="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:prov-dc="http://www.w3.org/ns/prov-dc#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic">
+	<rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+	<dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO/TC 211 Project Team 19150-2</dc:contributor>
+	<dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simon J D COX
+CSIRO Australia</dc:creator>
+	<dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology establishes classes corresponding to stereotypes used in ISO-conformant models, as used in the rules for conversion of the ISO TC 211 Harmonized Model from the UML to OWL representations</dc:description>
+	<dc:rights rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Copyright © 2012-2013 CSIRO</dc:rights>
+	<dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ontology elements required for conversion of ISO/TC 211 Harmonized Model to OWL</dc:title>
+	<dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-06-04T00:00:00</dct:created>
+	<dct:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#ISOClassName"/>
+	<dct:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#TaggedValue"/>
+	<dct:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#constraint"/>
+	<dct:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#isAbstract"/>
+	<dct:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#tag"/>
+	<dct:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#ttag"/>
+	<dct:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#tvalue"/>
+	<dct:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-01-07T00:00:00</dct:modified>
+	<vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">h2o</vann:preferredNamespacePrefix>
+	<vann:preferredNamespaceUri rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology establishes classes corresponding to stereotypes used in ISO-conformant models, as used in the rules for conversion of the ISO TC 211 Harmonized Model from the UML to OWL representations. 
+
+This vocabulary is provisional, pending finalization of ISO 19150-2.
+
+The URI stem http://def.seegrid.csiro.au/isotc211/ is temporary. The vocabulary is expected to be ultimately published in the domain http://def.isotc211.org/ .</rdfs:comment>
+	<owl:imports rdf:resource="http://purl.org/dc/elements/1.1/"/>
+	<owl:priorVersion rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201305/ISOTC211/HM/hm2owl.rdf"/>
+	<owl:versionIRI rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201311/ISOTC211/HM/iso19150/-2/2012/basic.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#ISOClassName">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A datatype for skos:notation annotations, used to indicate the original UML class name</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO Class name</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc59e7mx1">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+	<owl:onDataType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc59e7mx3">
+	<xsd:pattern>^[A-Z]\w*</xsd:pattern>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc59e7mx2">
+	<rdf:first rdf:nodeID="node19fc59e7mx3"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc59e7mx1">
+	<owl:withRestrictions rdf:nodeID="node19fc59e7mx2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#ISOClassName">
+	<owl:equivalentClass rdf:nodeID="node19fc59e7mx1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#TaggedValue">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Class for UML tagged values</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UML tagged value structure</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc59e7mx4">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#ttag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#TaggedValue">
+	<rdfs:subClassOf rdf:nodeID="node19fc59e7mx4"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19fc59e7mx5">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+	<owl:onProperty rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#tvalue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#TaggedValue">
+	<rdfs:subClassOf rdf:nodeID="node19fc59e7mx5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#constraint">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UML constraint</rdfs:label>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#isAbstract">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This property indicates whether the class was flagged 'abstract' in the UML model. Abstract classes cannot be instantiated directly. Concrete subclasses may be instantiated.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UML abstract class</rdfs:label>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#tag">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OWL property that links to a tagged value</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UML tagged value</rdfs:label>
+	<rdfs:range rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#TaggedValue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#ttag">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:domain rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#TaggedValue"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UML tagged value tag</rdfs:label>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#tvalue">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:domain rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#TaggedValue"/>
+	<rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UML tagged value value</rdfs:label>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#valueAssignment">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">property that can be attached to any statement to support a link to the evidence for the value</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">value assignment method</rdfs:label>
+</rdf:Description>
+
+</rdf:RDF>

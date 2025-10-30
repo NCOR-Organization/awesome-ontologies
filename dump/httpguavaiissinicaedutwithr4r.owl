@@ -1,0 +1,424 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    Relations for Reusing (R4R) Ontology    [guava]
+  </title>
+
+  <meta name="generator" content="DokuWiki Release 2007-06-26b" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2016-06-06T17:32:14+0800" />
+<meta name="keywords" content="r4r" />
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="guava" />
+<link rel="start" href="/" />
+<link rel="contents" href="/r4r?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/feed.php?mode=list&amp;ns=" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="/_export/xhtml/r4r" />
+<link rel="stylesheet" media="all" type="text/css" href="/lib/exe/css.php?s=all" />
+<link rel="stylesheet" media="screen" type="text/css" href="/lib/exe/css.php" />
+<link rel="stylesheet" media="print" type="text/css" href="/lib/exe/css.php?s=print" />
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?edit=0&amp;write=0" ></script>
+
+  <link rel="shortcut icon" href="/lib/tpl/guava/images/favicon.ico" />
+  <script type="text/javascript">
+  function _form_createpaper(form){
+    id = form.id.value;
+    regex = /^[a-zA-Z0-9\-\_]*$/;
+    test = regex.test(id);
+    if(!test){
+      txt = "not a valid paper title, allow letters, numbers, and underline only!";
+      alert(txt);
+      return false;
+    }
+    
+    id = "papers:"+id+":home";
+    form.id.value = id;
+    return true;
+  }
+  </script>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2865198-1";
+urchinTracker();
+</script>
+</head>
+
+<body>
+<div class="dokuwiki state_show">
+<div class="wrap">
+
+  
+  <div class="stylehead">
+
+		<div class="header">
+			<div class="logo">
+				<a href="/" >guava@iis, 1604, Taipei, Taiwan, Earth</a>			</div>
+		</div>
+
+		<div class="menu">
+			<ul>
+			  				<li><a href="/"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">首頁</a></li>
+				<li><a href="/research/" >研究</a></li>
+				<li><a href="/systems/" >系統</a></li>
+				<li><a href="/papers/" >論文</a></li>
+				<li><a href="/people/" >成員</a></li>
+				<li><a href="/events/" >活動</a></li>
+				<li><a href="/contact" >聯絡</a></li>
+    	     			<li>----------</li>
+   			<li><a href="/?do=recent"  class="action recent" accesskey="r" rel="nofollow">最近更新</a></li>
+			<li><a href="/index" >網站索引</a></li>
+   			<li>----------</li>
+			<li><a href="/en/r4r" class="wikilink2" title="en:r4r">English</a></li>   			<li>----------</li>
+
+    	     			<li><a href="/r4r?do=login"  class="action login" rel="nofollow">Login</a></li>
+			</ul>
+		</div>
+		
+  <div class="einfos">
+    <a href="/about" title="about"><img src="/lib/tpl/guava/images/32-1.png" width="80" height="15" alt="handcoded" /></a><br/>
+		<a href="http://validator.w3.org/check/referer" title="Valid XHTML 1.0"><img src="/lib/tpl/guava/images/button-xhtml.png" width="80" height="15" alt="Valid XHTML 1.0" /></a><br/>
+		<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3" title="Valid CSS"><img src="/lib/tpl/guava/images/button-css.png" width="80" height="15" alt="Valid CSS" /></a><br/>
+		<a href="/feed.php" title="Recent changes RSS feed"><img src="/lib/tpl/guava/images/rss.png" width="80" height="15" alt="RSS feed" /></a><br/>
+
+				<a href="/license" ><img src="/lib/tpl/guava/images/button-cc.gif" width="80" height="15" alt="2007 (CC) BY-NC-SA Taiwan" /></a><br/>
+		<!--
+		<a href="/license" >2007 (CC) BY-NC-SA Guavas</a><br/>
+		//-->
+  	<br/>
+  	<br/>
+
+		<div class="user"></div>
+
+	</div>
+		
+		
+  </div>
+  <!-- end style head -->
+
+    
+
+	<div class="page">
+
+    <div id="breadcrumbs">
+              Trace: <span class="bcsep">&raquo;</span> <span class="curid"><a href="/r4r"  class="breadcrumbs" title="r4r">Relations for Reusing (R4R) Ontology</a></span>      
+          </div>
+
+
+		<div class="pageContent">
+  		<!-- wikipage start -->
+      <div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#relations_for_reusing_r4r_ontology" class="toc">Relations for Reusing (R4R) Ontology</a></span></div>
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="#class" class="toc">CLASS</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#property" class="toc">PROPERTY</a></span></div></li>
+</ul>
+</li>
+<li class="level2"><div class="li"><span class="li"><a href="#contextual_framework" class="toc">Contextual Framework</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#use_cases" class="toc">Use Cases</a></span></div></li></ul>
+</li></ul>
+</div>
+</div>
+
+
+
+<h1><a name="relations_for_reusing_r4r_ontology" id="relations_for_reusing_r4r_ontology">Relations for Reusing (R4R) Ontology</a></h1>
+<div class="level1">
+
+<p>
+ <strong>This Version :</strong> <a href="http://guava.iis.sinica.edu.tw/r4r/" class="urlextern" title="http://guava.iis.sinica.edu.tw/r4r/"  rel="nofollow">http://guava.iis.sinica.edu.tw/r4r/</a>
+</p>
+
+<p>
+<strong>Previous Version :</strong><a href="http://guava.iis.sinica.edu.tw/wiki/R4R-20140910.ttl" class="urlextern" title="http://guava.iis.sinica.edu.tw/wiki/R4R-20140910.ttl"  rel="nofollow"> 20140910.ttl</a>
+</p>
+
+<p>
+ <strong>Latest Published:</strong> May 2015 (<a href="http://guava.iis.sinica.edu.tw/r4r" class="urlextern" title="http://guava.iis.sinica.edu.tw/r4r"  rel="nofollow">http://guava.iis.sinica.edu.tw/r4r</a>) 
+</p>
+
+<p>
+<strong> Chinese Version :</strong> 中文/<a href="/r4r/%E4%B8%AD%E6%96%87" class="wikilink1" title="r4r:中文">R4R: 資料再次使用關聯性的知識本體</a>
+</p>
+
+<p>
+<strong>Authors :</strong> <a href="http://www.researchgate.net/profile/Andrea_Huang/" class="urlextern" title="http://www.researchgate.net/profile/Andrea_Huang/"  rel="nofollow">Andrea Wei-Ching Huang</a> and <a href="http://www.iis.sinica.edu.tw/pages/trc/" class="urlextern" title="http://www.iis.sinica.edu.tw/pages/trc/"  rel="nofollow">Tyng-Ruey Chuang</a>
+</p>
+
+<p>
+<strong>Contributors:</strong> <a href="http://www.researchgate.net/profile/Guan-Shuo_Mai" class="urlextern" title="http://www.researchgate.net/profile/Guan-Shuo_Mai"  rel="nofollow">Guan-Shuo Mai</a>
+</p>
+
+<p>
+R4R is a light-weight ontology for representing general relationships of resource for publication and reusing. It asserts that a certain reusing context occurred and determined by its two basic relations, namely,<em> isPackagedWith</em> and <em>isCitedBy</em>. The <em> isPackagedWith</em> relation declares the resource is ready to be reused by incorporating License and Provenance information. The <em>cites</em> relation is an exceptional to <em>isCitedBy</em> which occurs only two related objects cite each other at the same time.  Five resource objects including article, data, code, provenance and license are major class concepts to represent in this ontology.  
+</p>
+<ul>
+<li class="level1"><div class="li"> The namespace for all R4R terms is <a href="http://guava.iis.sinica.edu.tw/r4r/" class="urlextern" title="http://guava.iis.sinica.edu.tw/r4r/"  rel="nofollow">http://guava.iis.sinica.edu.tw/r4r/</a></div>
+</li>
+<li class="level1"><div class="li"> R4R in <strong><a href="http://guava.iis.sinica.edu.tw/wiki/R4R.owl" class="urlextern" title="http://guava.iis.sinica.edu.tw/wiki/R4R.owl"  rel="nofollow">RDF/XML</a></strong>; in <strong><a href="http://guava.iis.sinica.edu.tw/wiki/R4R.ttl" class="urlextern" title="http://guava.iis.sinica.edu.tw/wiki/R4R.ttl"  rel="nofollow">ttl</a></strong>; a <a href="http://dat.digitalarchives.tw/resource/Dataset/10000004" class="urlextern" title="http://dat.digitalarchives.tw/resource/Dataset/10000004"  rel="nofollow">Reusing Case</a>.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <strong><a href="http://lov.okfn.org/dataset/lov/vocabs/r4r" class="urlextern" title="http://lov.okfn.org/dataset/lov/vocabs/r4r"  rel="nofollow"> R4R at Linked Open Vocabularies (LOV)</a> </strong>; <strong><a href="/r4r-20150512.jpg" class="wikilink1" title="r4r-20150512.jpg">R4R at a glance:</a> </strong> <a href="/_detail/r4r-20150512-s.jpg?id=r4r&amp;cache=cache" class="media" title="r4r-20150512-s.jpg"><img src="/_media/r4r-20150512-s.jpg?w=&amp;h=&amp;cache=cache" class="media" title="" alt="" /></a></div>
+</li>
+</ul>
+
+</div>
+
+<h3><a name="class" id="class">CLASS</a></h3>
+<div class="level3">
+
+<p>
+<strong><a href="/r4r/rrobject" class="wikilink1" title="r4r:rrobject">r4r:RRObject</a>:</strong> Any resource served as a component for publication and reusing is defined as a Reusing Related Object (RRObject). It can be a knowledge unit for research purposes, or any resource that has relations similar to the relations between article, data and code.
+</p>
+<ul>
+<li class="level1"><div class="li"> has subclasses: <a href="/r4r/article" class="wikilink1" title="r4r:article">r4r:Article</a> , <a href="/r4r/data" class="wikilink1" title="r4r:data">r4r:Data</a> , <a href="/r4r/code" class="wikilink1" title="r4r:code">r4r:Code</a></div>
+</li>
+<li class="level1"><div class="li"> described with properties: <em><a href="/r4r/locateat" class="wikilink1" title="r4r:locateat">r4r:locateAt</a> , <a href="/r4r/hastime" class="wikilink1" title="r4r:hastime">r4r:hasTime</a> ,<a href="/r4r/ispackagedwith" class="wikilink1" title="r4r:ispackagedwith">r4r:isPackagedWith</a> , <a href="/r4r/iscitedby" class="wikilink1" title="r4r:iscitedby">r4r:isCitedBy</a>, <a href="/r4r/cites" class="wikilink1" title="r4r:cites">r4r:cites</a></em></div>
+</li>
+</ul>
+<pre class="code"> URI: http://guava.iis.sinica.edu.tw/r4r/RRObject</pre>
+
+<p>
+ <strong><a href="/r4r/rrpolicy" class="wikilink1" title="r4r:rrpolicy">r4r:RRPolicy</a>:</strong> Any mechanism designed for relating to RRObject for reusing purposes is defined as a Reusing Related Policy (RRPolicy). RRPolicy is free to be extended for more issues such as security and trust for its subclasses concepts.
+</p>
+<ul>
+<li class="level1"><div class="li"> has subclasses: <a href="/r4r/provenance" class="wikilink1" title="r4r:provenance">r4r:Provenance</a> , <a href="/r4r/license" class="wikilink1" title="r4r:license">r4r:License</a></div>
+</li>
+<li class="level1"><div class="li"> described with properties: <em><a href="/r4r/ispackagedwith" class="wikilink1" title="r4r:ispackagedwith">r4r:isPackagedWith</a></em> </div>
+</li>
+</ul>
+<pre class="code"> URI: http://guava.iis.sinica.edu.tw/r4r/RRPolicy</pre>
+
+<p>
+ <strong><a href="/r4r/article" class="wikilink1" title="r4r:article">r4r:Article</a>:</strong> An object is presented mainly as textual form but not exclusively. It is not limited for representing research publications only, and may be presented in a variety of article formats such as: blog articles, encyclopedia articles (a primary division of encyclopedia content; Wikipedia entry pages), Usenet or web forum articles, even non-textual based resources like spoken articles (articles produced in the forms of video clips and audio recordings such as Vlogs/Video blogs, podcasts and audiobooks) are such cases.
+</p>
+<ul>
+<li class="level1"><div class="li"> has superclass: <a href="/r4r/rrobject" class="wikilink1" title="r4r:rrobject">r4r:RRObject</a></div>
+</li>
+<li class="level1"><div class="li"> has rdf:type <a href="http://www.w3.org/ns/dcat#Dataset" class="urlextern" title="http://www.w3.org/ns/dcat#Dataset"  rel="nofollow">dcat:Dataset</a> when the article is combined with associated data and <a href="http://guava.iis.sinica.edu.tw/r4r/inreusingcontext" class="urlextern" title="http://guava.iis.sinica.edu.tw/r4r/inreusingcontext"  rel="nofollow">is ready to be published or reused</a>.</div>
+</li>
+<li class="level1"><div class="li"> described with properties: <em><a href="/r4r/iscitedby" class="wikilink1" title="r4r:iscitedby">r4r:isCitedBy</a> , <a href="/r4r/cites" class="wikilink1" title="r4r:cites">r4r:cites</a> , <a href="/r4r/ispartof" class="wikilink1" title="r4r:ispartof">r4r:isPartOf</a> , <a href="/r4r/hasprovenance" class="wikilink1" title="r4r:hasprovenance">r4r:hasProvenance</a> , <a href="/r4r/haslicense" class="wikilink1" title="r4r:haslicense">r4r:hasLicense</a></em> </div>
+</li>
+</ul>
+<pre class="code"> URI: http://guava.iis.sinica.edu.tw/r4r/Article</pre>
+
+<p>
+ <strong><a href="/r4r/data" class="wikilink1" title="r4r:data">r4r:Data</a>:</strong> Data is presented in a structure form such as dataset, algorithms, models, metadata schema or ontologies. There are other forms of data, for instance, tables, figures or nanopublication. Other text based supplement materials like review, comments, and feedbacks are also included.  
+</p>
+<ul>
+<li class="level1"><div class="li"> has superclass: <a href="/r4r/rrobject" class="wikilink1" title="r4r:rrobject">r4r:RRObject</a></div>
+</li>
+<li class="level1"><div class="li"> has rdf:type <a href="http://www.w3.org/ns/dcat#Dataset" class="urlextern" title="http://www.w3.org/ns/dcat#Dataset"  rel="nofollow">dcat:Dataset</a> when the data is combined with associated data and <a href="http://guava.iis.sinica.edu.tw/r4r/inreusingcontext" class="urlextern" title="http://guava.iis.sinica.edu.tw/r4r/inreusingcontext"  rel="nofollow">is ready to be published or reused</a>.</div>
+</li>
+<li class="level1"><div class="li"> described with properties: <em><a href="/r4r/iscitedby" class="wikilink1" title="r4r:iscitedby">r4r:isCitedBy</a> , <a href="/r4r/cites" class="wikilink1" title="r4r:cites">r4r:cites</a> , <a href="/r4r/ispartof" class="wikilink1" title="r4r:ispartof">r4r:isPartOf</a> , <a href="/r4r/hasprovenance" class="wikilink1" title="r4r:hasprovenance">r4r:hasProvenance</a> , <a href="/r4r/haslicense" class="wikilink1" title="r4r:haslicense">r4r:hasLicense</a></em> </div>
+</li>
+</ul>
+<pre class="code"> URI: http://guava.iis.sinica.edu.tw/r4r/Data</pre>
+
+<p>
+ <strong><a href="/r4r/code" class="wikilink1" title="r4r:code">r4r:Code</a>:</strong> Any collection of computer instructions is written in human-readable computer language, and served for programming and executing the Data of RRObject.
+</p>
+<ul>
+<li class="level1"><div class="li"> has superclass: <a href="/r4r/rrobject" class="wikilink1" title="r4r:rrobject">r4r:RRObject</a></div>
+</li>
+<li class="level1"><div class="li"> has rdf:type <a href="http://www.w3.org/ns/dcat#Dataset" class="urlextern" title="http://www.w3.org/ns/dcat#Dataset"  rel="nofollow">dcat:Dataset</a> when the code is combined with associated data and <a href="http://guava.iis.sinica.edu.tw/r4r/inreusingcontext" class="urlextern" title="http://guava.iis.sinica.edu.tw/r4r/inreusingcontext"  rel="nofollow">is ready to be published or reused</a>.</div>
+</li>
+<li class="level1"><div class="li"> described with properties:<em> <a href="/r4r/iscitedby" class="wikilink1" title="r4r:iscitedby">r4r:isCitedBy</a> , <a href="/r4r/cites" class="wikilink1" title="r4r:cites">r4r:cites</a> ,<a href="/r4r/ispartof" class="wikilink1" title="r4r:ispartof">r4r:isPartOf</a> , <a href="/r4r/hasprovenance" class="wikilink1" title="r4r:hasprovenance">r4r:hasProvenance</a> , <a href="/r4r/haslicense" class="wikilink1" title="r4r:haslicense">r4r:hasLicense</a></em></div>
+</li>
+</ul>
+<pre class="code"> URI: http://guava.iis.sinica.edu.tw/r4r/Code</pre>
+
+<p>
+ <strong><a href="/r4r/provenance" class="wikilink1" title="r4r:provenance">r4r:Provenance</a>:</strong> metadata, metadata about metadata, or version information. Descriptive metadata can be represented as part of the Provenance.
+</p>
+<ul>
+<li class="level1"><div class="li"> has superclass: <a href="/r4r/rrpolicy" class="wikilink1" title="r4r:rrpolicy">r4r:RRPolicy</a> </div>
+</li>
+<li class="level1"><div class="li"> has rdf:type <a href="http://www.w3.org/TR/prov-o/#Entity" class="urlextern" title="http://www.w3.org/TR/prov-o/#Entity"  rel="nofollow">prov:Entity</a> when the <a href="/r4r/rrobject" class="wikilink1" title="r4r:rrobject">r4r:RRObject</a> is <a href="http://guava.iis.sinica.edu.tw/r4r/inreusingcontext" class="urlextern" title="http://guava.iis.sinica.edu.tw/r4r/inreusingcontext"  rel="nofollow">ready to be published or reused</a>.</div>
+</li>
+<li class="level1"><div class="li"> described with properties: <em><a href="/r4r/hasprovenance" class="wikilink1" title="r4r:hasprovenance">r4r:hasProvenance</a> , <a href="/r4r/ispartof" class="wikilink1" title="r4r:ispartof">r4r:isPartOf</a></em></div>
+</li>
+</ul>
+<pre class="code"> URI: http://guava.iis.sinica.edu.tw/r4r/Provenance</pre>
+
+<p>
+ <strong><a href="/r4r/license" class="wikilink1" title="r4r:license">r4r:License</a>:</strong> The authorization of the use and reuse of the referred resource, as well as the document recording that authorization. 
+</p>
+<ul>
+<li class="level1"><div class="li"> has superclass: <a href="/r4r/rrpolicy" class="wikilink1" title="r4r:rrpolicy">r4r:RRPolicy</a> </div>
+</li>
+<li class="level1"><div class="li"> described with properties: <em><a href="/r4r/haslicense" class="wikilink1" title="r4r:haslicense">r4r:hasLicense</a></em></div>
+</li>
+</ul>
+<pre class="code"> URI: http://guava.iis.sinica.edu.tw/r4r/License</pre>
+
+</div>
+
+<h3><a name="property" id="property">PROPERTY</a></h3>
+<div class="level3">
+
+<p>
+<em><strong><a href="/r4r/locateat" class="wikilink1" title="r4r:locateat">r4r:locateAt</a></strong></em>: is used to relate a machine-readable representation of the RRObject&#039;s identification, such as DOI, <acronym title="Uniform Resource Identifier">URI</acronym>, <acronym title="Uniform Resource Locator">URL</acronym>, etc. It is used as the basic relation description for resource publication and reusing. A complete R4R resource representation (RRObject <em>isPackagedWith</em> RRPolicy) shares the same property, <em>r4r:locateAt</em> with RRObject.  
+</p>
+<ul>
+<li class="level1"><div class="li"> has domain: <a href="/r4r/rrobject" class="wikilink1" title="r4r:rrobject">r4r:RRObject</a></div>
+</li>
+<li class="level3"><div class="li"> has range: <a href="http://www.w3.org/TR/rdf-schema/#ch_resource" class="urlextern" title="http://www.w3.org/TR/rdf-schema/#ch_resource"  rel="nofollow"> rdfs:Resource</a> </div>
+</li>
+</ul>
+<pre class="code">   URI: http://guava.iis.sinica.edu.tw/r4r/locateAt</pre>
+
+<p>
+ <em><strong><a href="/r4r/hastime" class="wikilink1" title="r4r:hastime">r4r:hasTime</a></strong></em>: describes the creation time of the RRObject. It is used as the basic relation description for resource publication and reusing. A complete R4R resource representation (RRObject <em>isPackagedWith</em> RRPolicy) shares the same property, <em>r4r:locateAt</em> with RRObject.  
+</p>
+<ul>
+<li class="level1"><div class="li"> has domain: <a href="/r4r/rrobject" class="wikilink1" title="r4r:rrobject">r4r:RRObject</a> </div>
+</li>
+<li class="level3"><div class="li"> has range: <a href="http://www.w3.org/TR/owl-time/#TemporalEntity" class="urlextern" title="http://www.w3.org/TR/owl-time/#TemporalEntity"  rel="nofollow"> time:TemporalEntity</a> or other temporal standards and vocabularies.</div>
+</li>
+</ul>
+<pre class="code">   URI: http://guava.iis.sinica.edu.tw/r4r/hasTime  </pre>
+
+<p>
+ <em><strong><a href="/r4r/hasprovenance" class="wikilink1" title="r4r:hasprovenance">r4r:hasProvenance</a></strong></em>: is used for relating subclass of RRObject to its provenance information when RRPolicy is not ready to use. It is used as the basic relation description for resource publication.
+</p>
+<ul>
+<li class="level1"><div class="li"> has domain: <a href="/r4r/rrobject" class="wikilink1" title="r4r:rrobject">r4r:RRObject</a> </div>
+</li>
+<li class="level3"><div class="li"> has range: <a href="/r4r/provenance" class="wikilink1" title="r4r:provenance">r4r:Provenance</a></div>
+</li>
+</ul>
+<pre class="code">   URI: http://guava.iis.sinica.edu.tw/r4r/hasProvenance    </pre>
+
+<p>
+ <em><strong><a href="/r4r/haslicense" class="wikilink1" title="r4r:haslicense">r4r:hasLicense</a></strong></em>: declares the use of license information for RRObject and its subclass when RRPolicy is not ready to use. It is used as the basic relation description for resource publication.
+</p>
+<ul>
+<li class="level1"><div class="li"> has domain: <a href="/r4r/rrobject" class="wikilink1" title="r4r:rrobject">r4r:RRObject</a> </div>
+</li>
+<li class="level3"><div class="li"> has range: <a href="/r4r/license" class="wikilink1" title="r4r:license">r4r:License</a></div>
+</li>
+</ul>
+<pre class="code">   URI: http://guava.iis.sinica.edu.tw/r4r/hasLicense   </pre>
+
+<p>
+ <em><strong><a href="/r4r/ispartof" class="wikilink1" title="r4r:ispartof">r4r:isPartOf</a></strong></em>: describes partial relationships with temporal and spatial constraints, and carries with it some characteristics such as being transitive. A isPartOf B only if A and B share the same time and location. Data can be part of data; code can be part of code or data; data like keywords or sentences can also be described as part of the Article; metadata can be part of provenance as long as two objects carry partial and transitive relations. 
+</p>
+<pre class="code">   URI: http://guava.iis.sinica.edu.tw/r4r/isPartOf</pre>
+
+<p>
+ <em><strong><a href="/r4r/ispackagedwith" class="wikilink1" title="r4r:ispackagedwith">r4r:isPackagedWith</a></strong></em>: is used for relating RRObject and RRPolicy for accomplishing a particular component, RRPolicy. This relation is served for the reusing context.  
+</p>
+<ul>
+<li class="level1"><div class="li"> has domain: <a href="/r4r/rrpolicy" class="wikilink1" title="r4r:rrpolicy">r4r:RRPolicy</a> , has range: <a href="/r4r/rrobject" class="wikilink1" title="r4r:rrobject">r4r:RRObject</a></div>
+</li>
+</ul>
+<pre class="code">   URI: http://guava.iis.sinica.edu.tw/r4r/isPackagedWith</pre>
+
+<p>
+ <em><strong><a href="/r4r/iscitedby" class="wikilink1" title="r4r:iscitedby">r4r:isCitedBy</a></strong></em>: Any resource (A) is referenced by any other resource (B) when the publication time of A is before B. <em>isCitedBy</em> is used to describe this relation. 
+</p>
+
+<p>
+When it is used as the basic relation description for resource publication, <em>r4r:isCitedBy</em> can be used to describe relations between article, data, or code of RRObject. 
+</p>
+
+<p>
+When it is used for reusing context, <em>r4r:isCitedBy</em> relates any resource that reuses RRObject for citation, and the reusing context is enriched by the packaging of RRPolicy.  
+</p>
+<ul>
+<li class="level1"><div class="li"> has domain: <a href="/r4r/rrobject" class="wikilink1" title="r4r:rrobject">r4r:RRObject</a> </div>
+</li>
+</ul>
+<pre class="code">   URI: http://guava.iis.sinica.edu.tw/r4r/isCitedBy</pre>
+
+<p>
+ <em><strong><a href="/r4r/cites" class="wikilink1" title="r4r:cites">r4r:cites</a></strong></em>: Any resource (A) is referenced by any other resource (B) only when the publication time of A is equal to B. “cites” is used to describe this relation.
+</p>
+
+<p>
+When it is used as the basic relation description for resource publication, <em>r4r:cites</em> can be used to describe relations between article, data, or code of RRObject.
+</p>
+
+<p>
+When it is used for reusing context, <em>r4r:cites</em> relates any resource that reuses RRObject for citation, and the reusing context is enriched by the packaging of RRPolicy. 
+</p>
+<ul>
+<li class="level1"><div class="li"> has domain: <a href="/r4r/rrobject" class="wikilink1" title="r4r:rrobject">r4r:RRObject</a> </div>
+</li>
+</ul>
+<pre class="code">   URI: http://guava.iis.sinica.edu.tw/r4r/cites</pre>
+
+<p>
+ <em><strong><a href="/r4r/inreusingcontext" class="wikilink1" title="r4r:inreusingcontext">r4r:inReusingContext</a></strong></em>: this is an annotation property that assists curators to describe the dataset of Article/Data/Code as a <a href="http://www.w3.org/ns/dcat#Dataset" class="urlextern" title="http://www.w3.org/ns/dcat#Dataset"  rel="nofollow">dcat:Dataset</a> or the provenance of <a href="/r4r/provenance" class="wikilink1" title="r4r:provenance">r4r:Provenance</a> as a prov:Entity when the context is for Reusing.
+</p>
+
+<p>
+ *has domain: <a href="/r4r/article" class="wikilink1" title="r4r:article">r4r:Article</a> or <a href="/r4r/data" class="wikilink1" title="r4r:data">r4r:Data</a> or <a href="/r4r/code" class="wikilink1" title="r4r:code">r4r:Code</a> or <a href="/r4r/provenance" class="wikilink1" title="r4r:provenance">r4r:Provenance</a> *has range: <a href="http://www.w3.org/ns/dcat#Dataset" class="urlextern" title="http://www.w3.org/ns/dcat#Dataset"  rel="nofollow">dcat:Dataset</a> or <a href="http://www.w3.org/TR/prov-o/#Entity" class="urlextern" title="http://www.w3.org/TR/prov-o/#Entity"  rel="nofollow">prov:Entity</a> 
+</p>
+<pre class="code">
+URI: http://guava.iis.sinica.edu.tw/r4r/inReusingContext </pre>
+<hr />
+
+</div>
+
+<h2><a name="contextual_framework" id="contextual_framework">Contextual Framework</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> <a href="/r4r/framework" class="wikilink1" title="r4r:framework">Contextual Framework</a> </div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="use_cases" id="use_cases">Use Cases</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> <a href="/r4r/examples" class="wikilink1" title="r4r:examples">Examples</a> </div>
+</li>
+<li class="level1"><div class="li"> <a href="http://data.odw.tw/" class="urlextern" title="http://data.odw.tw/"  rel="nofollow">http://data.odw.tw/</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://voc.odw.tw/" class="urlextern" title="http://voc.odw.tw/"  rel="nofollow">http://voc.odw.tw/</a></div>
+</li>
+</ul>
+
+</div>
+
+      <!-- wikipage stop -->
+		</div>
+	</div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+   	<div class="meta doc">
+   	r4r Last modified: 2016/06/06 17:32		<!--
+      <div class="pagename">
+        [[<a href="/r4r?do=backlink" >Relations for Reusing (R4R) Ontology</a>]]
+      </div>
+		-->
+   	</div>
+  </div>
+  
+
+</div>
+</div>
+
+<!--<rdf:RDF xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">  <Work rdf:about="">    <license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/tw/" />    <dc:title>guava.iis.sinica.edu.tw</dc:title>    <dc:date>2007</dc:date>    <dc:description>lab 603/604 IIS, Academia Sinica</dc:description>    <dc:creator>      <Agent>        <dc:title>[作者]</dc:title>      </Agent>    </dc:creator>    <dc:rights>      <Agent>        <dc:title>[著作權持有人]</dc:title>      </Agent>    </dc:rights>  </Work>  <License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/tw/">    <permits rdf:resource="http://web.resource.org/cc/Reproduction"/>    <permits rdf:resource="http://web.resource.org/cc/Distribution"/>    <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/>    <prohibits rdf:resource="http://web.resource.org/cc/CommercialUse" />    <requires rdf:resource="http://web.resource.org/cc/Notice"/>    <requires rdf:resource="http://web.resource.org/cc/Attribution"/>    <requires rdf:resource="http://web.resource.org/cc/ShareAlike"/>  </License></rdf:RDF>-->
+
+<div class="no"><img src="/lib/exe/indexer.php?id=r4r&amp;1510852301" width="1" height="1" alt=""  /></div>
+</body>
+</html>

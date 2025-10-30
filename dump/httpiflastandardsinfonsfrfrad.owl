@@ -1,0 +1,2062 @@
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xml:base="http://iflastandards.info/ns/fr/frad/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:reg="http://metadataregistry.org/uri/profile/RegAp/"
+  xmlns:status="http://metadataregistry.org/uri/RegStatus/">
+
+<!-- Element Set: FRAD model -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/">
+  <dc:title xml:lang="en">FRAD model</dc:title>
+  <foaf:homepage rdf:resource="http://www.ifla.org/files/assets/cataloguing/frad/frad_2013.pdf"/>
+  <skos:note  xml:lang="en">This is the element set of native RDF classes and properties described in the Functional Requirements for Authority Data model. The model also uses elements previously described in the Functional Requirements for Bibliographic Records (FRBR) entity-relationship model. </skos:note>
+</rdf:Description>
+
+<!-- Classes -->
+
+<!-- Class: Agency -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/C1008">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">Agency</reg:name>
+  <rdfs:label xml:lang="en">Agency</rdfs:label>
+  <skos:definition xml:lang="en">An organization responsible for creating or modifying a controlled access point. The agency is responsible for application and interpretation of the rules it creates and/or uses. The agency may also be responsible for the creation and maintenance of identifiers within its domain.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class" />
+  <skos:scopeNote xml:lang="en">Includes libraries, national bibliographic agencies, bibliographic utilities, consortia, museums, archives, rights management organizations, etc.</skos:scopeNote>
+  <rdfs:label xml:lang="es">Agencia</rdfs:label>
+</rdf:Description>
+
+<!-- Class: Bibliographic Entity -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/C1010">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">BibliographicEntity</reg:name>
+  <rdfs:label xml:lang="en">Bibliographic Entity</rdfs:label>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class" />
+  <skos:definition xml:lang="en">An entity which reflects intellectual constructs or concepts that are integral to the rules used to create library catalogues.</skos:definition>
+  <skos:scopeNote xml:lang="en">What is perceived as a specific instance of a particular entity type may vary from one set of rules to another.</skos:scopeNote>
+  <reg:hasSubClass rdf:resource="http://iflastandards.info/ns/fr/frad/C1002" />
+  <reg:hasSubClass rdf:resource="http://iflastandards.info/ns/fr/frad/C1003" />
+</rdf:Description>
+
+<!-- Class: Controlled Access Point -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/C1001">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">ControlledAccessPoint</reg:name>
+  <rdfs:label xml:lang="en">Controlled Access Point</rdfs:label>
+  <skos:definition xml:lang="en">A name, term, code, etc., under which a bibliographic or authority record or reference will be found.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class" />
+  <rdfs:comment xml:lang="en">Description is modified from: Guidelines for authority records and references / revised by the Working Group on GARE Revision. Second edition.  München : K.G. Saur, 2001.</rdfs:comment>
+  <skos:scopeNote xml:lang="en">Includes access points designated as authorized (or preferred) forms of names (i.e., authorized access points) as well as those designated as variant forms of name (i.e., variant access points). Includes access points based on personal, family, and corporate names. Includes access points based on titles (i.e., names) for works, expressions, manifestations, and items. Includes access points consisting of a combination of two access points, as in the case of a creator/title access point for a work which consists of an authorized access point for the name of the creator combined with an authorized access point for the name (i.e., the title) of the work. Includes access points based on names and terms for events, objects, concepts, and places. Includes access points based on identifiers, such as standard numbers, classification indicia. Elements added to the name per se (e.g., dates) form an integral part of the controlled access point.</skos:scopeNote>
+</rdf:Description>
+
+<!-- Class: Corporate Body -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/C1003">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">CorporateBody</reg:name>
+  <rdfs:label xml:lang="en">Corporate Body</rdfs:label>
+  <skos:definition xml:lang="en">An organization or group of persons and/or organizations identified by a particular name acting as a unit.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class" />
+  <rdfs:comment xml:lang="en">Description is modified from that in Functional requirements for bibliographic records : final report, by the IFLA Study Group on the Functional Requirements for Bibliographic Records, published by K.G. Saur, 1998.</rdfs:comment>
+  <skos:scopeNote xml:lang="en">Includes occasional groups and groups that are constituted as meetings, conferences, congresses, expeditions, exhibitions, festivals, fairs, etc. Includes musical performing groups, groups of visual artists, and dance companies producing collective work. Includes organizations that act as territorial authorities, exercising or claiming to exercise government functions over a certain territory, such as a federation, a state, a region, a local municipality. Includes organizations and groups that are defunct as well as those that continue to operate. Includes fictitious organizations or groups of persons.
+</skos:scopeNote>
+  <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/fr/frad/C1010" />
+</rdf:Description>
+
+<!-- Class: Family -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/C1002">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">Family</reg:name>
+  <rdfs:label xml:lang="en">Family</rdfs:label>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class" />
+  <skos:definition xml:lang="en">Two or more persons related by birth, marriage, adoption, civil union, or similar legal status, or who otherwise present themselves as a family.</skos:definition>
+  <skos:scopeNote xml:lang="en">Includes royal families, dynasties, houses of nobility, etc. Includes patriarchies and matriarchies. Includes groups of individuals sharing a common ancestral lineage. Includes family units (parents, children, grandchildren, etc.). Includes the successive holders of a title in a house of nobility, viewed collectively (e.g., Dukes of Norfolk).
+</skos:scopeNote>
+  <rdfs:label xml:lang="es">Familia</rdfs:label>
+  <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/fr/frad/C1010" />
+</rdf:Description>
+
+<!-- Class: Identifier -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/C1009">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">Identifier</reg:name>
+  <rdfs:label xml:lang="en">Identifier</rdfs:label>
+  <skos:definition xml:lang="en">A number, code, word, phrase, logo, device, etc., that is associated with an entity, and serves to differentiate that entity from other entities within the domain in which the identifier is assigned. An identifier can consist of an identifier string (i.e., a sequence of numeric and/or alphabetic characters assigned to an entity to serve as a unique identifier within the domain to which the identifier is assigned) and a prefix and/or suffix (a character or set of characters (numeric and/or alphabetic) appearing before or after an identifier string).</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class" />
+  <skos:scopeNote xml:lang="en">Includes identifiers such as social insurance numbers assigned by a government authority. Includes personal identifiers assigned by other registration authorities. Includes business registration numbers, registration numbers for charitable organizations, etc., assigned by a government authority. Includes corporate body identifiers assigned by other registration authorities (e.g., ISBN publisher’s prefix). 
+Includes standard identifiers assigned by registration authorities identifying content (e.g., ISRC, ISWC, ISAN). Includes standard identifiers assigned by registration authorities identifying manifestations (e.g., ISBN, ISSN). Includes thematic index numbers assigned to a musical work by the publisher, or a musicologist. Includes catalogue raisonné numbers. Includes identifiers for items assigned by repositories (e.g., shelf number). Includes classification numbers referencing specific entities (e.g., a classification number assigned to a particular painting). Includes registered trademarks.</skos:scopeNote>
+  <rdfs:label xml:lang="es">Identificador</rdfs:label>
+</rdf:Description>
+
+<!-- Class: Name -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/C1006">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">Name</reg:name>
+  <rdfs:label xml:lang="en">Name</rdfs:label>
+  <skos:definition xml:lang="en">A character, word, or group of words and/or characters by which an entity is known.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class" />
+  <skos:scopeNote xml:lang="en">Includes names by which persons, families, and corporate bodies are known. Includes titles by which works, expressions, and manifestations are known. Includes names and terms by which concepts, objects, events, and places are known. Includes real names, pseudonyms, religious names, initials, and separate letters, numerals, or symbols. Includes forenames (or given names), matronymics, patronymics, family names (or surnames), dynastic names, etc. Includes given names of sovereigns, popes, etc., with associated roman numerals. Includes names of families, clans, dynasties, houses of nobility, etc. Includes names representing the successive holders of a title in houses of nobility, etc., viewed collectively (e.g., Dukes of Norfolk). Includes names used by a corporate body at various periods in its history. Includes names of associations, institutions, business firms, not-for-profit enterprises, etc. Includes names of governments, government agencies, projects, programmes, government officials, delegations, legislative bodies, armed forces, etc. Includes names of religious bodies, local churches, etc., religious councils, religious officials, provinces, dioceses, synods, etc., papal diplomatic missions, etc. Includes names of conferences, congresses, meetings, etc. Includes names of exhibitions, athletic contests, expeditions, fairs, festivals, etc. Includes names of subordinate and related bodies. Includes numbers that form an integral part of the name of a corporate body or event. Includes trade names. Includes titles of content, parts of content, compilations of content, etc. Includes titles by which a work has become known. Includes the title proper of the original manifestation of a work. Includes titles by which a work is identified in reference sources. Includes titles under which a work has been published. Includes titles by which manifestations of an expression have become known. Includes the title proper of the original manifestation of an expression. Includes titles by which manifestations of an expression are identified in reference sources. Includes titles under which manifestations of an expression have been published. Includes the title proper of the original edition of a manifestation. Includes titles by which a manifestation is identified in reference sources. Includes variant titles appearing on or in a manifestation. Includes names and terms for events, objects, concepts, and places.</skos:scopeNote>
+  <rdfs:label xml:lang="es">Nombre</rdfs:label>
+</rdf:Description>
+
+<!-- Class: Name of a Corporate Body -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/C1011">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">NameOfACorporateBody</reg:name>
+  <rdfs:label xml:lang="en">Name of a Corporate Body</rdfs:label>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class" />
+  <skos:definition xml:lang="en">A name which is the appellation of a corporate body.</skos:definition>
+</rdf:Description>
+
+<!-- Class: Name of a Family -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/C1013">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">NameOfAFamily</reg:name>
+  <rdfs:label xml:lang="en">Name of a Family</rdfs:label>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class" />
+  <skos:definition xml:lang="en">A name which is the appellation of a family.</skos:definition>
+</rdf:Description>
+
+<!-- Class: Name of a Person -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/C1012">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">NameOfAPerson</reg:name>
+  <rdfs:label xml:lang="en">Name of a Person</rdfs:label>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class" />
+  <skos:definition xml:lang="en">A name which is the appellation of a person.</skos:definition>
+</rdf:Description>
+
+<!-- Class: Name of a Work -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/C1014">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">NameOfAWork</reg:name>
+  <rdfs:label xml:lang="en">Name of a Work</rdfs:label>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class" />
+  <skos:definition xml:lang="en">A name which is the appellation of a work.</skos:definition>
+</rdf:Description>
+
+<!-- Class: Rules -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/C1007">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">Rules</reg:name>
+  <rdfs:label xml:lang="en">Rules</rdfs:label>
+  <skos:definition xml:lang="en">A set of instructions relating to the formulation and/or recording of controlled access points (authorized forms, variant forms or references, etc.).</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class" />
+  <skos:scopeNote xml:lang="en">Includes cataloguing rules and interpretations of those rules. Includes coding conventions.</skos:scopeNote>
+  <rdfs:label xml:lang="es">Reglas</rdfs:label>
+</rdf:Description>
+
+
+<!-- Properties -->
+
+<!-- Property: applies -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P2002">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">applies</reg:name>
+  <rdfs:label xml:lang="en">applies</rdfs:label>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1008" />
+  <skos:definition xml:lang="en">Relates an agency to rules that it applies when creating or modifying a controlled access point.</skos:definition>
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1007" />
+  <rdfs:label xml:lang="es">aplica</rdfs:label>
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P2001" />
+</rdf:Description>
+
+<!-- Property: are applied by -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P2001">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">areAppliedBy</reg:name>
+  <rdfs:label xml:lang="en">are applied by</rdfs:label>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1007" />
+  <skos:definition xml:lang="en">Relates rules to an agency that applies them when creating or modifying a controlled access point.</skos:definition>
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1008" />
+  <rdfs:label xml:lang="es">son aplicadas por</rdfs:label>
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P2002" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3019" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3020" />
+</rdf:Description>
+
+<!-- Property: creates -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P2006">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">creates</reg:name>
+  <rdfs:label xml:lang="en">creates</rdfs:label>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1008" />
+  <skos:definition xml:lang="en">Relates an agency to a controlled access point that is created by the agency.</skos:definition>
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1001" />
+  <rdfs:label xml:lang="es">crea</rdfs:label>
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P2005" />
+</rdf:Description>
+
+<!-- Property: govern -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P2004">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">govern</reg:name>
+  <rdfs:label xml:lang="en">govern</rdfs:label>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1007" />
+  <skos:definition xml:lang="en">Relates rules to a controlled access point that they govern.</skos:definition>
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1001" />
+  <rdfs:label xml:lang="es">regula</rdfs:label>
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P2003" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3019" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3020" />
+</rdf:Description>
+
+<!-- Property: has accompanying relationship -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P2030">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasAccompanyingRelationship</reg:name>
+  <rdfs:label xml:lang="en">has accompanying relationship</rdfs:label>
+  <skos:definition xml:lang="en">Relates a work to another work that is a supplement to that work (i.e., a work that is intended to be used in conjunction with or to augment the related work, such as a teacher’s guide or incidental music to a play; or intended to complement or be a companion to another work, such as a set of maps to a video travelogue, a computer disk to accompany a textbook, a set of coloured plates to accompany a text, the equal parts of a kit).</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1001" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1001" />
+</rdf:Description>
+
+<!-- Property: has acronym or initials or abbreviation -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4027">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasAcronymOrInitialsOrAbbreviation</reg:name>
+  <rdfs:label xml:lang="en">has acronym or initials or abbreviation</rdfs:label>
+  <skos:definition xml:lang="en">Relates a name of a corporate body and an acronym or initials or an abbreviation by which that body is known.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1011" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1011" />
+  <rdfs:label xml:lang="es">tiene acrónimo o iniciales o abreviaturas</rdfs:label>
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P4026" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P4032" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P4026" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P4025" />
+</rdf:Description>
+
+<!-- Property: has addition -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3018">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasAddition</reg:name>
+  <rdfs:label xml:lang="en">has addition</rdfs:label>
+  <skos:definition xml:lang="en">Relates a controlled access point to a name, title, date, place, number, or other designation added to the base access point.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:comment xml:lang="en">Sometimes referred to as a "qualifier".</rdfs:comment>
+  <skos:scopeNote xml:lang="en">Includes the fuller form of name added to the base access point. Includes the title of nobility, title of royalty, or ecclesiastical title added to the base access point. Includes dates added to the base access point. Includes the place name associated with a corporate body added to the base access point. Includes a number associated with a corporate body or a musical work added to the base access point. Includes a title of an adaptation or version of a work added to the base access point. Includes the name and/or number of a section or part of a work added to the base access point. Includes a term designating the form of a work added to the base access point. Includes a term designating language of expression added to the base access point. Includes a term designating the key in which a musical work was originally composed added to the base access point. Includes a term designating the medium of performance for which a musical work was originally conceived added to the base access point. Includes other designations associated with persons and corporate bodies added to the base access point.</skos:scopeNote>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1001" />
+  <rdfs:label xml:lang="es">tiene adición</rdfs:label>
+</rdf:Description>
+
+<!-- Property: has address (corporate body) -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3041">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasAddressCorporateBody</reg:name>
+  <rdfs:label xml:lang="en">has address (corporate body)</rdfs:label>
+  <skos:definition xml:lang="en">Relates a corporate body to the current or former address of the corporate body's office(s).</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:scopeNote xml:lang="en">Includes addresses for the corporate body's headquarters and/or other offices. Includes street address, postal address, telephone number, e-mail address, etc. Includes the address of a World Wide Web site operated by the corporate body, about the corporate body or related to the corporate body.</skos:scopeNote>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1003" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3043" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3042" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3040" />
+</rdf:Description>
+
+<!-- Property: has address (person) -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3035">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasAddressPerson</reg:name>
+  <rdfs:label xml:lang="en">has address (person)</rdfs:label>
+  <skos:definition xml:lang="en">Relates a person to the current or former address of the person's place of residence, business, or employer.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:scopeNote xml:lang="en">Includes street address, postal address, telephone number, e-mail address, etc. Includes the address of a World Wide Web site operated by the person, about the person or related to the person.</skos:scopeNote>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+  <rdfs:label xml:lang="es">tiene dirección (persona)</rdfs:label>
+</rdf:Description>
+
+<!-- Property: has affiliation -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3034">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasAffiliation</reg:name>
+  <rdfs:label xml:lang="en">has affiliation</rdfs:label>
+  <skos:definition xml:lang="en">Relates a person to a group with which the person is affiliated or has been affiliated through employment, membership, cultural identity, etc.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+  <rdfs:label xml:lang="es">tiene afiliación</rdfs:label>
+</rdf:Description>
+
+<!-- Property: has alternate script form -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4002">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasAlternateScriptForm</reg:name>
+  <rdfs:label xml:lang="en">has alternate script form</rdfs:label>
+  <skos:definition xml:lang="en">Relates controlled access points that are established as alternate script forms of the access point for the authorized forms of name for the same entity.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1001" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1001" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P4001" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P4003" />
+</rdf:Description>
+
+<!-- Property: has alternative linguistic form (corporate body)  -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4025">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasAlternativeLinguisticFormCorporateBody</reg:name>
+  <rdfs:label xml:lang="en">has alternative linguistic form (corporate body) </rdfs:label>
+  <skos:definition xml:lang="en">Relates a name of a corporate body and an alternative linguistic form of name by which that body is known.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:scopeNote xml:lang="en">Includes translations of the name for the corporate body.</skos:scopeNote>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1011" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1011" />
+  <rdfs:label xml:lang="es">tiene forma lingüística alternativa (entidad corporativa)</rdfs:label>
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P4026" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P4027" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P4032" />
+</rdf:Description>
+
+<!-- Property: has alternative linguistic form (family)  -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4024">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasAlternativeLinguisticFormFamily</reg:name>
+  <rdfs:label xml:lang="en">has alternative linguistic form (family) </rdfs:label>
+  <skos:definition xml:lang="en">Relates a name of a family and an alternative linguistic form of name by which that family is known.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1013" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1013" />
+  <rdfs:label xml:lang="es">tiene forma lingüística alternativa (familia)</rdfs:label>
+</rdf:Description>
+
+<!-- Property: has alternative linguistic form (person) -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4034">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasAlternativeLinguisticFormPerson</reg:name>
+  <rdfs:label xml:lang="en">has alternative linguistic form (person)</rdfs:label>
+  <skos:definition xml:lang="en">Relates a name of a person and an alternative linguistic form of name by which that person is known.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:scopeNote xml:lang="en">Includes translations of a name into other languages.</skos:scopeNote>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1012" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1012" />
+  <rdfs:label xml:lang="es">tiene forma lingüística alternativa (persona)</rdfs:label>
+</rdf:Description>
+
+<!-- Property: has alternative linguistic form (work)  -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4028">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasAlternativeLinguisticFormWork </reg:name>
+  <rdfs:label xml:lang="en">has alternative linguistic form (work) </rdfs:label>
+  <skos:definition xml:lang="en">Relates a name of a work and an alternative linguistic form of name by which that work is known.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1014" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1014" />
+  <rdfs:label xml:lang="es">tiene forma lingüística alternativa (obra)</rdfs:label>
+</rdf:Description>
+
+<!-- Property: has appellation -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P2013">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasAppellation</reg:name>
+  <rdfs:label xml:lang="en">has appellation</rdfs:label>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1010" />
+  <skos:definition xml:lang="en">Relates a bibliographic entity to a name.</skos:definition>
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1006" />
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P2014" />
+</rdf:Description>
+
+<!-- Property: has as subject (family) -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4046">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasAsSubjectFamily</reg:name>
+  <rdfs:label xml:lang="en">has as subject (family)</rdfs:label>
+  <skos:definition xml:lang="en">Relates a work to a family that is the subject of the work.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1001" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1002" />
+  <rdfs:label xml:lang="es">tiene como materia (familia)</rdfs:label>
+</rdf:Description>
+
+<!-- Property: has attributed works from -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4044">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasAttributedWorksFrom</reg:name>
+  <rdfs:label xml:lang="en">has attributed works from</rdfs:label>
+  <skos:definition xml:lang="en">Relates a person (either a "real" individual or a persona) or identity to whom one or more works by another person have been attributed, either erroneously or falsely, and that other person.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P4043" />
+</rdf:Description>
+
+<!-- Property: has base access point -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3017">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasBaseAccessPoint</reg:name>
+  <rdfs:label xml:lang="en">has base access point</rdfs:label>
+  <skos:definition xml:lang="en">Relates a controlled access point to all elements in a controlled access point that are integral to the name or identifier that forms the basis for the access point.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:scopeNote xml:lang="en">Includes the name element in a controlled access point beginning with the name of a person, family, or corporate body. Includes the phrase element in a controlled access point beginning with a phrase associated with a person that is used in lieu of a name as such when the name of the person is unknown (e.g., A Physician, Author of Early Impressions). Includes the name element for a subordinate or related body in a controlled access point beginning with the name of a superior body. Includes the name element for a government agency, official, legislative body, court, etc., in a controlled access point beginning with the name for the territorial authority. Includes the name element for a religious council, official, province, synod, etc., in a controlled access point beginning with the name for the religious body. Includes the title element in a controlled access point for a work. Includes a term designating form at the beginning of the title element of a controlled access point for a musical work or expression (e.g., Symphony, Concerto). Includes conventional and collective titles at the beginning of the title element of a controlled access point for a work or expression (e.g., Treaties, Laws, Works, Selections, Piano music). Includes the additional  element(s) in a collective title controlled access point (i.e., a subsequent term or terms used to subdivide the collective uniform title)</skos:scopeNote>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1001" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3006" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3007" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3008" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3009" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P4018" />
+</rdf:Description>
+
+<!-- Property: has biography or history -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3039">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasBiographyOrHistory</reg:name>
+  <rdfs:label xml:lang="en">has biography or history</rdfs:label>
+  <skos:definition xml:lang="en">Relates a person to information pertaining to the life or history of the person.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+  <rdfs:label xml:lang="es">tiene biografía o historia</rdfs:label>
+</rdf:Description>
+
+<!-- Property: has child -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4049">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasChild</reg:name>
+  <rdfs:label xml:lang="en">has child</rdfs:label>
+  <skos:definition xml:lang="en">Relates a person to another person who is a "child" of that person.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P4048" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P4048" />
+</rdf:Description>
+
+<!-- Property: has citation for rules -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3019">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasCitationForRules</reg:name>
+  <rdfs:label xml:lang="en">has citation for rules</rdfs:label>
+  <skos:definition xml:lang="en">Relates rules to a citation for the cataloguing code, set of rules, instructions, etc.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:scopeNote xml:lang="en">Includes the title of the rules, etc., and, as necessary, the name of the body responsible for the rules, the edition designation, date, etc.</skos:scopeNote>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1007" />
+  <rdfs:label xml:lang="es">tiene cita de reglas</rdfs:label>
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3020" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P2001" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P2004" />
+</rdf:Description>
+
+<!-- Property: has collaborative relationship -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4045">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasCollaborativeRelationship</reg:name>
+  <rdfs:label xml:lang="en">has collaborative relationship</rdfs:label>
+  <skos:definition xml:lang="en">Relates two persons (i.e., individuals) who collaborate in intellectual or artistic endeavours</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+  <rdfs:label xml:lang="es">tiene relación colaborativa con</rdfs:label>
+</rdf:Description>
+
+<!-- Property: has conventional name -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4029">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasConventionalName</reg:name>
+  <rdfs:label xml:lang="en">has conventional name</rdfs:label>
+  <skos:definition xml:lang="en">Relates a name of a work and a conventional name by which that work is known</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1014" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1014" />
+  <rdfs:label xml:lang="es">tiene nombre convencional</rdfs:label>
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P4030" />
+</rdf:Description>
+
+<!-- Property: has corresponding subject term or classification number -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4018">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasCorrespondingSubjectTermOrClassificationNumber</reg:name>
+  <rdfs:label xml:lang="en">has corresponding subject term or classification number</rdfs:label>
+  <skos:definition xml:lang="en">Relates a controlled access point for the name of a bibliographic entity and a subject term in a controlled vocabulary or a classification number for that entity.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:scopeNote xml:lang="en">The subject term and the classification number may also be viewed as parallel names or identifiers for the name of the same entity.</skos:scopeNote>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1001" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3006" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3007" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3008" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3009" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3017" />
+</rdf:Description>
+
+<!-- Property: has country -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3032">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasCountry</reg:name>
+  <rdfs:label xml:lang="en">has country</rdfs:label>
+  <skos:definition xml:lang="en">Relates a person to a country with which the person is identified.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+  <rdfs:label xml:lang="es">tiene país</rdfs:label>
+</rdf:Description>
+
+<!-- Property: has custodial history of item -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3048">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasCustodialHistoryOfItem</reg:name>
+  <rdfs:label xml:lang="en">has custodial history of item</rdfs:label>
+  <skos:definition xml:lang="en">Relates an item to the record of previous ownership of an item.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1004" />
+</rdf:Description>
+
+<!-- Property: has dates of family -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3002">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasDatesOfFamily</reg:name>
+  <rdfs:label xml:lang="en">has dates of family</rdfs:label>
+  <skos:definition xml:lang="en">Relates a family to dates associated with the family.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1002" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3005" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3004" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3003" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3001" />
+</rdf:Description>
+
+<!-- Property: has dates of usage -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3025">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasDatesOfUsage</reg:name>
+  <rdfs:label xml:lang="en">has dates of usage</rdfs:label>
+  <skos:definition xml:lang="en">Relates a name to dates associated with the use of a particular name established by a person, corporate body, or family.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1006" />
+  <rdfs:label xml:lang="es">tiene fechas de uso</rdfs:label>
+</rdf:Description>
+
+<!-- Property: has derivative -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P2017">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasDerivative</reg:name>
+  <rdfs:label xml:lang="en">has derivative</rdfs:label>
+  <skos:definition xml:lang="en">Relates a work to another work which is an adaptation or modification of the prior work.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:scopeNote xml:lang="en">Includes relationships between an original work and a broad range of modifications from the original, including variations or versions of that work, such as editions, revisions, translations, summaries, abstracts, and digests. Includes new works that are adaptations or modifications that become new works but are based on an earlier work (improvisations, etc.); new works that are changes of genre (transformations, dramatizations, novelizations, etc.); and, new works based on the style or thematic content of other works (free translations, paraphrases, imitations, parodies, etc.).</skos:scopeNote>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1001" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1001" />
+  <rdfs:label xml:lang="es">tiene derivada</rdfs:label>
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P2018" />
+</rdf:Description>
+
+<!-- Property: has (descendent) genealogical relationship  -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4008">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasDescendentGenealogicalRelationship</reg:name>
+  <rdfs:label xml:lang="en">has (descendent) genealogical relationship </rdfs:label>
+  <skos:definition xml:lang="en">Relates a family to another family that descended from the prior family.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1002" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1002" />
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P4009" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P4009" />
+</rdf:Description>
+
+<!-- Property: has descriptive work -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P2035">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasDescriptiveWork</reg:name>
+  <rdfs:label xml:lang="en">has descriptive work</rdfs:label>
+  <skos:definition xml:lang="en">Relates a target work or expression or manifestation or item and a new work that refers to that target as its subject.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:scopeNote xml:lang="en">Includes criticism, commentary, review, casebook, etc., and the object of that analysis (that is, the target work, expression, or manifestation).</skos:scopeNote>
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1001" />
+  <rdfs:label xml:lang="es">tiene obra descriptiva</rdfs:label>
+</rdf:Description>
+
+<!-- Property: has designated usage of controlled access point -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3008">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasDesignatedUsageOfControlledAccessPoint</reg:name>
+  <rdfs:label xml:lang="en">has designated usage of controlled access point</rdfs:label>
+  <skos:definition xml:lang="en">Relates a controlled access point to an indication of whether the rules under which the controlled access point was constructed designate it as an authorized (or preferred) form (i.e., authorized access point) or as a variant (or non-preferred) form (i.e., variant access points).</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1001" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3006" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3007" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3009" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3017" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P4018" />
+</rdf:Description>
+
+<!-- Property: has different rules form -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4003">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasDifferentRulesForm</reg:name>
+  <rdfs:label xml:lang="en">has different rules form</rdfs:label>
+  <skos:definition xml:lang="en">Relates controlled access points for the authorized forms of name for the same entity that have been established according to different sets of rules.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1001" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1001" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P4002" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P4001" />
+</rdf:Description>
+
+<!-- Property: has earlier name -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4021">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasEarlierName</reg:name>
+  <rdfs:label xml:lang="en">has earlier name</rdfs:label>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:definition xml:lang="en">Relates a name of a person to a name that person used at an earlier stage in life.</skos:definition>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1012" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1012" />
+  <rdfs:label xml:lang="es">tiene nombre anterior</rdfs:label>
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P4022" />
+</rdf:Description>
+
+<!-- Property: has equivalence (item) relationship -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P2037">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasEquivalenceItemRelationship</reg:name>
+  <rdfs:label xml:lang="en">has equivalence (item) relationship</rdfs:label>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:definition xml:lang="en">Relates an item to another item that exemplifies the same intellectual or artistic content (work or work-expression).</skos:definition>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1004" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1004" />
+</rdf:Description>
+
+<!-- Property: has equivalence (manifestation) relationship -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P2019">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasEquivalenceManifestationRelationship</reg:name>
+  <rdfs:label xml:lang="en">has equivalence (manifestation) relationship</rdfs:label>
+  <skos:definition xml:lang="en">Relates a manifestation to another manifestation that embodies the same intellectual or artistic content (work or work-expression).</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1003" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1003" />
+</rdf:Description>
+
+<!-- Property: has expanded name -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4026">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasExpandedName</reg:name>
+  <rdfs:label xml:lang="en">has expanded name</rdfs:label>
+  <skos:definition xml:lang="en">Relates a name of a corporate body and the expanded form of name by which that body is known.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1011" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1011" />
+  <rdfs:label xml:lang="es">tiene nombre extenso</rdfs:label>
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P4027" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P4025" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P4027" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P4032" />
+</rdf:Description>
+
+<!-- Property: has field of activity (corporate body) -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3042">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasFieldOfActivityCorporateBody</reg:name>
+  <rdfs:label xml:lang="en">has field of activity (corporate body)</rdfs:label>
+  <skos:definition xml:lang="en">Relates a corporate body to a field of business in which the corporate body is engaged, its area of competence, responsibility, jurisdiction, etc.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1003" />
+  <rdfs:label xml:lang="es">tiene campo de actividad (entidad corporativa)</rdfs:label>
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3043" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3041" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3040" />
+</rdf:Description>
+
+<!-- Property: has field of activity (family) -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3004">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasFieldOfActivityFamily</reg:name>
+  <rdfs:label xml:lang="en">has field of activity (family)</rdfs:label>
+  <skos:definition xml:lang="en">Relates a family to afield of endeavour, area of expertise, etc., in which the family is engaged or was engaged.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1002" />
+  <rdfs:label xml:lang="es">tiene campo de actividad (familia)</rdfs:label>
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3005" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3003" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3002" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3001" />
+</rdf:Description>
+
+<!-- Property: has field of activity (person) -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3037">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasFieldOfActivityPerson</reg:name>
+  <rdfs:label xml:lang="en">has field of activity (person)</rdfs:label>
+  <skos:definition xml:lang="en">Relates a person to a field of endeavour, area of expertise, etc., in which the person is engaged or was engaged.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+  <rdfs:label xml:lang="es">tiene campo de actividad (persona)</rdfs:label>
+</rdf:Description>
+
+<!-- Property: has founder -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4011">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasFounder</reg:name>
+  <rdfs:label xml:lang="en">has founder</rdfs:label>
+  <skos:definition xml:lang="en">Relates a corporate body to a family which created it.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1003" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1002" />
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P4010" />
+</rdf:Description>
+
+<!-- Property: has gender -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3029">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasGender</reg:name>
+  <rdfs:label xml:lang="en">has gender</rdfs:label>
+  <skos:definition xml:lang="en">Relates a person to a gender by which the person is identified.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:scopeNote xml:lang="en">E.g., male, female, unknown, other.</skos:scopeNote>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+  <rdfs:label xml:lang="es">tiene género</rdfs:label>
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3030" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3031" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3032" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3033" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3034" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3035" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3036" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3037" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3038" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3039" />
+</rdf:Description>
+
+<!-- Property: has history (corporate body) -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3043">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasHistoryCorporateBody</reg:name>
+  <rdfs:label xml:lang="en">has history (corporate body)</rdfs:label>
+  <skos:definition xml:lang="en">Relates a corporate body to information pertaining to the history of the corporate body.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:scopeNote xml:lang="en">Includes historical information pertaining to an organization, institution, etc.</skos:scopeNote>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1003" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3040" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3041" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3042" />
+</rdf:Description>
+
+<!-- Property: has history of family -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3005">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasHistoryOfFamily</reg:name>
+  <rdfs:label xml:lang="en">has history of family</rdfs:label>
+  <skos:definition xml:lang="en">Relates a family to information pertaining to the history of the family.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1002" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3001" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3002" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3003" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3004" />
+</rdf:Description>
+
+<!-- Property: has history (work) -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3046">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasHistoryWork</reg:name>
+  <rdfs:label xml:lang="en">has history (work)</rdfs:label>
+  <skos:definition xml:lang="en">Relates a work to information pertaining to the history of the work.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:scopeNote xml:lang="en">Includes historical information pertaining to a work, including title changes for continuing resources.</skos:scopeNote>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1001" />
+  <rdfs:label xml:lang="es">tiene historia (obra)</rdfs:label>
+</rdf:Description>
+
+<!-- Property: has immediate source of acquisition of item -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3049">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasImmediateSourceOfAcquisitionOfItem</reg:name>
+  <rdfs:label xml:lang="en">has immediate source of acquisition of item</rdfs:label>
+  <skos:definition xml:lang="en">Relates an item to the source from which an item was directly acquired and the circumstances under which it was acquired.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1004" />
+</rdf:Description>
+
+<!-- Property: has language of base access point -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3010">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasLanguageOfBaseAccessPoint</reg:name>
+  <rdfs:label xml:lang="en">has language of base access point</rdfs:label>
+  <skos:definition xml:lang="en">Relates a controlled access point to the language in which the base access point is recorded.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1001" />
+</rdf:Description>
+
+<!-- Property: has language of cataloguing -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3011">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasLanguageOfCataloguing</reg:name>
+  <rdfs:label xml:lang="en">has language of cataloguing</rdfs:label>
+  <skos:definition xml:lang="en">Relates a controlled access point to the language in which additions to the base access point are recorded.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1001" />
+  <rdfs:label xml:lang="es">tiene lengua de catalogación</rdfs:label>
+</rdf:Description>
+
+<!-- Property: has language of family -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3052">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasLanguageOfFamily</reg:name>
+  <rdfs:label xml:lang="en">has language of family</rdfs:label>
+  <skos:definition xml:lang="en">Relates a family to a language associated with the family.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1002" />
+</rdf:Description>
+
+<!-- Property: has language of name -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3026">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasLanguageOfName</reg:name>
+  <rdfs:label xml:lang="en">has language of name</rdfs:label>
+  <skos:definition xml:lang="en">Relates a name to the language in which the name is expressed.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1006" />
+</rdf:Description>
+
+<!-- Property: has language of person -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3036">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasLanguageOfPerson</reg:name>
+  <rdfs:label xml:lang="en">has language of person</rdfs:label>
+  <skos:definition xml:lang="en">Relates a person to a language the person uses when creating an expression for publication, broadcasting, etc.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+</rdf:Description>
+
+<!-- Property: has language of the corporate body -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3040">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasLanguageOfTheCorporateBody</reg:name>
+  <rdfs:label xml:lang="en">has language of the corporate body</rdfs:label>
+  <skos:definition xml:lang="en">Relates a corporate body to a language that the corporate body uses in its communications.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1003" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3041" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3042" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3043" />
+</rdf:Description>
+
+<!-- Property: has later name -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4022">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasLaterName</reg:name>
+  <rdfs:label xml:lang="en">has later name</rdfs:label>
+  <skos:definition xml:lang="en">Relates a name of a person and a name that person used at a later stage in life.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1012" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1012" />
+  <rdfs:label xml:lang="es">tiene nombre posterior</rdfs:label>
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P4021" />
+</rdf:Description>
+
+<!-- Property: has location of item -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3047">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasLocationOfItem</reg:name>
+  <rdfs:label xml:lang="en">has location of item</rdfs:label>
+  <skos:definition xml:lang="en">Relates an item to the collection and/or institution in which the item is held, stored, or made available for access.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1004" />
+  <rdfs:comment xml:lang="en">Scope note not present in original documentation; added to clarify semantic difference with "is part (item)" property (http://iflastandards.info/ns/fr/frbr/frbrer/P2092).</rdfs:comment>
+  <skos:scopeNote xml:lang="en">E.g. Moir rare book collection, http://www.juilliardmanuscriptcollection.org/, Short loan collection (School of African and Oriental Studies, University of London), Library of Congress. Does not include collections where the item is originally published or manufactured as a component part.</skos:scopeNote>
+</rdf:Description>
+
+<!-- Property: has member (corporate body) -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4006">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasMemberCorporateBody</reg:name>
+  <rdfs:label xml:lang="en">has member (corporate body)</rdfs:label>
+  <skos:definition xml:lang="en">Relates a corporate body to a person who is a member of or affiliated with the corporate body.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1003" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P4007" />
+</rdf:Description>
+
+<!-- Property: has member (family) -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4004">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasMemberFamily</reg:name>
+  <rdfs:label xml:lang="en">has member (family)</rdfs:label>
+  <skos:definition xml:lang="en">Relates a family to a person who is a member of the family.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1002" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+</rdf:Description>
+
+<!-- Property: has name string -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3023">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasNameString</reg:name>
+  <rdfs:label xml:lang="en">has name string</rdfs:label>
+  <skos:definition xml:lang="en">Relates a name to a sequence of numeric and/or alphabetic characters or symbols that represents the name of an entity.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1006" />
+  <rdfs:label xml:lang="es">tiene cadena de caracteres</rdfs:label>
+</rdf:Description>
+
+<!-- Property: has numeric designation -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3051">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasNumericDesignation</reg:name>
+  <rdfs:label xml:lang="en">has numeric designation</rdfs:label>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:definition xml:lang="en">Relates a work to a number assigned to it.</skos:definition>
+  <skos:scopeNote xml:lang="en">Includes serial numbers, opus numbers assigned by the composer of a musical work, etc.</skos:scopeNote>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1001" />
+  <rdfs:label xml:lang="es">tiene designación numérica</rdfs:label>
+</rdf:Description>
+
+<!-- Property: has official identity -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4041">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasOfficialIdentity</reg:name>
+  <rdfs:label xml:lang="en">has official identity</rdfs:label>
+  <skos:definition xml:lang="en">Relates a person and an identity that person assumes in an official capacity.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+  <rdfs:label xml:lang="es">tiene identidad oficial</rdfs:label>
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P4042" />
+</rdf:Description>
+
+<!-- Property: has other variant name (corporate body) -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4032">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasOtherVariantNameCorporateBody</reg:name>
+  <rdfs:label xml:lang="en">has other variant name (corporate body)</rdfs:label>
+  <skos:definition xml:lang="en">Relates a name of a corporate body and a name by which that body is known (other than expanded name, acronym, initials, abbreviation, and alternative linguistic form).</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:scopeNote xml:lang="en">Includes orthographic variant names (spelling variations, transliterations, punctuation variations, capitalization variations), word order variant names (inversions, permutations).</skos:scopeNote>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1011" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1011" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P4025" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P4026" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P4027" />
+</rdf:Description>
+
+<!-- Property: has other variant name (person) -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4031">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasOtherVariantNamePerson</reg:name>
+  <rdfs:label xml:lang="en">has other variant name (person)</rdfs:label>
+  <skos:definition xml:lang="en">Relates a name of a person and several other variations on a name (other than earlier name, later name, and alternative linguistic form).</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:scopeNote xml:lang="en">Includes orthographic variant names (spelling variations, transliterations, punctuation variations, capitalization variations), word order variant names (inversions, permutations), alternative name/synonym variant names (bynames, nicknames, courtesy names). </skos:scopeNote>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1012" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1012" />
+</rdf:Description>
+
+<!-- Property: has other variant name (work) -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4033">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasOtherVariantNameWork</reg:name>
+  <rdfs:label xml:lang="en">has other variant name (work)</rdfs:label>
+  <skos:definition xml:lang="en">Relates a name of a work and a name by which that work is known (other than conventional name, and alternative linguistic form).</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:scopeNote xml:lang="en">Includes orthographic variant names(spelling variations, transliterations, punctuation variations, capitalization variations), word order variant names(inversions, permutations), variant title variant names (titles for the work based on titles found on manifestations or items, including cover title, spine title, caption title, container title, parallel title).</skos:scopeNote>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1014" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1014" />
+</rdf:Description>
+
+<!-- Property: has owner -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4013">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasOwner</reg:name>
+  <rdfs:label xml:lang="en">has owner</rdfs:label>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:definition xml:lang="en">Relates a corporate body to a family which owns it.</skos:definition>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1003" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1002" />
+  <rdfs:label xml:lang="es">tiene propietario</rdfs:label>
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P4012" />
+</rdf:Description>
+
+<!-- Property: has parallel language form -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4001">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasParallelLanguageForm</reg:name>
+  <rdfs:label xml:lang="en">has parallel language form</rdfs:label>
+  <skos:definition xml:lang="en">Relates controlled access points that are established as parallel language forms of access point for the authorized forms of name for the same entity.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1001" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1001" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P4002" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P4003" />
+</rdf:Description>
+
+<!-- Property: DEPRECATED -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4048">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1008" />
+  <reg:name xml:lang="en">hasParent</reg:name>
+  <rdfs:label xml:lang="en">has parent</rdfs:label>
+  <skos:definition xml:lang="en">Relates a person to another person who is a “parent”  of that person.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1003" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1003" />
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P4049" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P4049" />
+</rdf:Description>
+
+<!-- Property: has parent -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4051">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <rdfs:label xml:lang="en">has parent</rdfs:label>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <reg:name xml:lang="en">hasParent</reg:name>
+  <skos:definition xml:lang="en">Relates a person to another person who is a "parent" of that person.</skos:definition>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+</rdf:Description>
+
+<!-- Property: has place of birth -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3030">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasPlaceOfBirth</reg:name>
+  <rdfs:label xml:lang="en">has place of birth</rdfs:label>
+  <skos:definition xml:lang="en">Relates a person to the town, city, province, state, and/or country in which the person was born.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+  <rdfs:label xml:lang="es">tiene lugar de nacimiento</rdfs:label>
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3029" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3032" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3034" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3035" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3036" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3037" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3038" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3039" />
+</rdf:Description>
+
+<!-- Property: has place of death -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3031">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasPlaceOfDeath</reg:name>
+  <rdfs:label xml:lang="en">has place of death</rdfs:label>
+  <skos:definition xml:lang="en">Relates a person to the town, city, province, state, and/or country in which the person died.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+  <rdfs:label xml:lang="es">tiene lugar de fallecimiento</rdfs:label>
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3029" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3032" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3034" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3035" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3036" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3037" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3038" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3039" />
+</rdf:Description>
+
+<!-- Property: has place of origin of the work -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3045">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasPlaceOfOriginOfTheWork</reg:name>
+  <rdfs:label xml:lang="en">has place of origin of the work</rdfs:label>
+  <skos:definition xml:lang="en">Relates a work to the country or other territorial jurisdiction or cultural area from which the work originated.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:scopeNote xml:lang="en">Includes area of origin, etc.</skos:scopeNote>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1001" />
+  <rdfs:label xml:lang="es">tiene lugar de origen de la obra</rdfs:label>
+</rdf:Description>
+
+<!-- Property: has place of residence -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3033">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasPlaceOfResidence</reg:name>
+  <rdfs:label xml:lang="en">has place of residence</rdfs:label>
+  <skos:definition xml:lang="en">Relates a person to a country, state/province, city, etc., in which the person resides or has resided.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+  <rdfs:label xml:lang="es">tiene lugar de residencia</rdfs:label>
+</rdf:Description>
+
+<!-- Property: has places associated with family -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3003">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasPlacesAssociatedWithFamily</reg:name>
+  <rdfs:label xml:lang="en">has places associated with family</rdfs:label>
+  <skos:definition xml:lang="en">Relates a family to information pertaining to places where the family resides or resided or had some connection.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1002" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3001" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3002" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3004" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3005" />
+</rdf:Description>
+
+<!-- Property: has (predecessor) genealogical relationship -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4009">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasPredecessorGenealogicalRelationship</reg:name>
+  <rdfs:label xml:lang="en">has (predecessor) genealogical relationship</rdfs:label>
+  <skos:definition xml:lang="en">Relates a family to another family which is the precursor of the prior family.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1002" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1002" />
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P4008" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P4008" />
+</rdf:Description>
+
+<!-- Property: has profession or occupation -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3038">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasProfessionOrOccupation</reg:name>
+  <rdfs:label xml:lang="en">has profession or occupation</rdfs:label>
+  <skos:definition xml:lang="en">Relates a person to a profession or occupation in which the person works or worked.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+</rdf:Description>
+
+<!-- Property: has pseudonymous persona -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4035">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasPseudonymousPersona</reg:name>
+  <rdfs:label xml:lang="en">has pseudonymous persona</rdfs:label>
+  <skos:definition xml:lang="en">Relates a "real" person (i.e., an individual) and a persona(ae) or identity adopted by that individual through the use of one or more pseudonyms.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P4036" />
+</rdf:Description>
+
+<!-- Property: has related identifier -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4019">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasRelatedIdentifier</reg:name>
+  <rdfs:label xml:lang="en">has related identifier</rdfs:label>
+  <skos:definition xml:lang="en">Relates a controlled access point based on an authorized or variant form of name of a bibliographic entity to an identifier for the same bibliographic entity.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1001" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1009" />
+  <rdfs:label xml:lang="es">tiene identificador relacionado</rdfs:label>
+</rdf:Description>
+
+<!-- Property: has religious identity -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4039">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasReligiousIdentity</reg:name>
+  <rdfs:label xml:lang="en">has religious identity</rdfs:label>
+  <skos:definition xml:lang="en">Relates a person and an identity that person assumes in a religious capacity.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+  <rdfs:label xml:lang="es">tiene identidad religiosa</rdfs:label>
+  <owl:equivalentProperty rdf:resource="http://iflastandards.info/ns/fr/frad/P4038" />
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P4040" />
+</rdf:Description>
+
+<!-- Property: has rules identifier -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3020">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasRulesIdentifier</reg:name>
+  <rdfs:label xml:lang="en">has rules identifier</rdfs:label>
+  <skos:definition xml:lang="en">Relates rules to an acronym or initials or alphanumeric code identifying the rules.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1007" />
+  <rdfs:label xml:lang="es">tiene identificador de reglas</rdfs:label>
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3019" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P2001" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P2004" />
+</rdf:Description>
+
+<!-- Property: has scope of usage -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3024">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasScopeOfUsage</reg:name>
+  <rdfs:label xml:lang="en">has scope of usage</rdfs:label>
+  <skos:definition xml:lang="en">Relates a name to the form of work associated with a particular name for a persona.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:scopeNote xml:lang="en">Includes forms, genres, etc., (e.g., literary works, critical works, works on mathematics, detective novels) associated with a name used by an author.</skos:scopeNote>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1006" />
+  <rdfs:label xml:lang="es">tiene alcance de uso</rdfs:label>
+</rdf:Description>
+
+<!-- Property: has script of base access point -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3012">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasScriptOfBaseAccessPoint</reg:name>
+  <rdfs:label xml:lang="en">has script of base access point</rdfs:label>
+  <skos:definition xml:lang="en">Relates a controlled access point to the form of graphic characters in which the data in the base access point are recorded.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1001" />
+</rdf:Description>
+
+<!-- Property: has script of cataloguing -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3013">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasScriptOfCataloguing</reg:name>
+  <rdfs:label xml:lang="en">has script of cataloguing</rdfs:label>
+  <skos:definition xml:lang="en">Relates a controlled access point to the form of graphic characters in which any additions to the base access point are recorded.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1001" />
+</rdf:Description>
+
+<!-- Property: has script of name -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3027">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasScriptOfName</reg:name>
+  <rdfs:label xml:lang="en">has script of name</rdfs:label>
+  <skos:definition xml:lang="en">Relates a name to the script in which the name is rendered</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1006" />
+</rdf:Description>
+
+<!-- Property: has secular identity -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4037">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasSecularIdentity</reg:name>
+  <rdfs:label xml:lang="en">has secular identity</rdfs:label>
+  <skos:definition xml:lang="en">Relates a person and an identity that person assumes in a secular capacity.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+  <rdfs:label xml:lang="es">tiene identidad secular</rdfs:label>
+  <owl:equivalentProperty rdf:resource="http://iflastandards.info/ns/fr/frad/P4040" />
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P4038" />
+</rdf:Description>
+
+<!-- Property: has sequential relationship -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P2029">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasSequentialRelationship</reg:name>
+  <rdfs:label xml:lang="en">has sequential relationship</rdfs:label>
+  <skos:definition xml:lang="en">Relates a work to another work of different content that is a successor or a predecessor of that work,</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:scopeNote xml:lang="en">E.g. a sequel, a serial or series that has changed title. Excludes derivative works that modify the content of an earlier work.</skos:scopeNote>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1001" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1001" />
+</rdf:Description>
+
+<!-- Property: has shared characteristic (expression) relationship -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P2032">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasSharedCharacteristicExpressionRelationship</reg:name>
+  <rdfs:label xml:lang="en">has shared characteristic (expression) relationship</rdfs:label>
+  <skos:definition xml:lang="en">Relates two expressions that have some characteristic in common. </skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:scopeNote xml:lang="en">Excludes specific characteristics represented by other properties.</skos:scopeNote>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1002" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1002" />
+  <rdfs:label xml:lang="es">tiene relación de característica compartida (expresión)</rdfs:label>
+</rdf:Description>
+
+<!-- Property: has shared characteristic (item) relationship -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P2034">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasSharedCharacteristicItemRelationship </reg:name>
+  <rdfs:label xml:lang="en">has shared characteristic (item) relationship</rdfs:label>
+  <skos:definition xml:lang="en">Relates two items that have some characteristic in common.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:scopeNote xml:lang="en">Excludes specific characteristics represented by other properties.</skos:scopeNote>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1004" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1004" />
+  <rdfs:label xml:lang="es">tiene relación de característica compartida (ejemplar)</rdfs:label>
+</rdf:Description>
+
+<!-- Property: has shared characteristic (manifestation) relationship -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P2033">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasSharedCharacteristicManifestationRelationship</reg:name>
+  <rdfs:label xml:lang="en">has shared characteristic (manifestation) relationship</rdfs:label>
+  <skos:definition xml:lang="en">Relates two manifestations that have some characteristic in common.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:scopeNote xml:lang="en">Excludes specific characteristics represented by other properties. </skos:scopeNote>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1003" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1003" />
+  <rdfs:label xml:lang="es">tiene relación de característica compartida (manifestación)</rdfs:label>
+</rdf:Description>
+
+<!-- Property: has shared characteristic (work) relationship -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P2031">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasSharedCharacteristicWorkRelationship</reg:name>
+  <rdfs:label xml:lang="en">has shared characteristic (work) relationship</rdfs:label>
+  <skos:definition xml:lang="en">Relates two works that have some characteristic in common.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:scopeNote xml:lang="en">Excludes specific characteristics represented by other properties.</skos:scopeNote>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1001" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1001" />
+  <rdfs:label xml:lang="es">tiene relación de característica compartida (obra)</rdfs:label>
+</rdf:Description>
+
+<!-- Property: DEPRECATED -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4047">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1008" />
+  <reg:name xml:lang="en">hasSibling</reg:name>
+  <rdfs:label xml:lang="en">has sibling</rdfs:label>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:definition xml:lang="en">Relates two persons who have the same “parent(s)” (in an actual family or within a group).</skos:definition>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1003" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1003" />
+</rdf:Description>
+
+<!-- Property: has sibling -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4050">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <rdfs:label xml:lang="en">has sibling</rdfs:label>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <reg:name xml:lang="en">hasSibling</reg:name>
+  <skos:definition xml:lang="en">Relates two persons who have the same "parent(s)" (in an actual family or within a group).</skos:definition>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+</rdf:Description>
+
+<!-- Property: has source of controlled access point -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3016">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasSourceOfControlledAccessPoint</reg:name>
+  <rdfs:label xml:lang="en">has source of controlled access point</rdfs:label>
+  <skos:definition xml:lang="en">Relates a controlled access point to the publication or reference source used in establishing the form of name or title on which the controlled access point is based.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:scopeNote xml:lang="en">Includes the title, publisher, date, etc., of the resource for which the controlled access point was originally created. Includes the title, edition, etc., of the reference source(s) used to establish the conventional name or title.</skos:scopeNote>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1001" />
+</rdf:Description>
+
+<!-- Property: has status of controlled access point -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3007">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasStatusOfControlledAccessPoint</reg:name>
+  <rdfs:label xml:lang="en">has status of controlled access point</rdfs:label>
+  <skos:definition xml:lang="en">Relates a controlled access point to an indication of the level of establishment of the authorized access point for the entity (e.g., provisional).</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1001" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P4018" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3017" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3009" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3008" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3006" />
+</rdf:Description>
+
+<!-- Property: has subject of the work -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3050">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasSubjectOfTheWork</reg:name>
+  <rdfs:label xml:lang="en">has subject of the work</rdfs:label>
+  <skos:definition xml:lang="en">Relates a work to the subject aspects of the work and its content.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:scopeNote xml:lang="en">Includes information about the subject of the work. Includes classification numbers.</skos:scopeNote>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1001" />
+</rdf:Description>
+
+<!-- Property: has subordinate -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4014">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasSubordinate</reg:name>
+  <rdfs:label xml:lang="en">has subordinate</rdfs:label>
+  <skos:definition xml:lang="en">Relates a corporate body to another corporate body which is subordinate to the prior corporate body.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1003" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1003" />
+  <rdfs:label xml:lang="es">tiene subordinado</rdfs:label>
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P4015" />
+</rdf:Description>
+
+<!-- Property: has transliteration scheme of base access point -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3014">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasTransliterationSchemeOfBaseAccessPoint</reg:name>
+  <rdfs:label xml:lang="en">has transliteration scheme of base access point</rdfs:label>
+  <skos:definition xml:lang="en">Relates a controlled access point to an indication of the scheme used in transliterating the base access point.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1001" />
+</rdf:Description>
+
+<!-- Property: has transliteration scheme of cataloguing -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3015">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasTransliterationSchemeOfCataloguing</reg:name>
+  <rdfs:label xml:lang="en">has transliteration scheme of cataloguing</rdfs:label>
+  <skos:definition xml:lang="en">Relates a controlled access point to an indication of the scheme used in transliterating any additions to the base access point.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1001" />
+</rdf:Description>
+
+<!-- Property: has transliteration scheme of name -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3028">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasTransliterationSchemeOfName</reg:name>
+  <rdfs:label xml:lang="en">has transliteration scheme of name</rdfs:label>
+  <skos:definition xml:lang="en">Relates a name to the scheme used to produce the transliterated form of the name.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1006" />
+  <rdfs:label xml:lang="es">tiene esquema de transliteración del nombre</rdfs:label>
+</rdf:Description>
+
+<!-- Property: has type of controlled access point -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3006">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasTypeOfControlledAccessPoint</reg:name>
+  <rdfs:label xml:lang="en">has type of controlled access point</rdfs:label>
+  <skos:definition xml:lang="en">Relates a controlled access point to a categorization or generic descriptor for the controlled access point.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:scopeNote xml:lang="en">Includes terms and/or codes designating the type of access point (e.g., personal name access point, family name access point, corporate name access point, meeting name access point, territorial name access point, title access point, collective title access point or access points consisting of a combination of names, such as creator/title access points).</skos:scopeNote>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1001" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3007" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3008" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3009" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3017" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P4018" />
+</rdf:Description>
+
+<!-- Property: has type of family -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3001">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasTypeOfFamily</reg:name>
+  <rdfs:label xml:lang="en">has type of family</rdfs:label>
+  <skos:definition xml:lang="en">Relates a family to a categorization or generic descriptor for the type of family.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:scopeNote xml:lang="en">Includes categorizations, such as clan, dynasty, family unit, patriarchy, matriarchy, etc.</skos:scopeNote>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1002" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3002" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3003" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3004" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3005" />
+</rdf:Description>
+
+<!-- Property: has type of identifier -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3021">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasTypeOfIdentifier</reg:name>
+  <rdfs:label xml:lang="en">has type of identifier</rdfs:label>
+  <skos:definition xml:lang="en">Relates an identifier to a code or other designation indicating the type of identifier (i.e., the domain in which the identifier is assigned).</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:scopeNote xml:lang="en">Includes alphabetic strings identifying the numbering system (e.g., "ISBN", "ISSN", "ISRC"). Includes symbols designating the type of identifier (e.g., registered trademark symbol)
+</skos:scopeNote>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1009" />
+  <rdfs:label xml:lang="es">tiene tipo de identificador</rdfs:label>
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P2011" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P2016" />
+</rdf:Description>
+
+<!-- Property: has type of name -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3022">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasTypeOfName</reg:name>
+  <rdfs:label xml:lang="en">has type of name</rdfs:label>
+  <skos:definition xml:lang="en">Relates a name to the category of a name.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:scopeNote xml:lang="en">Includes personal names, corporate names, names of families, trade names, and titles of works and manifestations. Includes names of concepts, objects, events, and places.</skos:scopeNote>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1006" />
+  <rdfs:label xml:lang="es">tiene tipo de nombre</rdfs:label>
+</rdf:Description>
+
+<!-- Property: has undifferentiated access point  -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P3009">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">hasUndifferentiatedAccessPoint </reg:name>
+  <rdfs:label xml:lang="en">has undifferentiated access point </rdfs:label>
+  <skos:definition xml:lang="en">Relates a controlled access point to an indication that the controlled access point for the authorized form of name (i.e., authorized access point) is insufficiently precise to differentiate between two or more entities identified by the same name.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1001" />
+  <rdfs:label xml:lang="es">tiene punto de acceso no diferenciado</rdfs:label>
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P4018" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3017" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3008" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3007" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3006" />
+</rdf:Description>
+
+<!-- Property: DEPRECATED -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4043">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1008" />
+  <reg:name xml:lang="en">hasWorksAttributedTo</reg:name>
+  <rdfs:label xml:lang="en">has works attributed to</rdfs:label>
+  <skos:definition xml:lang="en">Relates one person and another person (either a "real" individual or a persona) or identity to whom one or more works by the former have been attributed, either erroneously or falsely.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1003" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1003" />
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P4044" />
+</rdf:Description>
+
+<!-- Property: has works attributed to -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4052">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <rdfs:label xml:lang="en">has works attributed to</rdfs:label>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <reg:name xml:lang="en">hasWorksAttributedTo</reg:name>
+  <skos:definition xml:lang="en">Relates one person and another person (either a "real" individual or a persona) or identity to whom one or more works by the former have been attributed, either erroneously or falsely.</skos:definition>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+</rdf:Description>
+
+<!-- Property: is appellation of -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P2014">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">isAppellationOf</reg:name>
+  <rdfs:label xml:lang="en">is appellation of</rdfs:label>
+  <skos:definition xml:lang="en">Relates a name to a bibliographic entity.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1006" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1010" />
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P2013" />
+</rdf:Description>
+
+<!-- Property: is assigned -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P2015">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">isAssigned</reg:name>
+  <rdfs:label xml:lang="en">is assigned</rdfs:label>
+  <skos:definition xml:lang="en">Relates a bibliographic entity to an identifier assigned to the entity.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1010" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1009" />
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P2016" />
+</rdf:Description>
+
+<!-- Property: is assigned to -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P2016">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">isAssignedTo</reg:name>
+  <rdfs:label xml:lang="en">is assigned to</rdfs:label>
+  <skos:definition xml:lang="en">Relates an identifier to a bibliographic entity to which it is assigned.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1009" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1010" />
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P2015" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3021" />
+</rdf:Description>
+
+<!-- Property: is associated with -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P2028">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">isAssociatedWith</reg:name>
+  <rdfs:label xml:lang="en">is associated with</rdfs:label>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:definition xml:lang="en">Relates a person, a family, or a corporate body to a work, expression, manifestation, or item.</skos:definition>
+  <reg:hasSubproperty rdf:resource="http://iflastandards.info/ns/fr/frad/P2020" />
+</rdf:Description>
+
+<!-- Property: is based on (identifier) -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P2012">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">isBasedOnIdentifier</reg:name>
+  <rdfs:label xml:lang="en">is based on (identifier)</rdfs:label>
+  <skos:definition xml:lang="en">Relates a controlled access point to an identifier on which it is based. </skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1001" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1009" />
+  <rdfs:label xml:lang="es">está basado en (identificador)</rdfs:label>
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P2011" />
+</rdf:Description>
+
+<!-- Property: is based on (name) -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P2010">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">isBasedOnName</reg:name>
+  <rdfs:label xml:lang="en">is based on (name)</rdfs:label>
+  <skos:definition xml:lang="en">Relates a controlled access point to a name on which it is based.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1001" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1006" />
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P2009" />
+</rdf:Description>
+
+<!-- Property: is basis (identifier) for -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P2011">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">isBasisIdentifierFor</reg:name>
+  <rdfs:label xml:lang="en">is basis (identifier) for</rdfs:label>
+  <skos:definition xml:lang="en">Relates an identifier to a controlled access point for which it is the basis.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1009" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1001" />
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P2012" />
+  <owl:propertyDisjointWith rdf:resource="http://iflastandards.info/ns/fr/frad/P3021" />
+</rdf:Description>
+
+<!-- Property: is basis (name) for -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P2009">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">isBasisNameFor</reg:name>
+  <rdfs:label xml:lang="en">is basis (name) for</rdfs:label>
+  <skos:definition xml:lang="en">Relates a name to a controlled access point for which it is the basis.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1006" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1001" />
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P2010" />
+</rdf:Description>
+
+<!-- Property: is conventional name of -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4030">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">isConventionalNameOf</reg:name>
+  <rdfs:label xml:lang="en">is conventional name of</rdfs:label>
+  <skos:definition xml:lang="en">Relates a conventional name by which a work is known to a name of the same work.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1014" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1014" />
+  <rdfs:label xml:lang="es">es nombre convencional de</rdfs:label>
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P4029" />
+</rdf:Description>
+
+<!-- Property: is created by -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P2005">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">isCreatedBy</reg:name>
+  <rdfs:label xml:lang="en">is created by</rdfs:label>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1001" />
+  <skos:definition xml:lang="en">Relates a controlled access point to the agency that creates it.</skos:definition>
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1008" />
+  <rdfs:label xml:lang="es">es creado por</rdfs:label>
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P2006" />
+</rdf:Description>
+
+<!-- Property: is created by (family) -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P2020">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">isCreatedByFamily</reg:name>
+  <rdfs:label xml:lang="en">is created by (family)</rdfs:label>
+  <skos:definition xml:lang="en">Relates a work to a family which is responsible for the creation of the intellectual or artistic content of the work.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1001" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1002" />
+  <rdfs:label xml:lang="es">es creada por (familia)</rdfs:label>
+  <rdfs:subPropertyOf rdf:resource="http://iflastandards.info/ns/fr/frad/P2028" />
+</rdf:Description>
+
+<!-- Property: is creator (family) of -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P2021">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">isCreatorFamilyOf</reg:name>
+  <rdfs:label xml:lang="en">is creator (family) of</rdfs:label>
+  <skos:definition xml:lang="en">Relates a family to a work of which it is responsible for the creation of the intellectual or artistic content.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1002" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1001" />
+  <rdfs:label xml:lang="es">es creadora (familia) de</rdfs:label>
+</rdf:Description>
+
+<!-- Property: is derivative of -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P2018">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">isDerivativeOf</reg:name>
+  <rdfs:label xml:lang="en">is derivative of</rdfs:label>
+  <skos:definition xml:lang="en">Relates a work to another work of which it is an adaptation or modification.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1001" />
+  <skos:scopeNote xml:lang="en">Includes relationships between an original work and a broad range of modifications from the original, including variations or versions of that work, such as editions, revisions, translations, summaries, abstracts, and digests. Includes new works that are adaptations or modifications that become new works but are based on an earlier work (improvisations, etc.); new works that are changes of genre (transformations, dramatizations, novelizations, etc.); and, new works based on the style or thematic content of other works (free translations, paraphrases, imitations, parodies, etc.).</skos:scopeNote>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1001" />
+  <rdfs:label xml:lang="es">es derivativa de</rdfs:label>
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P2017" />
+</rdf:Description>
+
+<!-- Property: is descriptive work of -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P2036">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">isDescriptiveWorkOf</reg:name>
+  <rdfs:label xml:lang="en">is descriptive work of</rdfs:label>
+  <skos:definition xml:lang="en">Relates a new work to a target work or expression or manifestation or item that it refers to as its subject.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:scopeNote xml:lang="en">Includes criticism, commentary, review, casebook, etc., and the object of that analysis (that is, the target work, expression, or manifestation). </skos:scopeNote>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1001" />
+</rdf:Description>
+
+<!-- Property: is founder of -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4010">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">isFounderOf</reg:name>
+  <rdfs:label xml:lang="en">is founder of</rdfs:label>
+  <skos:definition xml:lang="en">Relates a family to a corporate body which the family created.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1002" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1003" />
+  <rdfs:label xml:lang="es">es fundador de</rdfs:label>
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P4011" />
+</rdf:Description>
+
+<!-- Property: is governed by -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P2003">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">isGovernedBy</reg:name>
+  <rdfs:label xml:lang="en">is governed by</rdfs:label>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1001" />
+  <skos:definition xml:lang="en">Relates a controlled access point to the rules that govern it.</skos:definition>
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1007" />
+  <rdfs:label xml:lang="es">es regulado por</rdfs:label>
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P2004" />
+</rdf:Description>
+
+<!-- Property: is member of (corporate body) -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4007">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">isMemberOfCorporateBody</reg:name>
+  <rdfs:label xml:lang="en">is member of (corporate body)</rdfs:label>
+  <skos:definition xml:lang="en">Relates a person to a corporate body in which the person is a member or with which the person is affiliated.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1003" />
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P4006" />
+</rdf:Description>
+
+<!-- Property: is member of (family) -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4005">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">isMemberOfFamily</reg:name>
+  <rdfs:label xml:lang="en">is member of (family)</rdfs:label>
+  <skos:definition xml:lang="en">Relates a person to a family of which the person is a member.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1002" />
+</rdf:Description>
+
+<!-- Property: is modified by -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P2007">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">isModifiedBy</reg:name>
+  <rdfs:label xml:lang="en">is modified by</rdfs:label>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1001" />
+  <skos:definition xml:lang="en">Relates a controlled access point to the agency that modifies it.</skos:definition>
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1008" />
+  <rdfs:label xml:lang="es">es modificado por</rdfs:label>
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P2008" />
+</rdf:Description>
+
+<!-- Property: is official identity of -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4042">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">isOfficialIdentityOf</reg:name>
+  <rdfs:label xml:lang="en">is official identity of</rdfs:label>
+  <skos:definition xml:lang="en">Relates an identity a person assumes in an official capacity and the person.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P4041" />
+</rdf:Description>
+
+<!-- Property: is owned by (family) -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P2022">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">isOwnedByFamily</reg:name>
+  <rdfs:label xml:lang="en">is owned by (family)</rdfs:label>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:definition xml:lang="en">Relates an item to a family that is the owner or custodian of the item.</skos:definition>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1004" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1002" />
+  <rdfs:label xml:lang="es">es poseida por (familia)</rdfs:label>
+</rdf:Description>
+
+<!-- Property: is owner (family) of -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P2023">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">isOwnerFamilyOf</reg:name>
+  <rdfs:label xml:lang="en">is owner (family) of</rdfs:label>
+  <skos:definition xml:lang="en">Relates a family to an item of which it is the owner or custodian.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1002" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1004" />
+  <rdfs:label xml:lang="es">es propietaria (familia) de</rdfs:label>
+</rdf:Description>
+
+<!-- Property: is owner of -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4012">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">isOwnerOf</reg:name>
+  <rdfs:label xml:lang="en">is owner of</rdfs:label>
+  <skos:definition xml:lang="en">Related a family to a corporate body which the family owns.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1002" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1003" />
+  <rdfs:label xml:lang="es">es propietario de</rdfs:label>
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P4013" />
+</rdf:Description>
+
+<!-- Property: is predecessor of -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4016">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">isPredecessorOf</reg:name>
+  <rdfs:label xml:lang="en">is predecessor of</rdfs:label>
+  <skos:definition xml:lang="en">Relates a corporate body to another corporate body of which it is a predecessor.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1003" />
+  <skos:scopeNote xml:lang="en">Includes splits, mergers, subsequent meetings or conferences.</skos:scopeNote>
+  <rdfs:label xml:lang="es">es predecesora de</rdfs:label>
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P4017" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1003" />
+</rdf:Description>
+
+<!-- Property: is produced by (family) -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P2024">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">isProducedByFamily</reg:name>
+  <rdfs:label xml:lang="en">is produced by (family)</rdfs:label>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:definition xml:lang="en">Relates a manifestation to a family that is responsible for publishing, distributing, fabricating or manufacturing the manifestation.</skos:definition>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1003" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1002" />
+  <rdfs:label xml:lang="es">es producida por (familia)</rdfs:label>
+</rdf:Description>
+
+<!-- Property: is producer (family) of -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P2025">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">isProducerFamilyOf</reg:name>
+  <rdfs:label xml:lang="en">is producer (family) of</rdfs:label>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:definition xml:lang="en">Relates a family to a manifestation of which it is responsible for publishing, distributing, fabricating or manufacturing.</skos:definition>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1002" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1003" />
+  <rdfs:label xml:lang="es">es productora (familia) de</rdfs:label>
+</rdf:Description>
+
+<!-- Property: is pseudonymous persona of -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4036">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">isPseudonymousPersonaOf</reg:name>
+  <rdfs:label xml:lang="en">is pseudonymous persona of</rdfs:label>
+  <skos:definition xml:lang="en">Relates a persona(ae) or identity adopted by an individual through the use of one or more pseudonyms and the "real" person (i.e., the individual).</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P4035" />
+</rdf:Description>
+
+<!-- Property: is realized by (family) -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P2026">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">isRealizedByFamily</reg:name>
+  <rdfs:label xml:lang="en">is realized by (family)</rdfs:label>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:definition xml:lang="en">Relates an expression to a family that is responsible for the specifics of the intellectual or artistic realization or execution of the expression.</skos:definition>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1002" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1002" />
+  <rdfs:label xml:lang="es">es realizada por (familia)</rdfs:label>
+</rdf:Description>
+
+<!-- Property: is realizer (family) of -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P2027">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">isRealizerFamilyOf</reg:name>
+  <rdfs:label xml:lang="en">is realizer (family) of</rdfs:label>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:definition xml:lang="en">Relates a family to an expression of which it is responsible for the specifics of the intellectual or artistic realization or execution.</skos:definition>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1002" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1002" />
+  <rdfs:label xml:lang="es">es realizadora (familia) de</rdfs:label>
+</rdf:Description>
+
+<!-- Property: is religious identity of -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4040">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">isReligiousIdentityOf</reg:name>
+  <rdfs:label xml:lang="en">is religious identity of</rdfs:label>
+  <skos:definition xml:lang="en">Relates an identity a person assumes in a religious capacity and the person.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+  <owl:equivalentProperty rdf:resource="http://iflastandards.info/ns/fr/frad/P4037" />
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P4039" />
+</rdf:Description>
+
+<!-- Property: is secular identity of -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4038">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">isSecularIdentityOf</reg:name>
+  <rdfs:label xml:lang="en">is secular identity of</rdfs:label>
+  <skos:definition xml:lang="en">Relates an identity a person assumes in a secular capacity and the person.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frbr/frbrer/C1005" />
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P4037" />
+  <owl:equivalentProperty rdf:resource="http://iflastandards.info/ns/fr/frad/P4039" />
+</rdf:Description>
+
+<!-- Property: is subordinate of -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4015">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">isSubordinateOf</reg:name>
+  <rdfs:label xml:lang="en">is subordinate of</rdfs:label>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <skos:definition xml:lang="en">Relates a corporate body to another corporate body to which it is subordinate.</skos:definition>
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1003" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1003" />
+  <rdfs:label xml:lang="es">es subordinado de</rdfs:label>
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P4014" />
+</rdf:Description>
+
+<!-- Property: is successor of -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P4017">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">isSuccessorOf</reg:name>
+  <rdfs:label xml:lang="en">is successor of</rdfs:label>
+  <skos:definition xml:lang="en">Relates a corporate body to another corporate body of which it is a successor.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1003" />
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1003" />
+  <rdfs:label xml:lang="es">es sucesora de</rdfs:label>
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P4016" />
+</rdf:Description>
+
+<!-- Property: modifies -->
+<rdf:Description rdf:about="http://iflastandards.info/ns/fr/frad/P2008">
+  <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/fr/frad/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">modifies</reg:name>
+  <rdfs:label xml:lang="en">modifies</rdfs:label>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:domain rdf:resource="http://iflastandards.info/ns/fr/frad/C1008" />
+  <skos:definition xml:lang="en">Relates an agency to a controlled access point that is modified by the agency.</skos:definition>
+  <rdfs:range rdf:resource="http://iflastandards.info/ns/fr/frad/C1001" />
+  <rdfs:label xml:lang="es">modifica</rdfs:label>
+  <owl:inverseOf rdf:resource="http://iflastandards.info/ns/fr/frad/P2007" />
+</rdf:Description>
+
+
+<!-- Status properties used in this document  -->
+    <skos:Concept rdf:about="http://metadataregistry.org/uri/RegStatus/1001">
+        <skos:prefLabel xml:lang="en">Published</skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://metadataregistry.org/uri/RegStatus/1008">
+        <skos:prefLabel xml:lang="en">Deprecated</skos:prefLabel>
+    </skos:Concept>
+</rdf:RDF>
