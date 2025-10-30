@@ -1,0 +1,749 @@
+<?xml version="1.0" ?>
+<Ontology ontologyIRI="http://colore.oor.net/multidim_space_physcont/fullphyscont_full.owl" versionIRI="http://colore.oor.net/multidim_space_physcont/fullphyscont_full.owl" xml:base="http://colore.oor.net/multidim_space_physcont/fullphyscont_full.owl#" xmlns="http://www.w3.org/2002/07/owl#">
+	
+            
+	<Prefix IRI="http://colore.oor.net/multidim_space_physcont/fullphyscont_full.owl#" name=""/>
+	
+            
+	<Prefix IRI="http://www.w3.org/2002/07/owl#" name="owl"/>
+	
+            
+	<Prefix IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#" name="rdf"/>
+	
+            
+	<Prefix IRI="http://www.w3.org/XML/1998/namespace" name="xml"/>
+	
+            
+	<Prefix IRI="http://www.w3.org/2001/XMLSchema#" name="xsd"/>
+	
+            
+	<Prefix IRI="http://www.w3.org/2000/01/rdf-schema#" name="rdfs"/>
+	
+        
+	<Declaration>
+		<ObjectProperty IRI="osurroundsvoid"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="surroundsvoid"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="enclosesvoid"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="isurroundsvoid"/>
+	</Declaration>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="osurroundsvoid"/>
+		<ObjectProperty IRI="surroundsvoid"/>
+	</SubObjectPropertyOf>
+	<Declaration>
+		<ObjectProperty IRI="P"/>
+	</Declaration>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="isurroundsvoid"/>
+		<ObjectProperty IRI="surroundsvoid"/>
+	</SubObjectPropertyOf>
+	<Declaration>
+		<ObjectProperty IRI="r"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="="/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="voidspaceall"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="hostsvany"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="hostsv"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="hostsv1"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="hostsv2"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="hostsv3"/>
+	</Declaration>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="hostsv"/>
+		<ObjectProperty IRI="hostsvany"/>
+	</SubObjectPropertyOf>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="hostsv1"/>
+		<ObjectProperty IRI="hostsvany"/>
+	</SubObjectPropertyOf>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="hostsv2"/>
+		<ObjectProperty IRI="hostsvany"/>
+	</SubObjectPropertyOf>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="hostsv3"/>
+		<ObjectProperty IRI="hostsvany"/>
+	</SubObjectPropertyOf>
+	<Declaration>
+		<ObjectProperty IRI="PO"/>
+	</Declaration>
+	<Declaration>
+		<Class IRI="mat"/>
+	</Declaration>
+	<Declaration>
+		<Class IRI="ZEX"/>
+	</Declaration>
+	<Declaration>
+		<Class IRI="PED"/>
+	</Declaration>
+	<Declaration>
+		<Class IRI="S"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="VS"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="Cont"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="ch"/>
+	</Declaration>
+	<ObjectPropertyDomain>
+		<ObjectProperty IRI="VS"/>
+		<Class IRI="PED"/>
+	</ObjectPropertyDomain>
+	<ObjectPropertyRange>
+		<ObjectProperty IRI="VS"/>
+		<Class IRI="S"/>
+	</ObjectPropertyRange>
+	<Declaration>
+		<Class IRI="SimpleV"/>
+	</Declaration>
+	<Declaration>
+		<Class IRI="ICon"/>
+	</Declaration>
+	<Declaration>
+		<Class IRI="ComplexV"/>
+	</Declaration>
+	<Declaration>
+		<Class IRI="V"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="hosts"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="StrongC"/>
+	</Declaration>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="hostsv"/>
+		<ObjectProperty IRI="hosts"/>
+	</SubObjectPropertyOf>
+	<Declaration>
+		<Class IRI="RPF"/>
+	</Declaration>
+	<Declaration>
+		<Class IRI="F"/>
+	</Declaration>
+	<Declaration>
+		<Class IRI="DPF"/>
+	</Declaration>
+	<Declaration>
+		<Class IRI="POB"/>
+	</Declaration>
+	<Declaration>
+		<Class IRI="M"/>
+	</Declaration>
+	<Declaration>
+		<Class IRI="NAPO"/>
+	</Declaration>
+	<ObjectPropertyDomain>
+		<ObjectProperty IRI="hosts"/>
+		<Class IRI="PED"/>
+	</ObjectPropertyDomain>
+	<ObjectPropertyRange>
+		<ObjectProperty IRI="hosts"/>
+		<Class IRI="F"/>
+	</ObjectPropertyRange>
+	<ObjectPropertyRange>
+		<ObjectProperty IRI="hosts"/>
+		<Class IRI="F"/>
+	</ObjectPropertyRange>
+	<ObjectPropertyRange>
+		<ObjectProperty IRI="ch"/>
+		<Class IRI="S"/>
+	</ObjectPropertyRange>
+	<Declaration>
+		<Class IRI="Closed"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="TCont"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="C"/>
+	</Declaration>
+	<Declaration>
+		<Class IRI="MaxDim"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="ICont"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="EqDim"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="SC"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="lt"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="leq"/>
+	</Declaration>
+	<Declaration>
+		<Class IRI="Min"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="BCont"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="Inc"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="Covers"/>
+	</Declaration>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="TCont"/>
+		<ObjectProperty IRI="Cont"/>
+	</SubObjectPropertyOf>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="SC"/>
+		<ObjectProperty IRI="C"/>
+	</SubObjectPropertyOf>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="EqDim"/>
+		<ObjectProperty IRI="leq"/>
+	</SubObjectPropertyOf>
+	<ObjectPropertyDomain>
+		<ObjectProperty IRI="leq"/>
+		<Class IRI="S"/>
+	</ObjectPropertyDomain>
+	<ObjectPropertyRange>
+		<ObjectProperty IRI="leq"/>
+		<Class IRI="S"/>
+	</ObjectPropertyRange>
+	<TransitiveObjectProperty>
+		<ObjectProperty IRI="leq"/>
+	</TransitiveObjectProperty>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="Cont"/>
+		<ObjectProperty IRI="leq"/>
+	</SubObjectPropertyOf>
+	<Declaration>
+		<Class IRI="MinDim"/>
+	</Declaration>
+	<TransitiveObjectProperty>
+		<ObjectProperty IRI="Cont"/>
+	</TransitiveObjectProperty>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="P"/>
+		<ObjectProperty IRI="Cont"/>
+	</SubObjectPropertyOf>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="P"/>
+		<ObjectProperty IRI="EqDim"/>
+	</SubObjectPropertyOf>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="PO"/>
+		<ObjectProperty IRI="EqDim"/>
+	</SubObjectPropertyOf>
+	<Declaration>
+		<Class IRI="Max"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="PP"/>
+	</Declaration>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="PP"/>
+		<ObjectProperty IRI="P"/>
+	</SubObjectPropertyOf>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="BCont"/>
+		<ObjectProperty IRI="Cont"/>
+	</SubObjectPropertyOf>
+	<Declaration>
+		<ObjectProperty IRI="gt"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="geq"/>
+	</Declaration>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="lt"/>
+		<ObjectProperty IRI="leq"/>
+	</SubObjectPropertyOf>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="ICont"/>
+		<ObjectProperty IRI="Cont"/>
+	</SubObjectPropertyOf>
+	<ObjectPropertyRange>
+		<ObjectProperty IRI="r"/>
+		<Class IRI="S"/>
+	</ObjectPropertyRange>
+	<ObjectPropertyDomain>
+		<ObjectProperty IRI="Cont"/>
+		<Class IRI="S"/>
+	</ObjectPropertyDomain>
+	<ObjectPropertyRange>
+		<ObjectProperty IRI="Cont"/>
+		<Class IRI="S"/>
+	</ObjectPropertyRange>
+	<ObjectPropertyDomain>
+		<ObjectProperty IRI="lt"/>
+		<Class IRI="S"/>
+	</ObjectPropertyDomain>
+	<ObjectPropertyRange>
+		<ObjectProperty IRI="lt"/>
+		<Class IRI="S"/>
+	</ObjectPropertyRange>
+	<ObjectPropertyDomain>
+		<ObjectProperty IRI="BCont"/>
+		<Class IRI="S"/>
+	</ObjectPropertyDomain>
+	<ObjectPropertyRange>
+		<ObjectProperty IRI="BCont"/>
+		<Class IRI="S"/>
+	</ObjectPropertyRange>
+	<Declaration>
+		<Class IRI="Con"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="DK1"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="porespace"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="voidspace"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="convoidspace"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="conporespace"/>
+	</Declaration>
+	<ObjectPropertyDomain>
+		<ObjectProperty IRI="DK1"/>
+		<Class IRI="M"/>
+	</ObjectPropertyDomain>
+	<Declaration>
+		<ObjectProperty IRI="surrounds"/>
+	</Declaration>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="surroundsvoid"/>
+		<ObjectProperty IRI="surrounds"/>
+	</SubObjectPropertyOf>
+	<ObjectPropertyRange>
+		<ObjectProperty IRI="surroundsvoid"/>
+		<Class IRI="V"/>
+	</ObjectPropertyRange>
+	<Declaration>
+		<ObjectProperty IRI="detcont"/>
+	</Declaration>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="surrounds"/>
+		<ObjectProperty IRI="detcont"/>
+	</SubObjectPropertyOf>
+	<ObjectPropertyDomain>
+		<ObjectProperty IRI="surrounds"/>
+		<Class IRI="mat"/>
+	</ObjectPropertyDomain>
+	<Declaration>
+		<ObjectProperty IRI="fullphyscont"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="matdep"/>
+	</Declaration>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="detcont"/>
+		<ObjectProperty IRI="fullphyscont"/>
+	</SubObjectPropertyOf>
+	<Declaration>
+		<ObjectProperty IRI="dep"/>
+	</Declaration>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="matdep"/>
+		<ObjectProperty IRI="dep"/>
+	</SubObjectPropertyOf>
+	<Declaration>
+		<ObjectProperty IRI="submat"/>
+	</Declaration>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="StrongC"/>
+		<ObjectProperty IRI="SC"/>
+	</SubObjectPropertyOf>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="StrongC"/>
+		<ObjectProperty IRI="EqDim"/>
+	</SubObjectPropertyOf>
+	<ObjectPropertyDomain>
+		<ObjectProperty IRI="dep"/>
+		<Class IRI="PED"/>
+	</ObjectPropertyDomain>
+	<ObjectPropertyRange>
+		<ObjectProperty IRI="dep"/>
+		<Class IRI="PED"/>
+	</ObjectPropertyRange>
+	<ObjectPropertyRange>
+		<ObjectProperty IRI="fullphyscont"/>
+		<Class IRI="PED"/>
+	</ObjectPropertyRange>
+	<ObjectPropertyDomain>
+		<ObjectProperty IRI="fullphyscont"/>
+		<Class IRI="PED"/>
+	</ObjectPropertyDomain>
+	<Declaration>
+		<ObjectProperty IRI="hostscavity"/>
+	</Declaration>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="enclosesvoid"/>
+		<ObjectProperty IRI="surroundsvoid"/>
+	</SubObjectPropertyOf>
+	<Declaration>
+		<ObjectProperty IRI="hostsh"/>
+	</Declaration>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="hostsh"/>
+		<ObjectProperty IRI="hostsv"/>
+	</SubObjectPropertyOf>
+	<Declaration>
+		<ObjectProperty IRI="hostsg"/>
+	</Declaration>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="hostsg"/>
+		<ObjectProperty IRI="hostsv"/>
+	</SubObjectPropertyOf>
+	<Declaration>
+		<Class IRI="Hole"/>
+	</Declaration>
+	<ObjectPropertyRange>
+		<ObjectProperty IRI="hostsh"/>
+		<Class IRI="Hole"/>
+	</ObjectPropertyRange>
+	<Declaration>
+		<Class IRI="Gap"/>
+	</Declaration>
+	<ObjectPropertyRange>
+		<ObjectProperty IRI="hostsg"/>
+		<Class IRI="Gap"/>
+	</ObjectPropertyRange>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="hostscavity"/>
+		<ObjectProperty IRI="hostsv"/>
+	</SubObjectPropertyOf>
+	<Declaration>
+		<Class IRI="CAVITY"/>
+	</Declaration>
+	<ObjectPropertyRange>
+		<ObjectProperty IRI="hostscavity"/>
+		<Class IRI="CAVITY"/>
+	</ObjectPropertyRange>
+	<Declaration>
+		<ObjectProperty IRI="hostscavityi"/>
+	</Declaration>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="hostscavityi"/>
+		<ObjectProperty IRI="hostscavity"/>
+	</SubObjectPropertyOf>
+	<Declaration>
+		<ObjectProperty IRI="hostscavityt"/>
+	</Declaration>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="hostscavityt"/>
+		<ObjectProperty IRI="hostscavity"/>
+	</SubObjectPropertyOf>
+	<Declaration>
+		<ObjectProperty IRI="hostshollow"/>
+	</Declaration>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="hostshollow"/>
+		<ObjectProperty IRI="hostsv"/>
+	</SubObjectPropertyOf>
+	<Declaration>
+		<Class IRI="HOL"/>
+	</Declaration>
+	<ObjectPropertyRange>
+		<ObjectProperty IRI="hostshollow"/>
+		<Class IRI="HOL"/>
+	</ObjectPropertyRange>
+	<Declaration>
+		<ObjectProperty IRI="hoststunnel"/>
+	</Declaration>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="hoststunnel"/>
+		<ObjectProperty IRI="hostsv"/>
+	</SubObjectPropertyOf>
+	<Declaration>
+		<Class IRI="TUN"/>
+	</Declaration>
+	<ObjectPropertyRange>
+		<ObjectProperty IRI="hoststunnel"/>
+		<Class IRI="TUN"/>
+	</ObjectPropertyRange>
+	<Declaration>
+		<ObjectProperty IRI="hostsve"/>
+	</Declaration>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="hostsve"/>
+		<ObjectProperty IRI="hostsv"/>
+	</SubObjectPropertyOf>
+	<Declaration>
+		<ObjectProperty IRI="hostsvi"/>
+	</Declaration>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="hostsvi"/>
+		<ObjectProperty IRI="hostsv"/>
+	</SubObjectPropertyOf>
+	<Declaration>
+		<ObjectProperty IRI="osurroundsmat"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="surroundsmat"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="enclosesmat"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="isurroundsmat"/>
+	</Declaration>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="osurroundsmat"/>
+		<ObjectProperty IRI="surroundsmat"/>
+	</SubObjectPropertyOf>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="isurroundsmat"/>
+		<ObjectProperty IRI="surroundsmat"/>
+	</SubObjectPropertyOf>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="surroundsmat"/>
+		<ObjectProperty IRI="surrounds"/>
+	</SubObjectPropertyOf>
+	<ObjectPropertyRange>
+		<ObjectProperty IRI="surroundsmat"/>
+		<Class IRI="mat"/>
+	</ObjectPropertyRange>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="enclosesmat"/>
+		<ObjectProperty IRI="surroundsmat"/>
+	</SubObjectPropertyOf>
+	<Declaration>
+		<ObjectProperty IRI="voidinside"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="inside"/>
+	</Declaration>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="voidinside"/>
+		<ObjectProperty IRI="inside"/>
+	</SubObjectPropertyOf>
+	<ObjectPropertyDomain>
+		<ObjectProperty IRI="voidinside"/>
+		<Class IRI="V"/>
+	</ObjectPropertyDomain>
+	<ObjectPropertyRange>
+		<ObjectProperty IRI="inside"/>
+		<Class IRI="V"/>
+	</ObjectPropertyRange>
+	<Declaration>
+		<ObjectProperty IRI="matfillsinside"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="matinside"/>
+	</Declaration>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="matfillsinside"/>
+		<ObjectProperty IRI="matinside"/>
+	</SubObjectPropertyOf>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="matinside"/>
+		<ObjectProperty IRI="inside"/>
+	</SubObjectPropertyOf>
+	<ObjectPropertyDomain>
+		<ObjectProperty IRI="matinside"/>
+		<Class IRI="mat"/>
+	</ObjectPropertyDomain>
+	<Declaration>
+		<ObjectProperty IRI="matsplitinside"/>
+	</Declaration>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="matsplitinside"/>
+		<ObjectProperty IRI="matinside"/>
+	</SubObjectPropertyOf>
+	<Declaration>
+		<ObjectProperty IRI="depimmatcontains"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="depcont"/>
+	</Declaration>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="depimmatcontains"/>
+		<ObjectProperty IRI="depcont"/>
+	</SubObjectPropertyOf>
+	<ObjectPropertyDomain>
+		<ObjectProperty IRI="depimmatcontains"/>
+		<Class IRI="V"/>
+	</ObjectPropertyDomain>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="depcont"/>
+		<ObjectProperty IRI="fullphyscont"/>
+	</SubObjectPropertyOf>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="depcont"/>
+		<ObjectProperty IRI="matdep"/>
+	</SubObjectPropertyOf>
+	<Declaration>
+		<ObjectProperty IRI="depmatcont"/>
+	</Declaration>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="depmatcont"/>
+		<ObjectProperty IRI="depcont"/>
+	</SubObjectPropertyOf>
+	<ObjectPropertyDomain>
+		<ObjectProperty IRI="depmatcont"/>
+		<Class IRI="mat"/>
+	</ObjectPropertyDomain>
+	<Declaration>
+		<ObjectProperty IRI="subvoid"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="immatcont"/>
+	</Declaration>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="immatcont"/>
+		<ObjectProperty IRI="depcont"/>
+	</SubObjectPropertyOf>
+	<ObjectPropertyRange>
+		<ObjectProperty IRI="immatcont"/>
+		<Class IRI="V"/>
+	</ObjectPropertyRange>
+	<ObjectPropertyDomain>
+		<ObjectProperty IRI="immatcont"/>
+		<Class IRI="V"/>
+	</ObjectPropertyDomain>
+	<Declaration>
+		<ObjectProperty IRI="submaterial"/>
+	</Declaration>
+	<Declaration>
+		<ObjectProperty IRI="matcont"/>
+	</Declaration>
+	<SubObjectPropertyOf>
+		<ObjectProperty IRI="matcont"/>
+		<ObjectProperty IRI="depcont"/>
+	</SubObjectPropertyOf>
+	<ObjectPropertyRange>
+		<ObjectProperty IRI="matcont"/>
+		<Class IRI="mat"/>
+	</ObjectPropertyRange>
+	<ObjectPropertyDomain>
+		<ObjectProperty IRI="matcont"/>
+		<Class IRI="mat"/>
+	</ObjectPropertyDomain>
+	<DisjointClasses>
+		<Class IRI="PED"/>
+		<Class IRI="S"/>
+	</DisjointClasses>
+	<DisjointClasses>
+		<Class IRI="Max"/>
+		<Class IRI="ZEX"/>
+	</DisjointClasses>
+	<DisjointClasses>
+		<Class IRI="M"/>
+		<Class IRI="F"/>
+		<Class IRI="POB"/>
+	</DisjointClasses>
+	<DisjointClasses>
+		<Class IRI="RPF"/>
+		<Class IRI="DPF"/>
+	</DisjointClasses>
+	<DisjointClasses>
+		<Class IRI="MaxDim"/>
+		<Class IRI="ZEX"/>
+	</DisjointClasses>
+	<DisjointClasses>
+		<Class IRI="ZEX"/>
+		<Class IRI="MinDim"/>
+	</DisjointClasses>
+	<DisjointClasses>
+		<Class IRI="Min"/>
+		<Class IRI="ZEX"/>
+	</DisjointClasses>
+	<SubClassOf>
+		<Class IRI="POB"/>
+		<Class IRI="PED"/>
+	</SubClassOf>
+	<SubClassOf>
+		<Class IRI="RPF"/>
+		<Class IRI="mat"/>
+	</SubClassOf>
+	<SubClassOf>
+		<Class IRI="MaxDim"/>
+		<Class IRI="S"/>
+	</SubClassOf>
+	<SubClassOf>
+		<Class IRI="ZEX"/>
+		<Class IRI="S"/>
+	</SubClassOf>
+	<SubClassOf>
+		<Class IRI="Min"/>
+		<Class IRI="S"/>
+	</SubClassOf>
+	<SubClassOf>
+		<Class IRI="MinDim"/>
+		<Class IRI="S"/>
+	</SubClassOf>
+	<SubClassOf>
+		<Class IRI="RPF"/>
+		<Class IRI="F"/>
+	</SubClassOf>
+	<SubClassOf>
+		<Class IRI="Max"/>
+		<Class IRI="S"/>
+	</SubClassOf>
+	<SubClassOf>
+		<Class IRI="M"/>
+		<Class IRI="PED"/>
+	</SubClassOf>
+	<SubClassOf>
+		<Class IRI="M"/>
+		<Class IRI="mat"/>
+	</SubClassOf>
+	<SubClassOf>
+		<Class IRI="ICon"/>
+		<Class IRI="Con"/>
+	</SubClassOf>
+	<SubClassOf>
+		<Class IRI="ComplexV"/>
+		<Class IRI="V"/>
+	</SubClassOf>
+	<SubClassOf>
+		<Class IRI="NAPO"/>
+		<Class IRI="POB"/>
+	</SubClassOf>
+	<SubClassOf>
+		<Class IRI="Con"/>
+		<Class IRI="S"/>
+	</SubClassOf>
+	<SubClassOf>
+		<Class IRI="SimpleV"/>
+		<Class IRI="V"/>
+	</SubClassOf>
+	<SubClassOf>
+		<Class IRI="DPF"/>
+		<Class IRI="F"/>
+	</SubClassOf>
+	<SubClassOf>
+		<Class IRI="POB"/>
+		<Class IRI="mat"/>
+	</SubClassOf>
+	<SubClassOf>
+		<Class IRI="F"/>
+		<Class IRI="PED"/>
+	</SubClassOf>
+</Ontology>
